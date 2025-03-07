@@ -15,9 +15,16 @@ class Config_Block extends Partial
         $fields = Builder::make('config__block');
 
         $fields
-            ->addRepeater('items')
-                ->addText('item')
-            ->endRepeater();
+            ->addTrueFalse('hide',['label'=>'Hide Block'])
+            ->addButtonGroup('theme',[ 
+                'choices' => [ 
+                    'light'     => 'Light',
+                    'dark'      => 'Dark', 
+                    'subtle'    => 'Subtle', 
+                ],
+                'default_value' => 'light'
+            ])
+        ;
 
         return $fields;
     }

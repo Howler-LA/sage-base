@@ -5,6 +5,10 @@ namespace App\Fields;
 use Log1x\AcfComposer\Builder;
 use Log1x\AcfComposer\Field;
 
+use App\Fields\Partials\Block_Accordion;
+use App\Fields\Partials\Block_ImageText;
+use App\Fields\Partials\Block_StickyContent;
+
 class Blocks extends Field
 {
     /**
@@ -12,15 +16,19 @@ class Blocks extends Field
      */
     public function fields(): array
     {
-        $fields = Builder::make('blocks');
+        $fields = Builder::make('blocks',[
+            'hide_on_screen' => ['the_content']
+        ]);
 
         $fields
-            ->setLocation('post_type', '==', 'post');
+            ->setLocation('page_template', '==', 'template-custom.blade.php');
 
         $fields
-            ->addRepeater('items')
-                ->addText('item')
-            ->endRepeater();
+            ->addFlexibleContent('content', ['button_label' => 'Add Block'])
+                ->addLayout($this->get(Block_Accordion::class))
+                ->addLayout($this->get(Block_ImageText::class))
+                ->addLayout($this->get(Block_StickyContent::class))
+            ->endFlexibleContent();
 
         return $fields->build();
     }
