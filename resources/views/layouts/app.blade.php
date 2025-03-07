@@ -9,7 +9,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
   </head>
 
-  <body @php(body_class('bg-stone-800 text-stone-100'))>
+  <body @php(body_class('antialiased bg-background text-foreground'))>
     @php(wp_body_open())
 
     <div id="app">
