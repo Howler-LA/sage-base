@@ -12,22 +12,22 @@
   <body @php(body_class('antialiased bg-background text-foreground'))>
     @php(wp_body_open())
 
-    <div id="app">
+    <div 
+      id="app"
+      @class([
+        'min-h-[calc(100dvh-32px)] lg:min-h-[calc(100vh-32px)] flex flex-col' => is_user_logged_in() == true,
+        'min-h-dvh lg:min-h-screen flex flex-col' => is_user_logged_in() == false,
+      ])
+    >
       <a class="sr-only focus:not-sr-only" href="#main">
         {{ __('Skip to content', 'sage') }}
       </a>
 
       @include('sections.header')
 
-      <main id="main" class="main">
+      <main id="main" class="main flex-grow py-xs bg-neutral-50">
         @yield('content')
       </main>
-
-      @hasSection('sidebar')
-        <aside class="sidebar">
-          @yield('sidebar')
-        </aside>
-      @endif
 
       @include('sections.footer')
     </div>

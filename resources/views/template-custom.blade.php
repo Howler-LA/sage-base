@@ -6,7 +6,7 @@
 
 @section('content')
   @while(have_posts()) @php(the_post())
-    <div class="flex flex-col">
+    <div class="flex flex-col gap-xs">
       @layouts('content')
         @if(file_exists(get_theme_file_path('resources/views/partials/' . get_row_layout() . '.blade.php')))
           @include('partials/' . get_row_layout())
