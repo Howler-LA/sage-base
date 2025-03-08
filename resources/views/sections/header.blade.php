@@ -2,13 +2,14 @@
   x-data="{open:false}"
   data-theme="{{ $header['theme'] }}" 
   @class([
-    'bg-background text-foreground sticky z-50',
+    'bg-background text-foreground z-50',
+    'sticky' => $header['sticky'],
     'top-0' => is_user_logged_in() == false,
     'top-8' => is_user_logged_in() == true,
   ])
 >
   <div class="py-6 md:py-xs">
-    <x-container class="grid grid-cols-2">
+    <x-container class="grid grid-cols-2 gap-x-sm sm:gap-x-md">
       <a href="/" class="!no-underline leading-10">
         <x-type.title title="{!! $siteName !!}" />
       </a>

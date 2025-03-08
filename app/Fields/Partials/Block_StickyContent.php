@@ -21,6 +21,12 @@ class Block_StickyContent extends Partial
 
         $fields
             ->removeField('content->image')
+            ->modifyField('config->block->theme', function($fieldsBuilder) {
+                $fieldsBuilder
+                    ->addTrueFalse('flush',['label' => 'Flush to edge'])
+                ;
+                return $fieldsBuilder;
+            })
         ;
 
         return $fields;

@@ -19,6 +19,26 @@ class Block_ImageText extends Partial
             ->addFields($this->get(Config::class))
         ;
 
+        $fields
+            ->modifyField('config->block->theme', function($fieldsBuilder) {
+                $fieldsBuilder
+                    ->addTrueFalse('height',[
+                        'ui_on_text'    => 'Full',
+                        'ui_off_text'   => 'Hug',
+                    ])
+                ;
+                return $fieldsBuilder;
+            })
+            ->modifyField('config->block', function($fieldsBuilder) {
+                $fieldsBuilder
+                    ->addGroup('media')
+                        ->addFields($this->get(Config_Theme::class))
+                    ->endGroup()
+                ;
+                return $fieldsBuilder;
+            })
+        ;
+
         return $fields;
     }
 }

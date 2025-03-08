@@ -23,7 +23,7 @@ class Content_Lockup extends Partial
                 'new_lines' => 'wpautop'
             ])
             ->addFields($this->get(Content_Links::class))
-            ->addImage('image')
+            ->addFile('image')
         ;
 
         return $fields;

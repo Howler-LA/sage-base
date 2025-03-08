@@ -1,4 +1,4 @@
-@set($width,'wide')
+@set($width,'full')
 @set($order,'last')
 
 <div class="grid xl:grid-cols-2">
@@ -13,7 +13,7 @@
   >
     <x-lockup
       @class([
-        'xl:max-w-[calc(calc(var(--spacing-mega)*.5)-calc(var(--spacing-lg)*2))]'
+        'xl:w-full xl:max-w-[calc(calc(var(--spacing-mega)*.5)-calc(var(--spacing-lg)*2))]'
       ])
       eyebrow="{!! $content['eyebrow'] !!}"
       headline="{!! $content['headline'] !!}"
@@ -21,9 +21,10 @@
     />
   </div>
   <div 
-    data-theme="{{ $config['block']['theme'] }}" 
+    data-theme="{{ $config['media']['theme'] }}" 
     @class([
-      'xl:min-h-[calc(100vh-136px)]',
+      'xl:min-h-[calc(100vh-136px)]' => $config['block']['height'],
+      'xl:min-h-[calc(60vh-136px)]' => !$config['block']['height'],
       'bg-background flex flex-col justify-center relative',
       'p-0' => $width == 'full',
       'p-sm sm:p-md md:p-lg xl:p-xl' => $width == 'narrow',
@@ -31,12 +32,12 @@
       'xl:order-first' => $order == 'first'
     ])
   >
-    <x-image 
+    <x-media 
       id="{!! $content['image'] !!}"
       @class([
-        'rounded-lg',
-        'w-full h-auto object-cover',
-        'absolute inset-0' => $width == 'full',
+        'object-cover',
+        'w-full h-auto rounded-lg' => $width != 'full',
+        'absolute inset-0 w-full h-full' => $width == 'full',
       ])
     />
   </div>

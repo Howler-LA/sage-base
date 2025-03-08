@@ -21,6 +21,15 @@ class Block_Accordion extends Partial
 
         $fields
             ->removeField('content->image')
+            ->modifyField('config->block->theme', function($fieldsBuilder) {
+                $fieldsBuilder
+                    ->addButtonGroup('columns',[ 
+                        'choices'       => [1,2],
+                        'default_value' => 1
+                    ])
+                ;
+                return $fieldsBuilder;
+            })
         ;
 
         return $fields;

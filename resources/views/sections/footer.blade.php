@@ -1,14 +1,11 @@
-<footer 
+<x-section
+  tag="footer" 
   data-theme="{{ $footer['theme'] }}" 
-  class="py-sm md:pt-md xl:py-lg bg-background text-foreground"
 >
   <x-container class="flex flex-col gap-sm">
-    
     <x-type.eyebrow title="Eyebrow Content" />
-    
     <x-type.headline title="Simple footer headline" />
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-y-xs gap-x-sm md:gap-y-sm xl:gap-y-lg xl:pb-lg">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-y-xs gap-x-sm sm:gap-x-md md:gap-y-sm xl:gap-y-lg xl:pb-lg">
       <x-footer 
         {{-- class="flex flex-col md:grid-cols-2 md:col-span-2 xl:col-span-3 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-xs gap-x-sm md:gap-y-sm xl:gap-y-lg" --}}
         name="footer_navigation" 
@@ -22,10 +19,8 @@
         </div>
       </div>
     </div>
-
     <div class="flex flex-col gap-1">
       @repeat(2)<div class="h-px bg-foreground"></div>@endrepeat
     </div>
-
   </x-container>
-</footer>
+</x-section>
