@@ -185,3 +185,6 @@ add_action('widgets_init', function () {
         'id' => 'sidebar-footer',
     ] + $config);
 });
+
+
+add_image_size('flex_image', 800, 400); // 220 pixels wide by 180 pixels tall, soft proportional crop mode

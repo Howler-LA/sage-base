@@ -15,9 +15,9 @@ class Block_ImageText extends Partial
         $fields = Builder::make('block__image_text');
 
         $fields
-            ->addRepeater('items')
-                ->addText('item')
-            ->endRepeater();
+            ->addFields($this->get(Content::class))
+            ->addFields($this->get(Config::class))
+        ;
 
         return $fields;
     }

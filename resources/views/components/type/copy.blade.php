@@ -8,6 +8,6 @@
   'body-2'  => 'text-[15px] xl:text-base',
 })
 
-<div {{ $attributes->merge(['class' => "font-body {$class}"]) }}>
+<div {{ $attributes->merge(['class' => "font-body opacity-80 {$class}"]) }}>
   {!! $content ?? $slot !!}
 </div>

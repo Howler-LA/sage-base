@@ -19,6 +19,10 @@ class Block_StickyContent extends Partial
             ->addFields($this->get(Config::class))
         ;
 
+        $fields
+            ->removeField('content->image')
+        ;
+
         return $fields;
     }
 }

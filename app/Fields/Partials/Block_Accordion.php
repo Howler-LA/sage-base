@@ -15,9 +15,13 @@ class Block_Accordion extends Partial
         $fields = Builder::make('block__accordion');
 
         $fields
-            ->addRepeater('items')
-                ->addText('item')
-            ->endRepeater();
+            ->addFields($this->get(Content::class))
+            ->addFields($this->get(Config::class))
+        ;
+
+        $fields
+            ->removeField('content->image')
+        ;
 
         return $fields;
     }

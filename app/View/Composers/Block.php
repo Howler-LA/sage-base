@@ -4,18 +4,16 @@ namespace App\View\Composers;
 
 use Roots\Acorn\View\Composer;
 
-class Options extends Composer
+class Block extends Composer
 {
     protected static $views = [
-        'sections.header',
-        'sections.footer',
         'partials.block__*',
     ];
     public function with()
     {
         return [
-            'header'    => get_field('header','option'),
-            'footer'    => get_field('footer','option'),
+            'content'   => get_sub_field('content'),
+            'config'    => get_sub_field('config'),
         ];
     }
 }

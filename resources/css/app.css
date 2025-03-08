@@ -6,23 +6,23 @@
 
 [data-theme="light"] {
   --background:     var(--color-white);
-  --foreground:     var(--color-sky-700);
-  --eyebrow-bg:     var(--color-sky-700);
+  --foreground:     var(--color-teal-700);
+  --eyebrow-bg:     var(--color-teal-700);
   --eyebrow-text:   var(--color-white);
 }
 
 [data-theme="dark"] {
-  --background:     var(--color-sky-700);
+  --background:     var(--color-teal-700);
   --foreground:     var(--color-white);
-  --eyebrow-bg:     var(--color-sky-600);
-  --eyebrow-text:   var(--color-sky-200);
+  --eyebrow-bg:     var(--color-teal-600);
+  --eyebrow-text:   var(--color-teal-200);
 }
 
 [data-theme="subtle"] {
-  --background:     var(--color-sky-200);
-  --foreground:     var(--color-sky-700);
-  --eyebrow-bg:     var(--color-sky-200);
-  --eyebrow-text:   var(--color-sky-600);
+  --background:     var(--color-stone-100);
+  --foreground:     var(--color-teal-700);
+  --eyebrow-bg:     var(--color-teal-200);
+  --eyebrow-text:   var(--color-teal-600);
 }
 
 @theme {
