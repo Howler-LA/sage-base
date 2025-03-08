@@ -6,9 +6,8 @@
     data-theme="{{ $config['block']['theme'] }}" 
     @class([
       'bg-background text-foreground flex flex-col justify-center',
-      'p-xs pb-0 sm:p-sm sm:pb-0 md:p-md md:pb-0 xl:p-lg',
-      'flex',
-      'items-end' => $order == 'last',
+      'p-xs sm:p-sm sm:pb-0 md:p-md md:pb-0 xl:p-lg',
+      'xl:items-end' => $order == 'last',
     ])
   >
     <x-lockup
@@ -24,7 +23,7 @@
     data-theme="{{ $config['media']['theme'] }}" 
     @class([
       'xl:min-h-[calc(100vh-136px)]' => $config['block']['height'],
-      'xl:min-h-[calc(60vh-136px)]' => !$config['block']['height'],
+      'min-h-[calc(60vh-136px)]' => !$config['block']['height'],
       'bg-background flex flex-col justify-center relative',
       'p-0' => $width == 'full',
       'p-sm sm:p-md md:p-lg xl:p-xl' => $width == 'narrow',
