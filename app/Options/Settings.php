@@ -33,8 +33,11 @@ class Settings extends Field
         $fields = Builder::make('settings');
 
         $fields
+            ->addTab('Brand')
             ->addFields($this->get(Options_Brand::class))
+            ->addTab('Appearance')
             ->addFields($this->get(Options_Appearance::class))
+            ->addTab('Socials')
             ->addFields($this->get(Options_Socials::class))
         ;
 

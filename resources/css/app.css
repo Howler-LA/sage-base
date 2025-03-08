@@ -3,39 +3,38 @@
 @source "../views/";
 @source "../../app/";
 
-html,body {
-  font-size: 14px;
-}
 
 [data-theme="light"] {
-  --background:     var(--color-neutral-100);
-  --foreground:     var(--color-teal-900);
-  --eyebrow-bg:     var(--color-neutral-400);
-  --eyebrow-text:   var(--color-neutral-800);
+  --background:     var(--color-white);
+  --foreground:     var(--color-sky-700);
+  --eyebrow-bg:     var(--color-sky-700);
+  --eyebrow-text:   var(--color-white);
 }
 
 [data-theme="dark"] {
-  --background:     var(--color-teal-900);
+  --background:     var(--color-sky-700);
   --foreground:     var(--color-white);
-  --eyebrow-bg:     var(--color-teal-400);
-  --eyebrow-text:   var(--color-teal-900);
+  --eyebrow-bg:     var(--color-sky-600);
+  --eyebrow-text:   var(--color-sky-200);
 }
 
 [data-theme="subtle"] {
-  --background:     var(--color-neutral-100);
-  --foreground:     var(--color-neutral-800);
-  --eyebrow-bg:     var(--color-neutral-400);
-  --eyebrow-text:   var(--color-neutral-100);
+  --background:     var(--color-sky-200);
+  --foreground:     var(--color-sky-700);
+  --eyebrow-bg:     var(--color-sky-200);
+  --eyebrow-text:   var(--color-sky-600);
 }
 
 @theme {
+
+  --font-sans:       var(--body-font);
   --font-key:        var(--key-font);
   --font-eyebrow:    var(--eyebrow-font);
   --font-headline:   var(--headline-font);
-  --font-body:       var(--body-font);  
-  --font-button:     var(--button-font);  
+  --font-button:     var(--button-font);
 
   --spacing:         0.25rem;
+  --spacing-mega:    1840px;
 
   --spacing-xs:      calc( var( --spacing ) * 8 );
   --spacing-sm:      calc( var( --spacing ) * 10 );
@@ -43,6 +42,7 @@ html,body {
   --spacing-lg:      calc( var( --spacing ) * 20 );
   --spacing-xl:      calc( var( --spacing ) * 32 );
   --spacing-2xl:     calc( var( --spacing ) * 40 );
+
 }
 
 @theme inline {

@@ -1,16 +1,22 @@
 <header 
   x-data="{open:false}"
-  data-theme="light" 
-  class="bg-background text-foreground sticky top-0 z-50"
+  data-theme="{{ $header['theme'] }}" 
+  @class([
+    'bg-background text-foreground sticky z-50',
+    'top-0' => is_user_logged_in() == false,
+    'top-8' => is_user_logged_in() == true,
+  ])
 >
-  <div class="py-6 md:py-xs border-b">
-    <x-container class="grid grid-cols-2 gap-xs">
-      <div class="h-sm rounded bg-black/5"></div>
-      <div class="h-sm rounded bg-black/5 flex justify-end">
+  <div class="py-6 md:py-xs">
+    <x-container class="grid grid-cols-2">
+      <a href="/" class="!no-underline leading-10">
+        <x-type.title title="{!! $siteName !!}" />
+      </a>
+      <div class="bg-black/5 flex justify-end">
         <button 
           @click="open=!open"
           :class="open ? 'bg-foreground text-background' : ''"
-          class="h-sm px-4 cursor-pointer border rounded flex xl:hidden items-center justify-center"
+          class="h-sm px-4 cursor-pointer rounded border flex xl:hidden items-center justify-center"
         >
           <span x-text="open ? 'Close': 'Menu' " />
         </button>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     @php(do_action('get_header'))
     @php(wp_head())
-
+    @include('partials.theme')
     @vite(['resources/css/app.css', 'resources/js/app.js'])
   </head>
 
@@ -25,7 +25,7 @@
 
       @include('sections.header')
 
-      <main id="main" class="main flex-grow py-xs bg-neutral-50">
+      <main id="main" class="main flex-grow">
         @yield('content')
       </main>
 

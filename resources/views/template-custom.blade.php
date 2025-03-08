@@ -6,18 +6,16 @@
 
 @section('content')
   @while(have_posts()) @php(the_post())
-    <div class="flex flex-col gap-xs">
-      @layouts('content')
-        @if(file_exists(get_theme_file_path('resources/views/partials/' . get_row_layout() . '.blade.php')))
-          @include('partials/' . get_row_layout())
-        @else
-          <div class="py-12 border-y bg-pink-100">
-            <x-container>
-              {{ get_row_layout() }}
-            </x-container>
-          </div>
-        @endif
-      @endlayouts
-    </div>
+    @layouts('content')
+      @if(file_exists(get_theme_file_path('resources/views/partials/' . get_row_layout() . '.blade.php')))
+        @include('partials/' . get_row_layout())
+      @else
+        <div class="py-12 bg-pink-100">
+          <x-container>
+            {{ get_row_layout() }}
+          </x-container>
+        </div>
+      @endif
+    @endlayouts
   @endwhile
 @endsection

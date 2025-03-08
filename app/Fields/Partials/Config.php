@@ -18,7 +18,6 @@ class Config extends Partial
             ->addGroup('config')
                 ->addGroup('block')
                     ->addFields($this->get(Config_Block::class))
-                    ->addFields($this->get(Config_Theme::class))
                 ->endGroup()
             ->endGroup()
         ;

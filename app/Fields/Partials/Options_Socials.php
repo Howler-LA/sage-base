@@ -15,7 +15,9 @@ class Options_Socials extends Partial
         $fields = Builder::make('options__socials');
 
         $fields
-            ->addText('socials')
+            ->addRepeater('socials')
+                ->addText('item')
+            ->endRepeater();
         ;
 
         return $fields;
