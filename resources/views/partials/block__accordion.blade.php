@@ -5,7 +5,7 @@
     @class([
       'grid',
       'grid-cols-1 gap-x-sm sm:gap-x-md',
-      'xl:grid-cols-2' => $columns == 2,
+      'xl:grid-cols-2 gap-y-sm' => $columns == 2,
       'xl:grid-cols-1 gap-y-sm' => $columns == 1,
     ])
   >
