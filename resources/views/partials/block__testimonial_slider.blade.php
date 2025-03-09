@@ -57,7 +57,7 @@
               <div class="grid xl:grid-cols-2">
                 <div class="p-xs xl:p-lg flex flex-col items-center justify-center gap-4 xl:gap-sm text-center">
                   <x-lucide-quote class="fill-foreground text-background" />
-                  <p class="font-serif font-lighter leading-snug xl:leading-normal text-2xl xl:text-4xl">{!! $content['copy'] !!}</p>
+                  <p class="font-serif font-lighter leading-snug xl:leading-normal text-xl xl:text-4xl">{!! $content['copy'] !!}</p>
                   <div class="flex flex-col items-center">
                     <x-type.key title="{!! $content['headline'] !!}" />
                     <x-lucide-minus />
