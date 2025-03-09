@@ -2,6 +2,7 @@
   'key'       => null,
   'eyebrow'   => null,
   'headline'  => null,
+  'subhead'   => null,
   'title'     => null,
   'copy'      => null,
   'links'     => null,
@@ -34,6 +35,16 @@
         'mb-4 xl:mb-4' => $type == 'card',
       ])
       title="{!! $eyebrow !!}" 
+    />
+  @endif
+
+  @if($subhead)
+    <x-type.subhead 
+      @class([
+        'mb-8' => $type == null,
+        'mb-4' => $type == 'card',
+      ])
+      title="{!! $subhead !!}" 
     />
   @endif
 

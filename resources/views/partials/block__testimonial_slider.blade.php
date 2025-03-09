@@ -19,11 +19,13 @@
   ]
 ])
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<x-section 
-  data-theme="{{ $config['block']['theme'] }}" x-data="{
+<x-section
+  class="relative"
+  data-theme="{{ $config['block']['theme'] }}"
+  x-data="{
     init() {
       new Swiper(this.$refs.swiper, {
         loop: true,
@@ -41,12 +43,16 @@
         },
         pagination: {
           el: '.slides-pagination',
+          type: 'custom',
+          renderCustom: function (swiper, current, total) {
+            return '0' + current + ' of 0' + (total); 
+          }
         },
       }).mount()
     },
   }"
 >
-  <x-container>
+  <x-container class="relative">
     <div class="xl:px-xl flex flex-col">
       <x-lockup eyebrow="{!! $content['eyebrow'] !!}"/>
       
@@ -76,7 +82,7 @@
 
       <div class="flex items-center justify-center gap-4 pt-4 xl:pt-xs">
         <button class="cursor-pointer slides-button-prev"><x-lucide-circle-arrow-left class="size-10 stroke-1" /></button>
-        <div class="font-mono uppercase text-sm tracking-wider">02 of 12</div>
+        <div class="font-mono uppercase text-sm tracking-wider"><div class="slides-pagination"></div></div>
         <button class="cursor-pointer slides-button-next"><x-lucide-circle-arrow-right class="size-10 stroke-1" /></button>
       </div>
     </div>
