@@ -7,6 +7,8 @@ use Log1x\AcfComposer\Field;
 
 use App\Fields\Partials\Block_Accordion;
 use App\Fields\Partials\Block_ImageText;
+use App\Fields\Partials\Block_Gallery;
+use App\Fields\Partials\Block_MultiCol;
 use App\Fields\Partials\Block_StickyContent;
 
 class Blocks extends Field
@@ -27,6 +29,8 @@ class Blocks extends Field
             ->addFlexibleContent('content', ['button_label' => 'Add Block'])
                 ->addLayout($this->get(Block_Accordion::class))
                 ->addLayout($this->get(Block_ImageText::class))
+                ->addLayout($this->get(Block_Gallery::class))
+                ->addLayout($this->get(Block_MultiCol::class))
                 ->addLayout($this->get(Block_StickyContent::class))
             ->endFlexibleContent();
 

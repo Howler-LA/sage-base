@@ -1,7 +1,7 @@
-@php(the_content())
-
-@if ($pagination)
-  <nav class="page-nav" aria-label="Page">
-    {!! $pagination !!}
-  </nav>
-@endif
+<x-section>
+  <x-container>
+    <x-type.copy>
+      @php(the_content())
+    </x-type.copy>
+  </x-container>
+</x-section>

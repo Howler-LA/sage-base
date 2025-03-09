@@ -1,13 +1,21 @@
 @extends('layouts.app')
-
 @section('content')
-  @include('partials.page-header')
 
-  @if (! have_posts())
-    <x-alert type="warning">
-      {!! __('Sorry, but the page you are trying to view does not exist.', 'sage') !!}
-    </x-alert>
+<section 
+  data-theme="subtle" 
+  @class([
+    'bg-background text-foreground min-h-[calc(66vh-var(--spacing-header))]',
+    'flex items-center justify-center'
+  ])
+>
+  <x-container>
+    <x-lockup
+      align="center"
+      eyebrow="404 — Not Found"
+      headline="Sorry, nothing here"
+      copy="Why not try these links?"
+    />
+  </x-container>
+</section>
 
-    {!! get_search_form(false) !!}
-  @endif
 @endsection

@@ -1,7 +1,7 @@
 @set($width,'full')
 @set($order,'last')
 
-<div class="grid xl:grid-cols-2">
+<section class="grid xl:grid-cols-2">
   <div 
     data-theme="{{ $config['block']['theme'] }}" 
     @class([
@@ -40,4 +40,4 @@
       ])
     />
   </div>
-</div>
+</section>

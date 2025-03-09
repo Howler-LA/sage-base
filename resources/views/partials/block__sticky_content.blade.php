@@ -35,7 +35,7 @@
             'px-xs sm:px-sm md:px-md' => $config['block']['flush']
           ])
         >
-          <div class="aspect-video bg-black/10 rounded-lg"></div>
+          <div class="aspect-video bg-foreground/10 rounded-lg"></div>
           <x-lockup
             key="0{{ $loop->iteration }}"
             title="Some title goes here"
@@ -80,7 +80,7 @@
   >
     @repeat(5)
       <div class="border-b bg-background p-xs sm:p-sm md:p-md xl:p-lg flex flex-col gap-4">
-        <div class="aspect-video bg-black/10 rounded-lg"></div>
+        <div class="aspect-video bg-bg-foreground/10 rounded-lg"></div>
         <x-lockup
           key="0{{ $loop->iteration }}"
           title="Some title goes here"

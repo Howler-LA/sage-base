@@ -9,7 +9,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
   </head>
 
-  <body @php(body_class('antialiased bg-background text-foreground'))>
+  <body @php(body_class('antialiased'))>
     @php(wp_body_open())
 
     <div 
@@ -25,7 +25,11 @@
 
       @include('sections.header')
 
-      <main id="main" class="main flex-grow">
+      <main 
+        id="main" 
+        data-theme="light" 
+        class="main flex-grow bg-background text-foreground"
+      >
         @yield('content')
       </main>
 

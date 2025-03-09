@@ -6,6 +6,7 @@
   'copy'      => null,
   'links'     => null,
   'align'     => null,
+  'type'      => null,
 ])
 
 @php($align_class = match ($align) {
@@ -18,28 +19,39 @@
 
   @if($key)
     <x-type.key 
-      class="mb-4 xl:mb-4" 
+      @class([
+        'mb-4' => $type == null,
+        'mb-2' => $type == 'card',
+      ])
       title="{!! $key !!}" 
     />
   @endif
   
   @if($eyebrow)
     <x-type.eyebrow 
-      class="mb-8 xl:mb-8" 
+      @class([
+        'mb-8 xl:mb-8' => $type == null,
+        'mb-4 xl:mb-4' => $type == 'card',
+      ])
       title="{!! $eyebrow !!}" 
     />
   @endif
 
   @if($title)
     <x-type.title 
-      class="mb-4" 
+      @class([
+        'mb-8' => $type == null,
+        'mb-4' => $type == 'card',
+      ])
       title="{!! $title !!}" 
     />
   @endif
 
   @if($headline)
     <x-type.headline 
-      class="mb-4" 
+      @class([
+        'mb-4'
+      ])
       title="{!! $headline !!}" 
     />
   @endif
