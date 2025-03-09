@@ -15,6 +15,7 @@
   </video>
 @else
   <x-image
+    class="{{ $class }}"
     id="{{$id}}"
   />
 @endif

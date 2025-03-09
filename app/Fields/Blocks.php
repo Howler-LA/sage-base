@@ -10,6 +10,7 @@ use App\Fields\Partials\Block_ImageText;
 use App\Fields\Partials\Block_Gallery;
 use App\Fields\Partials\Block_MultiCol;
 use App\Fields\Partials\Block_StickyContent;
+use App\Fields\Partials\Block_TestimonialSlider;
 
 class Blocks extends Field
 {
@@ -32,6 +33,7 @@ class Blocks extends Field
                 ->addLayout($this->get(Block_Gallery::class))
                 ->addLayout($this->get(Block_MultiCol::class))
                 ->addLayout($this->get(Block_StickyContent::class))
+                ->addLayout($this->get(Block_TestimonialSlider::class))
             ->endFlexibleContent();
 
         return $fields->build();

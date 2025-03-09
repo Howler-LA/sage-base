@@ -8,11 +8,15 @@
   'link'      => null,
 ])
 
+
+
 <article
-  @class([
-    'flex flex-col gap-4' => $items > 1,
-    'grid xl:grid-cols-3 gap-sm' => $items == 1,
-  ])
+  {{ 
+    $attributes->class([
+      'flex flex-col gap-4' => $items > 1,
+      'grid xl:grid-cols-3 gap-sm' => $items == 1,
+    ]) 
+  }}
 >
   <div 
     @class([

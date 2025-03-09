@@ -29,19 +29,13 @@
       ])
     >
       @repeat(3)
-        <div 
-          @class([
-            'border-b py-xs sm:py-sm first:xl:pt-0 flex flex-col gap-4',
-            'px-xs sm:px-sm md:px-md' => $config['block']['flush']
-          ])
-        >
-          <div class="aspect-video bg-foreground/10 rounded-lg"></div>
-          <x-lockup
-            key="0{{ $loop->iteration }}"
-            title="Some title goes here"
-            copy="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis elit vitae orci sagittis facilisis. Aenean egestas fermentum justo, lobortis consectetur nisi. Integer non semper ante. "
-          />
-        </div>
+        <x-card.image_text 
+          items="2"
+          class="border-b py-xs sm:py-sm first:xl:pt-0"
+          key="0{{ $loop->iteration }}"
+          title="Headline about a particular topic you’re promoting"
+          copy="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation."
+        />
       @endrepeat
     </div>
   </x-container>
