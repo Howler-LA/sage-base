@@ -12,18 +12,25 @@
   --eyebrow-text:   var(--brand-accent-foreground);
 }
 
+/* --brand-background:         
+ --brand-subtle-background:  
+ --brand-foreground:         
+ --brand-accent-background:  
+ --brand-accent-foreground:  
+*/
+
 [data-theme="dark"] {
   --background:     var(--brand-foreground);
   --foreground:     var(--brand-background);
-  --eyebrow-bg:     var(--brand-accent-foreground);
-  --eyebrow-text:   var(--brand-accent-background);
+  --eyebrow-bg:     var(--brand-accent-background);
+  --eyebrow-text:   var(--brand-accent-foreground);
 }
 
 [data-theme="subtle"] {
-  --background:     var(--color-blue-200);
-  --foreground:     var(--color-blue-700);
-  --eyebrow-bg:     var(--color-blue-300);
-  --eyebrow-text:   var(--color-blue-600);
+  --background:     var(--brand-subtle-background);
+  --foreground:     var(--brand-foreground);
+  --eyebrow-bg:     var(--brand-accent-foreground);
+  --eyebrow-text:   var(--brand-foreground);
 }
 
 @theme {
