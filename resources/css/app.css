@@ -6,17 +6,17 @@
 
 
 [data-theme="light"] {
-  --background:     var(--color-white);
-  --foreground:     var(--color-blue-700);
-  --eyebrow-bg:     var(--color-blue-700);
-  --eyebrow-text:   var(--color-white);
+  --background:     var(--brand-background);
+  --foreground:     var(--brand-foreground);
+  --eyebrow-bg:     var(--brand-accent-background);
+  --eyebrow-text:   var(--brand-accent-foreground);
 }
 
 [data-theme="dark"] {
-  --background:     var(--color-blue-700);
-  --foreground:     var(--color-white);
-  --eyebrow-bg:     var(--color-blue-600);
-  --eyebrow-text:   var(--color-white);
+  --background:     var(--brand-foreground);
+  --foreground:     var(--brand-background);
+  --eyebrow-bg:     var(--brand-accent-foreground);
+  --eyebrow-text:   var(--brand-accent-background);
 }
 
 [data-theme="subtle"] {
