@@ -16,7 +16,7 @@
   --background:     var(--color-blue-700);
   --foreground:     var(--color-white);
   --eyebrow-bg:     var(--color-blue-600);
-  --eyebrow-text:   var(--color-blue-200);
+  --eyebrow-text:   var(--color-white);
 }
 
 [data-theme="subtle"] {
@@ -44,6 +44,7 @@
   --spacing-lg:      calc( var( --spacing ) * 20 );
   --spacing-xl:      calc( var( --spacing ) * 32 );
   --spacing-2xl:     calc( var( --spacing ) * 40 );
+  --spacing-3xl:     calc( var( --spacing ) * 50 );
 
 }
 

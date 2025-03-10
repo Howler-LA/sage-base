@@ -4,4 +4,5 @@
   'class' => 'w-full h-auto block'
 ])
 
-@image($id,$size,['class'=>$class])
+@image($id,$size,['class'=>$attributes->class($class)])
+

@@ -4,7 +4,7 @@
 ])
 
 @php($class = match ($size) {
-  'body-1'  => 'prose prose-lg leading-relaxed',
+  'body-1'  => 'prose prose-lg xl:prose-xl leading-relaxed xl:leading-relaxed',
   'body-2'  => 'prose',
 })
 

@@ -28,6 +28,7 @@
         <x-card.image_text 
           items="{{ $items }}"
           key="Category"
+          image="91"
           title="Headline about a particular topic you’re promoting"
           copy="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation."
         />

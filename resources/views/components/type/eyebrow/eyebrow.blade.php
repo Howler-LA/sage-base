@@ -2,11 +2,14 @@
   'title' => null,
 ])
 
-<div class="inline-flex">
-  <span {{ $attributes->merge(['class'=>'bg-eyebrow-bg text-eyebrow-text pl-3 pr-1 inline-block rounded-l-sm']) }}>
+<div {{ $attributes->merge(['class'=>'inline-flex items-center h-8 overflow-hidden']) }}>
+  <x-type.eyebrow.text class="bg-eyebrow-bg text-eyebrow-text pl-3 rounded-l" title="{!! $title ?? $slot !!}" />
+  <div class="w-0 h-0 border-24 border-solid border-transparent rounded border-l-eyebrow-bg"></div>
+</div>
+
+{{-- <div class="inline-flex justify-center items-center">
+  <span {{ $attributes->merge(['class'=>'bg-background text-foreground pl-3 pr-1 flex rounded-l-sm']) }}>
     <x-type.eyebrow.text title="{!! $title ?? $slot !!}" />
   </span>
-  <div class="w-4 h-8 pr-1 bg-background flex items-center justify-end overflow-hidden">
-    <div class="size-6 bg-eyebrow-bg rotate-45 flex-none rounded-sm"></div>
-  </div>
-</div>
+  <div class="w-0 h-0 border-8 border-solid border-transparent border-l-background bg-pink-100">asdfs</div>
+</div> --}}

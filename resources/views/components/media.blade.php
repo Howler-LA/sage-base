@@ -6,7 +6,13 @@
 
 @if(str_contains(get_post_mime_type($id), 'video'))
   <video 
-    width="320" height="240" autoplay muted playsinline loop class="{{$class}}"
+    width="320" 
+    height="240" 
+    autoplay 
+    muted 
+    playsinline 
+    loop 
+    {{ $attributes->merge(['class' => "{$class}"]) }}
     >
     <source 
       src="{{ wp_get_attachment_url($id) }}" 
@@ -14,8 +20,5 @@
     >
   </video>
 @else
-  <x-image
-    class="{{ $class }}"
-    id="{{$id}}"
-  />
+  @image($id,'large',['class'=>$class])
 @endif
