@@ -5,6 +5,7 @@
   @if($content['image'])
     <div class="absolute inset-0 bg-black">
       <x-media 
+        data-aos="fade-in"
         id="{{ $content['image'] }}" 
         class="opacity-75 w-full h-full object-cover" 
       />

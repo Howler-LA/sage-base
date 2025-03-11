@@ -1,4 +1,5 @@
 import Alpine from 'alpinejs'
+import AOS from 'aos';
 
 import.meta.glob([
   '../images/**',
@@ -7,3 +8,6 @@ import.meta.glob([
 
 window.Alpine = Alpine
 Alpine.start()
+AOS.init({
+  duration: 800,
+});

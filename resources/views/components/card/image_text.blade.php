@@ -22,6 +22,7 @@
       'bg-background text-foreground',
       'flex flex-col' => $items > 1,
       'grid xl:grid-cols-3' => $items == 1,
+      'gap-4' => $variant != 'padded',
       'rounded-lg xl:rounded-xl overflow-hidden' => $variant == 'padded'
     ]) 
   }}

@@ -4,15 +4,17 @@
   'class' => 'w-full h-auto block'
 ])
 
+
 @if(str_contains(get_post_mime_type($id), 'video'))
   <video 
+    data-aos="fade-in"
     width="320" 
     height="240" 
     autoplay 
     muted 
     playsinline 
     loop 
-    {{ $attributes->merge(['class' => "{$class}"]) }}
+    {{ $attributes->class($class) }}
     >
     <source 
       src="{{ wp_get_attachment_url($id) }}" 
@@ -20,5 +22,5 @@
     >
   </video>
 @else
-  @image($id,'large',['class'=>$class])
+  @image($id,'large',['class'=> $class])
 @endif

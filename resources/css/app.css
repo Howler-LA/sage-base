@@ -1,4 +1,5 @@
 @import "tailwindcss" theme(static);
+@import 'aos/dist/aos.css';
 @plugin "@tailwindcss/typography";
 
 @source "../views/";

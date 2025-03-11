@@ -16,7 +16,10 @@
   default   => 'text-left',
 })
 
-<div {{ $attributes->merge(['class' => "{$align_class}"]) }}>
+<div 
+  data-aos="fade-in"
+  {{ $attributes->merge(['class' => "{$align_class}"]) }}
+>
 
   @if($key)
     <x-type.key 

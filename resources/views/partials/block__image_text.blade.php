@@ -32,6 +32,7 @@
     ])
   >
     <x-media 
+      data-aos="fade-in"
       id="{!! $content['image'] !!}"
       @class([
         'object-cover',
