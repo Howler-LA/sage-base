@@ -1,11 +1,12 @@
-<x-section 
-  data-theme="subtle" 
-  class="bg-background text-foreground"
->
-  <x-container>
-    <x-type.headline 
-      tag="h1" 
-      title="{!! $title !!}" 
-    />
-  </x-container>
-</x-section>
+@include('partials.block__page_hero', [
+  'content'     => [
+    'headline'  => $title,
+    'eyebrow'   => 'single page',
+    'copy'      => ''
+  ],
+  'config'      => [
+    'block'     => [
+      'theme'   => 'light'
+    ]
+  ]
+])

@@ -8,6 +8,7 @@ class Block extends Composer
 {
     protected static $views = [
         'partials.block__*',
+        'components.section',
     ];
     public function with()
     {

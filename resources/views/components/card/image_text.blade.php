@@ -12,9 +12,7 @@
 ])
 
 @php($variant_class = match ($variant) {
-  'success' => 'text-green-50 bg-green-400',
-  'caution' => 'text-yellow-50 bg-yellow-400',
-  'padded' => 'p-xs xl:p-sm rounded-lg xl:rounded-xl',
+  'padded' => 'p-xs xl:p-sm',
   default => '',
 })
 
@@ -22,29 +20,35 @@
   {{ 
     $attributes->class([
       'bg-background text-foreground',
-      'flex flex-col gap-4' => $items > 1,
-      'grid xl:grid-cols-3 gap-sm' => $items == 1,
-      $variant_class
+      'flex flex-col' => $items > 1,
+      'grid xl:grid-cols-3' => $items == 1,
+      'rounded-lg xl:rounded-xl overflow-hidden' => $variant == 'padded'
     ]) 
   }}
 >
   @if($image)
     <div 
       @class([
-        'bg-foreground',
-        'aspect-video col-span-2' => $items == 1,
-        'aspect-video' => $items >= 2,
+        'bg-foreground/75 relative',
+        'xl:aspect-6/4 xl:col-span-2' => $items == 1,
+        'xl:aspect-6/4' => $items >= 2,
       ])
-    ></div>
+    >
+      <div class="xl:absolute inset-0">
+        @image($image,'large',['class'=>'w-full h-full object-cover'])
+      </div>
+    </div>
   @endif
   <div
     @class([
-      'flex flex-col items-start gap-4',
-      'justify-center border-y' => $items == 1,
+      'flex flex-col xl:items-start gap-4',
+      'justify-center xl:border-y' => $items == 1,
+      $variant_class
     ])
   >
     <x-lockup
       type="card"
+      eyebrow="{!! $eyebrow !!}"
       key="{!! $key !!}"
       title="{!! $title !!}"
       subhead="{!! $subhead !!}"

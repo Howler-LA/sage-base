@@ -20,7 +20,6 @@ class Block_TestimonialSlider extends Partial
         ;
 
         $fields
-            ->removeField('content->headline')
             ->removeField('content->copy')
             ->removeField('content->links')
             ->modifyField('config->block->theme', function($fieldsBuilder) {

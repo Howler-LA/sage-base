@@ -10,6 +10,8 @@
   default => 'py-sm md:py-md xl:py-lg',
 })
 
-<{{$tag}} {{ $attributes->merge(['class' => "bg-background text-foreground relative {$class}"]) }}>
+@set($block_type,get_row_layout())
+
+<{{$tag}} {{ $attributes->merge(['class' => "bg-background text-foreground relative {$block_type} {$class}"]) }}>
   {!! $slot !!}
 </{{$tag}}>

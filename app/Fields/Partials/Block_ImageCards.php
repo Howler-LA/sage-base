@@ -15,9 +15,21 @@ class Block_ImageCards extends Partial
         $fields = Builder::make('block__image_cards');
 
         $fields
-            ->addRepeater('items')
-                ->addText('item')
-            ->endRepeater();
+            ->addFields($this->get(Content::class))
+            ->addFields($this->get(Config::class))
+        ;
+
+        $fields
+            ->removeField('content->image')
+            ->modifyField('config->block', function($fieldsBuilder) {
+                $fieldsBuilder
+                    ->addGroup('cards')
+                        ->addFields($this->get(Config_Theme::class))
+                    ->endGroup()
+                ;
+                return $fieldsBuilder;
+            })
+        ;
 
         return $fields;
     }
