@@ -16,10 +16,10 @@
       <div class="flex items-center justify-end">
         <x-menu 
           name="primary_navigation" 
-          class="font-semibold text-lg flex"
+          class="font-semibold text-lg hidden xl:flex"
         />
         @if($header['links'])
-          <div class="flex gap-2">
+          <div class="hidden xl:flex gap-2">
             @foreach($header['links'] as $link)
               <x-button
                 format="{{ $link['config']['format'] }}"
