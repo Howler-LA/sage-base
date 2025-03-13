@@ -13,13 +13,30 @@
       <a href="/" class="!no-underline leading-10">
         <x-type.title title="{!! $siteName !!}" />
       </a>
-      <div class="flex justify-end">
+      <div class="flex items-center justify-end">
+        <x-menu 
+          name="primary_navigation" 
+          class="font-semibold text-lg flex"
+        />
+        @if($header['links'])
+          <div class="flex gap-2">
+            @foreach($header['links'] as $link)
+              <x-button
+                format="{{ $link['config']['format'] }}"
+                style="{{ $link['config']['style'] }}"
+                target="{{ $link['link']['target'] }}"
+                href="{{ $link['link']['url'] }}"
+                label="{{ $link['link']['title'] }}"
+              />
+            @endforeach
+          </div>
+        @endif
         <button 
           @click="open=!open"
           :class="open ? 'bg-foreground text-background' : ''"
           class="h-xs sm:h-sm px-3 sm:px-4 cursor-pointer rounded border flex xl:hidden items-center justify-center"
         >
-          <span class="font-medium text-sm" x-text="open ? 'Close': 'Menu' " />
+          <span class="font-medium text-sm" x-text="open ? 'Close': 'Menu' "></span>
         </button>
       </div>
     </x-container>
