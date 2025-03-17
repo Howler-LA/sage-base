@@ -6,7 +6,7 @@
 @source "../../app/";
 
 
-[data-theme="light"] {
+/*[data-theme="light"] {
   --background:     var(--brand-background);
   --foreground:     var(--brand-foreground);
   --eyebrow-bg:     var(--brand-accent-background);
@@ -20,19 +20,19 @@
  --brand-accent-foreground:  
 */
 
-[data-theme="dark"] {
+/*[data-theme="dark"] {
   --background:     var(--brand-foreground);
   --foreground:     var(--brand-background);
   --eyebrow-bg:     var(--brand-accent-background);
   --eyebrow-text:   var(--brand-accent-foreground);
-}
+}*/
 
-[data-theme="subtle"] {
+/*[data-theme="subtle"] {
   --background:     var(--brand-subtle-background);
   --foreground:     var(--brand-foreground);
   --eyebrow-bg:     var(--brand-accent-foreground);
   --eyebrow-text:   var(--brand-foreground);
-}
+}*/
 
 @theme {
 
@@ -61,5 +61,7 @@
   --color-foreground:     var(--foreground);
   --color-eyebrow-bg:     var(--eyebrow-bg);
   --color-eyebrow-text:   var(--eyebrow-text);
+  --color-btn-background: var(--btn-bg);
+  --color-btn-foreground: var(--btn-text);
   --color-border:         var(--border);
 }

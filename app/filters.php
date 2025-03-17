@@ -40,3 +40,46 @@ function my_acf_fields_flexible_content_layout_title( $title, $field, $layout, $
 
   return $new_title;
 }
+
+// // Populate Themes
+// function acf_load_themes( $field ) {
+//   $field['choices'] = array();
+//   if( get_field('brand', 'option')['modes'] ) {
+//     foreach(get_field('brand', 'option')['modes'] as $mode){
+//       $value = $mode['name'];
+//       $label = $mode['name'];
+//       $field['choices'][ $value ] = $label;
+//     }
+//   }
+//   return $field; 
+// }
+
+// add_filter('acf/load_field/name=theme',  __NAMESPACE__ . '\\acf_load_themes');
+
+// Populate Colors
+function acf_load_color_field_choices($field) {
+  $field['choices'] = array();
+  $choices = get_field('brand_colors', 'option', false);
+  $choices = explode("\n", $choices);
+  $choices = array_map('trim', $choices);
+
+  if (is_array($choices)) {
+    foreach ($choices as $choice) {
+      if (strpos($choice, ':') !== false) {
+        list($label, $value) = explode(':', $choice, 2);
+        $field['choices'][trim($value)] = trim($label);
+      } else {
+        $field['choices'][$choice] = $choice;
+      }
+    }
+  }
+
+  return $field;
+}
+
+add_filter('acf/load_field', function($field) {
+  if (strpos($field['name'], 'color_select_') === 0) {
+    $field = acf_load_color_field_choices($field);
+  }
+  return $field;
+});
