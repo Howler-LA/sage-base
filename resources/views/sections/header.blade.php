@@ -27,6 +27,7 @@
                 target="{{ $link['link']['target'] }}"
                 href="{{ $link['link']['url'] }}"
                 label="{{ $link['link']['title'] }}"
+                disabled
               />
             @endforeach
           </div>

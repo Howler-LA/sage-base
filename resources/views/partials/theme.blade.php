@@ -8,23 +8,7 @@
     --body-font:                {!! $font['body'] !!};
     --button-font:              {!! $font['button'] !!};
     --key-font:                 {!! $font['key'] !!};
-
-    --background:               white;
-    --foreground:               black;
-    --eyebrow-bg:               red;
-    --eyebrow-text:             white;
-    --btn-bg:                   blue;
-    --btn-text:                 white;
   }
-
-  @if(get_field('brand','option')['modes'])
-    @foreach(get_field('brand','option')['modes'] as $mode)
-      [data-theme="{{ strtolower($mode['name']) }}"] {
-        {{ $mode['css'] }}
-      }
-    @endforeach
-  @endif
-
 </style>
 
 @php

@@ -2,7 +2,8 @@
 @set($fullImage, $content['image'] && $config['media']['image_placement'] == 'full')
 @set($halfImage, $content['image'] && $config['media']['image_placement'] == 'half')
 
-<section 
+<x-section 
+  data-theme="{{ $config['block']['theme'] }}"
   @class([
     'grid xl:grid-cols-2',
     'bg-black' => $fullImage,
@@ -79,4 +80,4 @@
       @endif
     </div>
   </div>
-</section>
+</x-section>

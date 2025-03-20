@@ -4,10 +4,10 @@
 ])
 
 @php($class = match ($size) {
-  'body-1'  => 'prose prose-lg xl:prose-xl leading-relaxed xl:leading-relaxed',
-  'body-2'  => 'prose',
+  'body-1'  => 'body-1 prose text-body-1 leading-body-1',
+  'body-2'  => 'body-2 prose text-body-2 leading-body-2',
 })
 
-<div {{ $attributes->merge(['class' => "font-body max-w-full text-inherit {$class}"]) }}>
+<div {{ $attributes->merge(['class' => "max-w-full text-inherit {$class}"]) }}>
   {!! $content ?? $slot !!}
 </div>

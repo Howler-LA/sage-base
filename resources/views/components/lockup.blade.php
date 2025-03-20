@@ -47,6 +47,7 @@
         'mb-8' => $type == null,
         'mb-4' => $type == 'card',
       ])
+      size="1"
       title="{!! $subhead !!}" 
     />
   @endif
@@ -62,7 +63,7 @@
   @endif
 
   @if($headline)
-    <x-type.headline 
+    <x-type.display 
       @class([
         'mb-4'
       ])

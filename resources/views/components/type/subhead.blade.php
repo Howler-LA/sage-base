@@ -1,7 +1,13 @@
 @props([
   'title' => null,
+  'size'  => '1',
+  'tag'   => 'p'
 ])
 
-<div {{ $attributes->merge(['class'=>"font-headline leading-tight font-extrabold tracking-tight text-[32px] sm:text-[40px] xl:text-[48px]"]) }}>
+@php($class = match ($size) {
+  '1' => 'text-subhead leading-subhead',
+})
+
+<{{ $tag }} {{$attributes->class([$class,'font-bold tracking-tighter'])}}>
   {!! $title ?? $slot !!}
-</div>
+</{{ $tag }}>

@@ -3,8 +3,8 @@
 ])
 
 <div {{ $attributes->merge(['class'=>'inline-flex items-center h-8 overflow-hidden']) }}>
-  <x-type.eyebrow.text class="bg-secondary text-secondary-foreground pl-3 rounded-l" title="{!! $title ?? $slot !!}" />
-  <div class="w-0 h-0 border-24 border-solid border-transparent rounded border-l-secondary"></div>
+  <x-type.eyebrow.text class="bg-eyebrow text-eyebrow-foreground pl-3 rounded-l" title="{!! $title ?? $slot !!}" />
+  <div class="w-0 h-0 border-24 border-solid border-transparent rounded border-l-eyebrow"></div>
 </div>
 
 {{-- <div class="inline-flex justify-center items-center">

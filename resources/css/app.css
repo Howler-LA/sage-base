@@ -5,35 +5,6 @@
 @source "../views/";
 @source "../../app/";
 
-
-/*[data-theme="light"] {
-  --background:     var(--brand-background);
-  --foreground:     var(--brand-foreground);
-  --eyebrow-bg:     var(--brand-accent-background);
-  --eyebrow-text:   var(--brand-accent-foreground);
-}
-
-/* --brand-background:         
- --brand-subtle-background:  
- --brand-foreground:         
- --brand-accent-background:  
- --brand-accent-foreground:  
-*/
-
-/*[data-theme="dark"] {
-  --background:     var(--brand-foreground);
-  --foreground:     var(--brand-background);
-  --eyebrow-bg:     var(--brand-accent-background);
-  --eyebrow-text:   var(--brand-accent-foreground);
-}*/
-
-/*[data-theme="subtle"] {
-  --background:     var(--brand-subtle-background);
-  --foreground:     var(--brand-foreground);
-  --eyebrow-bg:     var(--brand-accent-foreground);
-  --eyebrow-text:   var(--brand-foreground);
-}*/
-
 @theme {
 
   --font-sans:       var(--body-font);
@@ -41,6 +12,8 @@
   --font-eyebrow:    var(--eyebrow-font);
   --font-headline:   var(--headline-font);
   --font-button:     var(--button-font);
+
+  --text-display:    calc(var(--font-size-display-1) * 1px);
 
   --spacing:         0.25rem;
   --spacing-mega:    120rem;
@@ -57,36 +30,72 @@
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-destructive: var(--destructive);
-  --color-destructive-foreground: var(--destructive-foreground);
-  --color-border: var(--border);
-  --color-input: var(--input);
-  --color-ring: var(--ring);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
+
+  --text-super:         calc( var(--font-size-super-display) * 1px);
+  --text-display:       calc( var(--font-size-display-1) * 1px);
+  --text-subhead:       calc( var(--font-size-subhead) * 1px);
+  --text-title-1:       calc( var(--font-size-title-1) * 1px);
+  --text-title-2:       calc( var(--font-size-title-2) * 1px);
+  --text-eyebrow:       calc( var(--font-size-eyebrow) * 1px);
+  --text-body-1:        calc( var(--font-size-body-1) * 1px);
+  --text-body-2:        calc( var(--font-size-body-2) * 1px);
+
+  --leading-super:      calc( var(--line-height-super-display-lh) * 1px);
+  --leading-display:    calc( var(--line-height-display-1-lh) * 1px);
+  --leading-subhead:    calc( var(--line-height-subhead-lh) * 1px);
+  --leading-title-1:    calc( var(--line-height-title-1-lh) * 1px);
+  --leading-title-2:    calc( var(--line-height-title-2-lh) * 1px);
+  --leading-eyebrow:    calc( var(--line-height-eyebrow-lh) * 1px);
+  --leading-body-1:     calc( var(--line-height-body-1-lh) * 1px);
+  --leading-body-2:     calc( var(--line-height-body-2-lh) * 1px);
+
+  --color-foreground: var(--txt-color);
+  --color-background: var(--bg-color);
+  
+  --color-button: var(--button-color-btn-bg);
+  --color-button-active: var(--button-color-btn-bg-active);
+  --color-button-hover: var(--button-color-btn-bg-hover);
+  --color-button-disabled: var(--button-color-btn-bg-disabled);
+  
+  --color-button-foreground: var(--button-color-btn-txt);
+  --color-button-foreground-active: var(--button-color-btn-txt-active);
+  --color-button-foreground-hover: var(--button-color-btn-txt-hover);
+  --color-button-foreground-disabled: var(--button-color-btn-txt-disabled);
+  
+  --color-button-outline-active: var(--button-color-btn-outline-bg-active);
+  --color-button-outline-focus: var(--button-color-btn-border-focus);
+  
+  --color-button-border: var(--button-color-btn-border);
+  --color-button-border-hover: var(--button-color-btn-border-hover);
+  --color-button-border-active: var(--button-color-btn-border-active);
+  --color-button-border-disabled: var(--button-color-btn-border-disabled);
+  
+  --color-gridlines: var(--gridlines-tint);
+  --color-texture: var(--texture-color);
+  --color-error: var(--error-color);
+  
+  /*  
+  --color-foreground: var(--news-card-bg-enabled);
+  --color-foreground: var(--news-card-bg-hover);
+  --color-foreground: var(--news-card-bg-active);
+  --color-foreground: var(--news-card-icon-bg-hover);
+  --color-foreground: var(--news-card-icon-line-hover);
+  --color-foreground: var(--news-card-focus-border);
+  --color-foreground: var(--news-card-feat-bg-hover);
+  --color-foreground: var(--news-card-feat-bg-active);
+  --color-foreground: var(--news-card-feat-txt-hover);
+  --color-foreground: var(--news-card-feat-focus-border);
+  
+  --color-foreground: var(--link-grid-bg-hover);
+  --color-foreground: var(--link-grid-bg-active);
+  --color-foreground: var(--link-grid-focus-border);
+  
+  --color-foreground: var(--color-card-bg-hover);
+  --color-foreground: var(--color-card-bg-active);
+  --color-foreground: var(--color-card-focus-border);
+  */
+  
+  --color-eyebrow: var(--eyebrow-bg);
+  --color-eyebrow-foreground: var(--eyebrow-txt);
+  
 }

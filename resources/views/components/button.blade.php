@@ -11,7 +11,7 @@
 })
 
 @php($style_class = match ($style) {
-  'solid'    => 'ring-2 ring-inset ring-btn-background bg-btn-background text-btn-foreground hover:bg-btn-foreground hover:text-btn-background',
+  'solid'    => 'ring-2 ring-inset ring-button-border bg-button text-button-foreground hover:bg-button-hover hover:text-button-foreground-hover active:bg-button-active',
   'outline'  => 'ring-2 ring-inset ring-btn-background hover:bg-btn-background hover:text-btn-foreground',
 })
 
