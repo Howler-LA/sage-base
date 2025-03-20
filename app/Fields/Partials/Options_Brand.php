@@ -30,6 +30,7 @@ class Options_Brand extends Partial
                 ->addTextarea('colors')
                 ->addRepeater('modes',['collapsed'=>'name'])
                     ->addText('name')
+                    ->addTextarea('css')
                     ->addSelect('color_select_1',['label'=>'bg-primary'])
                     ->addSelect('color_select_2',['label'=>'text-primary'])
                     ->addSelect('color_select_3',['label'=>'bg-accent'])

@@ -20,12 +20,7 @@
   @if(get_field('brand','option')['modes'])
     @foreach(get_field('brand','option')['modes'] as $mode)
       [data-theme="{{ strtolower($mode['name']) }}"] {
-        --background:    {{ $mode['color_select_1'] }};
-        --foreground:    {{ $mode['color_select_2'] }};
-        --eyebrow-bg:    {{ $mode['color_select_3'] }};
-        --eyebrow-text:  {{ $mode['color_select_4'] }};
-        --btn-bg:        {{ $mode['color_select_5'] }};
-        --btn-text:      {{ $mode['color_select_6'] }};
+        {{ $mode['css'] }}
       }
     @endforeach
   @endif

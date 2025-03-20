@@ -16,10 +16,9 @@
   default => '',
 })
 
-<article
+<x-card
   {{ 
     $attributes->class([
-      'bg-background text-foreground',
       'flex flex-col' => $items > 1,
       'grid xl:grid-cols-3' => $items == 1,
       'gap-4' => $variant != 'padded',
@@ -60,4 +59,4 @@
       label="Call to Action" 
     />
   </div>
-</article>
+</x-card>
