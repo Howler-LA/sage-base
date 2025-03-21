@@ -7,6 +7,7 @@
   'title'     => null,
   'copy'      => null,
   'link'      => null,
+  'links'     => null,
   'image'     => null,
   'variant'   => null,
 ])
@@ -41,7 +42,7 @@
   @endif
   <div
     @class([
-      'flex flex-col xl:items-start gap-4',
+      'flex flex-col xl:items-start gap-8',
       'justify-center xl:border-y' => $items == 1,
       $variant_class
     ])
@@ -54,9 +55,16 @@
       subhead="{!! $subhead !!}"
       copy="{!! $copy !!}"
     />
-    <x-button 
-      style="{{ $variant == 'padded' ? 'outline' : 'solid' }}"
-      label="Call to Action" 
-    />
+    @if($links)
+      @foreach(json_decode($links, true) as $link)
+        <x-button 
+          href="{{ $link['link']['url'] }}"
+          style="{{ $link['config']['style'] }}"
+          format="{{ $link['config']['format'] }}"
+          label="{{ $link['link']['title'] }}" 
+          target="{{ $link['link']['target'] }}"
+        />
+      @endforeach
+    @endif
   </div>
 </x-card>

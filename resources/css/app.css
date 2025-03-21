@@ -74,26 +74,25 @@
   --color-texture: var(--texture-color);
   --color-error: var(--error-color);
   
-  /*  
-  --color-foreground: var(--news-card-bg-enabled);
-  --color-foreground: var(--news-card-bg-hover);
-  --color-foreground: var(--news-card-bg-active);
-  --color-foreground: var(--news-card-icon-bg-hover);
-  --color-foreground: var(--news-card-icon-line-hover);
-  --color-foreground: var(--news-card-focus-border);
-  --color-foreground: var(--news-card-feat-bg-hover);
-  --color-foreground: var(--news-card-feat-bg-active);
-  --color-foreground: var(--news-card-feat-txt-hover);
-  --color-foreground: var(--news-card-feat-focus-border);
+  --color-news-card: var(--news-card-bg-enabled);
+  --color-news-card-hover: var(--news-card-bg-hover);
+  --color-news-card-active: var(--news-card-bg-active);
+  --color-news-card-icon-hover: var(--news-card-icon-bg-hover);
+  --color-news-card-icon-line-hover: var(--news-card-icon-line-hover);
+  --color-news-card-border-focus: var(--news-card-focus-border);
+  --color-news-card-feat-hover: var(--news-card-feat-bg-hover);
+  --color-news-card-feat-active: var(--news-card-feat-bg-active);
+  --color-news-card-feat-foreground-hover: var(--news-card-feat-txt-hover);
+  --color-news-card-feat-border-focus: var(--news-card-feat-focus-border);
   
-  --color-foreground: var(--link-grid-bg-hover);
-  --color-foreground: var(--link-grid-bg-active);
-  --color-foreground: var(--link-grid-focus-border);
+  --color-link-grid-hover: var(--link-grid-bg-hover);
+  --color-link-grid-active: var(--link-grid-bg-active);
+  --color-link-grid-border-focus: var(--link-grid-focus-border);
   
-  --color-foreground: var(--color-card-bg-hover);
-  --color-foreground: var(--color-card-bg-active);
-  --color-foreground: var(--color-card-focus-border);
-  */
+  --color-card-hover: var(--color-card-bg-hover);
+  --color-card-active: var(--color-card-bg-active);
+  --color-card-border-focus: var(--color-card-focus-border);
+
   
   --color-eyebrow: var(--eyebrow-bg);
   --color-eyebrow-foreground: var(--eyebrow-txt);

@@ -2,7 +2,7 @@
   tag="footer" 
   data-theme="{{ $footer['theme'] }}" 
 >
-  <x-container class="flex flex-col gap-sm">
+  <x-container class="flex flex-col gap-sm items-start">
     <x-type.eyebrow title="Eyebrow Content" />
     <x-type.headline title="Simple footer headline" />
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-y-xs gap-x-sm sm:gap-x-md md:gap-y-sm xl:gap-y-lg xl:pb-lg">

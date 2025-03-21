@@ -25,7 +25,7 @@
     <x-type.key 
       @class([
         'mb-4' => $type == null,
-        'mb-2' => $type == 'card',
+        'mb-6 xl:mb-8' => $type == 'card',
       ])
       title="{!! $key !!}" 
     />

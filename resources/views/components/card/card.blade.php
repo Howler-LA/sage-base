@@ -1,3 +1,3 @@
-<article {{ $attributes->merge(['class'=>'bg-card text-card-foreground border border-[var(--border)]']) }}>
+<article {{ $attributes->merge(['class'=>'bg-background text-foreground']) }}>
   {!! $slot !!}
 </article>

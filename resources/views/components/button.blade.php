@@ -11,8 +11,8 @@
 })
 
 @php($style_class = match ($style) {
-  'solid'    => 'ring-2 ring-inset ring-button-border bg-button text-button-foreground hover:bg-button-hover hover:text-button-foreground-hover active:bg-button-active',
-  'outline'  => 'ring-2 ring-inset ring-btn-background hover:bg-btn-background hover:text-btn-foreground',
+  'solid'    => 'ring-1 ring-inset ring-button-border bg-button text-button-foreground hover:bg-button-hover hover:text-button-foreground-hover active:bg-button-active',
+  'outline'  => 'ring-1 ring-inset ring-btn-background hover:bg-btn-background hover:text-btn-foreground',
 })
 
 <{{ $attributes->has(['href']) ? 'a' : 'button' }}
