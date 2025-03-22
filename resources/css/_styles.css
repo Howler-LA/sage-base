@@ -1,0 +1,111 @@
+.TealGradient{
+  background: radial-gradient(152.21% 121.73% at -3.75% 105.27%, #02adcb 0%, #ffffff 100%);
+}
+.purpletealgradient{
+  background: radial-gradient(406.09% 181.72% at 128.82% 111.68%, #ffffff 0%, #37bed6 37.1%, #6a4b9f 100%);
+}
+.SuperDisplay{
+  font-size: 100px;
+  font-weight: undefined;
+  line-height: 105px;
+}
+.Display{
+  font-size: 72px;
+  font-weight: undefined;
+  line-height: 102.7999997138977;
+}
+.Subhead{
+  font-size: 48px;
+  font-weight: undefined;
+  line-height: 48px;
+}
+.Title1{
+  font-size: 32px;
+  font-weight: undefined;
+  line-height: 104.99999523162842;
+}
+.TItle2{
+  font-size: 28px;
+  font-weight: undefined;
+  line-height: 112.00000047683716;
+}
+.Eyebrow{
+  font-size: 14px;
+  font-weight: undefined;
+  letter-spacing: 1px;
+  text-decoration: uppercase;
+}
+.Body1Bold{
+  font-size: 20px;
+  font-weight: undefined;
+  line-height: 130%;
+}
+.Body1{
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 130%;
+}
+.Body2{
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 130%;
+}
+.SmallText{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120.00000476837158;
+}
+.MetaText{
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-decoration: uppercase;
+}
+.BtnLText{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 130%;
+}
+.BtnSTxt{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 130%;
+}
+.PullquoteLG{
+  font-size: 48px;
+  font-weight: 400;
+}
+.PullquoteSM{
+  font-size: 32px;
+  font-weight: 400;
+}
+.EditorialBody{
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 123.00000190734863;
+}
+.EditorialIntro{
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 123.00000190734863;
+}
+.PullquoteXL{
+  font-size: 64px;
+  font-weight: 400;
+}
+.Devnotes__Body{
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 113.80000114440918;
+}
+.Devnotes__Tags{
+  font-size: 11.225740432739258px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-decoration: uppercase;
+}
+.Devnotes__Title{
+  font-size: 48.985050201416016px;
+  font-weight: 400;
+  line-height: 102.7999997138977;
+}

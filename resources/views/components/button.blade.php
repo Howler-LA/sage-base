@@ -3,6 +3,38 @@
   'icon'    => null,
   'tag'     => 'button',
   'format'  => 'primary',
+  'size'    => 'lg',
+  'style'   => 'solid',
+])
+
+<{{ $attributes->has(['href']) ? 'a' : 'button' }} 
+  {{ $attributes->class([
+    'inline-flex items-center justify-center',
+    'bg-[var(--button-color-btn-bg)] text-[var(--button-color-btn-txt)]',
+    'font-semibold',
+    '!no-underline',
+    'px-[calc((var(--button-padding-horiz-l))*1px)]'  => $size == 'lg',
+    'py-[calc((var(--button-padding-vert-l))*1px)]'   => $size == 'lg',
+    'px-[calc((var(--button-padding-horiz-s))*1px)]'  => $size == 'sm',
+    'py-[calc((var(--button-padding-vert-s))*1px)]'   => $size == 'sm',
+    'rounded-[calc((var(--button-radius))*1px)]',
+  ]) }}
+>
+  <span
+    @class([
+      'text-body-1 leading-[130%]' => $size == 'lg',
+      'text-body-2 leading-[130%]' => $size == 'sm',
+    ])
+  >
+    {!! $label ?? $slot !!}
+  </span>
+</{{ $attributes->has(['href']) ? 'a' : 'button' }}>
+
+{{-- @props([
+  'label'   => null,
+  'icon'    => null,
+  'tag'     => 'button',
+  'format'  => 'primary',
   'style'   => 'solid',
 ])
 
@@ -32,4 +64,4 @@
 >
   <span>{!! $label ?? $slot !!}</span>
   @if($icon)<x-lucide-arrow-right />@endif
-</{{ $attributes->has(['href']) ? 'a' : 'button' }}>
+</{{ $attributes->has(['href']) ? 'a' : 'button' }}> --}}

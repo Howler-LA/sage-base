@@ -16,6 +16,7 @@ use App\Fields\Partials\Block_MultiCol;
 use App\Fields\Partials\Block_PageHero;
 use App\Fields\Partials\Block_StickyContent;
 use App\Fields\Partials\Block_TestimonialSlider;
+use App\Fields\Partials\Block_TestField;
 
 class Blocks extends Field
 {
@@ -44,6 +45,7 @@ class Blocks extends Field
                 ->addLayout($this->get(Block_PageHero::class))
                 ->addLayout($this->get(Block_StickyContent::class))
                 ->addLayout($this->get(Block_TestimonialSlider::class))
+                ->addLayout($this->get(Block_TestField::class))
             ->endFlexibleContent();
 
         return $fields->build();

@@ -1,0 +1,32 @@
+:root {
+  --spacing-x-large: 160;
+  --spacing-large: 80;
+  --spacing-med: 40;
+  --spacing-small: 32;
+  --spacing-em: 16;
+  --spacing-min: 8;
+  --spacing-zero: 0;
+  --margins-x-large: 296;
+  --margins-large: 160;
+  --margins-small: 80;
+
+  --card-radius: 16;
+  --card-padding: 32;
+
+  --spacing-gutters: 32;
+  --sizing-grid-cols: 12;
+  --sizing-browser-width: 1440;
+  --sizing-3-col-span: 296;
+  --sizing-4-col-span: 405;
+  --sizing-6-col-span: 624;
+  --sizing-8-col-span: 843;
+  --sizing-9-col-span: 952;
+
+  --button-radius: 100;
+  --button-padding-vert-l: 16;
+  --button-padding-horiz-l: 24;
+  --button-padding-vert-s: 12;
+  --button-padding-horiz-s: 16;
+  
+  --link-grid-vert-padding: 16;
+}

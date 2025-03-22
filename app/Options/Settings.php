@@ -35,6 +35,13 @@ class Settings extends Field
         $fields
             ->addTab('Brand')
             ->addFields($this->get(Options_Brand::class))
+            ->addTab('Sizing')
+            ->addMessage('Very important:','Breakpoints should be ordered from least to greatest')
+            ->addRepeater('breakpoints')
+                ->addText('breakpoint',['label'=>'Browser Width'])
+                ->addTextArea('type_sizes',['label'=>'Type Sizes'])
+                ->addTextArea('variables',['label'=>'Space & Size'])
+            ->endRepeater()
             ->addTab('Appearance')
             ->addFields($this->get(Options_Appearance::class))
             ->addTab('Socials')

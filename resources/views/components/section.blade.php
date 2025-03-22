@@ -10,8 +10,13 @@
   default => 'py-sm md:py-md xl:py-lg',
 })
 
-@set($block_type,get_row_layout())
-
-<{{$tag}} {{ $attributes->merge(['class' => "bg-background text-foreground relative {$block_type} {$class}"]) }}>
+<section
+  {{ $attributes->class([
+    get_row_layout(),
+    'bg-[var(--bg-color)] text-[var(--txt-color)]',
+    'py-[calc((var(--spacing-x-large))*1px)]'
+  ]) }}
+>
   {!! $slot !!}
-</{{$tag}}>
+</section>
+

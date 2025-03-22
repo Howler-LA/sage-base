@@ -1,3 +1,9 @@
-<div {{ $attributes->merge(['class' => "w-full max-w-(--spacing-mega) mx-auto px-xs sm:px-sm md:px-md xl:px-lg"]) }}>
+<div 
+  {{ $attributes->class([
+    'max-w-[calc((var(--sizing-browser-width))*1px)]', 
+    'px-[calc((var(--margins-small))*1px)]',
+    'mx-auto'
+  ]) }}
+>
   {!! $slot !!}
 </div>

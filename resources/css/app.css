@@ -1,5 +1,6 @@
 @import "tailwindcss" theme(static);
 @import 'aos/dist/aos.css';
+@import './_styles';
 @plugin "@tailwindcss/typography";
 
 @source "../views/";
@@ -29,7 +30,7 @@
 
 }
 
-@theme inline {
+/*@theme inline {
 
   --text-super:         calc( var(--font-size-super-display) * 1px);
   --text-display:       calc( var(--font-size-display-1) * 1px);
@@ -97,4 +98,4 @@
   --color-eyebrow: var(--eyebrow-bg);
   --color-eyebrow-foreground: var(--eyebrow-txt);
   
-}
+}*/
