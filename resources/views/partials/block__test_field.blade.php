@@ -1,8 +1,21 @@
-@set($size,'sm')
-
 <x-section data-theme="White">
   <x-container>
-    <div class="grid xl:grid-cols-3 gap-[calc((var(--spacing-small))*1px)]">
+    <div 
+      @class([
+        'flex flex-col',
+        'gap-[calc((var(--spacing-gutters))*1px)]',
+        'items-center text-center',
+        'mb-[calc((var(--spacing-small))*1px)]',
+        'px-[calc((var(--spacing-large))*1px)]'
+      ])
+    >
+      <x-eyebrow content="Key Goes Here" />
+      <header class="space-y-[calc((var(--spacing-em))*1px)]">
+        <x-display content="Card title" />
+        <x-body content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation." />
+      </header>
+    </div>
+    <div class="grid lg:grid-cols-3 gap-[calc((var(--spacing-small))*1px)]">
       @repeat(3)
         <div 
           data-theme="Primary"
@@ -20,7 +33,7 @@
               'gap-[calc((var(--spacing-gutters))*1px)]',
             ])
           > 
-            <x-eyebrow content="Key Goes Here" />
+            <x-eyebrow wrapper="false" content="Key Goes Here" />
             <header class="space-y-[calc((var(--spacing-em))*1px)]">
               <x-subhead content="Card title" />
               <x-body content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt." />

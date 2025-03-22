@@ -3,21 +3,30 @@
   'icon'    => null,
   'tag'     => 'button',
   'format'  => 'primary',
-  'size'    => 'lg',
   'style'   => 'solid',
 ])
 
+@php($format_class = match ($format) {
+  'primary'  => 'px-[calc((var(--button-padding-horiz-l))*1px)] py-[calc((var(--button-padding-vert-l))*1px)]',
+  'small'    => 'px-[calc((var(--button-padding-horiz-s))*1px)] py-[calc((var(--button-padding-vert-s))*1px)]',
+})
+
+@php($style_class = match ($style) {
+  'solid'     => 'bg-[var(--button-color-btn-bg)] text-[var(--button-color-btn-txt)]',
+  'outline'   => 'ring-1 ring-[var(--button-color-btn-bg)] text-[var(--button-color-btn-bg)]',
+})
+
 <{{ $attributes->has(['href']) ? 'a' : 'button' }} 
   {{ $attributes->class([
+    $format_class,
     'inline-flex items-center justify-center',
-    'bg-[var(--button-color-btn-bg)] text-[var(--button-color-btn-txt)]',
     'font-semibold',
     '!no-underline',
-    'px-[calc((var(--button-padding-horiz-l))*1px)]'  => $size == 'lg',
-    'py-[calc((var(--button-padding-vert-l))*1px)]'   => $size == 'lg',
-    'px-[calc((var(--button-padding-horiz-s))*1px)]'  => $size == 'sm',
-    'py-[calc((var(--button-padding-vert-s))*1px)]'   => $size == 'sm',
+    'transition ease duration-200',
     'rounded-[calc((var(--button-radius))*1px)]',
+    'bg-[var(--button-color-btn-bg)] text-[var(--button-color-btn-txt)]' => $style == 'solid',
+    'ring-2 ring-[var(--button-color-btn-bg)] text-[var(--button-color-btn-bg)]' => $style == 'outline',
+    'hover:bg-[var(--button-color-btn-bg)] hover:text-[var(--button-color-btn-txt)]' => $style == 'outline',
   ]) }}
 >
   <span
@@ -29,39 +38,3 @@
     {!! $label ?? $slot !!}
   </span>
 </{{ $attributes->has(['href']) ? 'a' : 'button' }}>
-
-{{-- @props([
-  'label'   => null,
-  'icon'    => null,
-  'tag'     => 'button',
-  'format'  => 'primary',
-  'style'   => 'solid',
-])
-
-@php($format_class = match ($format) {
-  'primary'  => '',
-})
-
-@php($style_class = match ($style) {
-  'solid'    => 'ring-1 ring-inset ring-button-border bg-button text-button-foreground hover:bg-button-hover hover:text-button-foreground-hover active:bg-button-active',
-  'outline'  => 'ring-1 ring-inset ring-btn-background hover:bg-btn-background hover:text-btn-foreground',
-})
-
-<{{ $attributes->has(['href']) ? 'a' : 'button' }}
-  {{ 
-    $attributes->class([
-      'font-button',
-      'text font-semibold leading-10',
-      'inline-flex gap-2 items-center !no-underline',
-      'items-center justify-center',
-      'transition ease duration-100',
-      'rounded-full',
-      'py-1 px-5' => $icon == '', 'pl-5 pr-4' => $icon,
-      $format_class,
-      $style_class,
-    ]) 
-  }}
->
-  <span>{!! $label ?? $slot !!}</span>
-  @if($icon)<x-lucide-arrow-right />@endif
-</{{ $attributes->has(['href']) ? 'a' : 'button' }}> --}}

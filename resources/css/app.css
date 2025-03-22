@@ -8,17 +8,22 @@
 
 @theme {
 
-  --font-sans:       var(--body-font);
-  --font-key:        var(--key-font);
-  --font-eyebrow:    var(--eyebrow-font);
-  --font-headline:   var(--headline-font);
-  --font-button:     var(--button-font);
+  --font-sans:        var(--body-font);
+  --font-key:         var(--key-font);
+  --font-eyebrow:     var(--eyebrow-font);
+  --font-headline:    var(--headline-font);
+  --font-button:      var(--button-font);
 
-  --text-display:    calc(var(--font-size-display-1) * 1px);
+  --text-display:     calc(var(--font-size-display-1) * 1px);
 
-  --spacing:         0.25rem;
-  --spacing-mega:    120rem;
-  --spacing-header:  136px;
+  --breakpoint-sm:    375px;
+  --breakpoint-md:    768px;
+  --breakpoint-lg:    1440px;
+  --breakpoint-xl:    1920px;
+
+  --spacing:          0.25rem;
+  --spacing-mega:     120rem;
+  --spacing-header:   136px;
 
   --spacing-xs:      calc( var( --spacing ) * 8 );
   --spacing-sm:      calc( var( --spacing ) * 10 );
@@ -30,7 +35,7 @@
 
 }
 
-/*@theme inline {
+@theme inline {
 
   --text-super:         calc( var(--font-size-super-display) * 1px);
   --text-display:       calc( var(--font-size-display-1) * 1px);
@@ -98,4 +103,4 @@
   --color-eyebrow: var(--eyebrow-bg);
   --color-eyebrow-foreground: var(--eyebrow-txt);
   
-}*/
+}

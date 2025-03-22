@@ -5,7 +5,7 @@
 
 @php($class = match ($wrapper) {
   'true'  => 'bg-[var(--eyebrow-bg)] text-[var(--eyebrow-txt)]',
-  'false' => 'text-[var(--eyebrow-txt)]',
+  'false' => '',
 })
 
 <div 
@@ -13,10 +13,11 @@
     $class,
     'text-[calc((var(--font-size-eyebrow))*1px)] leading-[calc((var(--line-height-eyebrow))*1px)]',
     'font-eyebrow',
+    'tracking-wider',
     'uppercase',
-    'font-semibold',
-    'py-[calc((var(--spacing-min))*1px)] pl-3 rounded-l' => $wrapper == "true",
+    'font-medium',
+    'py-[calc((var(--spacing-min))*1px)] px-3 rounded' => $wrapper == "true",
   ]) }}
 >
-  {!! $content ?? $slot !!}
+  <span>{!! $content ?? $slot !!}</span>
 </div>

@@ -14,7 +14,7 @@
   {{ $attributes->class([
     get_row_layout(),
     'bg-[var(--bg-color)] text-[var(--txt-color)]',
-    'py-[calc((var(--spacing-x-large))*1px)]'
+    'py-[calc((var(--spacing-large))*1px)]'
   ]) }}
 >
   {!! $slot !!}

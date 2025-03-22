@@ -4,13 +4,13 @@
 ])
 
 @php($class = match ($size) {
-  '1' => 'text-[calc((var(--font-size-subhead))*1px)] leading-[calc((var(--line-height-subhead))*1px)]',
-  '2' => 'text-[calc((var(--font-size-subhead))*1px)] leading-[calc((var(--line-height-subhead))*1px)]',
+  '1' => 'text-[calc((var(--font-size-subhead))*1px)] leading-[calc((var(--line-height-subhead-lh))*1px)]',
+  '2' => 'text-[calc((var(--font-size-subhead))*1px)] leading-[calc((var(--line-height-subhead-lh))*1px)]',
 })
 
 <div 
   {{ $attributes->class([
-    'text-[calc((var(--font-size-subhead))*1px)] leading-[calc((var(--line-height-subhead))*1px)]',
+    $class,
     'tracking-[-1%]',
     'font-extrabold',
   ]) }}
