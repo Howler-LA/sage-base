@@ -21,7 +21,7 @@
         'grid gap-sm grid-cols-1',
         'xl:grid-cols-2' => $items == 2,
         'xl:grid-cols-3' => $items == 3,
-        'lg:grid-cols-2 xl:grid-cols-4' => $items >= 4,
+        'xl:grid-cols-2 xl:grid-cols-4' => $items >= 4,
       ])
     >
       @repeat($items)

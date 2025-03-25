@@ -13,7 +13,7 @@
 
 @php($style_class = match ($style) {
   'solid'     => 'bg-[var(--button-color-btn-bg)] text-[var(--button-color-btn-txt)]',
-  'outline'   => 'ring-1 ring-[var(--button-color-btn-bg)] text-[var(--button-color-btn-bg)]',
+  'outline'   => 'ring-2 ring-[var(--button-color-btn-bg)] text-[var(--button-color-btn-bg)]',
 })
 
 <{{ $attributes->has(['href']) ? 'a' : 'button' }} 
@@ -24,7 +24,8 @@
     '!no-underline',
     'transition ease duration-200',
     'rounded-[calc((var(--button-radius))*1px)]',
-    'bg-[var(--button-color-btn-bg)] text-[var(--button-color-btn-txt)]' => $style == 'solid',
+    'ring-2 ring-[var(--button-color-btn-bg)] bg-[var(--button-color-btn-bg)] text-[var(--button-color-btn-txt)]' => $style == 'solid',
+    'hover:bg-[var(--button-color-btn-txt)] hover:ring-2 ring-[var(--button-color-btn-bg)] hover:text-[var(--button-color-btn-bg)]' => $style == 'solid',
     'ring-2 ring-[var(--button-color-btn-bg)] text-[var(--button-color-btn-bg)]' => $style == 'outline',
     'hover:bg-[var(--button-color-btn-bg)] hover:text-[var(--button-color-btn-txt)]' => $style == 'outline',
   ]) }}

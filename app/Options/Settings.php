@@ -38,7 +38,7 @@ class Settings extends Field
             ->addTab('Sizing')
             ->addMessage('Very important:','Breakpoints should be ordered from least to greatest')
             ->addRepeater('breakpoints',['collapsed'=>'breakpoint'])
-                ->addText('breakpoint',['label'=>'Browser Width'])
+                ->addText('breakpoint',['label'=>'Browser Width','append'=>'px'])
                 ->addTextArea('type_sizes',['label'=>'Type Sizes'])
                 ->addTextArea('variables',['label'=>'Space & Size'])
             ->endRepeater()

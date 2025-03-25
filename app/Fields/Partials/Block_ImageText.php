@@ -20,19 +20,26 @@ class Block_ImageText extends Partial
         ;
 
         $fields
-            ->modifyField('config->block->theme', function($fieldsBuilder) {
-                $fieldsBuilder
-                    ->addTrueFalse('height',[
-                        'ui_on_text'    => 'Full',
-                        'ui_off_text'   => 'Hug',
-                    ])
-                ;
-                return $fieldsBuilder;
-            })
             ->modifyField('config->block', function($fieldsBuilder) {
                 $fieldsBuilder
                     ->addGroup('media')
+                        ->addButtonGroup('image_orientation',[ 
+                            'choices' => [ 
+                                'left'      => 'Left',
+                                'right'     => 'Right', 
+                            ],
+                            'default_value' => 'right'
+                        ])
+                        ->addButtonGroup('image_size',[ 
+                            'choices' => [ 
+                                'full'      => 'Full with', 
+                                'wide'      => 'Wide margins', 
+                                'narrow'    => 'Narrow margins'
+                            ],
+                            'default_value' => 'full'
+                        ])
                         ->addFields($this->get(Config_Theme::class))
+                        ->addFields($this->get(Config_Sticker::class))
                     ->endGroup()
                 ;
                 return $fieldsBuilder;

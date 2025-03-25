@@ -4,8 +4,8 @@
 ])
 
 @php($class = match ($size) {
-  '1' => 'text-subhead leading-subhead',
-  '2' => 'text-subhead leading-subhead',
+  '1' => 'text-title-1 leading-title-1',
+  '2' => 'text-title-2 leading-title-2',
 })
 
 <div 

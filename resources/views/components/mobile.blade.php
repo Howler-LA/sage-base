@@ -12,7 +12,7 @@
           @class([
             '!no-underline',
             'cursor-pointer',
-            'px-xs sm:px-sm md:px-md py-5 w-full',
+            'px-xs sm:px-sm xl:px-md py-5 w-full',
             'flex justify-between items-center',
           ])
           @if($item->children)@click="subMenu=!subMenu"@endif
@@ -34,7 +34,7 @@
                   '!no-underline',
                   'cursor-pointer',
                   'border-b border-foreground/50 last:border-0',
-                  'px-xs sm:px-sm md:px-md py-5 w-full',
+                  'px-xs sm:px-sm xl:px-md py-5 w-full',
                   'flex justify-between items-center',
                 ])
                 href="{{ $child->url }}"

@@ -9,6 +9,6 @@
   '2' => 'text-display leading-display',
 })
 
-<{{ $tag }} {{$attributes->class([$class,'font-headline font-bold tracking-tighter'])}}>
+<{{ $tag }} {{$attributes->class([$class,'font-headline font-bold tracking-tight'])}}>
   {!! $title ?? $slot !!}
 </{{ $tag }}>

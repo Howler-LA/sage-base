@@ -16,53 +16,103 @@
 
   --text-display:     calc(var(--font-size-display-1) * 1px);
 
-  --breakpoint-sm:    375px;
-  --breakpoint-md:    768px;
-  --breakpoint-lg:    1440px;
-  --breakpoint-xl:    1920px;
-
   --spacing:          0.25rem;
   --spacing-mega:     120rem;
   --spacing-header:   136px;
 
-  --spacing-xs:      calc( var( --spacing ) * 8 );
+/*  --spacing-xs:      calc( var( --spacing ) * 8 );
   --spacing-sm:      calc( var( --spacing ) * 10 );
-  --spacing-md:      calc( var( --spacing ) * 16 );
-  --spacing-lg:      calc( var( --spacing ) * 20 );
+  --spacing-xl:      calc( var( --spacing ) * 16 );
+  --spacing-xl:      calc( var( --spacing ) * 20 );
   --spacing-xl:      calc( var( --spacing ) * 32 );
   --spacing-2xl:     calc( var( --spacing ) * 40 );
-  --spacing-3xl:     calc( var( --spacing ) * 50 );
+  --spacing-3xl:     calc( var( --spacing ) * 50 );*/
 
 }
 
 @theme inline {
 
-  --text-super:         calc( var(--font-size-super-display) * 1px);
-  --text-display:       calc( var(--font-size-display-1) * 1px);
-  --text-subhead:       calc( var(--font-size-subhead) * 1px);
-  --text-title-1:       calc( var(--font-size-title-1) * 1px);
-  --text-title-2:       calc( var(--font-size-title-2) * 1px);
-  --text-eyebrow:       calc( var(--font-size-eyebrow) * 1px);
-  --text-body-1:        calc( var(--font-size-body-1) * 1px);
-  --text-body-2:        calc( var(--font-size-body-2) * 1px);
+  /* 
+    Font Sizes 
+  */
 
-  --leading-super:      calc( var(--line-height-super-display-lh) * 1px);
-  --leading-display:    calc( var(--line-height-display-1-lh) * 1px);
-  --leading-subhead:    calc( var(--line-height-subhead-lh) * 1px);
-  --leading-title-1:    calc( var(--line-height-title-1-lh) * 1px);
-  --leading-title-2:    calc( var(--line-height-title-2-lh) * 1px);
-  --leading-eyebrow:    calc( var(--line-height-eyebrow-lh) * 1px);
-  --leading-body-1:     calc( var(--line-height-body-1-lh) * 1px);
-  --leading-body-2:     calc( var(--line-height-body-2-lh) * 1px);
+  --text-super: calc( var(--font-size-super-display) * 1px);
+  --text-display: calc( var(--font-size-display-1) * 1px);
+  --text-subhead: calc( var(--font-size-subhead) * 1px);
+  --text-title-1: calc( var(--font-size-title-1) * 1px);
+  --text-title-2: calc( var(--font-size-title-2) * 1px);
+  --text-eyebrow: calc( var(--font-size-eyebrow) * 1px);
+  --text-body-1: calc( var(--font-size-body-1) * 1px);
+  --text-body-2: calc( var(--font-size-body-2) * 1px);
+
+  /* 
+    Line Height
+  */
+
+  --leading-super: calc( var(--line-height-super-display-lh) * 1px);
+  --leading-display: calc( var(--line-height-display-1-lh) * 1px);
+  --leading-subhead: calc( var(--line-height-subhead-lh) * 1px);
+  --leading-title-1: calc( var(--line-height-title-1-lh) * 1px);
+  --leading-title-2: calc( var(--line-height-title-2-lh) * 1px);
+  --leading-eyebrow: calc( var(--line-height-eyebrow-lh) * 1px);
+  --leading-body-1: calc( var(--line-height-body-1-lh) * 1px);
+  --leading-body-2: calc( var(--line-height-body-2-lh) * 1px);
+
+  /*
+    Sizing
+  */
+
+  --spacing-xl: calc(var(--spacing-x-large) * 1px);
+  --spacing-lg: calc(var(--spacing-large) * 1px);
+  --spacing-md: calc(var(--spacing-med) * 1px);
+  --spacing-sm: calc(var(--spacing-small) * 1px);
+  --spacing-em: calc(var(--spacing-em) * 1px);
+  --spacing-min: calc(var(--spacing-min) * 1px);
+  --spacing-zero: calc(var(--spacing-zero) * 1px);
+
+  /*calc(var(--margins-x-large)*1px);
+  calc(var(--margins-large)*1px);
+  calc(var(--margins-small)*1px);
+  calc(var(--button-radius)*1px);
+  calc(var(--button-padding-vert-l)*1px);
+  calc(var(--card-radius)*1px);
+  calc(var(--card-padding)*1px);
+  calc(var(--spacing-gutters)*1px);
+  calc(var(--sizing-grid-cols)*1px);*/
+
+  --spacing-browser: calc(var(--sizing-browser-width)*1px);
+
+  /*calc(var(--sizing-3-col-span)*1px);
+  calc(var(--sizing-4-col-span)*1px);
+  calc(var(--sizing-6-col-span)*1px);
+  calc(var(--sizing-8-col-span)*1px);
+  calc(var(--sizing-9-col-span)*1px);
+  calc(var(--button-padding-horiz-l)*1px);
+  calc(var(--button-padding-vert-s)*1px);
+  calc(var(--button-padding-horiz-s)*1px);
+  calc(var(--link-grid-vert-padding)*1px);*/
+
+
+  /* 
+    Base Colors 
+  */
 
   --color-foreground: var(--txt-color);
   --color-background: var(--bg-color);
   
+  /* 
+    Button Background Colors 
+  */
+
   --color-button: var(--button-color-btn-bg);
   --color-button-active: var(--button-color-btn-bg-active);
   --color-button-hover: var(--button-color-btn-bg-hover);
   --color-button-disabled: var(--button-color-btn-bg-disabled);
   
+  /* 
+    Button Foreground Colors 
+  */
+
   --color-button-foreground: var(--button-color-btn-txt);
   --color-button-foreground-active: var(--button-color-btn-txt-active);
   --color-button-foreground-hover: var(--button-color-btn-txt-hover);

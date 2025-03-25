@@ -21,6 +21,7 @@ class Config_Theme extends Partial
                     'dark'      => 'Dark', 
                     'subtle'    => 'Subtle', 
                 ],
+                'label' => 'Color Mode',
                 'default_value' => 'light'
             ])
         ;

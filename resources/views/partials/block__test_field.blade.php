@@ -1,12 +1,12 @@
-<x-section data-theme="White">
+<x-section data-theme="{{ $config['block']['theme'] }}">
   <x-container>
     <div 
       @class([
         'flex flex-col',
         'gap-[calc((var(--spacing-gutters))*1px)]',
         'items-center text-center',
-        'mb-[calc((var(--spacing-small))*1px)]',
-        'px-[calc((var(--spacing-large))*1px)]'
+        'mb-sm',
+        'px-lg'
       ])
     >
       <x-eyebrow content="Key Goes Here" />
@@ -15,7 +15,7 @@
         <x-body content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation." />
       </header>
     </div>
-    <div class="grid lg:grid-cols-3 gap-[calc((var(--spacing-small))*1px)]">
+    <div class="grid xl:grid-cols-3 gap-sm">
       @repeat(3)
         <div 
           data-theme="Primary"

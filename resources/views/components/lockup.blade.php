@@ -11,12 +11,26 @@
 ])
 
 @php($align_class = match ($align) {
-  'right'   => 'text-right',
-  'center'  => 'text-center max-w-screen-md mx-auto',
-  default   => 'text-left',
+  'right'   => 'text-right items-end',
+  'center'  => 'text-center items-center max-w-screen-md mx-auto',
+  default   => 'text-left items-start',
 })
 
 <div 
+  {{ $attributes->class([
+    $align_class,
+    'flex flex-col',
+    'gap-[calc((var(--spacing-gutters))*1px)]',
+  ]) }}
+>
+  <x-eyebrow content="{!! $eyebrow !!}" />
+  <header class="space-y-[calc((var(--spacing-em))*1px)]">
+    <x-display content="{!! $headline !!}" />
+    <x-body content="{!! $copy !!}" />
+  </header>
+</div>
+
+{{-- <div 
   data-aos="fade-in"
   {{ $attributes->merge(['class' => "{$align_class}"]) }}
 >
@@ -77,4 +91,4 @@
     />
   @endif
 
-</div>
+</div> --}}

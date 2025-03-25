@@ -16,6 +16,13 @@ class Block_Accordion extends Partial
 
         $fields
             ->addFields($this->get(Content::class))
+            ->addRepeater('cards',['collapsed'=>'headline'])
+                ->addText('headline')
+                ->addTextarea('copy',[
+                    'rows'      => 3,
+                    'new_lines' => 'br'
+                ])
+            ->endRepeater()
             ->addFields($this->get(Config::class))
         ;
 

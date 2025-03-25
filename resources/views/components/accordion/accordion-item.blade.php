@@ -1,7 +1,7 @@
 @props([
-  'key' => null,
+  'key'   => null,
   'title' => null,
-  'copy' => null,
+  'copy'  => null,
 ])
 
 <div 
@@ -11,13 +11,22 @@
   
   <button 
     @click="open=!open" 
-    class="flex gap-4 justify-between items-center w-full cursor-pointer group"
+    @class([
+      'flex justify-between items-center w-full cursor-pointer group',
+      'gap-[calc((var(--spacing-em))*1px)]',
+    ])
   >
-    <x-type.copy class="py-3 sm:py-xs border-r border-dashed flex-grow text-left font-semibold flex items-center gap-4">
-      <x-type.key title="{!! $key !!}" />
+    <x-body 
+      @class([
+        'border-r border-dashed flex-grow text-left font-semibold flex items-center',
+        'py-sm',
+        'gap-[calc((var(--spacing-em))*1px)]',
+      ])
+    >
+      <x-eyebrow class="text-foreground font-light" wrapper="false" content="{!! $key !!}" />
       <span>{{ $title }}</span>
-    </x-type.copy>
-    <x-accordion.accordion-icon />
+    </x-body>
+    <x-accordion.accordion-icon class="flex-none" />
   </button>
   
   <div 
@@ -25,8 +34,10 @@
     x-cloak
     class="border-t border-dashed"
   >
-    <div class="py-xs px-xs">
-      {{ $copy }}
+    <div class="py-md px-sm">
+      <x-body size="2">
+        {!! $copy !!}
+      </x-body>
     </div>
   </div>
 

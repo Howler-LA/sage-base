@@ -20,7 +20,7 @@
         'columns-3 xl:columns-2' => $columns == 2,
         'columns-3 xl:columns-3' => $columns == 3,
         'columns-3 xl:columns-4' => $columns == 4,
-        'gap-2 lg:gap-xs'
+        'gap-min xl:gap-min'
       ])
     >
       @foreach($content['images'] as $image)
@@ -36,10 +36,11 @@
           }
 
         @endphp
-        <div class="break-inside-avoid-column mb-2 lg:mb-xs">
+        <div class="break-inside-avoid-column mb-min xl:mb-min">
           <div 
             @class([
               'bg-foreground/10 relative',
+              'w-full',
               'aspect-[5/4]' => $aspect == 'landscape',
               'aspect-[4/5]' => $aspect == 'portrait',
             ])

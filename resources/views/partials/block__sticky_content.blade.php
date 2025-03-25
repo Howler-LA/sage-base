@@ -49,7 +49,7 @@
 >
   <div 
     @class([
-      'p-xs pb-0 sm:p-sm sm:pb-0 md:p-md md:pb-0 xl:p-lg',
+      'p-xs pb-0 sm:p-sm sm:pb-0 xl:p-md xl:pb-0 xl:p-lg',
       'flex flex-col',
       'items-end'
     ])
@@ -73,7 +73,7 @@
     ])
   >
     @repeat(5)
-      <div class="border-b bg-background p-xs sm:p-sm md:p-md xl:p-lg flex flex-col gap-4">
+      <div class="border-b bg-background p-xs sm:p-sm xl:p-md xl:p-lg flex flex-col gap-4">
         <div class="aspect-video bg-bg-foreground/10 rounded-lg"></div>
         <x-lockup
           key="0{{ $loop->iteration }}"

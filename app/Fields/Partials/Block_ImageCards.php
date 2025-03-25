@@ -24,8 +24,8 @@ class Block_ImageCards extends Partial
                     'maxlength' => 250,
                     'new_lines' => 'wpautop'
                 ])
-                ->addFields($this->get(Content_Links::class))
                 ->addFile('image')
+                ->addFields($this->get(Content_Links::class))
             ->endRepeater()
             ->addFields($this->get(Config::class))
         ;

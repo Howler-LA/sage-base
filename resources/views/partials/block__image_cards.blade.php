@@ -8,8 +8,8 @@
         'flex flex-col',
         'gap-[calc((var(--spacing-gutters))*1px)]',
         'items-center text-center',
-        'mb-[calc((var(--spacing-small))*1px)]',
-        'px-[calc((var(--spacing-large))*1px)]'
+        'mb-sm',
+        'px-lg'
       ])
     >
       <x-eyebrow content="{!! $content['eyebrow'] !!}" />
@@ -22,26 +22,27 @@
       <div 
         @class([
           'grid grid-cols-1',
-          'gap-[calc((var(--spacing-small))*1px)]',
-          'lg:grid-cols-2' => $items == 2,
-          'lg:grid-cols-2' => $items == 2,
-          'lg:grid-cols-3' => $items >= 3,
+          'gap-sm',
+          'xl:grid-cols-2' => $items == 2,
+          'xl:grid-cols-2' => $items == 2,
+          'xl:grid-cols-3' => $items >= 3,
         ])
       >
-        @foreach(get_sub_field('cards') as $card)
+        @foreach(get_sub_field('cards') as $key => $card)
           <div 
             data-theme="{{ $config['cards']['theme'] }}"
             @class([
+              'border border-foreground/50' => $config['block']['theme'] === $config['cards']['theme'],
               'bg-[var(--bg-color)] text-[var(--txt-color)]',
               'rounded-[calc((var(--card-radius))*1px)]',
               'overflow-hidden',
-              'grid lg:grid-cols-2' => $items == 1,
+              'grid xl:grid-cols-2' => $items == 1,
             ])
           >
             @image($card['image'],'large',['class'=>'w-full h-auto block'])
             <div
               @class([
-                'lg:p-[calc((var(--spacing-large))*1px)] lg:justify-between lg:order-first' => $items == 1,
+                'xl:p-lg xl:justify-between xl:order-first' => $items == 1,
                 'p-[calc((var(--card-padding))*1px)]',
                 'flex flex-col items-start',
                 'gap-[calc((var(--spacing-gutters))*1px)]',
@@ -53,7 +54,7 @@
                 <x-body size="2" content="{!! $card['copy'] !!}" />
               </header>
               @if($card['links'])
-                <div class="flex space-x-[calc((var(--spacing-min))*1px)]">
+                <div class="flex space-x-min">
                   @foreach($card['links'] as $link)
                     <x-button 
                       href="{{ $link['link']['url'] }}"
@@ -70,10 +71,28 @@
         @endforeach
       </div>
     @endif
+    @if($content['links'])
+      <div
+        @class([
+          'pt-sm',
+          'flex items-center justify-center gap-min'
+        ])
+      >
+        @foreach($content['links'] as $key => $link)
+          <x-button 
+            href="{{ $link['link']['url'] }}"
+            style="{{ $link['config']['style'] }}"
+            format="{{ $link['config']['format'] }}"
+            label="{{ $link['link']['title'] }}" 
+            target="{{ $link['link']['target'] }}"
+          />
+        @endforeach
+      </div>
+    @endif
   </x-container>
 </x-section>
 
-<x-section data-theme="{{ $config['block']['theme'] }}">
+{{-- <x-section data-theme="{{ $config['block']['theme'] }}">
   <x-container 
     @class([
       'grid',
@@ -92,9 +111,9 @@
       <div 
         @class([
           'grid gap-sm grid-cols-1',
-          'lg:grid-cols-2' => $items == 2,
-          'lg:grid-cols-2' => $items == 2,
-          'lg:grid-cols-3' => $items >= 3,
+          'xl:grid-cols-2' => $items == 2,
+          'xl:grid-cols-2' => $items == 2,
+          'xl:grid-cols-3' => $items >= 3,
         ])
       >
         @foreach(get_sub_field('cards') as $card)
@@ -111,7 +130,13 @@
       </div>
     @endif
     @if($content['links'])
-      <div class="flex items-center justify-center gap-2">
+      <div 
+        @class([
+          'bg-pink-100',
+          'pt-sm',
+          'flex items-center justify-center gap-2'
+        ])
+      >
         @foreach($content['links'] as $key => $link)
           <x-button 
             href="{{ $link['link']['url'] }}"
@@ -124,4 +149,4 @@
       </div>
     @endif
   </x-container>
-</x-section>
+</x-section> --}}

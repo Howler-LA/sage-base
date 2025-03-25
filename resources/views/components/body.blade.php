@@ -4,8 +4,8 @@
 ])
 
 @php($class = match ($size) {
-  '1' => 'text-[calc((var(--font-size-body-1))*1px)] leading-[calc((var(--line-height-body-1))*1px)]',
-  '2' => 'text-[calc((var(--font-size-body-2))*1px)] leading-[calc((var(--line-height-body-2))*1px)]',
+  '1' => 'text-body-1 leading-body-1',
+  '2' => 'text-body-2 leading-body-2',
 })
 
 <div 

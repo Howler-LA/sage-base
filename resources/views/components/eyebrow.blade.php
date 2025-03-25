@@ -11,12 +11,12 @@
 <div 
   {{ $attributes->class([
     $class,
-    'text-[calc((var(--font-size-eyebrow))*1px)] leading-[calc((var(--line-height-eyebrow))*1px)]',
+    'text-eyebrow-foreground leading-eyebrow',
     'font-eyebrow',
     'tracking-wider',
     'uppercase',
     'font-medium',
-    'py-[calc((var(--spacing-min))*1px)] px-3 rounded' => $wrapper == "true",
+    'py-min px-3 rounded' => $wrapper == "true",
   ]) }}
 >
   <span>{!! $content ?? $slot !!}</span>

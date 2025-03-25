@@ -1,7 +1,7 @@
 <style id="variables">
   @if(get_field('breakpoints','option'))
     @foreach(get_field('breakpoints','option') as $breakpoint)
-      @media only screen and (min-width : {{ $breakpoint['breakpoint'] }}px) {
+      @media (width >= {{ $breakpoint['breakpoint'] }}px) {
         :root {
           {{ preg_replace('/\s+/', '', $breakpoint['variables']) }}
           {{ preg_replace('/\s+/', '', $breakpoint['type_sizes']) }}

@@ -15,6 +15,7 @@ class Config extends Partial
         $fields = Builder::make('config');
 
         $fields
+            ->addAccordion('Configure Block')
             ->addGroup('config')
                 ->addGroup('block')
                     ->addFields($this->get(Config_Block::class))

@@ -25,7 +25,6 @@ class Block_ColorCards extends Partial
                     'new_lines' => 'wpautop'
                 ])
                 ->addFields($this->get(Content_Links::class))
-                ->addFile('image')
             ->endRepeater()
             ->addFields($this->get(Config::class))
         ;
