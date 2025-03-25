@@ -4,6 +4,7 @@
   'tag'     => 'button',
   'format'  => 'primary',
   'style'   => 'solid',
+  'size'    => 'lg'
 ])
 
 @php($format_class = match ($format) {
