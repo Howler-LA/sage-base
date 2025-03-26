@@ -57,9 +57,10 @@ a:where(:not(.wp-element-button)) {
   --spacing-min: calc(var(--spacing-min) * 1px);
   --spacing-zero: calc(var(--spacing-zero) * 1px);
   --spacing-gutters: calc(var(--spacing-gutters)*1px);
-  --spacing-card-radius: calc(var(--card-radius)*1px);
   --spacing-card-padding: calc(var(--card-padding)*1px);
   --spacing-link-grid-vert-padding: calc(var(--link-grid-vert-padding)*1px);
+
+  --radius-card-radius: calc(var(--card-radius)*1px);
 
   /*calc(var(--margins-x-large)*1px);
   calc(var(--margins-large)*1px);

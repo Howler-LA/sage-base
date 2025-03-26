@@ -12,7 +12,7 @@
   ])
 >
   @if($fullImage)
-    <div class="absolute inset-0 opacity-75">
+    <div class="absolute inset-0 opacity-50">
       <x-media 
         id="{{ $content['image'] }}" 
         class="w-full h-full object-cover" 
@@ -44,11 +44,10 @@
     data-theme="{{ $config['media']['theme'] }}" 
     @class([
       'relative',
-      'bg-pink-50/50',
+      'bg-pink-50/50' => !$content['image'],
       'xl:min-h-[calc(100vh-136px)]' => $config['block']['height'],
       'min-h-[calc(60vh-136px)]' => !$config['block']['height'],
       'flex flex-col justify-center relative',
-      'px-lg',
       'xl:p-0' => $width == 'full',
       'xl:p-xl' => $width == 'narrow',
       'xl:p-lg' => $width == 'wide',
@@ -69,7 +68,8 @@
     <div 
       data-theme="light"
       @class([
-        'h-full w-full rounded relative',
+        'rounded-card-radius',
+        'h-full w-full relative',
         'bg-background text-foreground',
         'shadow-2xl' => $content['image'],
         'p-lg',
