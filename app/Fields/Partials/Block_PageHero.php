@@ -16,6 +16,12 @@ class Block_PageHero extends Partial
 
         $fields
             ->addFields($this->get(Content::class))
+            ->addGroup('links')
+                ->addText('headline')
+                ->addRepeater('links',['instructions' => 'To link another block, simply enter the blocks headline (lowercase & replace spaces for dashes) in the URL field.'])
+                    ->addLink('link')
+                ->endRepeater()
+            ->endGroup()
             ->addFields($this->get(Config::class))
         ;
 

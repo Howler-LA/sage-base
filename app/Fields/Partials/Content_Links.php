@@ -22,6 +22,7 @@ class Content_Links extends Partial
                 ->addLink('link',[
                     'required'      => 1
                 ])
+                ->addAccordion('config')
                 ->addGroup('config')
                     ->addButtonGroup('format',[ 
                         'choices' => [ 

@@ -16,6 +16,17 @@ class Block_MultiCol extends Partial
 
         $fields
             ->addFields($this->get(Content::class))
+            ->addRepeater('cards',['collapsed'=>'headline'])
+                ->addText('eyebrow')
+                ->addText('headline')
+                ->addTextarea('copy',[
+                    'rows'      => 3,
+                    'maxlength' => 250,
+                    'new_lines' => 'wpautop'
+                ])
+                ->addFile('image')
+                ->addFields($this->get(Content_Links::class))
+            ->endRepeater()
             ->addFields($this->get(Config::class))
         ;
 

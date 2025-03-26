@@ -6,31 +6,18 @@
 @source "../views/";
 @source "../../app/";
 
-@theme {
+a:where(:not(.wp-element-button)) {
+  text-decoration: none;
+}
+
+
+@theme inline {
 
   --font-sans:        var(--body-font);
   --font-key:         var(--key-font);
   --font-eyebrow:     var(--eyebrow-font);
   --font-headline:    var(--headline-font);
   --font-button:      var(--button-font);
-
-  --text-display:     calc(var(--font-size-display-1) * 1px);
-
-  --spacing:          0.25rem;
-  --spacing-mega:     120rem;
-  --spacing-header:   136px;
-
-/*  --spacing-xs:      calc( var( --spacing ) * 8 );
-  --spacing-sm:      calc( var( --spacing ) * 10 );
-  --spacing-xl:      calc( var( --spacing ) * 16 );
-  --spacing-xl:      calc( var( --spacing ) * 20 );
-  --spacing-xl:      calc( var( --spacing ) * 32 );
-  --spacing-2xl:     calc( var( --spacing ) * 40 );
-  --spacing-3xl:     calc( var( --spacing ) * 50 );*/
-
-}
-
-@theme inline {
 
   /* 
     Font Sizes 
@@ -69,6 +56,10 @@
   --spacing-em: calc(var(--spacing-em) * 1px);
   --spacing-min: calc(var(--spacing-min) * 1px);
   --spacing-zero: calc(var(--spacing-zero) * 1px);
+  --spacing-gutters: calc(var(--spacing-gutters)*1px);
+  --spacing-card-radius: calc(var(--card-radius)*1px);
+  --spacing-card-padding: calc(var(--card-padding)*1px);
+  --spacing-link-grid-vert-padding: calc(var(--link-grid-vert-padding)*1px);
 
   /*calc(var(--margins-x-large)*1px);
   calc(var(--margins-large)*1px);
@@ -77,7 +68,7 @@
   calc(var(--button-padding-vert-l)*1px);
   calc(var(--card-radius)*1px);
   calc(var(--card-padding)*1px);
-  calc(var(--spacing-gutters)*1px);
+  
   calc(var(--sizing-grid-cols)*1px);*/
 
   --spacing-browser: calc(var(--sizing-browser-width)*1px);
@@ -90,7 +81,7 @@
   calc(var(--button-padding-horiz-l)*1px);
   calc(var(--button-padding-vert-s)*1px);
   calc(var(--button-padding-horiz-s)*1px);
-  calc(var(--link-grid-vert-padding)*1px);*/
+  */
 
 
   /* 
