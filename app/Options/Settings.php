@@ -33,6 +33,7 @@ class Settings extends Field
         $fields = Builder::make('settings');
 
         $fields
+            ->addMessage('Tutorial','<a target="_blank" href="https://www.dropbox.com/scl/fi/rqv2r26rol7zo6dsrql99/Screen-Recording-2025-03-26-at-9.50.43-AM.mov?rlkey=lui8fu9fricwjpwmhrmcfcxih&dl=0">How to adjust these values</a>')
             ->addTab('Brand')
             ->addFields($this->get(Options_Brand::class))
             ->addTab('Sizing')
