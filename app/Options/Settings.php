@@ -16,7 +16,7 @@ class Settings extends Field
      *
      * @var string
      */
-    public $name = 'Settings';
+    public $name = 'Theme Config';
 
     /**
      * The option page document title.
