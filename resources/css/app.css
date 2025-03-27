@@ -65,9 +65,7 @@ a:where(:not(.wp-element-button)) {
   /*calc(var(--margins-x-large)*1px);
   calc(var(--margins-large)*1px);
   calc(var(--margins-small)*1px);  */
-  
-  --radius-button: calc(var(--button-radius)*1px);
-  --sizing-button-padding-vert-l: calc(var(--button-padding-vert-l)*1px);
+
 
   /*calc(var(--card-radius)*1px);
   calc(var(--card-padding)*1px);
@@ -81,9 +79,7 @@ a:where(:not(.wp-element-button)) {
   calc(var(--sizing-6-col-span)*1px);
   calc(var(--sizing-8-col-span)*1px);
   calc(var(--sizing-9-col-span)*1px);
-  calc(var(--button-padding-horiz-l)*1px);
-  calc(var(--button-padding-vert-s)*1px);
-  calc(var(--button-padding-horiz-s)*1px);
+  
   */
 
 
@@ -93,6 +89,16 @@ a:where(:not(.wp-element-button)) {
 
   --color-foreground: var(--txt-color);
   --color-background: var(--bg-color);
+
+  /*
+    Buttons Spacing & Radius
+  */
+  
+  --radius-button: calc(var(--button-radius)*1px);
+  --spacing-button-padding-vert-l: calc(var(--button-padding-vert-l)*1px);
+  --spacing-button-padding-horiz-l: calc(var(--button-padding-horiz-l)*1px);
+  --spacing-button-padding-vert-s: calc(var(--button-padding-vert-s)*1px);
+  --spacing-button-padding-horiz-s: calc(var(--button-padding-horiz-s)*1px);
   
   /* 
     Button Background Colors 
@@ -143,7 +149,6 @@ a:where(:not(.wp-element-button)) {
   --color-card-active: var(--color-card-bg-active);
   --color-card-border-focus: var(--color-card-focus-border);
 
-  
   --color-eyebrow: var(--eyebrow-bg);
   --color-eyebrow-foreground: var(--eyebrow-txt);
   

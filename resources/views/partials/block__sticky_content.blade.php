@@ -15,9 +15,9 @@
         @class([
           'xl:sticky',
           'xl:top-[calc(theme(spacing.lg)+calc(90px+32px))] xl:pb-lg' => $header['sticky'] == true && is_user_logged_in() == true,
-          'xl:top-[calc(theme(spacing.lg)+calc(90px+0))] xl:pb-lg' => $header['sticky'] == true && is_user_logged_in() == false,
+          'xl:top-[calc(theme(spacing.lg)+calc(90px+0px))] xl:pb-lg' => $header['sticky'] == true && is_user_logged_in() == false,
           'xl:top-[calc(theme(spacing.lg)+calc(0px+32px))] xl:pb-lg' => $header['sticky'] == false && is_user_logged_in() == true,
-          'xl:top-[calc(theme(spacing.lg)+calc(0px+0))] xl:pb-lg' => $header['sticky'] == false && is_user_logged_in() == false,
+          'xl:top-[calc(theme(spacing.lg)+calc(0px+0px))] xl:pb-lg' => $header['sticky'] == false && is_user_logged_in() == false,
           'xl:max-w-[calc(calc(var(--spacing-mega)*.5)-calc(var(--spacing-lg)*2))]'
         ])
         eyebrow="{!! $content['eyebrow'] !!}"

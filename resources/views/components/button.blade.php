@@ -7,8 +7,8 @@
 ])
 
 @php($format_class = match ($format) {
-  'primary'  => 'px-[calc((var(--button-padding-horiz-l))*1px)] py-[calc((var(--button-padding-vert-l))*1px)]',
-  'small'    => 'px-[calc((var(--button-padding-horiz-s))*1px)] py-[calc((var(--button-padding-vert-s))*1px)]',
+  'primary'  => 'px-button-padding-horiz-l py-button-padding-vert-l',
+  'small'    => 'px-button-padding-horiz-s py-button-padding-vert-s',
 })
 
 @php($style_class = match ($style) {
