@@ -13,13 +13,13 @@
       <a href="/" class="!no-underline leading-10">
         <x-type.title title="{!! $siteName !!}" />
       </a>
-      <div class="flex items-center justify-end">
+      <div class="flex items-center justify-end gap-sm">
         <x-menu 
           name="primary_navigation" 
-          class="font-semibold text-lg hidden xl:flex"
+          class="font-semibold text-body-2 hidden xl:flex"
         />
         @if($header['links'])
-          <div class="hidden xl:flex gap-2">
+          <div class="hidden xl:flex gap-min">
             @foreach($header['links'] as $link)
               <x-button
                 format="{{ $link['config']['format'] }}"
@@ -27,7 +27,6 @@
                 target="{{ $link['link']['target'] }}"
                 href="{{ $link['link']['url'] }}"
                 label="{{ $link['link']['title'] }}"
-                disabled
               />
             @endforeach
           </div>

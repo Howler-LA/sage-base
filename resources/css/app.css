@@ -64,10 +64,12 @@ a:where(:not(.wp-element-button)) {
 
   /*calc(var(--margins-x-large)*1px);
   calc(var(--margins-large)*1px);
-  calc(var(--margins-small)*1px);
-  calc(var(--button-radius)*1px);
-  calc(var(--button-padding-vert-l)*1px);
-  calc(var(--card-radius)*1px);
+  calc(var(--margins-small)*1px);  */
+  
+  --radius-button: calc(var(--button-radius)*1px);
+  --sizing-button-padding-vert-l: calc(var(--button-padding-vert-l)*1px);
+
+  /*calc(var(--card-radius)*1px);
   calc(var(--card-padding)*1px);
   
   calc(var(--sizing-grid-cols)*1px);*/

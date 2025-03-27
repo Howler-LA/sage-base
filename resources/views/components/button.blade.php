@@ -4,7 +4,6 @@
   'tag'     => 'button',
   'format'  => 'primary',
   'style'   => 'solid',
-  'size'    => 'lg'
 ])
 
 @php($format_class = match ($format) {
@@ -13,8 +12,8 @@
 })
 
 @php($style_class = match ($style) {
-  'solid'     => 'bg-[var(--button-color-btn-bg)] text-[var(--button-color-btn-txt)]',
-  'outline'   => 'ring-2 ring-[var(--button-color-btn-bg)] text-[var(--button-color-btn-bg)]',
+  'solid'     => 'bg-button text-button-foreground',
+  'outline'   => 'ring-2 ring-button text-button',
 })
 
 <{{ $attributes->has(['href']) ? 'a' : 'button' }} 
@@ -24,17 +23,17 @@
     'font-semibold',
     '!no-underline',
     'transition ease duration-200',
-    'rounded-[calc((var(--button-radius))*1px)]',
-    'ring-2 ring-[var(--button-color-btn-bg)] bg-[var(--button-color-btn-bg)] text-[var(--button-color-btn-txt)]' => $style == 'solid',
-    'hover:bg-[var(--button-color-btn-txt)] hover:ring-2 ring-[var(--button-color-btn-bg)] hover:text-[var(--button-color-btn-bg)]' => $style == 'solid',
-    'ring-2 ring-[var(--button-color-btn-bg)] text-[var(--button-color-btn-bg)]' => $style == 'outline',
-    'hover:bg-[var(--button-color-btn-bg)] hover:text-[var(--button-color-btn-txt)]' => $style == 'outline',
+    'rounded-button',
+    'ring-2 ring-button bg-button text-button-foreground' => $style == 'solid',
+    'hover:bg-button-foreground hover:ring-2 ring-button hover:text-button' => $style == 'solid',
+    'ring-2 ring-button text-button' => $style == 'outline',
+    'hover:bg-button hover:text-button-foreground' => $style == 'outline',
   ]) }}
 >
   <span
     @class([
-      'text-body-1 leading-[130%]' => $size == 'lg',
-      'text-body-2 leading-[130%]' => $size == 'sm',
+      'text-body-1 leading-[130%]' => $format == 'primary',
+      'text-body-2 leading-[130%]' => $format == 'small',
     ])
   >
     {!! $label ?? $slot !!}
