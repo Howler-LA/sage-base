@@ -12,7 +12,7 @@ class Block_Hero extends Partial
      */
     public function fields(): Builder
     {
-        $fields = Builder::make('block__hero');
+        $fields = Builder::make('block__hero',['title'=>'Basic Hero']);
 
         $fields
             ->addFields($this->get(Content::class))

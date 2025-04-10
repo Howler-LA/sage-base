@@ -1,5 +1,17 @@
 @set($columns,1)
-@set($items,count(get_sub_field('cards')))
+
+@php
+  // Here we're counting the number of features, then subtracting from the total number of cards. 
+  // This will allow us to span the features across all columns.
+  $count = 0;
+  foreach(get_sub_field('cards') as $feature){
+    if($feature['featured']){
+      $count++;
+    }
+  }
+@endphp
+
+@set($items,count(get_sub_field('cards'))-$count)
 
 <x-section data-theme="{{ $config['block']['theme'] }}">
   <x-container 
@@ -23,7 +35,8 @@
         ])
       >
         @foreach(get_sub_field('cards') as $key => $card)
-          <x-card.image 
+          <x-card.image
+            featured="{!! $card['featured'] !!}"
             {{-- data-theme="{{ $config['cards']['theme'] }}" --}}
             items="{{ $items }}"
             eyebrow="{!! $card['eyebrow'] !!}"

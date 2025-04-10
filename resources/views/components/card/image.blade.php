@@ -11,24 +11,26 @@
   'links'     => null,
   'image'     => null,
   'variant'   => null,
+  'featured'  => null,
 ])
 
 <x-card 
   @class([
     // 'border border-foreground/50' => $config['block']['theme'] === $config['cards']['theme'],
-    'grid xl:grid-cols-3 gap-gutters' => $items == 1,
-    'space-y-gutters' => $items > 1,
+    'col-span-full' => $featured,
+    'grid xl:grid-cols-3 gap-gutters' => $items == 1 || $featured,
+    'space-y-gutters' => $items > 1 && !$featured,
     'border-b last:border-0 border-foreground/50 py-card-padding first:pt-0 last:pb-0' => $parent === 'block__sticky_content',
   ])
 >
   @if($image)
-    <div @class([ 'xl:col-span-2' => $items == 1 ])>
+    <div @class([ 'xl:col-span-2' => $items == 1 || $featured ])>
       @image($image,'large',['class'=>'w-full h-auto block'])
     </div>
   @endif
   <div
     @class([
-      'xl:py-card-padding xl:justify-center xl:border-y' => $items == 1,
+      'xl:py-card-padding xl:justify-center xl:border-y' => $items == 1 || $featured,
       'flex flex-col items-start',
       'gap-em',
     ])
