@@ -12,7 +12,7 @@ class Block_ImageCards extends Partial
      */
     public function fields(): Builder
     {
-        $fields = Builder::make('block__image_cards');
+        $fields = Builder::make('block__image_cards',['title'=>'Image Cards']);
 
         $fields
             ->addFields($this->get(Content::class))

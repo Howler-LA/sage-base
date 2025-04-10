@@ -12,7 +12,7 @@ class Block_MultiCol extends Partial
      */
     public function fields(): Builder
     {
-        $fields = Builder::make('block__multi_col');
+        $fields = Builder::make('block__multi_col',['title'=>'Multi-col Basic Content']);
 
         $fields
             ->addFields($this->get(Content::class))
@@ -26,6 +26,7 @@ class Block_MultiCol extends Partial
                 ])
                 ->addFile('image')
                 ->addFields($this->get(Content_Links::class))
+                ->addTrueFalse('featured',['instructions'=>'Toggling this will change the apperance of this card to be more prominent'])
             ->endRepeater()
             ->addFields($this->get(Config::class))
         ;

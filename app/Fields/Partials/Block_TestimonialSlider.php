@@ -12,7 +12,7 @@ class Block_TestimonialSlider extends Partial
      */
     public function fields(): Builder
     {
-        $fields = Builder::make('block__testimonial_slider');
+        $fields = Builder::make('block__testimonial_slider',['title'=>'Testimonial Slider']);
 
         $fields
             ->addFields($this->get(Content::class))

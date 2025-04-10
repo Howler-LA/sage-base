@@ -12,7 +12,7 @@ class Block_Gallery extends Partial
      */
     public function fields(): Builder
     {
-        $fields = Builder::make('block__gallery');
+        $fields = Builder::make('block__gallery',['title'=>'Mosaic Image Gallery']);
 
         $fields
             ->addFields($this->get(Content::class))

@@ -12,7 +12,7 @@ class Block_ColorCards extends Partial
      */
     public function fields(): Builder
     {
-        $fields = Builder::make('block__color_cards');
+        $fields = Builder::make('block__color_cards',['title'=>'Color Cards']);
 
         $fields
             ->addFields($this->get(Content::class))

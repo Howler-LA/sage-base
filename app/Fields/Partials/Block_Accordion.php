@@ -12,7 +12,7 @@ class Block_Accordion extends Partial
      */
     public function fields(): Builder
     {
-        $fields = Builder::make('block__accordion');
+        $fields = Builder::make('block__accordion',['title'=>'Accordion-General Pages']);
 
         $fields
             ->addFields($this->get(Content::class))

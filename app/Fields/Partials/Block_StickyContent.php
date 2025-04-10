@@ -12,7 +12,7 @@ class Block_StickyContent extends Partial
      */
     public function fields(): Builder
     {
-        $fields = Builder::make('block__sticky_content');
+        $fields = Builder::make('block__sticky_content',['title'=>'Sticky-50']);
 
         $fields
             ->addFields($this->get(Content::class))
