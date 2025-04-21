@@ -4,9 +4,11 @@
   // Here we're counting the number of features, then subtracting from the total number of cards. 
   // This will allow us to span the features across all columns.
   $count = 0;
-  foreach(get_sub_field('cards') as $feature){
-    if($feature['featured']){
-      $count++;
+  if(get_sub_field('cards')){
+    foreach(get_sub_field('cards') as $feature){
+      if($feature['featured']){
+        $count++;
+      }
     }
   }
 @endphp
