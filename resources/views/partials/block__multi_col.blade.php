@@ -10,10 +10,9 @@
         $count++;
       }
     }
+    $items = count(get_sub_field('cards'))-$count;
   }
 @endphp
-
-@set($items,count(get_sub_field('cards'))-$count)
 
 <x-section data-theme="{{ $config['block']['theme'] }}">
   <x-container 
