@@ -23,10 +23,16 @@
     'gap-[calc((var(--spacing-gutters))*1px)]',
   ]) }}
 >
-  <x-eyebrow content="{!! $eyebrow !!}" />
+  @if($eyebrow )
+    <x-eyebrow content="{!! $eyebrow !!}" />
+  @endif
   <header class="space-y-[calc((var(--spacing-em))*1px)]">
-    <x-display content="{!! $headline !!}" />
-    <x-body content="{!! $copy !!}" />
+    @if($headline)
+      <x-display content="{!! $headline !!}" />
+    @endif
+    @if($copy)
+      <x-body content="{!! $copy !!}" />
+    @endif
   </header>
 </div>
 
