@@ -56,29 +56,31 @@
     <div class="xl:px-xl flex flex-col">
       <x-lockup eyebrow="{!! $content['eyebrow'] !!}"/>
       
-      <div x-ref="swiper" class="swiper w-full border" aria-label="Testimonial Carousel">
-        <div class="swiper-wrapper">
-          @foreach(get_sub_field('cards') as $content)
-            <div class="swiper-slide bg-background max-h-[75dvh]">
-              <div class="grid xl:grid-cols-2">
-                <div class="p-xs xl:p-lg flex flex-col items-center justify-center gap-4 xl:gap-sm text-center">
-                  <x-lucide-quote class="fill-foreground text-background" />
-                  <div class="font-serif font-lighter leading-snug xl:leading-normal text-xl xl:text-4xl">{!! $content['copy'] !!}</div>
-                  <div class="flex flex-col items-center">
-                    <x-eyebrow wrapper="false" content="{!! $content['headline'] !!}" />
-                    <x-lucide-minus />
-                    <x-eyebrow wrapper="false" content="{!! $content['subheadline'] !!}" />
+      @if(get_sub_field('cards'))
+        <div x-ref="swiper" class="swiper w-full border" aria-label="Testimonial Carousel">
+          <div class="swiper-wrapper">
+            @foreach(get_sub_field('cards') as $content)
+              <div class="swiper-slide bg-background max-h-[75dvh]">
+                <div class="grid xl:grid-cols-2">
+                  <div class="p-xs xl:p-lg flex flex-col items-center justify-center gap-4 xl:gap-sm text-center">
+                    <x-lucide-quote class="fill-foreground text-background" />
+                    <div class="font-serif font-lighter leading-snug xl:leading-normal text-xl xl:text-4xl">{!! $content['copy'] !!}</div>
+                    <div class="flex flex-col items-center">
+                      <x-eyebrow wrapper="false" content="{!! $content['headline'] !!}" />
+                      <x-lucide-minus />
+                      <x-eyebrow wrapper="false" content="{!! $content['subheadline'] !!}" />
+                    </div>
+                    <x-button label="Get Involved" />
                   </div>
-                  <x-button label="Get Involved" />
-                </div>
-                <div class="bg-black/10">
-                  <x-media id="{!! $content['image'] !!}" class="w-full h-full object-cover" />
+                  <div class="bg-black/10">
+                    <x-media id="{!! $content['image'] !!}" class="w-full h-full object-cover" />
+                  </div>
                 </div>
               </div>
-            </div>
-          @endforeach
+            @endforeach
+          </div>
         </div>
-      </div>
+      @endif
 
       <div class="flex items-center justify-center gap-4 pt-4 xl:pt-xs">
         <button class="cursor-pointer slides-button-prev"><x-lucide-circle-arrow-left class="size-10 stroke-1" /></button>
