@@ -72,10 +72,12 @@
         'h-full w-full relative',
         'bg-background text-foreground',
         'shadow-2xl' => $content['image'],
-        'p-lg',
+        'p-sm',
       ])
     >
-      <div class="w-full h-full border-2 rounded-lg border-dashed border-pink-400 bg-pink-50"></div>
+      <div class="w-full h-full">
+        {!! $content['embed'] !!}
+      </div>
       @if($config['media']['sticker'])
         <div 
           @class([

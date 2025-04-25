@@ -21,6 +21,12 @@ class Block_DonateForm extends Partial
 
         $fields
             ->removeField('content->links')
+            ->modifyField('content->image', function($fieldsBuilder) {
+                $fieldsBuilder
+                    ->addTextarea('embed',['label'=>'Donation form embed'])
+                ;
+                return $fieldsBuilder;
+            })
             ->modifyField('config->block->theme', function($fieldsBuilder) {
                 $fieldsBuilder
                     ->addTrueFalse('height',[
