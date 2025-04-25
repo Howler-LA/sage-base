@@ -76,7 +76,7 @@
       ])
     >
       <div class="w-full h-full">
-        {!! $content['embed'] !!}
+        {!! $content['embed'] ? $content['embed'] : 'Enter embed code' !!}
       </div>
       @if($config['media']['sticker'])
         <div 
