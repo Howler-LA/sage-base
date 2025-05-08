@@ -12,7 +12,7 @@
   {{-- id="{{ str_replace(' ', '-', strtolower(get_sub_field('content')['headline'])) }}" --}}
   {{ $attributes->class([
     get_row_layout(),
-    'bg-background text-foreground',
+    'bg-background text-foreground overflow-hidden',
     $class,
   ]) }}
 >

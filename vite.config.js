@@ -14,7 +14,7 @@ export default defineConfig({
         'resources/css/editor.css',
         'resources/js/editor.js',
       ],
-      detectTls: 'youthjusticela.test',
+      detectTls: 'youthjustice.test',
       refresh: true,
     }),
 
