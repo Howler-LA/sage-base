@@ -5,7 +5,7 @@
   <div 
     data-theme="{{ $config['block']['theme'] }}" 
     @class([
-      'relative',
+      'relative z-40',
       'flex flex-col justify-center',
       'p-0 xl:p-lg',
       'xl:items-end' => $order == 'right',
@@ -46,6 +46,7 @@
 	  </div>
   </div>
   <div 
+  	data-aos="fade-in"
     @class([
       'p-0',
       '-ml-64',
