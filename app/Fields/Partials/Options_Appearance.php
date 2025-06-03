@@ -31,6 +31,10 @@ class Options_Appearance extends Partial
             ->addGroup('footer',['instructions'=>'Settings for site footer'])
                 ->addText('eyebrow')
                 ->addText('headline')
+                ->addGroup('widget')
+                    ->addText('headline')
+                    ->addLink('link')
+                ->endGroup()
                 ->addFields($this->get(Config_Theme::class))
             ->endGroup()
         ;
