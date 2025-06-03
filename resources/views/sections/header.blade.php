@@ -11,7 +11,15 @@
   <div class="py-6 xl:py-4">
     <x-container class="flex justify-between items-center gap-x-sm xl:gap-x-md">
       <a href="/" class="!no-underline leading-10">
-        <x-type.title title="{!! $siteName !!}" />
+        @unless(get_field('brand','option')['logo'])
+          <x-type.title title="{!! $siteName !!}" />
+        @else
+          <img 
+            src="{{ wp_get_attachment_url(get_field('brand','option')['logo']) }}"
+            title="{!! $siteName !!}"
+            class="h-10 xl:h-auto"
+          />
+        @endunless
       </a>
       <div class="flex items-center justify-end gap-sm">
         <x-menu 
@@ -53,5 +61,4 @@
       class="font-medium text-xl"
     />
   </div>
-
 </header>
