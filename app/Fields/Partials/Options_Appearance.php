@@ -29,6 +29,8 @@ class Options_Appearance extends Partial
                 ->addTrueFalse('sticky',['label'=>'Sticky'])
             ->endGroup()
             ->addGroup('footer',['instructions'=>'Settings for site footer'])
+                ->addText('eyebrow')
+                ->addText('headline')
                 ->addFields($this->get(Config_Theme::class))
             ->endGroup()
         ;

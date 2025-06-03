@@ -3,8 +3,12 @@
   data-theme="{{ $footer['theme'] }}" 
 >
   <x-container class="flex flex-col gap-sm items-start">
-    <x-type.eyebrow title="Eyebrow Content" />
-    <x-type.headline title="Simple footer headline" />
+    @if($footer['eyebrow'])
+      <x-eyebrow content="{!! $footer['eyebrow'] !!}" />
+    @endif
+    @if($footer['headline'])
+      <x-display content="{!! $footer['headline'] !!}" />
+    @endif
     <div class="grid grid-cols-1 xl:grid-cols-2 xl:grid-cols-4 gap-y-xs gap-x-sm sm:gap-x-md xl:gap-y-sm xl:gap-y-lg xl:pb-lg">
       <x-footer 
         {{-- class="flex flex-col xl:grid-cols-2 xl:col-span-2 xl:col-span-3 grid grid-cols-1 xl:grid-cols-2 xl:grid-cols-3 gap-y-xs gap-x-sm xl:gap-y-sm xl:gap-y-lg" --}}
