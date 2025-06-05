@@ -21,31 +21,43 @@
           />
         @endunless
       </a>
-      <div class="flex items-center justify-end gap-sm">
+      <div class="flex flex-col">
+        <div class="flex justify-end border-b border-foreground pb-4">
+          @if($header['links'])
+            <div class="hidden xl:flex gap-min">
+              @foreach($header['links'] as $link)
+                <a 
+                  href=""
+                  @class([
+                    'px-2 py-1',
+                    'rounded-md',
+                    'bg-foreground text-background'
+                  ])
+                >
+                  {{ $link['link']['title'] }}
+                </a>
+                {{-- <x-button
+                  format="{{ $link['config']['format'] }}"
+                  style="{{ $link['config']['style'] }}"
+                  target="{{ $link['link']['target'] }}"
+                  href="{{ $link['link']['url'] }}"
+                  label="{{ $link['link']['title'] }}"
+                /> --}}
+              @endforeach
+            </div>
+          @endif
+          <button 
+            @click="open=!open"
+            :class="open ? 'bg-foreground text-background' : ''"
+            class="h-xs xl:h-sm px-3 xl:px-4 cursor-pointer rounded border flex xl:hidden items-center justify-center"
+          >
+            <span class="font-medium text-sm" x-text="open ? 'Close': 'Menu' "></span>
+          </button>
+        </div>
         <x-menu 
           name="primary_navigation" 
           class="font-semibold text-body-2 hidden xl:flex"
         />
-        @if($header['links'])
-          <div class="hidden xl:flex gap-min">
-            @foreach($header['links'] as $link)
-              <x-button
-                format="{{ $link['config']['format'] }}"
-                style="{{ $link['config']['style'] }}"
-                target="{{ $link['link']['target'] }}"
-                href="{{ $link['link']['url'] }}"
-                label="{{ $link['link']['title'] }}"
-              />
-            @endforeach
-          </div>
-        @endif
-        <button 
-          @click="open=!open"
-          :class="open ? 'bg-foreground text-background' : ''"
-          class="h-xs xl:h-sm px-3 xl:px-4 cursor-pointer rounded border flex xl:hidden items-center justify-center"
-        >
-          <span class="font-medium text-sm" x-text="open ? 'Close': 'Menu' "></span>
-        </button>
       </div>
     </x-container>
   </div>
