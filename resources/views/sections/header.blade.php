@@ -22,27 +22,18 @@
         @endunless
       </a>
       <div class="flex flex-col">
-        <div class="flex justify-end border-b border-foreground pb-4">
+        <div class="flex justify-end border-b border-foreground pb-4 gap-4">
+          <x-upper-menu name="secondary_navigation" class="flex items-center gap-4" />
           @if($header['links'])
             <div class="hidden xl:flex gap-min">
               @foreach($header['links'] as $link)
-                <a 
-                  href=""
-                  @class([
-                    'px-2 py-1',
-                    'rounded-md',
-                    'bg-foreground text-background'
-                  ])
-                >
-                  {{ $link['link']['title'] }}
-                </a>
-                {{-- <x-button
+                <x-button
                   format="{{ $link['config']['format'] }}"
                   style="{{ $link['config']['style'] }}"
                   target="{{ $link['link']['target'] }}"
                   href="{{ $link['link']['url'] }}"
                   label="{{ $link['link']['title'] }}"
-                /> --}}
+                />
               @endforeach
             </div>
           @endif

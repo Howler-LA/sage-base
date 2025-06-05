@@ -28,6 +28,7 @@ class Content_Links extends Partial
                         'choices' => [ 
                             'primary'   => 'Default', 
                             'small'     => 'Small', 
+                            'tiny'      => 'Tiny',
                             'link'      => 'Link'
                         ]
                     ])

@@ -7,8 +7,9 @@
 ])
 
 @php($format_class = match ($format) {
-  'primary'  => 'px-button-padding-horiz-l py-button-padding-vert-l',
-  'small'    => 'px-button-padding-horiz-s py-button-padding-vert-s',
+  'primary'  => 'px-button-padding-horiz-l py-button-padding-vert-l rounded-button',
+  'small'    => 'px-button-padding-horiz-s py-button-padding-vert-s rounded-button',
+  'tiny'     => 'px-[10px] py-[10px] rounded-[8px]'
 })
 
 @php($style_class = match ($style) {
@@ -23,7 +24,6 @@
     'font-semibold',
     '!no-underline',
     'transition ease duration-200',
-    'rounded-button',
     'ring-2 ring-button bg-button text-button-foreground' => $style == 'solid',
     'hover:bg-button-foreground hover:ring-2 ring-button hover:text-button' => $style == 'solid',
     'ring-2 ring-button text-button' => $style == 'outline',
@@ -34,6 +34,7 @@
     @class([
       'text-body-1 leading-[130%]' => $format == 'primary',
       'text-body-2 leading-[130%]' => $format == 'small',
+      'text-[12px] leading-[12px] uppercase font-semibold tracking-wide' => $format == 'tiny',
     ])
   >
     {!! $label ?? $slot !!}
