@@ -23,7 +23,7 @@
     'gap-[calc((var(--spacing-gutters))*1px)]',
   ]) }}
 >
-  @if($eyebrow )
+  @if($eyebrow)
     <x-eyebrow content="{!! $eyebrow !!}" />
   @endif
   <header class="space-y-[calc((var(--spacing-em))*1px)]">

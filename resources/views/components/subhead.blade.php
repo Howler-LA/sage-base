@@ -8,12 +8,14 @@
   '2' => 'text-subhead leading-subhead',
 })
 
-<div 
-  {{ $attributes->class([
-    $class,
-    'tracking-[-1%]',
-    'font-extrabold',
-  ]) }}
->
-  {!! $content ?? $slot !!}
-</div>
+@if($slot->isNotEmpty() or $content != null)
+  <div 
+    {{ $attributes->class([
+      $class,
+      'tracking-[-1%]',
+      'font-extrabold',
+    ]) }}
+  >
+    {!! $content ?? $slot !!}
+  </div>
+@endif

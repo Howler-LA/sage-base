@@ -26,6 +26,7 @@ class Block_ImageCards extends Partial
                 ])
                 ->addFile('image')
                 ->addFields($this->get(Content_Links::class))
+                ->addTrueFalse('featured',['instructions'=>'Toggling this will change the apperance of this card to be more prominent'])
             ->endRepeater()
             ->addFields($this->get(Config::class))
         ;

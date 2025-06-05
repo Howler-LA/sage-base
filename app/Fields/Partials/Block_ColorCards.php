@@ -25,6 +25,7 @@ class Block_ColorCards extends Partial
                     'new_lines' => 'wpautop'
                 ])
                 ->addFields($this->get(Content_Links::class))
+                ->addTrueFalse('featured',['instructions'=>'Toggling this will change the apperance of this card to be more prominent'])
             ->endRepeater()
             ->addFields($this->get(Config::class))
         ;

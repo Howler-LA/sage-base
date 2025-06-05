@@ -4,5 +4,7 @@
   'class' => 'w-full h-auto block'
 ])
 
-@image($id,$size,['class'=>$class])
+@if($id)
+  @image($id,$size,['class'=>$class])
+@endif
 

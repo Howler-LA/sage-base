@@ -24,6 +24,7 @@ class Config_Block extends Partial
                 ],
                 'default_value' => 'light'
             ])
+            ->addImage('background_image')
         ;
 
         return $fields;

@@ -9,13 +9,20 @@
 })
 
 <section
-  {{-- id="{{ str_replace(' ', '-', strtolower(get_sub_field('content')['headline'])) }}" --}}
   {{ $attributes->class([
     get_row_layout(),
     'bg-background text-foreground overflow-hidden',
+    'relative',
     $class,
   ]) }}
 >
-  {!! $slot !!}
+  @if(get_sub_field('config')['block']['background_image'])
+    <div class="absolute inset-0">
+      @image(get_sub_field('config')['block']['background_image'],'full',['class'=>'w-full h-full object-cover'])
+    </div>
+  @endif
+  <div class="relative">
+    {!! $slot !!}
+  </div>
 </section>
 

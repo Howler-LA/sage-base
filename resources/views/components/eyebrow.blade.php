@@ -8,15 +8,17 @@
   'false' => '',
 })
 
-<div 
-  {{ $attributes->class([
-    $class,
-    'font-eyebrow',
-    'tracking-wider',
-    'uppercase',
-    'font-medium',
-    'py-min px-3 rounded text-eyebrow-foreground leading-eyebrow' => $wrapper == "true",
-  ]) }}
->
-  <span>{!! $content ?? $slot !!}</span>
-</div>
+@if($slot->isNotEmpty() or $content != null)
+  <div 
+    {{ $attributes->class([
+      $class,
+      'font-eyebrow',
+      'tracking-wider',
+      'uppercase',
+      'font-medium',
+      'py-min px-3 rounded text-eyebrow-foreground leading-eyebrow' => $wrapper == "true",
+    ]) }}
+  >
+    <span>{!! $content ?? $slot !!}</span>
+  </div>
+@endif

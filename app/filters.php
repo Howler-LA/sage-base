@@ -33,7 +33,7 @@ function my_acf_fields_flexible_content_layout_title( $title, $field, $layout, $
   // load text sub field
   $sub_field = get_sub_field('content');
   if (isset($sub_field['headline']) && $sub_field['headline']) {
-    $new_title .= '<span>' . esc_html($sub_field['headline']) . '</span>';
+    $new_title .= '<span style="font-weight:bold">'.$title.'</span> <span>— ' . esc_html($sub_field['headline']) . '</span>';
   } else {
     $new_title = $title; // Fallback to the default
   }
