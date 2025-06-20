@@ -12,6 +12,7 @@
   'image'     => null,
   'variant'   => null,
   'featured'  => null,
+  'columns'   => null,
 ])
 
 <x-card 
@@ -37,8 +38,8 @@
   > 
     <x-eyebrow wrapper="false" content="{{ $eyebrow }}" />
     <header class="space-y-em">
-      <x-title content="{{ $title }}" />
-      <x-body size="2" content="{!! $copy !!}" />
+      <x-title size="1" content="{{ $title }}" />
+      <x-body size="{{ $columns >= 4 ? '2' : '1' }}" content="{!! $copy !!}" />
     </header>
     @if($links)
       <div class="flex flex-col xl:flex-row gap-min">

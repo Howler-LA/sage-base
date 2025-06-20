@@ -16,11 +16,11 @@
     $class,
   ]) }}
 >
-  @if(get_sub_field('config')['block']['background_image'])
+  {{-- @if(get_sub_field('config')['block']['background_image'])
     <div class="absolute inset-0">
       @image(get_sub_field('config')['block']['background_image'],'full',['class'=>'w-full h-full object-cover'])
     </div>
-  @endif
+  @endif --}}
   <div class="relative">
     {!! $slot !!}
   </div>

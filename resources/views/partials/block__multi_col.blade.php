@@ -37,6 +37,8 @@
       >
         @foreach(get_sub_field('cards') as $key => $card)
           <x-card.image
+            :card="$card"
+            columns="{{ $columns }}"
             featured="{!! $card['featured'] !!}"
             {{-- data-theme="{{ $config['cards']['theme'] }}" --}}
             items="{{ $items }}"

@@ -51,7 +51,9 @@
         ])
       >
         @foreach($content['links'] as $key => $link)
-          <x-button 
+          <x-button
+            :link="$link['link']"
+            :config="$link['config']"
             href="{{ $link['link']['url'] }}"
             style="{{ $link['config']['style'] }}"
             format="{{ $link['config']['format'] }}"

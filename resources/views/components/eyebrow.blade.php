@@ -16,7 +16,7 @@
       'tracking-wider',
       'uppercase',
       'font-medium',
-      'py-min px-3 rounded text-eyebrow-foreground leading-eyebrow' => $wrapper == "true",
+      'py-min px-3 rounded-full text-eyebrow-foreground leading-eyebrow' => $wrapper == "true",
     ]) }}
   >
     <span>{!! $content ?? $slot !!}</span>

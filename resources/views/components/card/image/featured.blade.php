@@ -14,7 +14,7 @@
   ]) }}
 	data-theme="{{ $config['cards']['theme'] }}"
 >
-	<x-image id="{{ $card['image'] }}" size="large" class="w-full h-auto block" />
+	<x-image id="{{ $card['image'] }}" size="large" class="w-full h-full object-cover block" />
   <div 
   	@class([
   		'gap-sm',
@@ -29,7 +29,7 @@
     @if($card['links'])
       <div class="flex space-x-min">
         @foreach($card['links'] as $link)
-          <x-button 
+          <x-button
             href="{{ $link['link']['url'] }}"
             style="{{ $link['config']['style'] }}"
             format="{{ $link['config']['format'] }}"
