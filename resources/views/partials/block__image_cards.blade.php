@@ -33,11 +33,13 @@
             <x-card.image.default 
               :card="$card"
               :config="$config" 
+              items="{{ $items }}"
             />
           @else
             <x-card.image.featured 
               :card="$card"
               :config="$config" 
+              items="{{ $items }}"
             />
           @endunless
         @endforeach

@@ -1,6 +1,7 @@
 @props([
   'config',
   'card',
+  'items' => null,
 ])
 
 <div 
@@ -24,7 +25,7 @@
   > 
     <x-eyebrow content="{{ $card['eyebrow'] }}" />
     <header class="space-y-[calc((var(--spacing-em))*1px)]">
-      <x-subhead content="{{ $card['headline'] }}" />
+      <x-title content="{{ $card['headline'] }}" />
       <x-body size="2" content="{!! $card['copy'] !!}" />
     </header>
     @if($card['links'])
