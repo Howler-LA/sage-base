@@ -39,6 +39,13 @@
   --text-eyebrow: calc( var(--font-size-eyebrow) * 1px);
   --text-body-1: calc( var(--font-size-body-1) * 1px);
   --text-body-2: calc( var(--font-size-body-2) * 1px);
+  --text-small-text: calc(var(--font-size-small-text)*1px);
+  --text-meta-text: calc(var(--font-size-meta-text)*1px);
+  --text-pullquote-xl: calc(var(--font-size-pullquote-xl)*1px);
+  --text-pullquote-lg: calc(var(--font-size-pullquote-lg)*1px);
+  --text-pullquote-sm: calc(var(--font-size-pullquote-sm)*1px);
+  --text-editorial-intro: calc(var(--font-size-editorial-intro)*1px);
+  --text-editorial-body: calc(var(--font-size-editorial-body)*1px);
 
   /* 
     Line Height
@@ -52,6 +59,13 @@
   --leading-eyebrow: calc( var(--line-height-eyebrow-lh) * 1px);
   --leading-body-1: calc( var(--line-height-body-1-lh) * 1px);
   --leading-body-2: calc( var(--line-height-body-2-lh) * 1px);
+  --leading-small-text: calc(var(--line-height-small-text-lh)*1px);
+  --leading-meta-text: calc(var(--line-height-meta-text-lh)*1px);
+  --leading-pullquote-xl: calc(var(--line-height-pullquote-xl-lh)*1px);
+  --leading-pullquote-lg: calc(var(--line-height-pullquote-lg-lh)*1px);
+  --leading-pullquote-sm: calc(var(--line-height-pullquote-sm-lh)*1px);
+  --leading-editorial-intro: calc(var(--line-height-editorial-intro-lh)*1px);
+  --leading-editorial-body: calc(var(--line-height-editorial-body-lh)*1px);   
 
   /*
     Sizing

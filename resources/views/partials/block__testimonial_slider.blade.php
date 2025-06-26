@@ -57,18 +57,18 @@
       <x-lockup eyebrow="{!! $content['eyebrow'] !!}"/>
       
       @if(get_sub_field('cards'))
-        <div x-ref="swiper" class="swiper w-full border" aria-label="Testimonial Carousel">
+        <div x-ref="swiper" class="swiper w-full border rounded-card-radius" aria-label="Testimonial Carousel">
           <div class="swiper-wrapper">
             @foreach(get_sub_field('cards') as $content)
               <div class="swiper-slide bg-background max-h-[75dvh]">
                 <div class="grid grid-cols-1 xl:grid-cols-2">
                   <div class="p-sm xl:p-lg flex flex-col items-center justify-center gap-em xl:gap-sm text-center">
                     <x-lucide-quote class="fill-foreground text-background" />
-                    <div class="font-serif font-lighter leading-snug xl:leading-normal text-xl xl:text-4xl">{!! $content['copy'] !!}</div>
+                    <x-pull-quote>{!! $content['copy'] !!}</x-pull-quote>
                     <div class="flex flex-col items-center">
-                      <x-eyebrow wrapper="false" content="{!! $content['headline'] !!}" />
-                      <x-lucide-minus />
-                      <x-eyebrow wrapper="false" content="{!! $content['subheadline'] !!}" />
+                      <x-meta-text>{!! $content['headline'] !!}</x-meta-text>
+                      <x-lucide-minus class="rotate-90" />
+                      <x-meta-text>{!! $content['subheadline'] !!}</x-meta-text>
                     </div>
                     <x-button label="Get Involved" />
                   </div>
