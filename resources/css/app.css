@@ -6,10 +6,18 @@
 @source "../views/";
 @source "../../app/";
 
-a:where(:not(.wp-element-button)) {
-  text-decoration: none;
+@layer base {
+  html,body {
+    @apply antialiased;
+    @apply bg-background text-foreground;
+  }
+  a:where(:not(.wp-element-button)) {
+    @apply !no-underline;
+  }
+  /** {
+    @apply border-border;
+  }*/
 }
-
 
 @theme inline {
 

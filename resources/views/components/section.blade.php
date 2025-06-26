@@ -4,14 +4,15 @@
 ])
 
 @php($class = match ($padding) {
+  'none'  => 'py-0',
   'xl'    => 'py-xl',
   default => 'py-lg',
 })
 
 <section
-  {{ $attributes->class([
+  {{ $attributes->twMerge([
     get_row_layout(),
-    'bg-background text-foreground overflow-hidden',
+    'bg-background text-foreground',
     'relative',
     $class,
   ]) }}

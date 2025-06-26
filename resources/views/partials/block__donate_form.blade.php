@@ -4,90 +4,71 @@
 
 <x-section 
   data-theme="{{ $config['block']['theme'] }}"
-  @class([
-    'relative',
-    'grid xl:grid-cols-2',
-    '!py-0',
-    'bg-black' => $fullImage,
-  ])
+  padding="none"
 >
   @if($fullImage)
     <div class="absolute inset-0 opacity-50">
-      <x-media 
-        id="{{ $content['image'] }}" 
-        class="w-full h-full object-cover" 
-      />
+      @image($content['image'],'large',['alt'=>' ', 'class'=>'w-full h-full object-cover inset-0'])
     </div>
   @endif
-
-  <div 
-    data-theme="{{ $config['block']['theme'] }}" 
+  <div
     @class([
-      'relative',
-      'flex flex-col justify-center items-end',
-      'p-lg',
-      'max-w-browser mx-auto',
-      'xl:max-w-none xl:mx-0', 
+      'grid',
+      'grid-cols-1 xl:grid-cols-2',
+      'relative'
     ])
   >
-    <x-lockup
-      @class([
-        'xl:w-full',
-        'xl:max-w-[calc(calc(calc(var(--sizing-browser-width)*.5)-calc(var(--spacing-large)*2))*1px)]'
-      ])
-      eyebrow="{!! $content['eyebrow'] !!}"
-      headline="{!! $content['headline'] !!}"
-      copy="{!! $content['copy'] !!}"
-    />
-  </div>
-  <div 
-    data-theme="{{ $config['media']['theme'] }}" 
-    @class([
-      'relative',
-      'bg-pink-50/50' => !$content['image'],
-      'xl:min-h-[calc(100vh-136px)]' => $config['block']['height'],
-      'min-h-[calc(60vh-136px)]' => !$config['block']['height'],
-      'flex flex-col justify-center relative',
-      'xl:p-0' => $width == 'full',
-      'xl:p-xl' => $width == 'narrow',
-      'xl:p-lg' => $width == 'wide',
-      'bg-background text-foreground' => !$content['image'],
-      'bg-black' => $halfImage,
-      'w-full max-w-browser mx-auto',
-      'xl:max-w-none xl:mx-0', 
-    ])
-  >
-    @if($halfImage)
-      <div class="absolute inset-0 opacity-75">
-        <x-media 
-          id="{{ $content['image'] }}" 
-          class="w-full h-full object-cover" 
+    <div 
+      data-theme="{{ $config['block']['theme'] }}" 
+      class="flex flex-col justify-center items-end"
+    >
+      <div
+        @class([
+          'w-full',
+          'lg:max-w-[calc(var(--spacing-browser)*0.5)]',
+          'px-[calc((var(--margins-small))*1px)]',
+        ])
+      >
+        <x-lockup
+          eyebrow="{!! $content['eyebrow'] !!}"
+          headline="{!! $content['headline'] !!}"
+          copy="{!! $content['copy'] !!}"
         />
       </div>
-    @endif
+    </div>
     <div 
-      data-theme="light"
+      data-theme="{{ $config['media']['theme'] }}" 
       @class([
-        'rounded-card-radius',
-        'h-full w-full relative',
-        'bg-background text-foreground',
-        'shadow-2xl' => $content['image'],
-        'p-sm',
+        'relative',
+        'h-[50vh]' => !$content['embed'],
+        'bg-pink-200' => !$halfImage && !$content['embed'],
+        'bg-black' => $halfImage,
+        'xl:p-lg' => $width == 'wide',
       ])
     >
-      <div class="w-full h-full">
-        {!! $content['embed'] ? $content['embed'] : 'Enter embed code' !!}
-      </div>
-      @if($config['media']['sticker'])
-        <div 
-          @class([
-            'absolute right-0 top-0 translate-x-1/3 -translate-y-1/3',
-            'size-lg xl:size-xl xl:size-xl',
-          ])
-        >
-          @image($config['media']['sticker'],'large',['class'=>'w-full h-auto block opacity-95'])
+      @if($halfImage)
+        <div class="absolute inset-0 opacity-75">
+          <x-media 
+            id="{{ $content['image'] }}" 
+            class="w-full h-full object-cover" 
+          />
         </div>
       @endif
+      <div class="inset-0 size-full relative">
+        <div class="w-full h-full bg-white relative">
+          {!! $content['embed'] ? $content['embed'] : 'Enter embed code' !!}
+        </div>
+        @if($config['media']['sticker'])
+          <div 
+            @class([
+              'absolute right-0 top-0 translate-x-1/3 -translate-y-1/3',
+              'size-lg xl:size-xl xl:size-xl',
+            ])
+          >
+            @image($config['media']['sticker'],'large',['class'=>'w-full h-auto block opacity-95'])
+          </div>
+        @endif
+      </div>
     </div>
   </div>
 </x-section>

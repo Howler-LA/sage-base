@@ -33,7 +33,30 @@
         ])
       >
         @foreach(get_sub_field('cards') as $key => $card)
-          <x-card.image
+          <x-item variant="accordion-card">
+            <x-item.content>
+              <x-eyebrow wrapper="false" content="0{{ $loop->iteration }}" />
+              <header class="space-y-em">
+                <x-title size="1" content="{{ $card['headline'] }}" />
+                <x-body size="{{ $columns >= 4 ? '2' : '1' }}" content="{!! $card['copy'] !!}" />
+              </header>
+              @if($card['links'])
+                <x-button.group>
+                  @foreach($card['links'] as $link)
+                  asdfasd
+                    <x-button
+                      style="{{ $link['config']['style'] }}"
+                      format="{{ $link['config']['format'] }}"
+                      href="{{ $link['link']['url'] }}"
+                      label="{{ $link['link']['title'] }}" 
+                      target="{{ $link['link']['target'] }}"
+                    />
+                  @endforeach
+                </x-button.group>
+              @endif
+            </x-item.content>
+          </x-item>
+          {{-- <x-card.image
             items="2"
             parent="{{  get_row_layout() }}"
             image="{!! $card['image'] !!}"
@@ -41,7 +64,7 @@
             title="{!! $card['headline'] !!}"
             copy="{!! $card['copy'] !!}"
             links="{!! json_encode($card['links']) !!}"
-          />
+          /> --}}
         @endforeach
       </div>
     @endif

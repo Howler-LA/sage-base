@@ -17,7 +17,7 @@
 })
 
 <div 
-  {{ $attributes->class([
+  {{ $attributes->twMerge([
     $align_class,
     'flex flex-col',
     'gap-[calc((var(--spacing-gutters))*1px)]',

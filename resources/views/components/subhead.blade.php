@@ -12,6 +12,7 @@
   <div 
     {{ $attributes->class([
       $class,
+      'text-balance',
       'tracking-[-1%]',
       'font-extrabold',
     ]) }}
