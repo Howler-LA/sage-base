@@ -19,6 +19,7 @@ class Block_ImageCards extends Partial
             ->addRepeater('cards',['collapsed'=>'headline'])
                 ->addText('eyebrow')
                 ->addText('headline')
+                ->addText('subheadline')
                 ->addTextarea('copy',[
                     'rows'      => 3,
                     'maxlength' => 250,

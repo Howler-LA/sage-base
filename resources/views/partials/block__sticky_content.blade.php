@@ -43,7 +43,6 @@
               @if($card['links'])
                 <x-button.group>
                   @foreach($card['links'] as $link)
-                  asdfasd
                     <x-button
                       style="{{ $link['config']['style'] }}"
                       format="{{ $link['config']['format'] }}"
@@ -56,15 +55,6 @@
               @endif
             </x-item.content>
           </x-item>
-          {{-- <x-card.image
-            items="2"
-            parent="{{  get_row_layout() }}"
-            image="{!! $card['image'] !!}"
-            eyebrow="0{{ $key }}"
-            title="{!! $card['headline'] !!}"
-            copy="{!! $card['copy'] !!}"
-            links="{!! json_encode($card['links']) !!}"
-          /> --}}
         @endforeach
       </div>
     @endif

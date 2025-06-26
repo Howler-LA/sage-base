@@ -29,19 +29,32 @@
         ])
       >
         @foreach(get_sub_field('cards') as $key => $card)
-          @unless($card['featured'])
-            <x-card.image.default 
-              :card="$card"
-              :config="$config" 
-              items="{{ $items }}"
-            />
-          @else
-            <x-card.image.featured 
-              :card="$card"
-              :config="$config" 
-              items="{{ $items }}"
-            />
-          @endunless
+          <x-item layout="{{ $card['featured'] ? 'featured' : '' }}">
+            @image($card['image'],'large',['class'=>'w-full h-auto block'])
+            <x-item.content>
+              <x-eyebrow content="{!! $card['eyebrow'] !!}" />
+              <div class="flex flex-col gap-min">
+                <x-title content="{!! $card['headline'] !!}" />
+                <x-body size="2" class="font-bold" content="{!! $card['subheadline'] !!}" />
+              </div>
+              <x-body size="{{ $items >= 4 ? '2' : '1' }}" content="{!! $card['copy'] !!}" />
+              @if($card['links'])
+                <x-card.footer>
+                  <x-button.group>
+                    @foreach($card['links'] as $link)
+                      <x-button 
+                        title="{!! $link['link']['title'] !!}"
+                        target="{!! $link['link']['target'] !!}"
+                        href="{!! $link['link']['url'] !!}"
+                      >
+                        {!! $link['link']['title'] !!}
+                      </x-button>
+                    @endforeach
+                  </x-button.group>
+                </x-card.footer>
+              @endif
+            </x-item.content>
+          </x-item>
         @endforeach
       </div>
     @endif
@@ -54,8 +67,6 @@
       >
         @foreach($content['links'] as $key => $link)
           <x-button
-            :link="$link['link']"
-            :config="$link['config']"
             href="{{ $link['link']['url'] }}"
             style="{{ $link['config']['style'] }}"
             format="{{ $link['config']['format'] }}"
