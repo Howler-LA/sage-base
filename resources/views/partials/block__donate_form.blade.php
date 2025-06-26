@@ -4,7 +4,6 @@
 
 <x-section 
   data-theme="{{ $config['block']['theme'] }}"
-  padding="none"
 >
   @if($fullImage)
     <div class="absolute inset-0 opacity-50">
@@ -14,7 +13,7 @@
   <div
     @class([
       'grid',
-      'grid-cols-1 xl:grid-cols-2',
+      'grid-cols-1 xl:grid-cols-2 gap-md',
       'relative'
     ])
   >

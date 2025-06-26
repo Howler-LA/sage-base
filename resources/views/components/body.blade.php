@@ -10,8 +10,9 @@
 
 @if($slot->isNotEmpty() or $content != null)
   <div 
-    {{ $attributes->class([
-      $class
+    {{ $attributes->twMerge([
+      $class,
+      'text-balance'
     ]) }}
   >
     {!! $content ?? $slot !!}

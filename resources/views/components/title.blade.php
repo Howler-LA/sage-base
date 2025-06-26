@@ -13,6 +13,7 @@
     $class,
     'tracking-[-1%]',
     'font-extrabold',
+    'text-balance'
   ]) }}
 >
   {!! $content ?? $slot !!}

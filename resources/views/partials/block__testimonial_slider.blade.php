@@ -61,8 +61,8 @@
           <div class="swiper-wrapper">
             @foreach(get_sub_field('cards') as $content)
               <div class="swiper-slide bg-background max-h-[75dvh]">
-                <div class="grid xl:grid-cols-2">
-                  <div class="p-xs xl:p-lg flex flex-col items-center justify-center gap-4 xl:gap-sm text-center">
+                <div class="grid grid-cols-1 xl:grid-cols-2">
+                  <div class="p-sm xl:p-lg flex flex-col items-center justify-center gap-em xl:gap-sm text-center">
                     <x-lucide-quote class="fill-foreground text-background" />
                     <div class="font-serif font-lighter leading-snug xl:leading-normal text-xl xl:text-4xl">{!! $content['copy'] !!}</div>
                     <div class="flex flex-col items-center">

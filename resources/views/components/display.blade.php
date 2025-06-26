@@ -13,6 +13,7 @@
     $class,
     'tracking-tight',
     'font-extrabold',
+    'text-balance'
   ]) }}
 >
   {!! $content ?? $slot !!}

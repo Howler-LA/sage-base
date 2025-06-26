@@ -8,7 +8,7 @@
 	'news-card' 			=> 'bg-news-card-background hover:bg-news-card-background-hover',
 	'accordion-card' 	=> 'py-md first:pt-0 bg-background text-foreground border-b',
   'featured' 				=> 'grid xl:grid-cols-2 xl:col-span-full',
-  default 					=> 'border bg-card rounded-lg overflow-hidden',
+  default 					=> 'bg-background text-foreground rounded-lg overflow-hidden',
 })
 
 @php($layout_class = match ($layout) {

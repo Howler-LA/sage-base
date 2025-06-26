@@ -29,8 +29,11 @@
         ])
       >
         @foreach(get_sub_field('cards') as $key => $card)
-          <x-item layout="{{ $card['featured'] ? 'featured' : '' }}">
-            @image($card['image'],'large',['class'=>'w-full h-auto block'])
+          <x-item 
+            data-theme="{{ $config['cards']['theme'] }}"
+            layout="{{ $card['featured'] ? 'featured' : '' }}"
+          >
+            @image($card['image'],'large',['class'=>'object-cover block aspect-[1440/1300]'])
             <x-item.content>
               <x-eyebrow content="{!! $card['eyebrow'] !!}" />
               <div class="flex flex-col gap-min">
@@ -39,10 +42,12 @@
               </div>
               <x-body size="{{ $items >= 4 ? '2' : '1' }}" content="{!! $card['copy'] !!}" />
               @if($card['links'])
-                <x-card.footer>
+                <x-item.footer>
                   <x-button.group>
                     @foreach($card['links'] as $link)
-                      <x-button 
+                      <x-button
+                        style="{{ $link['config']['style'] }}"
+                        format="{{ $link['config']['format'] }}"
                         title="{!! $link['link']['title'] !!}"
                         target="{!! $link['link']['target'] !!}"
                         href="{!! $link['link']['url'] !!}"
@@ -51,7 +56,7 @@
                       </x-button>
                     @endforeach
                   </x-button.group>
-                </x-card.footer>
+                </x-item.footer>
               @endif
             </x-item.content>
           </x-item>

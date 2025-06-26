@@ -36,18 +36,19 @@
         ])
       >
         @foreach(get_sub_field('cards') as $key => $card)
-          <x-card.image
-            :card="$card"
-            columns="{{ $columns }}"
-            featured="{!! $card['featured'] !!}"
-            {{-- data-theme="{{ $config['cards']['theme'] }}" --}}
-            items="{{ $items }}"
-            eyebrow="{!! $card['eyebrow'] !!}"
-            image="{!! $card['image'] !!}"
-            title="{!! $card['headline'] !!}"
-            copy="{!! $card['copy'] !!}"
-            links="{!! json_encode($card['links']) !!}"
-          />
+          <x-item variant="color-card">
+            @image($card['image'],'large',['class'=>'w-full h-auto'])
+            <div
+              @class([
+                'flex flex-col items-start gap-em',
+                'py-card-padding' => $card['image']
+              ])
+            >
+              <x-eyebrow wrapper="false" content="{!! $card['eyebrow'] !!}" />
+              <x-body class="font-bold" size="1" content="{!! $card['headline'] !!}" />
+              <x-body size="1" content="{!! $card['copy'] !!}" />
+            </div>
+          </x-item>
         @endforeach
       </div>
     @endif
