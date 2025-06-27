@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Fields\Partials;
+
+use Log1x\AcfComposer\Builder;
+use Log1x\AcfComposer\Partial;
+
+class Content extends Partial
+{
+    /**
+     * The partial field group.
+     */
+    public function fields(): Builder
+    {
+        $fields = Builder::make('content');
+
+        $fields
+            ->addGroup('content')
+                ->addFields($this->get(ContentGuts::class))
+            ->endGroup();
+
+        return $fields;
+    }
+}

@@ -1,0 +1,130 @@
+@import "tailwindcss" theme(static);
+@source "../views/";
+@source "../../app/";
+
+@layer base {
+	html,body {
+		@apply antialiased;
+    @apply bg-background text-foreground;
+	}
+	a:where(:not(.wp-element-button)) {
+		@apply !no-underline;
+	}
+	* {
+		@apply border-border;
+	}
+}
+
+:root {
+	--bg-color: var(--color-white);
+	--txt-color: var(--color-stone-800);
+	--border-color: var(--color-stone-200);
+}
+
+[data-theme="Cyan"] {
+	--bg-color: var(--color-cyan-400);
+	--txt-color: var(--color-cyan-900);
+	--border-color: var(--color-cyan-500);
+}
+
+@theme inline {
+
+	--text-body-1: 					calc(var(--font-size-body-1)*1px);
+	--leading-body-2: 			140%;
+	--text-body-2: 					calc(var(--font-size-body-2)*1px);
+	--leading-body-1: 			140%;
+	--tracking-body: 				0%;
+	--font-weight-body: 		400;
+
+	--text-button: 					var(--text-body);
+	--leading-button: 			var(--leading-body);
+	--tracking-button: 			-1%;
+	--font-weight-button: 	600;
+
+	--text-eyebrow: 				13px;
+	--leading-eyebrow: 			100%;
+	--tracking-eyebrow: 		10%;
+	--font-weight-eyebrow: 	600;
+
+	--text-display-1: 			calc(var(--font-size-display-1)*1px);
+	--leading-display-1:		calc(var(--line-height-display-1-lh)*1px);
+	--text-display-2: 			calc(var(--font-size-display-2)*1px);
+	--leading-display-2:		calc(var(--line-height-display-1-lh)*1px);
+	--tracking-display: 		-4%;
+	--font-weight-display: 	900;
+
+	--text-title-1: 				calc(var(--font-size-title-1)*1px);
+	--leading-title-2: 			100%;
+	--text-title-2: 				calc(var(--font-size-title-2)*1px);
+	--leading-title-1: 			100%;
+	--tracking-title: 			-2%;
+	--font-weight-body: 		400;
+
+	--font-eyebrow:    		  var(--eyebrow-font);
+	--font-display:    		  var(--display-font);
+	--font-title:    		  	var(--title-font);
+	--font-subhead:    		  var(--subhead-font);
+	--font-body:       		  var(--body-font);
+	--font-pull-quote: 		  var(--pull-quote-font);
+	--font-meta-text:  		  var(--meta-text-font);
+	--font-button:     		  var(--button-font);
+
+  --spacing-x-large: 			calc(var(--spacing-x-large)*1px);
+  --spacing-large: 				calc(var(--spacing-large)*1px);
+  --spacing-med: 					calc(var(--spacing-med)*1px);
+  --spacing-small: 				calc(var(--spacing-small)*1px);
+  --spacing-em: 					calc(var(--spacing-em)*1px);
+  --spacing-min: 					calc(var(--spacing-min)*1px);
+  --spacing-zero: 				calc(var(--spacing-zero)*1px);
+
+	--spacing-browser: 			calc(var(--sizing-browser-width)*1px);
+	--spacing-browser-half: calc(calc(var(--spacing-browser) * 0.5) - calc(var(--spacing-gutter) * 0.5));
+	--spacing-gutter: 			calc(var(--spacing-gutters)*1px);
+	
+	--radius-card: 					calc(var(--card-radius)*1px);
+  --spacing-card: 				calc(var(--card-padding)*1px);
+
+	--color-background: 		var(--bg-color);
+	--color-foreground: 		var(--txt-color);
+	--color-border: 				var(--border-color);
+
+  --color-eyebrow-background: var(--eyebrow-bg);
+  --color-eyebrow-foreground: var(--eyebrow-txt);	
+
+	--color-btn-background: var(--button-color-btn-bg);
+  --color-btn-foreground: var(--button-color-btn-txt);
+  --color-btn-border: var(--button-color-btn-border);
+  --color-btn-background-hover: var(--button-color-btn-bg-hover);
+  --color-btn-foreground-hover: var(--button-color-btn-txt-hover);
+  --color-btn-border-hover: var(--button-color-btn-border-hover);
+  --color-btn-background-active: var(--button-color-btn-bg-active);
+  --color-btn-outline-active: var(--button-color-btn-outline-bg-active);
+  --color-btn-foreground-active: var(--button-color-btn-txt-active);
+  --color-btn-border-disabled: var(--button-color-btn-border-active);
+  --color-btn-background-disabled: var(--button-color-btn-bg-disabled);
+  --color-btn-foreground-disabled: var(--button-color-btn-txt-disabled);
+  --color-btn-border-disabled: var(--button-color-btn-border-disabled);
+  --color-btn-forder-focus: var(--button-color-btn-border-focus);
+
+  --color-news-card-background: var(--news-card-bg-enabled);
+  --color-news-card-background-hover: var(--news-card-bg-hover);
+  --color-news-card-background-active: var(--news-card-bg-active);
+  --color-news-card-background-hover: var(--news-card-icon-bg-hover);
+  --color-news-card-background: var(--news-card-icon-line-hover);
+  --color-news-card-background: var(--news-card-focus-border);
+  --color-news-card-background: var(--news-card-feat-bg-hover);
+  --color-news-card-background: var(--news-card-feat-bg-active);
+  --color-news-card-background: var(--news-card-feat-txt-hover);
+  --color-news-card-background: var(--news-card-feat-focus-border);
+  
+  --color-grid-background-hover: var(--link-grid-bg-hover);
+  --color-grid-background-active: var(--link-grid-bg-active);
+  --color-grid-border-focus: var(--link-grid-focus-border);
+  
+  --color-color-card-background: var(--color-card-bg-hover);
+  --color-color-card-active: var(--color-card-bg-active);
+  --color-color-card-border-focus: var(--color-card-focus-border);
+
+
+}
+
