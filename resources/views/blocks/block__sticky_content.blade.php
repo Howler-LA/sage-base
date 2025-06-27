@@ -1,6 +1,6 @@
 <x-section data-theme="{{ $config['block']['themes'] }}">
-  <x-columns columns="2">
-    <x-columns.column class="h-full">
+  <x-columns gutter="zero" columns="2">
+    <x-columns.column>
       <div class="sticky top-large">
         <x-columns.contained>
           <div class="space-y-small">

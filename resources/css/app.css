@@ -79,7 +79,7 @@
   --spacing-zero: 				calc(var(--spacing-zero)*1px);
 
 	--spacing-browser: 			1600px;
-	--spacing-browser-half: calc(calc(var(--spacing-browser) * 0.5) - calc(var(--spacing-gutter) * 0.5));
+	--spacing-browser-half: calc(calc(var(--spacing-browser) * 0.5));
 	--spacing-gutter: 			calc(var(--spacing-gutters)*1px);
 	--spacing-section:			calc(var(--spacing-large)*1px);
 	--spacing-container:		calc(var(--spacing-large)*1px);
