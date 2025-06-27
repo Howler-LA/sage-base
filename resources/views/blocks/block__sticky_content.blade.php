@@ -1,8 +1,8 @@
 <x-section data-theme="{{ $config['block']['themes'] }}">
   <x-columns columns="2">
     <x-columns.column class="h-full">
-      <x-card class="sticky top-large">
-        <x-card.contained>
+      <div class="sticky top-large">
+        <x-columns.contained>
           <div class="space-y-small">
             <x-eyebrow>{{ $content['eyebrow'] }}</x-eyebrow>
             <x-display>{{ $content['headline'] }}</x-display>
@@ -23,8 +23,8 @@
               </x-card.footer>
             @endif
           </div>
-        </x-card.contained>
-      </x-card>
+        </x-columns.contained>
+      </div>
     </x-columns.column>
     <x-columns.column>
       @if(get_sub_field('cards'))

@@ -19,6 +19,33 @@ class Block_ImageText extends Partial
             ->addFields($this->get(Config::class))
         ;
 
+        $fields
+            ->modifyField('config->block', function($fieldsBuilder) {
+                $fieldsBuilder
+                    ->addGroup('media')
+                        ->addButtonGroup('themes')
+                        ->addTrueFalse('reverse',[ 
+                            'label' => 'Reverse Direction',
+                            'default_value' => 1
+                        ])
+                        ->addTrueFalse('scaling',[ 
+                            'label' => 'Fluid Image Scaling',
+                            'default_value' => 1
+                        ])
+                        ->addButtonGroup('image_size',[ 
+                            'choices' => [ 
+                                'full'      => 'Full with', 
+                                'narrow'    => 'Narrow margins',
+                                'wide'      => 'Wide margins', 
+                            ],
+                            'default_value' => 'full'
+                        ])
+                    ->endGroup()
+                ;
+                return $fieldsBuilder;
+            })
+        ;
+
         return $fields;
     }
 }

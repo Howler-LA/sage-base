@@ -1,12 +1,14 @@
-@props([
-  'direction' => 'left'
+@aware([
+  'order' => null
 ])
 
 <div
   @class([
+    'contained',
     'w-full xl:max-w-browser-half',
-    'xl:group-even/column:pr-med group-even/column:mr-auto',
-    'xl:group-odd/column:pl-med group-odd/column:ml-auto',
+    $order ? 'xl:group-odd/column:pr-container' : '',
+    $order ? 'xl:group-odd/column:pl-container' : '',
+    $order ? 'mr-auto' : 'ml-auto p-med xl:p-container'
   ])
 >
   {{ $slot }}

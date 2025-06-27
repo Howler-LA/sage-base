@@ -1,6 +1,14 @@
-<x-section data-theme="White" html="header" class="py-small relative">
+<x-section 
+  data-theme="White" 
+  html="header"
+  @class([
+    'py-small',
+    'sticky z-50',
+    is_user_logged_in() ? 'top-[32px]' : 'top-0'
+  ])
+>
   <x-container>
-    <div class="flex justify-between gap-med items-center">
+    <div class="flex justify-between gap-med items-center bg-pink-100">
       <a href="/">
         <x-title size="1">{{ $siteName }}</x-title>
       </a>

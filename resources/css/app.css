@@ -77,9 +77,11 @@
   --spacing-min: 					calc(var(--spacing-min)*1px);
   --spacing-zero: 				calc(var(--spacing-zero)*1px);
 
-	--spacing-browser: 			calc(var(--sizing-browser-width)*1px);
+	--spacing-browser: 			1600px;
 	--spacing-browser-half: calc(calc(var(--spacing-browser) * 0.5) - calc(var(--spacing-gutter) * 0.5));
 	--spacing-gutter: 			calc(var(--spacing-gutters)*1px);
+	--spacing-section:			calc(var(--spacing-large)*1px);
+	--spacing-container:		calc(var(--spacing-large)*1px);
 	
 	--radius-card: 					calc(var(--card-radius)*1px);
   --spacing-card: 				calc(var(--card-padding)*1px);
