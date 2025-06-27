@@ -1,6 +1,6 @@
 <x-section data-theme="{{ $config['block']['themes'] }}" class="pb-0">
 	<x-section.image />	
-	<x-section.header class="relative">
+	<x-section.header data-aos="fade-in" class="relative">
 		<x-eyebrow>{{ $content['eyebrow'] }}</x-eyebrow>
     <x-super-display>{{ $content['headline'] }}</x-super-display>
     <x-body>{!! $content['copy'] !!}</x-body>
@@ -21,7 +21,7 @@
     @endif
 	</x-section.header>
 	<x-container class="relative">
-		@image($content['image'],'large',['class'=>'w-full h-auto block rounded-t-card', 'alt'=> $content['headline'] ])
+		@image($content['image'],'large',['data-aos-delay' => '100', 'data-aos'=>'fade-up', 'class'=>'w-full h-auto block rounded-t-card', 'alt'=> $content['headline'] ])
 	</x-container>
 </x-section>
 

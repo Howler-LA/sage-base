@@ -2,6 +2,24 @@
 # yarn lockfile v1
 
 
+"@alpinejs/anchor@^3.14.9":
+  version "3.14.9"
+  resolved "https://registry.yarnpkg.com/@alpinejs/anchor/-/anchor-3.14.9.tgz#3372d33523fe5f110bf0ad4f690345403696bbad"
+  integrity sha512-rx/ayMtLgtInXiY6zIikWM6+23uqGdp/zqpzlKp86P8s4+q9famgcO5NXIAXbAai1DV9Ec0QIpV+j3Wl/U1U+A==
+
+"@alpinejs/collapse@^3.14.9":
+  version "3.14.9"
+  resolved "https://registry.yarnpkg.com/@alpinejs/collapse/-/collapse-3.14.9.tgz#90b3b0c35543ce2cc8380a8d941dfed4536def4a"
+  integrity sha512-cUjbBVo4KR/CfFg0cLB+Q7a8SnjmD4MdxmtZvFjh25Dlf/ZWYPSPx/28b+aAykuX/SUoDPQRmdFiVVvq+iILHw==
+
+"@alpinejs/focus@^3.14.9":
+  version "3.14.9"
+  resolved "https://registry.yarnpkg.com/@alpinejs/focus/-/focus-3.14.9.tgz#a2ac6d8b20c1104aaf4103e3056f83d4e306bfa5"
+  integrity sha512-+OMOcdkyEUr3gYWD0ZVqojLotI9D67F5BxGesDfZcPaGtNifXMoq0vt0UVDivGnXQXosOfNpO++GF4NzGrWE9Q==
+  dependencies:
+    focus-trap "^6.9.4"
+    tabbable "^5.3.3"
+
 "@ampproject/remapping@^2.3.0":
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/@ampproject/remapping/-/remapping-2.3.0.tgz#ed441b6fa600072520ce18b43d2c8cc8caecc7f4"
@@ -463,7 +481,7 @@
   dependencies:
     json2php "^0.0.7"
 
-alpinejs@^3.14.8:
+alpinejs@^3.14.9:
   version "3.14.9"
   resolved "https://registry.yarnpkg.com/alpinejs/-/alpinejs-3.14.9.tgz#381a050152acb221b2209d9398935d5cd4c18afc"
   integrity sha512-gqSOhTEyryU9FhviNqiHBHzgjkvtukq9tevew29fTj+ofZtfsYriw4zPirHHOAy9bw8QoL3WGhyk7QqCh5AYlw==
@@ -542,6 +560,13 @@ fdir@^6.4.4:
   version "6.4.6"
   resolved "https://registry.yarnpkg.com/fdir/-/fdir-6.4.6.tgz#2b268c0232697063111bbf3f64810a2a741ba281"
   integrity sha512-hiFoqpyZcfNm1yc4u8oWCf9A2c4D3QjCrks3zmoVKVxpQRzmPNar1hUJcBG2RQHvEVGDN+Jm81ZheVLAQMK6+w==
+
+focus-trap@^6.9.4:
+  version "6.9.4"
+  resolved "https://registry.yarnpkg.com/focus-trap/-/focus-trap-6.9.4.tgz#436da1a1d935c48b97da63cd8f361c6f3aa16444"
+  integrity sha512-v2NTsZe2FF59Y+sDykKY+XjqZ0cPfhq/hikWVL88BqLivnNiEffAsac6rP6H45ff9wG9LL5ToiDqrLEP9GX9mw==
+  dependencies:
+    tabbable "^5.3.3"
 
 fsevents@~2.3.2, fsevents@~2.3.3:
   version "2.3.3"
@@ -758,6 +783,11 @@ source-map-js@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.2.1.tgz#1ce5650fddd87abc099eda37dcff024c2667ae46"
   integrity sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==
+
+tabbable@^5.3.3:
+  version "5.3.3"
+  resolved "https://registry.yarnpkg.com/tabbable/-/tabbable-5.3.3.tgz#aac0ff88c73b22d6c3c5a50b1586310006b47fbf"
+  integrity sha512-QD9qKY3StfbZqWOPLp0++pOrAVb/HbUi5xCc8cUo4XjP19808oaMiDzn0leBY5mCespIBM0CIZePzZjgzR83kA==
 
 tailwind-shades-for-custom-colors@^1.0.2:
   version "1.0.2"

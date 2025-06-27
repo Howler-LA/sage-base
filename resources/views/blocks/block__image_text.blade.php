@@ -9,7 +9,7 @@
   @endphp
   <x-dynamic-component :component="$scaling ? 'empty' : 'container'">
     <x-columns gutter="{{ $scaling ? 'zero' : 'xl' }}" class="items-center">
-      <x-columns.column>
+      <x-columns.column data-aos="fade-in">
         @php
           // Dynamically adding a contained component if we're toggling on fluid width
         @endphp
@@ -36,7 +36,7 @@
           </div>
         </x-dynamic-component>
       </x-columns.column>
-      <x-columns.column class="{{ $order ? 'xl:order-first' : '' }}">
+      <x-columns.column data-aos-delay="100" data-aos="fade-up" class="{{ $order ? 'xl:order-first' : '' }}">
         <div
           data-theme="{{ $config['media']['themes'] }}"
           @class([
