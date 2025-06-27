@@ -1,55 +1,16 @@
 @set($width,$config['media']['image_size'])
 @set($order,$config['media']['reverse'])
-@set($container, $config['media']['scaling'] ? 'empty' : 'container')
-@set($scaling, $config['media']['scaling'])
+@set($scaling,$config['media']['scaling'])
 
-<x-section class="{{ $scaling ? 'py-zero' : null }}" data-theme="{{ $config['block']['themes'] }}">
-  @php
-    // Dynamically adding a container component if we're toggling off fluid width
-  @endphp
-  <x-dynamic-component :component="$scaling ? 'empty' : 'container'">
-    <x-columns gutter="{{ $scaling ? 'zero' : 'xl' }}" class="items-center">
-      <x-columns.column data-aos="fade-in">
-        @php
-          // Dynamically adding a contained component if we're toggling on fluid width
-        @endphp
-        <x-dynamic-component order="{{ $order }}" :component="$scaling ? 'columns.contained' : 'empty'">
-          <div class="space-y-small">
-            <x-eyebrow>{{ $content['eyebrow'] }}</x-eyebrow>
-            <x-display>{{ $content['headline'] }}</x-display>
-            <x-body>{!! $content['copy'] !!}</x-body>
-            @if($content['links'])
-              <x-card.footer>
-                <x-button.group>
-                  @foreach($content['links'] as $link)
-                    <x-button 
-                      variant="{{ $loop->iteration == 1 ? 'primary' : 'outline' }}"
-                      label="{{ $link['link']['title'] }}"
-                      title="{{ $link['link']['title'] }}"
-                      href="{{ $link['link']['url'] }}"
-                      target="{{ $link['link']['target'] }}"
-                    />
-                  @endforeach
-                </x-button.group>
-              </x-card.footer>
-            @endif
-          </div>
-        </x-dynamic-component>
-      </x-columns.column>
-      <x-columns.column data-aos-delay="100" data-aos="fade-up" class="{{ $order ? 'xl:order-first' : '' }}">
-        <div
-          data-theme="{{ $config['media']['themes'] }}"
-          @class([
-            'bg-background' => $scaling,
-            'p-zero' => $width == 'full',
-            'p-large' => $width == 'narrow',
-            'p-x-large' => $width == 'wide',
-          ])
-        >
-          @set($rounded, $width == 'narrow' || $width == 'wide' || !$scaling ? 'rounded-card' : '')
-          @image($content['image'],'large',['alt'=> ' ', 'class'=> "w-full h-full object-cover {$rounded}"])
-        </div>
-      </x-columns.column>
-    </x-columns>
-  </x-dynamic-component>
+<x-section>
+  <x-cols :reversed="$order" :contained="$scaling">
+    <x-cols.col :contained="$scaling">
+      <div class="aspect-[6/4] flex items-center justify-center font-medium text-sm text-pink-500 border-2 border-dashed">
+        Text
+      </div>
+    </x-cols.col>
+    <x-cols.col>
+      @image($content['image'],'large',['class'=>'w-full aspect-[6/4] object-cover object-top'])
+    </x-cols.col>
+  </x-cols>
 </x-section>
