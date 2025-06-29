@@ -4,18 +4,18 @@
 ])
 
 @php($class = match ($size) {
-  '1' => 'text-display-1 leading-display-1',
-  '2' => 'text-display-2 leading-display-2',
+  '1' => 'text-subhead leading-subhead',
+  '2' => 'text-subhead leading-subhead',
 })
 
 @if($slot->isNotEmpty() or $content != null)
   <div 
     {{ $attributes->twMerge([
       $class,
-      'tracking-display',
+      'tracking-subhead',
       'font-extrabold',
       'text-balance',
-      'font-display',
+      'font-subhead',
     ]) }}
   >
     {!! $content ?? $slot !!}

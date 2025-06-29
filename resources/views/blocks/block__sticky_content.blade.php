@@ -1,43 +1,41 @@
 <x-section data-theme="{{ $config['block']['themes'] }}">
-  <x-columns gutter="zero" columns="2">
-    <x-columns.column>
-      <div class="sticky top-large">
-        <x-columns.contained>
-          <div class="space-y-small">
-            <x-eyebrow>{{ $content['eyebrow'] }}</x-eyebrow>
-            <x-display>{{ $content['headline'] }}</x-display>
-            <x-body>{!! $content['copy'] !!}</x-body>
-            @if($content['links'])
-              <x-card.footer>
-                <x-button.group>
-                  @foreach($content['links'] as $link)
-                    <x-button 
-                      variant="{{ $loop->iteration == 1 ? 'primary' : 'outline' }}"
-                      label="{{ $link['link']['title'] }}"
-                      title="{{ $link['link']['title'] }}"
-                      href="{{ $link['link']['url'] }}"
-                      target="{{ $link['link']['target'] }}"
-                    />
-                  @endforeach
-                </x-button.group>
-              </x-card.footer>
-            @endif
-          </div>
-        </x-columns.contained>
+  <x-cols contained>
+    <x-cols.col>
+      <div
+        @class([
+          'space-y-small xl:sticky',
+          'xl:top-[calc(144px+theme(spacing.section))]' => is_user_logged_in(),
+          'xl:top-[calc(112px+theme(spacing.section))]' => !is_user_logged_in(),
+        ])
+      >
+        <x-eyebrow>{{ $content['eyebrow'] }}</x-eyebrow>
+        <x-display>{{ $content['headline'] }}</x-display>
+        <x-body>{!! $content['copy'] !!}</x-body>
+        @if($content['links'])
+          <x-card.footer>
+            <x-button.group>
+              @foreach($content['links'] as $link)
+                <x-button 
+                  variant="{{ $loop->iteration == 1 ? 'primary' : 'outline' }}"
+                  label="{{ $link['link']['title'] }}"
+                  title="{{ $link['link']['title'] }}"
+                  href="{{ $link['link']['url'] }}"
+                  target="{{ $link['link']['target'] }}"
+                />
+              @endforeach
+            </x-button.group>
+          </x-card.footer>
+        @endif
       </div>
-    </x-columns.column>
-    <x-columns.column>
+    </x-cols.col>
+    <x-cols.col>
       @if(get_sub_field('cards'))
-        <div class="space-y-med">
-          @foreach(get_sub_field('cards') as $card)
-            <x-card>
-              <x-card.contained>
-                <div class="h-128 bg-blue-300"></div>
-              </x-card.contained>
-            </x-card>
-          @endforeach
-        </div>
+        @foreach(get_sub_field('cards') as $card)
+          <div data-aos="fade-up" data-theme="Cream" class="border-b py-med first:pt-0 last:pb-">
+            <div class="h-128 bg-background rounded-card"></div>
+          </div>
+        @endforeach
       @endif
-    </x-columns.column>
-  </x-columns>
+    </x-cols.col>
+  </x-cols>
 </x-section>

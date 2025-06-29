@@ -12,7 +12,7 @@
     {{ $attributes->twMerge([
       $class,
       'font-display',
-      'tracking-[-3%]',
+      'tracking-[-4%]',
       'font-extrabold',
       'text-balance'
     ]) }}

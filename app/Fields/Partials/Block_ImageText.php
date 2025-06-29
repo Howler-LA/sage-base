@@ -25,11 +25,13 @@ class Block_ImageText extends Partial
                     ->addGroup('media')
                         ->addButtonGroup('themes')
                         ->addTrueFalse('reverse',[ 
-                            'label' => 'Reverse Direction',
+                            'label'         => 'Reverse Direction',
+                            'instructions'  => 'Image ordered first on desktop',
                             'default_value' => 1
                         ])
                         ->addTrueFalse('scaling',[ 
-                            'label' => 'Fluid Image Scaling',
+                            'label'         => 'Fixed container width',
+                            'instructions'  => 'Adds a max-width',
                             'default_value' => 1
                         ])
                         ->addButtonGroup('image_size',[ 

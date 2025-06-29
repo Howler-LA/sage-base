@@ -13,6 +13,7 @@
       {{ $attributes->twMerge([
         $class,
         'font-eyebrow',
+        'font-extrabold',
         'tracking-eyebrow',
         'font-[var(--font-weight-eyebrow)]',
         'uppercase',

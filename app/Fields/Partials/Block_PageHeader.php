@@ -5,17 +5,22 @@ namespace App\Fields\Partials;
 use Log1x\AcfComposer\Builder;
 use Log1x\AcfComposer\Partial;
 
-class Card extends Partial
+class Block_PageHeader extends Partial
 {
     /**
      * The partial field group.
      */
     public function fields(): Builder
     {
-        $fields = Builder::make('card',['title'=>'Color-Card']);
+        $fields = Builder::make('block__page_header');
 
         $fields
             ->addFields($this->get(Content::class))
+            ->addFields($this->get(Config::class))
+        ;
+
+        $fields
+            ->removeField('content->image')
         ;
 
         return $fields;

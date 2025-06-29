@@ -18,7 +18,7 @@ class Config extends Partial
             ->addAccordion('Block Configuration')
             ->addGroup('config')
                 ->addGroup('block')
-                    ->addButtonGroup('themes')
+                    ->addButtonGroup('themes',['label' => 'Block Theme'])
                     ->addFile('background')
                 ->endGroup()
             ->endGroup();

@@ -20,18 +20,16 @@
     @endif
   </x-section.header>
   <x-container>
-    <x-columns columns="3">
+    <div class="grid grid-cols-1 xl:grid-cols-3 gap-gutter">
       @layouts('cards')
-        @layout('card')
-          <x-card variant="color-card">
-            @image(get_sub_field('content')['image'],'large',['class'=>'aspect-[405/350] relative object-cover'])
-            <x-card.content>
-              <x-body size="1" class="font-bold">{!! get_sub_field('content')['headline'] !!}</x-body>
-              <x-body size="2">{!! get_sub_field('content')['copy'] !!}</x-body>
-            </x-card.content>
-          </x-card>
-        @endlayout
+        @if(file_exists(get_theme_file_path('resources/views/components/card/' . str_replace('card__', '', get_row_layout()) . '.blade.php')))
+          <x-dynamic-component :component="str_replace('__', '.', get_row_layout())" />
+        @else
+          <div class="py-10 bg-black/10 text-black border-2 border-dashed border-current rounded-lg text-center text-sm font-medium">
+            {{ get_row_layout() }}
+          </div>
+        @endif
       @endlayouts
-    </x-columns>
+    </div>
   </x-container>
 </x-section>

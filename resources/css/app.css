@@ -54,12 +54,30 @@
 	--tracking-display: 		-4%;
 	--font-weight-display: 	900;
 
+	--text-pull-quote-sm: 		calc(var(--font-size-pullquote-sm)*1px);
+	--text-pull-quote-lg: 		calc(var(--font-size-pullquote-lg)*1px);
+	--text-pull-quote-xl: 		calc(var(--font-size-pullquote-xl)*1px);
+	--leading-pull-quote-sm: 	calc(var(--line-height-pullquote-sm)*1px);
+	--leading-pull-quote-lg: 	calc(var(--line-height-pullquote-lg)*1px);
+	--leading-pull-quote-xl: 	calc(var(--line-height-pullquote-xl)*1px);
+	
+	--tracking-display: 		-4%;
+	--font-weight-display: 	900;
+
 	--text-title-1: 				calc(var(--font-size-title-1)*1px);
 	--leading-title-2: 			100%;
 	--text-title-2: 				calc(var(--font-size-title-2)*1px);
 	--leading-title-1: 			100%;
 	--tracking-title: 			-2%;
 	--font-weight-body: 		400;
+
+	--text-meta-text: 			calc(var(--font-size-meta-text)*1px);
+	--leading-meta-text: 		calc(var(--line-height-meta-text)*1px);
+	--tracking-meta-text: 	6%;
+
+	--text-subhead: 				calc(var(--font-size-subhead)*1px);
+	--leading-subhead: 			calc(var(--line-height-subhead-lh)*1px);
+	--tracking-subhead: 	-3%;
 
 	--font-eyebrow:    		  var(--eyebrow-font);
 	--font-display:    		  var(--display-font);

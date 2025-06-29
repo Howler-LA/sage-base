@@ -17,6 +17,10 @@ class Cards extends Partial
         $fields
             ->addFlexibleContent('cards', ['button_label' => 'Add Card'])
                 ->addLayout($this->get(Card::class))
+                ->addLayout($this->get(Card_Image::class))
+                ->addLayout($this->get(Card_News::class))
+                ->addLayout($this->get(Card_Person::class))
+                ->addLayout($this->get(Card_Testimonial::class))
             ->endFlexibleContent();
 
         return $fields;
