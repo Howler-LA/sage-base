@@ -36,6 +36,7 @@
       @if($cards)
         @foreach($cards as $card)
           <x-card
+            data-theme="{{ $config['block']['themes_cards'] }}"
             @class(['grid grid-cols-1 xl:grid-cols-2 items-center'  => $count == 1])
             :count="$count"
             :variant="$type"

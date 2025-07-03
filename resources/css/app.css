@@ -19,7 +19,7 @@
 :root {
 	--bg-color: var(--color-white);
 	--txt-color: var(--color-stone-800);
-	--border-color: var(--color-stone-200);
+	--border-color: var(--color-foreground);
 }
 
 [data-theme="Cyan"] {

@@ -11,15 +11,17 @@
 
 @php($class = match ($variant) {
   'news-card' 	=> 'rounded-card bg-news-card-background hover:bg-news-card-background-hover active:news-card-background-active',
-  'color-card' 	=> 'rounded-card bg-color-card-background hover:bg-color-card-background-hover active:color-card-background-active',
+  // 'color-card' 	=> 'rounded-card bg-color-card-background hover:bg-color-card-background-hover active:color-card-background-active',
+  'color-card'  => 'rounded-card bg-background hover:bg-color-card-background-hover active:color-card-background-active',
   'image-card' 	=> 'rounded-card bg-color-card-background hover:bg-color-card-background-hover active:color-card-background-active',
   'news'        => '',
-  'color'       => 'rounded-card bg-color-card-background hover:bg-color-card-background-hover active:color-card-background-active',
+  // 'color'       => 'rounded-card bg-color-card-background hover:bg-color-card-background-hover active:color-card-background-active',
+  'color'       => 'rounded-card bg-background text-foreground border-border border',
   'image'       => 'rounded-card bg-color-card-background hover:bg-color-card-background-hover active:color-card-background-active',
   'person'      => 'rounded-card bg-color-card-background hover:bg-color-card-background-hover active:color-card-background-active',
 })
 
-<div {{ $attributes->twMerge([$class,'overflow-hidden']) }}>
+<div {{ $attributes->twMerge([$class,'overflow-hidden', $variant]) }}>
 
   @if($image)
     @image($image,'large',['class'=> $count == 1 ? 'h-auto xl:size-full object-cover' : 'w-full h-auto object-cover' ])

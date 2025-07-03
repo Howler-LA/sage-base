@@ -40,7 +40,8 @@ class Cards extends Partial
                 ->addFile('image')
                     ->conditional('type', '==', 'image')
                         ->or('type', '==', 'person')
-            ->endRepeater();
+            ->endRepeater()
+        ;
             // ->addFlexibleContent('cards', ['button_label' => 'Add Card'])
             //     ->addLayout($this->get(Card::class))
             //     ->addLayout($this->get(Card_Image::class))
