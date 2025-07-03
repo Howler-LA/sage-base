@@ -1,8 +1,28 @@
 <x-section data-theme="{{ $config['block']['themes'] }}" class="pb-0 overflow-hidden">
 	<x-section.image class="object-fill" />	
-	<x-section.header data-aos="fade-in" class="relative">
+	<x-section.header 
+    data-aos="fade-in"
+    @class([
+      'relative',
+      'items-center justify-center text-center' => $config['block']['align'] == 'center',
+      'items-start justify-start text-left' => $config['block']['align'] == 'left',
+      'items-end justify-end text-right' => $config['block']['align'] == 'right',
+    ])
+  >
 		<x-eyebrow>{{ $content['eyebrow'] }}</x-eyebrow>
-    <x-super-display class="xl:px-large">{{ $content['headline'] }}</x-super-display>
+    <div class="flex flex-col gap-em">
+      <x-super-display 
+        @class([
+          'relative',
+            'items-center justify-center text-center xl:px-large' => $config['block']['align'] == 'center',
+            'items-start justify-start text-left' => $config['block']['align'] == 'left',
+            'items-end justify-end text-right' => $config['block']['align'] == 'right',
+        ])
+        :message="$content['headline']"
+      />
+      <x-subhead :message="$content['subhead']" />
+    </div>
+    <x-body :message="$content['copy']" />
     @if($content['links'])
       <x-card.footer>
         <x-button.group>

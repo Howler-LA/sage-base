@@ -23,7 +23,7 @@
 
 <div {{ $attributes->twMerge([$class,'overflow-hidden', $variant]) }}>
 
-  @if($image)
+  @if($image && ( $variant == 'image' OR  $variant == 'person' OR $variant == 'image-card'))
     @image($image,'large',['class'=> $count == 1 ? 'h-auto xl:size-full object-cover' : 'w-full h-auto object-cover' ])
   @endif
 

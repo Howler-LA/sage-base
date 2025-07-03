@@ -19,6 +19,29 @@ class Block_HeroSpecial extends Partial
             ->addFields($this->get(Config::class))
         ;
 
+        $fields
+            ->modifyField('content->headline', function($fieldsBuilder) {
+                $fieldsBuilder
+                    ->addText('subhead')
+                ;
+                return $fieldsBuilder;
+            })
+            ->modifyField('config->block->themes', function($fieldsBuilder) {
+                $fieldsBuilder
+                    ->addButtonGroup('align',[ 
+                        'label' => 'Text align',
+                        'choices' => [ 
+                            'left'      => 'Left', 
+                            'center'    => 'Center',
+                            'right'     => 'Right', 
+                        ],
+                        'default_value' => 'center'
+                    ])
+                ;
+                return $fieldsBuilder;
+            })
+        ;
+
         return $fields;
     }
 }

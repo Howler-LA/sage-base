@@ -1,13 +1,13 @@
 @props([
   'size' => '1',
-  'content' => null
+  'message' => null
 ])
 
 @php($class = match ($size) {
   '1' => 'text-super-display xl:text-[152px] leading-super-display xl:leading-[135px]',
 })
 
-@if($slot->isNotEmpty() or $content != null)
+@if($slot->isNotEmpty() or $message != null)
   <div 
     {{ $attributes->twMerge([
       $class,
@@ -17,6 +17,6 @@
       'text-balance'
     ]) }}
   >
-    {!! $content ?? $slot !!}
+    {!! $message ?? $slot !!}
   </div>
 @endif
