@@ -17,7 +17,7 @@
   'news'        => '',
   // 'color'       => 'rounded-card bg-color-card-background hover:bg-color-card-background-hover active:color-card-background-active',
   'color'       => 'rounded-card bg-background text-foreground border-border border',
-  'image'       => 'rounded-card bg-color-card-background hover:bg-color-card-background-hover active:color-card-background-active',
+  'image'       => 'rounded-card bg-background text-foreground',
   'person'      => 'rounded-card bg-color-card-background hover:bg-color-card-background-hover active:color-card-background-active',
 })
 

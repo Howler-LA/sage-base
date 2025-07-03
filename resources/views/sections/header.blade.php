@@ -1,5 +1,5 @@
 <x-section 
-  data-theme="White" 
+  data-theme="{{ get_field('sections','options')['header']['themes'] }}" 
   html="header"
   padding="tight"
   @class([

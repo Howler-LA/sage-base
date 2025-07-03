@@ -23,6 +23,23 @@ class Block_CTA extends Partial
             ->removeField('content->image')
         ;
 
+        $fields
+            ->modifyField('config->block->themes', function($fieldsBuilder) {
+                $fieldsBuilder
+                    ->addButtonGroup('align',[ 
+                        'label' => 'Text align',
+                        'choices' => [ 
+                            'left'      => 'Left', 
+                            'center'    => 'Center',
+                            'right'     => 'Right', 
+                        ],
+                        'default_value' => 'center'
+                    ])
+                ;
+                return $fieldsBuilder;
+            })
+        ;
+
         return $fields;
     }
 }

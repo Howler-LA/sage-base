@@ -5,14 +5,14 @@ namespace App\Fields\Partials;
 use Log1x\AcfComposer\Builder;
 use Log1x\AcfComposer\Partial;
 
-class Block_HeroSpecial extends Partial
+class Block_Donate extends Partial
 {
     /**
      * The partial field group.
      */
     public function fields(): Builder
     {
-        $fields = Builder::make('block__hero_special',['title'=>'Custom Hero Upper']);
+        $fields = Builder::make('block__donate');
 
         $fields
             ->addFields($this->get(Content::class))

@@ -1,7 +1,16 @@
 <x-section padding="roomy" data-theme="{{ $config['block']['themes'] }}">
   <x-section.image data-aos="fade-in" />
   <x-container>
-    <div data-aos="fade-in" data-aos-delay="100" class="space-y-small flex flex-col items-center justify-center">
+    <div 
+      data-aos="fade-in" 
+      data-aos-delay="100"
+      @class([
+        'space-y-small flex flex-col',
+        'items-center justify-center text-center' => $config['block']['align'] == 'center',
+        'items-start justify-start text-left' => $config['block']['align'] == 'left',
+        'items-end justify-end text-right' => $config['block']['align'] == 'right',
+      ])
+    >
       <x-eyebrow>{{ $content['eyebrow'] }}</x-eyebrow>
       <x-display>{{ $content['headline'] }}</x-display>
       <x-body>{!! $content['copy'] !!}</x-body>

@@ -6,21 +6,6 @@
     <x-eyebrow>{{ $content['eyebrow'] }}</x-eyebrow>
     <x-display>{{ $content['headline'] }}</x-display>
     <x-body>{!! $content['copy'] !!}</x-body>
-    @if($content['links'])
-      <x-card.footer>
-        <x-button.group>
-          @foreach($content['links'] as $link)
-            <x-button 
-              variant="{{ $loop->iteration == 1 ? 'primary' : 'outline' }}"
-              label="{{ $link['link']['title'] }}"
-              title="{{ $link['link']['title'] }}"
-              href="{{ $link['link']['url'] }}"
-              target="{{ $link['link']['target'] }}"
-            />
-          @endforeach
-        </x-button.group>
-      </x-card.footer>
-    @endif
   </x-section.header>
   <x-container>
     <div 
@@ -51,4 +36,21 @@
       @endif
     </div>
   </x-container>
+  <div class="flex items-center justify-center">
+    @if($content['links'])
+      <x-card.footer>
+        <x-button.group>
+          @foreach($content['links'] as $link)
+            <x-button 
+              variant="{{ $loop->iteration == 1 ? 'primary' : 'outline' }}"
+              label="{{ $link['link']['title'] }}"
+              title="{{ $link['link']['title'] }}"
+              href="{{ $link['link']['url'] }}"
+              target="{{ $link['link']['target'] }}"
+            />
+          @endforeach
+        </x-button.group>
+      </x-card.footer>
+    @endif
+  </div>
 </x-section>

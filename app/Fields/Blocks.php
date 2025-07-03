@@ -7,6 +7,8 @@ use Log1x\AcfComposer\Field;
 
 use App\Fields\Partials\Block_Accordion;
 use App\Fields\Partials\Block_CTA;
+use App\Fields\Partials\Block_Donate;
+use App\Fields\Partials\Block_Hero;
 use App\Fields\Partials\Block_HeroSpecial;
 use App\Fields\Partials\Block_HeroSpecialFooter;
 use App\Fields\Partials\Block_ImageCards;
@@ -34,6 +36,8 @@ class Blocks extends Field
             ->addFlexibleContent('content', ['button_label' => 'Add Block'])
                 ->addLayout($this->get(Block_Accordion::class))
                 ->addLayout($this->get(Block_CTA::class))
+                ->addLayout($this->get(Block_Donate::class))
+                ->addLayout($this->get(Block_Hero::class))
                 ->addLayout($this->get(Block_HeroSpecial::class))
                 ->addLayout($this->get(Block_HeroSpecialFooter::class))
                 ->addLayout($this->get(Block_ImageCards::class))
