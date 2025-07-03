@@ -3,10 +3,11 @@
 ])
 
 @aware([
-	'reversed' => null
+	'reversed' => null,
+	'center' => null
 ])
 
-<div {{ $attributes->twMerge([$reversed ? 'even:xl:order-first' : 'xl:order-last']) }}>
+<div {{ $attributes->twMerge([$center ? '' : 'h-full', $reversed ? 'even:xl:order-first' : 'xl:order-last']) }}>
 
 	<div 
 		@class([

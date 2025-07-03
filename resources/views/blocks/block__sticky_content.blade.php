@@ -1,6 +1,6 @@
 <x-section data-theme="{{ $config['block']['themes'] }}">
-  <x-cols contained>
-    <x-cols.col>
+  <x-cols>
+    <x-cols.col contained>
       <div
         @class([
           'space-y-small xl:sticky',
@@ -29,10 +29,18 @@
       </div>
     </x-cols.col>
     <x-cols.col>
-      @if(get_sub_field('cards'))
-        @foreach(get_sub_field('cards') as $card)
-          <div data-aos="fade-up" data-theme="Cream" class="border-b py-med first:pt-0 last:pb-">
-            <div class="h-128 bg-background rounded-card"></div>
+      @if($cards)
+        @foreach($cards as $card)
+          <div class="p-section bg-background ring-1 ring-border">
+            <x-card
+              :variant="$type"
+              :eyebrow="$card['eyebrow']"
+              :headline="$card['headline']"
+              :subhead="$card['subhead']"
+              :body="$card['body']"
+              :links="$card['links']"
+              :image="$type == 'news' ? null : $card['image']"
+            />
           </div>
         @endforeach
       @endif

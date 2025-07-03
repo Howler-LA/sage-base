@@ -1,6 +1,7 @@
 @props([
   'size' => '1',
-  'content' => null
+  'content' => null,
+  'naked' => null
 ])
 
 @php($class = match ($size) {
@@ -8,7 +9,7 @@
 })
 
 @if($slot->isNotEmpty() or $content != null)
-  <x-eyebrow.wrapper>
+  <x-dynamic-component :component="$naked ? 'empty' : 'eyebrow.wrapper' ">
     <div 
       {{ $attributes->twMerge([
         $class,
@@ -21,5 +22,5 @@
     >
       {!! $content ?? $slot !!}
     </div>
-  </x-eyebrow.wrapper>
+  </x-dynamic-component>
 @endif
