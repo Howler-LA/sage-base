@@ -5,13 +5,18 @@
   @class([
     'ring-1 ring-black/5',
     'sticky z-50',
-    is_user_logged_in() ? 'top-[32px]' : 'top-0'
+    is_user_logged_in() ? 'top-[32px]' : 'top-0',
   ])
 >
   <x-container>
     <div class="flex justify-between gap-med items-center">
-      <a href="/">
-        <x-title size="1">{{ $siteName }}</x-title>
+      <a href="/" class="text-foreground">
+        @unless(get_field('brand','options')['logo'])
+          <x-title size="1">{{ $siteName }}</x-title>
+        @else
+          @set($image,get_field('brand','options')['logo'])
+          @image($image,'large',['class'=>'text-foreground !fill-white'])
+        @endunless
       </a>
       <x-button.group>
         <x-desktop-menu class='hidden xl:flex items-center' />

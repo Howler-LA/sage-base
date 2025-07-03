@@ -12,6 +12,7 @@ use App\Fields\Partials\Block_Hero;
 use App\Fields\Partials\Block_HeroSpecial;
 use App\Fields\Partials\Block_HeroSpecialFooter;
 use App\Fields\Partials\Block_ImageCards;
+use App\Fields\Partials\Block_ImageGrid;
 use App\Fields\Partials\Block_ImageText;
 use App\Fields\Partials\Block_MultiCol;
 use App\Fields\Partials\Block_PageHeader;
@@ -41,6 +42,7 @@ class Blocks extends Field
                 ->addLayout($this->get(Block_HeroSpecial::class))
                 ->addLayout($this->get(Block_HeroSpecialFooter::class))
                 ->addLayout($this->get(Block_ImageCards::class))
+                ->addLayout($this->get(Block_ImageGrid::class))
                 ->addLayout($this->get(Block_ImageText::class))
                 ->addLayout($this->get(Block_MultiCol::class))                
                 ->addLayout($this->get(Block_PageHeader::class))                

@@ -1,4 +1,8 @@
-<x-section data-theme="{{ $config['block']['themes'] }}" class="pb-0 overflow-hidden">
+<x-section 
+  data-theme="{{ $config['block']['themes'] }}" 
+  padding="{{ $content['image'] ? '' : 'roomy' }}"
+  @class([ 'pb-0 overflow-hidden' => $content['image'] ])
+>
 	<x-section.image class="object-fill" />	
 	<x-section.header 
     data-aos="fade-in"
@@ -39,7 +43,9 @@
       </x-card.footer>
     @endif
 	</x-section.header>
-	<x-container class="relative">
-		@image($content['image'],'large',['data-aos-delay' => '100', 'data-aos'=>'fade-up', 'class'=>'w-full h-auto block rounded-t-card', 'alt'=> $content['headline'] ])
-	</x-container>
+  @if($content['image'])
+  	<x-container class="relative">
+  		@image($content['image'],'large',['data-aos-delay' => '100', 'data-aos'=>'fade-up', 'class'=>'w-full h-auto block rounded-t-card', 'alt'=> $content['headline'] ])
+  	</x-container>
+  @endif
 </x-section>

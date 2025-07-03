@@ -77,7 +77,7 @@
 
 	--text-subhead: 				calc(var(--font-size-subhead)*1px);
 	--leading-subhead: 			calc(var(--line-height-subhead-lh)*1px);
-	--tracking-subhead: 	-3%;
+	--tracking-subhead: 		-3%;
 
 	--font-eyebrow:    		  var(--eyebrow-font);
 	--font-display:    		  var(--display-font);

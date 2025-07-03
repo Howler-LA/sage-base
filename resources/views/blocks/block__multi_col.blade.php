@@ -15,7 +15,7 @@
         'px-x-large'  => $count == 1,
         'xl:grid-cols-2' => $count == 2,
         'xl:grid-cols-3' => $count == 3,
-        'xl:grid-cols-4' => $count >= 3,
+        'xl:grid-cols-4' => $count >= 4,
       ])
     >
       @if($cards)
