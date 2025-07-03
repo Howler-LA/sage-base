@@ -15,19 +15,22 @@
           <x-title size="1">{{ $siteName }}</x-title>
         @else
           @set($image,get_field('brand','options')['logo'])
-          @image($image,'large',['class'=>'text-foreground !fill-white'])
+          @image($image,'large',['class'=>'text-foreground fill-foreground'])
         @endunless
       </a>
-      <x-button.group>
-        <x-desktop-menu class='hidden xl:flex items-center' />
-        <x-button 
-          label="Donate"
-          href="#"
-          size="sm"
-          target="self"
-          variant=""
-        />
-      </x-button.group>
+      <div class="flex flex-col items-end gap-min">
+        <x-button.group>
+          <x-desktop-menu class='hidden xl:flex items-center' />
+          <x-button 
+            label="Donate"
+            href="#"
+            size="sm"
+            target="self"
+            variant=""
+          />
+        </x-button.group>
+        <x-sub-menu class='hidden xl:flex items-center gap-4' name="secondary_navigation" /> 
+      </div>
     </div>
   </x-container>
 </x-section>
