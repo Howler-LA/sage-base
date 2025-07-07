@@ -1,5 +1,9 @@
 @php
-  $card_count = count($cards ? $cards : '1');
+  if ($cards) {
+    $card_count = count($cards);
+  } else {
+    $card_count = 1;
+  }
   $featured_cards = [];
   if (!empty($cards)) {
     foreach($cards as $card){
