@@ -54,7 +54,8 @@
 	--tracking-display: 		-4%;
 	--font-weight-display: 	900;
 
-	--text-super-display: 	calc(var(--font-size-super-display)*1px);
+	--text-super-display: 		calc(var(--font-size-super-display)*1px);
+	--leading-super-display: 	calc(var(--line-height-super-display-lh)*1px);
 
 	--text-pull-quote-sm: 		calc(var(--font-size-pullquote-sm)*1px);
 	--text-pull-quote-lg: 		calc(var(--font-size-pullquote-lg)*1px);
