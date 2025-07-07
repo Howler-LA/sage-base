@@ -11,14 +11,12 @@
 
 @php($class = match ($variant) {
   'news-card' 	=> 'rounded-card bg-news-card-background hover:bg-news-card-background-hover active:news-card-background-active',
-  // 'color-card' 	=> 'rounded-card bg-color-card-background hover:bg-color-card-background-hover active:color-card-background-active',
-  'color-card'  => 'rounded-card bg-background hover:bg-color-card-background-hover active:color-card-background-active',
-  'image-card' 	=> 'rounded-card bg-color-card-background hover:bg-color-card-background-hover active:color-card-background-active',
-  'news'        => '',
-  // 'color'       => 'rounded-card bg-color-card-background hover:bg-color-card-background-hover active:color-card-background-active',
+  'color-card'  => 'rounded-card bg-background text-foreground',
+  'image-card' 	=> 'rounded-card bg-background text-foreground',
+  'news'        =>  null,
   'color'       => 'rounded-card bg-background text-foreground border-border border',
   'image'       => 'rounded-card bg-background text-foreground',
-  'person'      => 'rounded-card bg-color-card-background hover:bg-color-card-background-hover active:color-card-background-active',
+  'person'      => 'rounded-card bg-background text-foreground',
 })
 
 <div {{ $attributes->twMerge([$class,'overflow-hidden', $variant]) }}>
@@ -43,7 +41,7 @@
         :class="$variant == 'person' || $variant == 'news' ? 'font-bold' : '' " 
         :message="$headline" 
       />
-      <x-body :message="$subhead" />
+      <x-body :message="$variant == 'person' ? $subhead : null" />
     </header>
     <x-body :message="$body" />
     @if($links)

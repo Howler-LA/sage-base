@@ -30,41 +30,39 @@
     },
   }"
 >
-  <x.section.image />
+  <x-section.image />
   <x-container>
     <div class="xl:p-section space-y-em">
       <x-eyebrow>{{ $content['headline'] }}</x-eyebrow>
       <div x-ref="swiper" class="swiper w-full rounded-card" aria-label="Testimonial Carousel">
         <div class="swiper-wrapper">
-          @layouts('cards')
-            @layout('card__testimonial')
-              <div class="swiper-slide">
-                <div data-theme="Black" class="grid grid-cols-1 xl:grid-cols-2">
-                  <div class="p-large bg-background text-foreground">
-                    <div class="size-full flex flex-col items-center justify-center text-center space-y-med">
-                      <div class="space-y-zero">
-                        <x-pull-quote message="“" />
-                        <x-pull-quote message="{{ get_sub_field('content')['copy'] }}" />
-                      </div>
-                      <div class="space-y-min flex flex-col items-center justify-center">
-                        <x-meta-text message="{{ get_sub_field('content')['name'] }}" />
-                        <x-lucide-minus class="rotate-90" />
-                        <x-meta-text message="{{ get_sub_field('content')['role'] }}" />
-                      </div>
-                      @if(get_sub_field('content')['link'])
-                        <x-button
-                          label="{{ get_sub_field('content')['link']['title'] }}"
-                          href="{{ get_sub_field('content')['link']['url'] }}"
-                          target="{{ get_sub_field('content')['link']['target'] }}"
-                        />
-                      @endif
+          @foreach(get_sub_field('cards') as $card)
+            <div class="swiper-slide">
+              <div data-theme="Black" class="grid grid-cols-1 xl:grid-cols-2">
+                <div class="p-large bg-background text-foreground">
+                  <div class="size-full flex flex-col items-center justify-center text-center space-y-med">
+                    <div class="space-y-zero">
+                      <x-pull-quote message="“" />
+                      <x-pull-quote message="{{ $card['copy'] }}" />
                     </div>
+                    <div class="space-y-min flex flex-col items-center justify-center">
+                      <x-meta-text message="{{ $card['name'] }}" />
+                      <x-lucide-minus class="rotate-90" />
+                      <x-meta-text message="{{ $card['role'] }}" />
+                    </div>
+                    @if($card['link'])
+                      <x-button
+                        label="{{ $card['link']['title'] }}"
+                        href="{{ $card['link']['url'] }}"
+                        target="{{ $card['link']['target'] }}"
+                      />
+                    @endif
                   </div>
-                  @image(get_sub_field('content')['image'],'large',['class'=>'size-full object-cover'])
                 </div>
+                @image($card['image'],'large',['class'=>'size-full object-cover'])
               </div>
-            @endlayout
-          @endlayouts
+            </div>
+          @endforeach
         </div>
       </div>
       <div class="flex items-center justify-center gap-em text-black">

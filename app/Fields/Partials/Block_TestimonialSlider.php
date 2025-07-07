@@ -16,12 +16,11 @@ class Block_TestimonialSlider extends Partial
 
         $fields
             ->addFields($this->get(Content::class))
-            ->addRepeater('cards')
+            ->addRepeater('cards',['collapsed'=>'name'])
                 ->addText('name')
                 ->addText('role')
-                ->addRepeater('links')
-                    ->addLink('link',['required'=>true])
-                ->endRepeater()
+                ->addText('copy')
+                ->addLink('link',['required'=>true])
                 ->addImage('image')
             ->endRepeater()
             ->addFields($this->get(Config::class))
