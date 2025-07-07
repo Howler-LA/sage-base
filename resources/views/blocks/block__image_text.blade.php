@@ -28,7 +28,7 @@
     </x-cols.col>
     <x-cols.col data-aos-delay="100" data-aos="fade-up">
       @if($content['image'])
-        @image($content['image'],'large',['class'=>'w-full aspect-[5/4] object-cover object-top'])
+        @image($content['image'],'large',['class'=>'w-full h-auto object-cover object-top'])
       @else
         <div class="aspect-[5/4] bg-background rounded-card bg-black/10">
           <div class="absolute inset-0 flex items-center justify-center">

@@ -64,6 +64,7 @@ class SiteSettings extends Field
             ->addGroup('sections')
                 ->addGroup('header')
                     ->addButtonGroup('themes')
+                    ->addTrueFalse('match',['label'=>'Inherit nearest block theme'])
                 ->endGroup()
                 ->addGroup('footer')
                     ->addButtonGroup('themes')

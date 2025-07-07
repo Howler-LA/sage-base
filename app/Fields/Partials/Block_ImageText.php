@@ -27,7 +27,7 @@ class Block_ImageText extends Partial
                         ->addTrueFalse('reverse',[ 
                             'label'         => 'Reverse Direction',
                             'instructions'  => 'Image ordered first on desktop',
-                            'default_value' => 1
+                            'default_value' => 0
                         ])
                         ->addTrueFalse('scaling',[ 
                             'label'         => 'Fixed container width',

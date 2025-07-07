@@ -1,6 +1,6 @@
-<x-section data-theme="{{ $config['block']['themes'] }}">
+<x-section data-theme="{{ $config['block']['themes'] }}" padding="none">
   <x-cols>
-    <x-cols.col contained>
+    <x-cols.col contained class="py-section">
       <div
         @class([
           'space-y-small xl:sticky',
@@ -31,7 +31,7 @@
     <x-cols.col>
       @if($cards)
         @foreach($cards as $card)
-          <div class="p-section bg-background ring-1 ring-border">
+          <div class="p-section bg-background xl:border-l xl:border-b xl:last:border-b-0 border-border">
             <x-card
               :variant="$type"
               :eyebrow="$card['eyebrow']"

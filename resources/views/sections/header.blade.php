@@ -1,9 +1,14 @@
 <x-section 
-  data-theme="{{ get_field('sections','options')['header']['themes'] }}" 
+  data-theme="{{ 
+    $blocks 
+      ?
+    ($blocks[0]['config']['block']['themes'] ? $blocks[0]['config']['block']['themes'] : get_field('sections','options')['header']['themes'])
+      :
+    get_field('sections','options')['header']['themes']   
+  }}" 
   html="header"
   padding="tight"
   @class([
-    'ring-1 ring-black/5',
     'sticky z-50',
     is_user_logged_in() ? 'top-[32px]' : 'top-0',
   ])
