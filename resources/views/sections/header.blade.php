@@ -10,15 +10,15 @@
 >
   <x-container>
     <div class="flex justify-between gap-med items-center">
-      <a href="/" class="text-foreground">
+      <a href="/" class="text-foreground flex-grow">
         @unless(get_field('brand','options')['logo'])
           <x-title size="1">{{ $siteName }}</x-title>
         @else
           @set($image,get_field('brand','options')['logo'])
-          @image($image,'large',['class'=>'text-foreground fill-foreground'])
+          @image($image,'large',['class'=>'text-foreground fill-foreground max-w-72 2xl:max-w-none'])
         @endunless
       </a>
-      <div class="flex flex-col items-end gap-min">
+      <div class="flex flex-col items-end gap-min flex-grow">
         <x-button.group>
           <x-desktop-menu class='hidden xl:flex items-center' />
           <x-button 
