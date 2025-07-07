@@ -30,6 +30,7 @@
     },
   }"
 >
+  <x.section.image />
   <x-container>
     <div class="xl:p-section space-y-em">
       <x-eyebrow>{{ $content['headline'] }}</x-eyebrow>
