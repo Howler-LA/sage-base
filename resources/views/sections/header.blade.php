@@ -19,7 +19,7 @@
         @else
           @set($image,get_field('brand','options')['logo'])
           @image($image,'large',['class'=>'text-foreground fill-foreground max-w-72 2xl:max-w-none'])
-          @svg(wp_get_attachment_url($image), 'w-full h-auto max-w-72 2xl:max-w-none', ['aria-label' => 'Logo'])
+          @svg(get_attached_file($image), 'w-full h-auto max-w-72 2xl:max-w-none', ['aria-label' => 'Logo'])
         @endunless
       </a>
       <div class="flex flex-col items-end gap-min flex-grow">
