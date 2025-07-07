@@ -7,6 +7,7 @@
   'body'      => false,
   'links'     => false,
   'image'     => false,
+  'featured'  => null,
 ])
 
 @php($class = match ($variant) {
@@ -19,7 +20,7 @@
   'person'      => 'rounded-card bg-background text-foreground',
 })
 
-<div {{ $attributes->twMerge([$class,'overflow-hidden', $variant]) }}>
+<div {{ $attributes->twMerge([$class,'overflow-hidden grid grid-cols-1', $featured ? 'lg:grid-cols-2 col-span-full' : null, $variant]) }}>
 
   @if($image && ( $variant == 'image' OR  $variant == 'person' OR $variant == 'image-card'))
     @image($image,'large',['class'=> $count == 1 ? 'h-auto xl:size-full object-cover' : 'w-full h-auto object-cover' ])
@@ -37,7 +38,7 @@
     />
     <header class="flex flex-col">
       <x-dynamic-component 
-        :component="$variant == 'person' || $variant == 'news' ? 'body' : 'subhead' " 
+        :component="$variant == 'person' || $variant == 'news' ? 'body' : 'title' " 
         :class="$variant == 'person' || $variant == 'news' ? 'font-bold' : '' " 
         :message="$headline" 
       />

@@ -1,4 +1,15 @@
-@set($count,count($cards ? $cards : '1'))
+@php
+  $card_count = count($cards ? $cards : '1');
+  $featured_cards = [];
+  if (!empty($cards)) {
+    foreach($cards as $card){
+      if (!empty($card['featured'])) {
+        $featured_cards[] = $card;
+      }
+    }
+  };
+  $count = $card_count - count($featured_cards);
+@endphp
 
 <x-section data-theme="{{ $config['block']['themes'] }}">
   <x-section.image />
@@ -31,6 +42,7 @@
             :body="$card['body']"
             :links="$card['links']"
             :image="$type == 'news' ? null : $card['image']"
+            :featured="$card['featured']"
           />
         @endforeach
       @endif

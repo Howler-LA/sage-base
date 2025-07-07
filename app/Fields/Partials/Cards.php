@@ -37,6 +37,7 @@ class Cards extends Partial
                 ->addRepeater('links')
                     ->addLink('link',['required'=>true])
                 ->endRepeater()
+                ->addTrueFalse('featured')
                 ->addFile('image')
                     ->conditional('type', '==', 'image')
                         ->or('type', '==', 'person')

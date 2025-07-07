@@ -1,6 +1,6 @@
 @props([
   'size' => '1',
-  'content' => null
+  'message' => null
 ])
 
 @php($class = match ($size) {
@@ -8,7 +8,7 @@
   '2' => 'text-title-2 leading-title-2',
 })
 
-@if($slot->isNotEmpty() or $content != null)
+@if($slot->isNotEmpty() or $message != null)
   <div 
     {{ $attributes->twMerge([
       $class,
@@ -18,6 +18,6 @@
       'font-title',
     ]) }}
   >
-    {!! $content ?? $slot !!}
+    {!! $message ?? $slot !!}
   </div>
 @endif
