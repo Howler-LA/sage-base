@@ -1,10 +1,8 @@
 <x-section 
   data-theme="{{ 
     $blocks 
-      ?
-    ($blocks[0]['config']['block']['themes'] ? $blocks[0]['config']['block']['themes'] : get_field('sections','options')['header']['themes'])
-      :
-    get_field('sections','options')['header']['themes']   
+      ? (get_field('sections','options')['header']['match'] ? $blocks[0]['config']['block']['themes'] : get_field('sections','options')['header']['themes'])
+      : get_field('sections','options')['header']['themes']
   }}" 
   html="header"
   padding="tight"
