@@ -54,6 +54,8 @@
 	--tracking-display: 		-4%;
 	--font-weight-display: 	900;
 
+	--text-super-display: 	calc(var(--font-size-super-display)*1px);
+
 	--text-pull-quote-sm: 		calc(var(--font-size-pullquote-sm)*1px);
 	--text-pull-quote-lg: 		calc(var(--font-size-pullquote-lg)*1px);
 	--text-pull-quote-xl: 		calc(var(--font-size-pullquote-xl)*1px);
@@ -80,6 +82,7 @@
 	--tracking-subhead: 		-3%;
 
 	--font-eyebrow:    		  var(--eyebrow-font);
+	--font-display:    		  var(--display-font);
 	--font-display:    		  var(--display-font);
 	--font-title:    		  	var(--title-font);
 	--font-subhead:    		  var(--subhead-font);

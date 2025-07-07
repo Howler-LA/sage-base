@@ -4,7 +4,7 @@
 ])
 
 @php($class = match ($size) {
-  '1' => 'text-super-display xl:text-[152px] leading-super-display xl:leading-[135px]',
+  '1' => 'text-super-display leading-super-display xl:leading-[135px]',
 })
 
 @if($slot->isNotEmpty() or $message != null)
