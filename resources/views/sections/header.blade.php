@@ -1,3 +1,5 @@
+
+
 <x-section 
   data-theme="{{ 
     $blocks 
@@ -11,9 +13,6 @@
     is_user_logged_in() ? 'top-[32px]' : 'top-0',
   ])
 >
-
-<!-- https://youthjustice.test/wp-content/uploads/2025/07/youthjustice-1.svg not found. -->
-
   <x-container>
     <div class="flex justify-between gap-med items-center">
       <a href="/" class="text-foreground flex-grow">
@@ -22,7 +21,7 @@
         @else
           @set($img,get_field('brand','options')['logo'])
           @set($svg,str_replace('/','.', get_attached_file(get_field('brand','options')['logo'])))
-          @if(str_contains('svg', $img))
+          @if(str_contains('.svg', $img))
             @image($img,'large',['class'=>'text-foreground fill-foreground max-w-72 2xl:max-w-none'])
           @else
             @svg(str_replace('.svg','',$svg), 'text-foreground fill-foreground max-w-72 2xl:max-w-none', ['aria-label' => $siteName])
