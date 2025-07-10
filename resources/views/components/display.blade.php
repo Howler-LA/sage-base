@@ -16,6 +16,7 @@
       'font-extrabold',
       'text-balance',
       'font-display',
+      str_contains(get_site_url(), 'youthjustice') ? 'uppercase' : null,
     ]) }}
   >
     {!! $message ?? $slot !!}

@@ -68,6 +68,10 @@ class SiteSettings extends Field
                 ->endGroup()
                 ->addGroup('footer')
                     ->addButtonGroup('themes')
+                    ->addGroup('widget')
+                        ->addText('headline')
+                        ->addLink('link')
+                    ->endGroup()
                 ->endGroup()
             ->endGroup()
 
