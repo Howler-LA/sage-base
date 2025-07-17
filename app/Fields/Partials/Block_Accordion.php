@@ -12,11 +12,31 @@ class Block_Accordion extends Partial
      */
     public function fields(): Builder
     {
-        $fields = Builder::make('block__accordion');
+        $fields = Builder::make('block__accordion',['title'=>'Accordion-General Pages']);
 
         $fields
             ->addFields($this->get(Content::class))
+            ->addRepeater('cards',['label'=>'Accordions','collapsed'=>'headline'])
+                ->addText('headline')
+                ->addTextarea('copy',[
+                    'rows'      => 3,
+                    'new_lines' => 'br'
+                ])
+            ->endRepeater()
             ->addFields($this->get(Config::class))
+        ;
+
+        $fields
+            ->removeField('content->image')
+            ->modifyField('config->block->themes', function($fieldsBuilder) {
+                $fieldsBuilder
+                    ->addButtonGroup('columns',[ 
+                        'choices'       => [1,2],
+                        'default_value' => 1
+                    ])
+                ;
+                return $fieldsBuilder;
+            })
         ;
 
         return $fields;
