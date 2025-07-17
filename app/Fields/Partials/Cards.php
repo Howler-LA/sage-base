@@ -22,10 +22,11 @@ class Cards extends Partial
                 'conditional_logic' => [],
                 'ui' => 0,
                 'choices' => [
-                    'news' => 'News Card',
-                    'color' => 'Color Card',
-                    'image' => 'Image Card',
-                    'person' => 'Person Card',
+                    'news'    => 'News Card',
+                    'color'   => 'Color Card',
+                    'image'   => 'Image Card',
+                    'person'  => 'Person Card',
+                    'compare' => 'Compare Card',
                 ],
                 'default_value' => ['color'],
             ])
