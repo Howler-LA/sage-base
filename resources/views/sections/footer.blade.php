@@ -39,18 +39,17 @@
     
     <div class="border-t border-foreground">
       <hr class="h-px border-foreground mt-1" />
-      <div class="grid grid-cols-1 lg:grid-cols-5 gap-min lg:gap-small py-med">
-        @repeat(4)
-          <div 
-            @class([
-              'flex flex-col gap-min',
-              'lg:col-span-2 lg:text-right' => $loop->last
-            ])
-          >
-            <a href="#">USNH Privacy Policies</a>
-            <a href="#">USNH Privacy Policies</a>
-          </div>
-        @endrepeat
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-min lg:gap-small py-med">
+        <div class="col-span-2 col-start-1">
+          <x-lower-footer
+            class="grid grid-cols-3 gap-x-em col-span-3"
+            name="lower_footer_navigation" 
+          />
+        </div>
+        <div class="col-span-2 col-start-3 flex flex-col items-end">
+          <x-body size="2">Copyright © {{ date("Y") }}, {{ $siteName }}. All rights reserved. </x-body>
+          <x-body size="2">TTY Users: 7-1-1 or 800-735-2964</x-body>
+        </div>
       </div>
     </div>
 

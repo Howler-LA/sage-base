@@ -76,9 +76,10 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'sage'),
-        'secondary_navigation' => __('Secondary Navigation', 'sage'),
-        'footer_navigation' => __('Footer Navigation', 'sage'),
+        'primary_navigation' => __('Primary Nav', 'sage'),
+        'secondary_navigation' => __('Secondary Nav', 'sage'),
+        'footer_navigation' => __('Upper Footer Nav', 'sage'),
+        'lower_footer_navigation' => __('Lower Footer Nav', 'sage'),
     ]);
 
     /**

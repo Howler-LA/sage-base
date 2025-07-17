@@ -17,7 +17,7 @@
           @foreach ($item->children as $child)
             <li class="py-min">
               <a href="{{ $child->url }}" class="flex items-center justify-between">
-                <span>{{ $child->label }}</span>
+                <x-body size="2" :message="$child->label" />
               </a>
             </li>
           @endforeach
