@@ -8,6 +8,7 @@
   'links'     => false,
   'image'     => false,
   'featured'  => null,
+  'list'      => false,
 ])
 
 @php($class = match ($variant) {
@@ -16,6 +17,7 @@
   'image-card' 	=> 'rounded-card bg-background text-foreground',
   'news'        =>  null,
   'color'       => 'rounded-card bg-background text-foreground ring-foreground ring-1',
+  'compare'     => 'rounded-card bg-background text-foreground ring-foreground ring-1',
   'image'       => 'rounded-card bg-background text-foreground',
   'person'      => 'rounded-card bg-background text-foreground',
 })
@@ -36,7 +38,7 @@
 
   <x-card.content
     @class([
-      $count == 1 ? 'p-large space-y-small' : '',  
+      $count == 1 || $variant == 'compare' ? 'p-large space-y-small' : '',  
       'p-zero' => $variant == 'news',
       'p-card lg:p-large xl:order-first' => $featured,
       $featured ? 'justify-between' : null,
@@ -49,13 +51,26 @@
     <div class="space-y-small">
       <header class="flex flex-col">
         <x-dynamic-component 
-          :component="$featured ? 'subhead' : ($variant == 'person' || $variant == 'news' ? 'body' : 'title') " 
+          :component="$featured || $variant == 'person' ? 'subhead' : ($variant == 'person' || $variant == 'person' || $variant == 'news' ? 'body' : 'title') " 
           :class="$variant == 'person' || $variant == 'news' ? 'font-bold' : '' " 
           :message="$headline" 
         />
         <x-body :message="$variant == 'person' ? $subhead : null" />
       </header>
       <x-body :message="$body" />
+      @if($list)
+        <ul class="divide-y divide-border">
+          @foreach($list as $item)
+            <li class="flex gap-min py-em">
+              <x-dynamic-component 
+                class="size-6 flex-none"
+                component="lucide-{{ $item['icon'] ? $item['icon'] : 'dot' }}" 
+              />
+              <x-body :message="$item['item']" />
+            </li>
+          @endforeach
+        </ul>
+      @endif
     </div>
     @if($links)
       <x-card.footer>

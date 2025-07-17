@@ -27,10 +27,11 @@
       @class([
         'gap-gutter',
         'grid grid-cols-1',
-        '2xl:px-x-large'     => $count == 1,
+        '2xl:px-x-large' => $count == 1,
         'xl:grid-cols-2' => $count == 2,
         'xl:grid-cols-3' => ($count == 3) or ($count >= 4 && $type == 'person'),
         'xl:grid-cols-4' => $count >= 4 && $type != 'person',
+        'items-center' => $type == 'compare',
       ])
     >
       @if($cards)
@@ -47,6 +48,7 @@
             :links="$card['links']"
             :image="$type == 'news' ? null : $card['image']"
             :featured="$card['featured']"
+            :list="$card['list']"
           />
         @endforeach
       @endif
