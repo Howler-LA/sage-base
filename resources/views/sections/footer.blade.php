@@ -6,15 +6,15 @@
   <x-container class="flex flex-col gap-med">
 
     <div class="flex flex-col lg:flex-row justify-between items-start gap-small">
-      <x-eyebrow>Simple footer headline</x-eyebrow>
+      <x-eyebrow :content="$footer['upper']['eyebrow']" />
       <ul>
-        <li class="flex gap-min"><x-meta-text>01</x-meta-text><x-body size="2">1234 Address St<br>Los Angeles, CA 90065</x-body></li>
-        <li class="flex gap-min"><x-meta-text>02</x-meta-text><x-body size="2">555-555-5555</x-body></li>
-        <li class="flex gap-min"><x-meta-text>03</x-meta-text><x-body size="2">Contact us</x-body></li>
+        <li class="flex gap-min"><x-meta-text>01</x-meta-text><x-body size="2" :message="$footer['upper']['address']" /></li>
+        <li class="flex gap-min"><x-meta-text>02</x-meta-text><x-body size="2" :message="$footer['upper']['phone']" /></li>
+        <li class="flex gap-min"><x-meta-text>03</x-meta-text><x-body size="2" :message="$footer['upper']['contact']['title']" /></li>
       </ul>
     </div>
 
-    <x-display message="Simple footer headline " />
+    <x-display :message="$footer['upper']['headline']" />
     
     <div class="grid grid-cols-1 lg:grid-cols-4 gap-small">
       <x-footer
@@ -25,11 +25,12 @@
         <x-eyebrow naked>About Us</x-eyebrow>
         <div class="border border-foreground rounded-card p-med">
           <div class="h-full flex flex-col items-center gap-min">
-            <x-title message="Some headline" />
+            <x-title :message="$footer['widget']['headline']" />
             <div class="w-px flex-grow bg-foreground"></div>
             <x-button 
-              href="#" 
-              label="Button Action" 
+              href="{{ $footer['widget']['link']['url'] }}" 
+              label="{{ $footer['widget']['link']['title'] }}" 
+              target="{{ $footer['widget']['link']['target'] }}" 
             />
           </div>
         </div>

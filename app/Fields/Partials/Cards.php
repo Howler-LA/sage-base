@@ -33,7 +33,7 @@ class Cards extends Partial
                 ->addText('eyebrow')
                 ->addText('headline')
                 ->addText('subhead')->conditional('type', '==', 'person')
-                ->addText('body')
+                ->addWysiwyg('body')
                 ->addRepeater('links')
                     ->addLink('link',['required'=>true])
                 ->endRepeater()
