@@ -1,3 +1,5 @@
+{!! get_field('brand','options')['font']['embed'] !!}
+
 <style id="font-styles">
   :root {
     --eyebrow-font:       {!! get_field('brand','options')['font']['eyebrow'] !!};

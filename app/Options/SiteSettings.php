@@ -33,6 +33,7 @@ class SiteSettings extends Field
             ->addGroup('brand')
                 ->addFile('logo')
                 ->addGroup('font')
+                    ->addText('embed')
                     ->addText('eyebrow',    ['placeholder'=>'Helvetica, Sans'])
                     ->addText('display',    ['placeholder'=>'Helvetica, Sans'])
                     ->addText('subhead',    ['placeholder'=>'Helvetica, Sans'])

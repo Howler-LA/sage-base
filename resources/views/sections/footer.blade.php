@@ -8,9 +8,15 @@
     <div class="flex flex-col lg:flex-row justify-between items-start gap-small">
       <x-eyebrow :content="$footer['upper']['eyebrow']" />
       <ul>
-        <li class="flex gap-min"><x-meta-text>01</x-meta-text><x-body size="2" :message="$footer['upper']['address']" /></li>
-        <li class="flex gap-min"><x-meta-text>02</x-meta-text><x-body size="2" :message="$footer['upper']['phone']" /></li>
-        <li class="flex gap-min"><x-meta-text>03</x-meta-text><x-body size="2" :message="$footer['upper']['contact']['title']" /></li>
+        @if($footer['upper']['address'])
+          <li class="flex gap-min"><x-meta-text>01</x-meta-text><x-body size="2" :message="$footer['upper']['address']" /></li>
+        @endif
+        @if($footer['upper']['phone'])
+          <li class="flex gap-min"><x-meta-text>02</x-meta-text><x-body size="2" :message="$footer['upper']['phone']" /></li>
+        @endif
+        @if($footer['upper']['contact'])
+          <li class="flex gap-min"><x-meta-text>03</x-meta-text><x-body size="2" :message="$footer['upper']['contact']['title']" /></li>
+        @endif
       </ul>
     </div>
 
