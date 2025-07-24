@@ -14,6 +14,7 @@
 	'5' 		=> 'xl:grid-cols-5',
   '4' 		=> 'xl:grid-cols-4',
   '3' 		=> 'xl:grid-cols-3',
+  '1' 		=> 'xl:grid-cols-1',
   default => 'xl:grid-cols-2',
 })
 

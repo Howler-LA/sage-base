@@ -1,10 +1,14 @@
 @set($align, $config['block']['align'])
-@set($scaling,false)
+@set($scaling,$align == 'center' ? true : false)
 @set($order,false)
 
-<x-section data-theme="{{ $config['block']['themes'] }}" class="overflow-hidden" padding="{{ $scaling ? '' : 'none' }}">
+<x-section 
+  data-theme="{{ $config['block']['themes'] }}" 
+  class="overflow-hidden" 
+  padding="none"
+>
   <x-cols 
-    cols="3" 
+    :cols="$align == 'center' ? '1' : '3'" 
     :contained="$scaling" 
     center
     :reversed="$align == 'right'"
@@ -18,6 +22,7 @@
         @class([
           'space-y-small',
           'py-section' => $scaling,
+          'text-center flex flex-col justify-center' => $align == 'center',
           '-mr-x-large' => $align == 'left',
           '-ml-x-large' => $align == 'right',
         ])
@@ -45,7 +50,7 @@
     </x-cols.col>
     <x-cols.col
       @class([
-        'lg:col-span-2',
+        'lg:col-span-2' => $align != 'center',
       ])
     >
       @if($content['image'])
