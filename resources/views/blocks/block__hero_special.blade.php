@@ -10,7 +10,10 @@
   ])
 >
   <x-container
-    @class(['grid xl:grid-cols-2 xl:gap-med'])
+    @class([
+      'grid grid-cols-1',
+      'grid xl:grid-cols-2 xl:gap-med' => $align != 'center'
+    ])
   >
     <div class="z-10">
       <div class="flex flex-col justify-center h-full space-y-med">
