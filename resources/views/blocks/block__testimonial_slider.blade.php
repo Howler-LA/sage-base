@@ -48,7 +48,7 @@
                   <div class="size-full flex flex-col items-center justify-center text-center space-y-med">
                     <div class="space-y-zero">
                       <x-pull-quote message="“" />
-                      <x-pull-quote message="{{ $card['copy'] }}" />
+                      <x-pull-quote size="sm" message="{{ $card['copy'] }}" />
                     </div>
                     <div class="space-y-min flex flex-col items-center justify-center">
                       <x-meta-text message="{{ $card['name'] }}" />
