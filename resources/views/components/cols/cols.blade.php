@@ -11,6 +11,8 @@
 })
 
 @php($cols_class = match ($cols) {
+	'5' 		=> 'xl:grid-cols-5',
+  '4' 		=> 'xl:grid-cols-4',
   '3' 		=> 'xl:grid-cols-3',
   default => 'xl:grid-cols-2',
 })
