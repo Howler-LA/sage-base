@@ -43,7 +43,7 @@
         <x-sub-menu class='hidden xl:flex items-center gap-4' name="secondary_navigation" /> 
         <button 
           @click="mobile=!mobile" 
-          class="size-11 flex items-center justify-center border border-foreground rounded-full transition-all ease" 
+          class="size-11 flex xl:hidden items-center justify-center border border-foreground rounded-full transition-all ease" 
           :class="mobile ? 'bg-foreground text-background' : 'bg-background text-foreground'"
         >
           <x-lucide-menu class="size-6 stroke-1"/>
