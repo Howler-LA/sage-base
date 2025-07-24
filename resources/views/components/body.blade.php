@@ -4,8 +4,8 @@
 ])
 
 @php($class = match ($size) {
-  '1' => 'text-body-1 leading-body-1 prose prose-lg lg:prose-xl',
-  '2' => 'text-body-2 leading-body-2 prose prose-lg',
+  '1' => 'text-body-1 leading-body-1 prose lg:prose-lg',
+  '2' => 'text-body-2 leading-body-2 prose',
 })
 
 @if($slot->isNotEmpty() or $message != null)

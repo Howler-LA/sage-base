@@ -24,7 +24,7 @@ return [
         'gallery'       => ['return_format' => 'id','preview_size'=>'medium'],
         'file'          => ['return_format' => 'id'],
         'relationship'  => ['return_format' => 'id'],                
-        'wysiwyg'       => ['tabs'=>'visual','media_upload'=>0],
+        'wysiwyg'       => ['tabs'=>'all','media_upload'=>0],
         'textarea'      => ['rows'=>2],
         'repeater'      => ['layout'=>'row'],
         'group'         => ['layout'=>'row'],
