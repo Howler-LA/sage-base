@@ -57,6 +57,9 @@
         <div
           data-aos-delay="100" 
           data-aos="fade-up"
+          @class([
+            'lg:w-3/4 mx-auto' => $align == 'center',
+          ])
         >
           @image($content['image'],'large',['class'=>'w-full h-auto object-cover object-top'])
         </div>

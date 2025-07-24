@@ -71,4 +71,4 @@ function acf_load_card_themes( $field ) {
 add_filter('acf/load_field/name=themes',  __NAMESPACE__ . '\\acf_load_themes');
 add_filter('acf/load_field/name=themes_secondary',  __NAMESPACE__ . '\\acf_load_themes');
 add_filter('acf/load_field/name=themes_cards',  __NAMESPACE__ . '\\acf_load_themes');
-// add_filter('acf/load_field/name=themes_card',  __NAMESPACE__ . '\\acf_load_card_themes');
+add_filter('acf/load_field/name=themes_card',  __NAMESPACE__ . '\\acf_load_card_themes');

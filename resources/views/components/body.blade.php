@@ -11,12 +11,11 @@
 @if($slot->isNotEmpty() or $message != null)
   <div 
     {{ $attributes->twMerge([
-      $class,
       'font-body',
       'tracking-body',
       'text-balance',
       'font-medium',
-      'text-foreground prose-headings:text-foreground prose-a:text-foreground'
+      $class,
     ]) }}
   >
     {!! $message ?? $slot !!}

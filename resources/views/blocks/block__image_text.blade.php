@@ -29,7 +29,8 @@
     <x-cols.col>
       @if($content['image'])
         <div
-          data-aos-delay="100" data-aos="fade-up"
+          data-aos-delay="100" 
+          data-aos="fade-up"
           data-theme="{{ $config['media']['themes'] }}"
           @class([
             'bg-background',
