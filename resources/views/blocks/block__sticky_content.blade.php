@@ -31,7 +31,7 @@
     <x-cols.col>
       @if($cards)
         @foreach($cards as $card)
-          <div class="p-section bg-background xl:border-l xl:border-b xl:last:border-b-0 border-border">
+          <div class="p-section bg-background">
             <x-card
               :variant="$type"
               :eyebrow="$card['eyebrow']"
