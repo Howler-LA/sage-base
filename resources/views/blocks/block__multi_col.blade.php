@@ -37,7 +37,7 @@
       @if($cards)
         @foreach($cards as $card)
           <x-card
-            data-theme="{{ $card['themes'] }}"
+            data-theme="{{ $card['themes_card'] }}"
             @class(['grid grid-cols-1 xl:grid-cols-2 items-center'  => $count == 1])
             :count="$count"
             :variant="$type"

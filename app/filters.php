@@ -54,6 +54,21 @@ function acf_load_themes( $field ) {
   return $field; 
 }
 
+function acf_load_card_themes( $field ) {
+  $field['choices'] = array();
+  // Add default 'inherit' choice
+  $field['choices'][''] = 'Inherit theme';
+  if( get_field('colors', 'option')['color_modes'] ) {
+    foreach(get_field('colors', 'option')['color_modes'] as $mode){
+      $value = $mode['name'];
+      $label = $mode['name'];
+      $field['choices'][ $value ] = $label;
+    }
+  }
+  return $field; 
+}
+
 add_filter('acf/load_field/name=themes',  __NAMESPACE__ . '\\acf_load_themes');
 add_filter('acf/load_field/name=themes_secondary',  __NAMESPACE__ . '\\acf_load_themes');
 add_filter('acf/load_field/name=themes_cards',  __NAMESPACE__ . '\\acf_load_themes');
+// add_filter('acf/load_field/name=themes_card',  __NAMESPACE__ . '\\acf_load_card_themes');
