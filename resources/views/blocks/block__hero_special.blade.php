@@ -3,7 +3,7 @@
 @set($order,false)
 
 <x-section
-  padding="{{ $content['image'] ? '' : 'roomy' }}"
+  :padding="$align == 'center' ? '' : 'none'"
   data-theme="{{ $config['block']['themes'] }}" 
   @class([
     'bg-background text-foreground',
@@ -14,6 +14,7 @@
   <x-container
     @class([
       'grid grid-cols-1 gap-med',
+      'xl:gap-large' => $align == 'center',
       'grid xl:grid-cols-2 xl:gap-med' => $align != 'center'
     ])
   >
