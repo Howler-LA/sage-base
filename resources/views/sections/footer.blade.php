@@ -28,7 +28,7 @@
         name="footer_navigation" 
       />
       <div class="flex flex-col gap-em lg:col-start-4">
-        <x-eyebrow naked>About Us</x-eyebrow>
+        <x-eyebrow naked :content="$footer['widget']['eyebrow']" />
         <div class="border border-foreground rounded-card p-med">
           <div class="h-full flex flex-col items-center gap-min">
             <x-title :message="$footer['widget']['headline']" />

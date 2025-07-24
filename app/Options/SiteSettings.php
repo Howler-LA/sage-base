@@ -77,6 +77,7 @@ class SiteSettings extends Field
                         ->addLink('contact')
                     ->endGroup()
                     ->addGroup('widget')
+                        ->addText('eyebrow')
                         ->addText('headline')
                         ->addLink('link')
                     ->endGroup()
