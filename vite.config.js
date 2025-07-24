@@ -15,7 +15,7 @@ export default defineConfig({
         'resources/js/editor.js',
       ],
       refresh: true,
-      detectTls: 'youthjustice.test',
+      detectTls: 'initiatejustice.test',
     }),
 
     wordpressPlugin(),

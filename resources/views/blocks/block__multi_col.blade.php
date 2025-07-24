@@ -38,7 +38,10 @@
         @foreach($cards as $card)
           <x-card
             data-theme="{{ $card['themes_card'] }}"
-            @class(['grid grid-cols-1 xl:grid-cols-2 items-center'  => $count == 1])
+            @class([
+              'grid grid-cols-1 xl:grid-cols-2 items-center'  => $count == 1,
+              'grid grid-cols-1 items-center' => $count == 1 && !$card['image']
+            ])
             :count="$count"
             :variant="$type"
             :eyebrow="$card['eyebrow']"
