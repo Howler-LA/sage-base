@@ -46,6 +46,7 @@ class Cards extends Partial
                 ->addFile('image')
                     ->conditional('type', '==', 'image')
                         ->or('type', '==', 'person')
+                ->addButtonGroup('themes',['label' => 'Card Theme'])
             ->endRepeater()
         ;
             // ->addFlexibleContent('cards', ['button_label' => 'Add Card'])

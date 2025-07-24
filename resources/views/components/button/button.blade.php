@@ -25,7 +25,8 @@
 
 <{{ $attributes->has(['href']) ? 'a' : 'button' }}  
 	{{ $attributes->twMerge([
-    'font-[var(--button-weight)] gap-1 inline-flex items-center tracking-button ease duration-300 transition-colors font-button',
+    'gap-1 inline-flex items-center tracking-button ease duration-300 transition-colors font-button',
+    'font-semibold',
     $variant_class,
     $size_class,
     $state_class,
