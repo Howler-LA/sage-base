@@ -20,7 +20,7 @@
   <x-section.header>
     <x-eyebrow>{{ $content['eyebrow'] }}</x-eyebrow>
     <x-display>{{ $content['headline'] }}</x-display>
-    <x-body>{!! $content['copy'] !!}</x-body>
+    <x-body class="max-w-prose mx-auto">{!! $content['copy'] !!}</x-body>
   </x-section.header>
   <x-container>
     <div 

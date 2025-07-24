@@ -14,7 +14,6 @@
       'font-body',
       'tracking-body',
       'font-medium',
-      'max-w-prose mx-auto',
       $class,
     ]) }}
   >

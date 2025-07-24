@@ -16,7 +16,7 @@
         <ul class="divide-y divide-foreground border-t border-foreground">
           @foreach ($item->children as $child)
             <li class="py-min">
-              <a href="{{ $child->url }}" class="flex items-center justify-between">
+              <a href="{{ $child->url }}" class="text-center lg:text-left">
                 <x-body size="2" :message="$child->label" />
               </a>
             </li>

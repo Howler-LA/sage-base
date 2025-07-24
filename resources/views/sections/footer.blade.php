@@ -7,7 +7,7 @@
 
     <div class="flex flex-col lg:flex-row justify-between items-start gap-small">
       <x-eyebrow :content="$footer['upper']['eyebrow']" />
-      <ul>
+      <ul class="flex-grow flex flex-col items-end">
         @if($footer['upper']['address'])
           <li class="flex gap-min"><x-body size="2" :message="$footer['upper']['address']" /></li>
         @endif
@@ -52,7 +52,7 @@
             name="lower_footer_navigation" 
           />
         </div>
-        <div class="col-span-2 col-start-3 flex flex-col items-end">
+        <div class="col-span-2 col-start-3 flex flex-col items-end text-right">
           <x-body size="2">Copyright © {{ date("Y") }}, {{ $siteName }}. All rights reserved. </x-body>
           <x-body size="2">TTY Users: 7-1-1 or 800-735-2964</x-body>
         </div>
