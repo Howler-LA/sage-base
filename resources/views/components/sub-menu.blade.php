@@ -7,7 +7,7 @@
 @php($menu = Navi::build($name))
 
 @if ($menu->isNotEmpty())
-  <ul {{ $attributes->twMerge(['border-t border-foreground/50 pt-min']) }}>
+  <ul {{ $attributes->twMerge(['border-b border-foreground/50 pb-em']) }}>
     @foreach ($menu->all() as $item)
       <li @class([
         'text-body-2',

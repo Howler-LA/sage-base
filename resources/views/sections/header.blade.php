@@ -30,6 +30,7 @@
         @endunless
       </a>
       <div class="flex flex-row lg:flex-col justify-end items-center lg:items-end gap-min flex-grow">
+        <x-sub-menu class='hidden xl:flex items-center gap-4' name="secondary_navigation" /> 
         <x-button.group>
           <x-desktop-menu class='hidden xl:flex items-center' />
           <x-button 
@@ -40,7 +41,6 @@
             variant=""
           />
         </x-button.group>
-        <x-sub-menu class='hidden xl:flex items-center gap-4' name="secondary_navigation" /> 
         <button 
           @click="mobile=!mobile" 
           class="size-11 flex xl:hidden items-center justify-center border border-foreground rounded-full transition-all ease" 
