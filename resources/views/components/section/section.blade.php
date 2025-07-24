@@ -1,6 +1,6 @@
 @props([
   'padding' => null,
-  'tag' => 'div'
+  'tag' => 'section'
 ])
 
 @php($class = match ($padding) {
@@ -10,6 +10,6 @@
   default => 'py-section',
 })
 
-<{{ $tag }} {{ $attributes->twMerge([$class, 'gap-y-med flex flex-col bg-background text-foreground relative']) }}>
+<{{ $tag }} {{ $attributes->twMerge([$class, 'space-y-med bg-background text-foreground relative']) }}>
 	{{ $slot }}
 </{{ $tag }}>

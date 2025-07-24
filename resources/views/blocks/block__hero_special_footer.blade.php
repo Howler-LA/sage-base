@@ -6,9 +6,10 @@
 	<x-section.header data-aos="fade-in" class="relative">
     <div 
       data-theme="{{ $config['block']['themes_secondary'] }}"  
-      class="bg-background text-foreground flex flex-col items-center justify-center p-large rounded-b-card space-y-small"
+      class="bg-background text-foreground flex flex-col w-full items-center justify-center p-large rounded-b-card space-y-small"
     >
-  		<x-eyebrow>{{ $content['headline'] }}</x-eyebrow>
+      <x-eyebrow>{{ $content['headline'] }}</x-eyebrow>
+      <x-subhead :message="$content['copy']" />
       @if($content['links'])
         <x-card.footer>
           <x-button.group>
