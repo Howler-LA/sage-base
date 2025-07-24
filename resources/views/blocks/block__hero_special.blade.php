@@ -2,21 +2,28 @@
 @set($scaling,$align == 'center' ? true : false)
 @set($order,false)
 
-<div
+<x-section
+  padding="{{ $content['image'] ? '' : 'roomy' }}"
   data-theme="{{ $config['block']['themes'] }}" 
   @class([
     'bg-background text-foreground',
-    'overflow-hidden'
+    'overflow-hidden',
+    'pb-0 overflow-hidden' => $content['image'],
   ])
 >
   <x-container
     @class([
-      'grid grid-cols-1',
+      'grid grid-cols-1 gap-med',
       'grid xl:grid-cols-2 xl:gap-med' => $align != 'center'
     ])
   >
     <div class="z-10">
-      <div class="flex flex-col justify-center h-full space-y-med">
+      <div
+        @class([
+          'flex flex-col justify-center h-full space-y-med',
+          'items-center text-balance' => $align == 'center'
+        ])
+      >
         <x-eyebrow :content="$content['eyebrow']" />
         <div class="space-y-em">
           <x-super-display 
@@ -65,7 +72,7 @@
       </div>
     </div>
   </x-container>
-</div>
+</x-section>
 
 {{-- <x-section 
   data-theme="{{ $config['block']['themes'] }}" 

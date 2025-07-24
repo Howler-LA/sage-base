@@ -9,7 +9,6 @@
       class="bg-background text-foreground flex flex-col items-center justify-center p-large rounded-b-card space-y-small"
     >
   		<x-eyebrow>{{ $content['headline'] }}</x-eyebrow>
-      <x-subhead>{!! $content['copy'] !!}</x-subhead>
       @if($content['links'])
         <x-card.footer>
           <x-button.group>
