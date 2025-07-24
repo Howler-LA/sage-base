@@ -38,7 +38,12 @@
         <div class="swiper-wrapper">
           @foreach(get_sub_field('cards') as $card)
             <div class="swiper-slide">
-              <div data-theme="Black" class="grid grid-cols-1 xl:grid-cols-2">
+              <div 
+                data-theme="Black" 
+                @class([
+                  'grid grid-cols-1 xl:grid-cols-2' => $card['image']
+                ])
+              >
                 <div class="p-large bg-background text-foreground">
                   <div class="size-full flex flex-col items-center justify-center text-center space-y-med">
                     <div class="space-y-zero">
