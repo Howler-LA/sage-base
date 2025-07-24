@@ -59,7 +59,7 @@
   </x-container>
   <div class="flex items-center justify-center">
     @if($content['links'])
-      <x-card.footer>
+      <div class="flex items-center">
         <x-button.group>
           @foreach($content['links'] as $link)
             <x-button 
@@ -71,7 +71,7 @@
             />
           @endforeach
         </x-button.group>
-      </x-card.footer>
+      </div>
     @endif
   </div>
 </x-section>

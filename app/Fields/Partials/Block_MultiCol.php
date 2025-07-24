@@ -24,15 +24,6 @@ class Block_MultiCol extends Partial
             ->removeField('content->image')
         ;
 
-        $fields
-            ->modifyField('config->block->themes', function($fieldsBuilder) {
-                $fieldsBuilder
-                    ->addButtonGroup('themes_cards',['label'=>'Cards Theme'])
-                ;
-                return $fieldsBuilder;
-            })
-        ;
-
         return $fields;
     }
 }

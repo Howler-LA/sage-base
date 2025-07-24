@@ -13,8 +13,8 @@
     {{ $attributes->twMerge([
       'font-body',
       'tracking-body',
-      'text-balance',
       'font-medium',
+      'max-w-prose mx-auto',
       $class,
     ]) }}
   >
