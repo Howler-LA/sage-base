@@ -40,7 +40,7 @@
             :message="$content['subhead']" 
           />
         </div>
-        <x-body :message="$content['copy']" />
+        <x-body :message="$content['copy']" class="max-w-prose mx-auto" />
         @if($content['links'])
           <x-card.footer>
             <x-button.group>
