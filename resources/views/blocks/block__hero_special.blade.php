@@ -18,9 +18,9 @@
       <x-super-display 
         @class([
           'relative',
-            'items-center justify-center text-center xl:px-large' => $config['block']['align'] == 'center',
-            'items-start justify-start text-left' => $config['block']['align'] == 'left',
-            'items-end justify-end text-right' => $config['block']['align'] == 'right',
+          'items-center justify-center text-center xl:px-large' => $config['block']['align'] == 'center',
+          'items-start justify-start text-left' => $config['block']['align'] == 'left',
+          'items-end justify-end text-right' => $config['block']['align'] == 'right',
         ])
         :message="$content['headline']"
       />

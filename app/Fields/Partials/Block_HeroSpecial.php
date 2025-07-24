@@ -29,7 +29,7 @@ class Block_HeroSpecial extends Partial
             ->modifyField('config->block->themes', function($fieldsBuilder) {
                 $fieldsBuilder
                     ->addButtonGroup('align',[ 
-                        'label' => 'Text align',
+                        'label' => 'Hero align',
                         'choices' => [ 
                             'left'      => 'Left', 
                             'center'    => 'Center',

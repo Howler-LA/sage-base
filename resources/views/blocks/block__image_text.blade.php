@@ -26,9 +26,20 @@
         @endif
       </div>
     </x-cols.col>
-    <x-cols.col data-aos-delay="100" data-aos="fade-up">
+    <x-cols.col>
       @if($content['image'])
-        @image($content['image'],'large',['class'=>'w-full h-auto object-cover object-top'])
+        <div
+          data-aos-delay="100" data-aos="fade-up"
+          data-theme="{{ $config['media']['themes'] }}"
+          @class([
+            'bg-background',
+            'p-zero' => $config['media']['image_size'] == 'full',
+            'p-large' => $config['media']['image_size'] == 'narrow',
+            'p-x-large' => $config['media']['image_size'] == 'wide',
+          ])
+        >
+          @image($content['image'],'large',['class'=>'w-full h-auto object-cover object-top'])
+        </div>
       @else
         <div class="aspect-[5/4] bg-background rounded-card bg-black/10">
           <div class="absolute inset-0 flex items-center justify-center">
