@@ -28,18 +28,20 @@ class Block_HeroSpecial extends Partial
             })
             ->modifyField('content->image', function($fieldsBuilder) {
                 $fieldsBuilder
-                    ->addFile('svg_headline',['label'=>'Vector Headline'])
+                    ->addFile('svg_headline',[
+                        'label'=>'Hero Vector Headline',
+                        'instructions' => 'Replaces text headline'
+                    ])->conditional('align', '==', 'center')
                 ;
                 return $fieldsBuilder;
             })
-            ->modifyField('config->block->themes', function($fieldsBuilder) {
+            ->modifyField('content->image', function($fieldsBuilder) {
                 $fieldsBuilder
-                    ->addButtonGroup('align',[ 
-                        'label' => 'Hero align',
+                    ->addRadio('align',[ 
+                        'label' => 'Hero Version',
                         'choices' => [ 
-                            'left'      => 'Left', 
-                            'center'    => 'Center',
-                            'right'     => 'Right', 
+                            'left'      => 'Left aligned', 
+                            'center'    => 'Centered with vector headline',
                         ],
                         'default_value' => 'center'
                     ])
