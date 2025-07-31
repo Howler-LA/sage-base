@@ -3,4 +3,5 @@
 /public/*
 !/public/.gitkeep
 .env
+vite.config.js
 npm-debug.log
