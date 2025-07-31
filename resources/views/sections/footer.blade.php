@@ -29,7 +29,7 @@
       />
       <div class="flex flex-col gap-em lg:col-start-4">
         <x-eyebrow naked :content="$footer['widget']['eyebrow']" />
-        <div class="border border-foreground rounded-card p-med">
+        <div class="border !border-[var(--gridlines-tint)] rounded-card p-med">
           <div class="h-full flex flex-col items-center gap-min">
             <x-title :message="$footer['widget']['headline']" />
             <div class="w-px min-h-large flex-grow bg-foreground"></div>
@@ -43,16 +43,16 @@
       </div>
     </div>
     
-    <div class="border-t border-foreground">
-      <hr class="h-px border-foreground mt-1" />
-      <div class="grid grid-cols-1 lg:grid-cols-4 gap-min lg:gap-small py-med">
-        <div class="col-span-2 col-start-1">
+    <div class="border-t border-border">
+      <hr class="h-px border-[var(--gridlines-tint)] mt-1" />
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-min lg:gap-small py-med">
+        <div class="xl:col-span-2 col-start-1">
           <x-lower-footer
-            class="grid grid-cols-3 gap-x-em col-span-3"
+            class="grid xl:grid-cols-3 gap-y-min xl:gap-y-0 gap-x-em col-span-3"
             name="lower_footer_navigation" 
           />
         </div>
-        <div class="col-span-2 col-start-3 flex flex-col items-end text-right">
+        <div class="xl:col-span-2 xl:col-start-3 flex flex-col gap-y-min xl:gap-y-0 items-end xl:text-right">
           <x-body size="2">Copyright © {{ date("Y") }}, {{ $siteName }}. All rights reserved. </x-body>
           <x-body size="2">TTY Users: 7-1-1 or 800-735-2964</x-body>
         </div>

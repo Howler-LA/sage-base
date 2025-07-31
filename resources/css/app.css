@@ -9,24 +9,6 @@
 		@apply antialiased;
     @apply bg-background text-foreground;
 	}
-	a:where(:not(.wp-element-button)) {
-		@apply !no-underline;
-	}
-	* {
-		@apply border-border;
-	}
-}
-
-:root {
-	--bg-color: var(--color-white);
-	--txt-color: var(--color-stone-800);
-	--border-color: var(--color-foreground);
-}
-
-[data-theme="Cyan"] {
-	--bg-color: var(--color-cyan-400);
-	--txt-color: var(--color-cyan-900);
-	--border-color: var(--color-cyan-500);
 }
 
 @theme inline {
@@ -112,10 +94,11 @@
 
 	--color-background: 		var(--bg-color);
 	--color-foreground: 		var(--txt-color);
-	--color-border: 				var(--border-color);
+	--color-border: 				var(--gridlines-tint);
 
   --color-eyebrow-background: var(--eyebrow-bg);
   --color-eyebrow-foreground: var(--eyebrow-txt);	
+  --color-eyebrow-border: 		var(--eyebrow-border);	
 
 	--color-btn-background: var(--button-color-btn-bg);
   --color-btn-foreground: var(--button-color-btn-txt);
