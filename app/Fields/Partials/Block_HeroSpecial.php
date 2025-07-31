@@ -43,7 +43,7 @@ class Block_HeroSpecial extends Partial
                             'left'      => 'Left aligned', 
                             'center'    => 'Centered with vector headline',
                         ],
-                        'default_value' => 'center'
+                        'default_value' => 'left'
                     ])
                 ;
                 return $fieldsBuilder;
