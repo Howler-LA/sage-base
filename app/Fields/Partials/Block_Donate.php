@@ -12,7 +12,7 @@ class Block_Donate extends Partial
      */
     public function fields(): Builder
     {
-        $fields = Builder::make('block__donate');
+        $fields = Builder::make('block__donate',['label'=>'Donate']);
 
         $fields
             ->addFields($this->get(Content::class))

@@ -12,7 +12,7 @@ class Block_ImageGrid extends Partial
      */
     public function fields(): Builder
     {
-        $fields = Builder::make('block__image_grid');
+        $fields = Builder::make('block__image_grid',['label'=>'Image Grid']);
 
         $fields
             ->addFields($this->get(Content::class))

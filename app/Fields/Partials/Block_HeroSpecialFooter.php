@@ -12,7 +12,7 @@ class Block_HeroSpecialFooter extends Partial
      */
     public function fields(): Builder
     {
-        $fields = Builder::make('block__hero_special_footer',['title'=>'Custom Hero Lower']);
+        $fields = Builder::make('block__hero_special_footer',['title'=>'Hero Footer - Special']);
 
         $fields
             ->addFields($this->get(Content::class))

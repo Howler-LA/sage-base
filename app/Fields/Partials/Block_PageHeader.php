@@ -12,7 +12,7 @@ class Block_PageHeader extends Partial
      */
     public function fields(): Builder
     {
-        $fields = Builder::make('block__page_header');
+        $fields = Builder::make('block__page_header',['label'=>'Page Header']);
 
         $fields
             ->addFields($this->get(Content::class))

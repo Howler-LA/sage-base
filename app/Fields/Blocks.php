@@ -35,17 +35,17 @@ class Blocks extends Field
 
         $fields
             ->addFlexibleContent('content', ['button_label' => 'Add Block'])
-                ->addLayout($this->get(Block_Accordion::class))
-                ->addLayout($this->get(Block_CTA::class))
-                ->addLayout($this->get(Block_Donate::class))
                 ->addLayout($this->get(Block_Hero::class))
                 ->addLayout($this->get(Block_HeroSpecial::class))
                 ->addLayout($this->get(Block_HeroSpecialFooter::class))
+                ->addLayout($this->get(Block_PageHeader::class))
+                ->addLayout($this->get(Block_Accordion::class))
+                ->addLayout($this->get(Block_CTA::class))
+                ->addLayout($this->get(Block_Donate::class))
                 ->addLayout($this->get(Block_ImageCards::class))
                 ->addLayout($this->get(Block_ImageGrid::class))
                 ->addLayout($this->get(Block_ImageText::class))
-                ->addLayout($this->get(Block_MultiCol::class))                
-                ->addLayout($this->get(Block_PageHeader::class))                
+                ->addLayout($this->get(Block_MultiCol::class))
                 ->addLayout($this->get(Block_StickyContent::class))
                 ->addLayout($this->get(Block_TestimonialSlider::class))
             ->endFlexibleContent();

@@ -12,7 +12,7 @@ class Block_HeroSpecial extends Partial
      */
     public function fields(): Builder
     {
-        $fields = Builder::make('block__hero_special',['title'=>'Custom Hero Upper']);
+        $fields = Builder::make('block__hero_special',['title'=>'Hero Upper - Special']);
 
         $fields
             ->addFields($this->get(Content::class))
