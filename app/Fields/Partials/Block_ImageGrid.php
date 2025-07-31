@@ -21,6 +21,28 @@ class Block_ImageGrid extends Partial
 
         $fields
             ->removeField('content->image')
+            ->modifyField('content->links', function($fieldsBuilder) {
+                $fieldsBuilder
+                    ->addGallery('images')
+                ;
+                return $fieldsBuilder;
+            })
+            ->modifyField('config->block->themes', function($fieldsBuilder) {
+                $fieldsBuilder
+                    ->addButtonGroup('aspect_ratio',[ 
+                        'label'         => 'Force aspect-ratio',
+                        'choices'       => [
+                            'auto'      => 'Auto',
+                            'magic'     => 'Magic',
+                            '6_4'       => '6/4',
+                            '4_6'       => '4/6',
+                            '1_1'       => 'Square',
+                        ],
+                        'default_value' => 'auto'
+                    ])
+                ;
+                return $fieldsBuilder;
+            })
         ;
 
         return $fields;

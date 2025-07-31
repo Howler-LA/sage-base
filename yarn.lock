@@ -481,6 +481,16 @@
   dependencies:
     json2php "^0.0.7"
 
+add@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/add/-/add-2.0.6.tgz#248f0a9f6e5a528ef2295dbeec30532130ae2235"
+  integrity sha512-j5QzrmsokwWWp6kUcJQySpbG+xfOBqqKnup3OIk1pz+kB/80SLorZ9V8zHFLO92Lcd+hbvq8bT+zOGoPkmBV0Q==
+
+alpinejs-masonry@^1.0.16:
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/alpinejs-masonry/-/alpinejs-masonry-1.0.16.tgz#d10b112c8e5d335c6613e09f050a95668a4dd0e0"
+  integrity sha512-66HkEmBW0lH9NVjSCFAhJnbTEYhpYdSJ8dotPH5RNG6g1BkyvewaNxfb9/L381B2sL1Jx5rMHEJPZMGIcX2Lcg==
+
 alpinejs@^3.14.9:
   version "3.14.9"
   resolved "https://registry.yarnpkg.com/alpinejs/-/alpinejs-3.14.9.tgz#381a050152acb221b2209d9398935d5cd4c18afc"
@@ -860,3 +870,8 @@ yallist@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-5.0.0.tgz#00e2de443639ed0d78fd87de0d27469fbcffb533"
   integrity sha512-YgvUTfwqyc7UXVMrB+SImsVYSmTS8X/tSrtdNZMImM+n7+QTriRXyXim0mBrTXNeqzVF0KWGgHPeiyViFFrNDw==
+
+yarn@^1.22.22:
+  version "1.22.22"
+  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.22.22.tgz#ac34549e6aa8e7ead463a7407e1c7390f61a6610"
+  integrity sha512-prL3kGtyG7o9Z9Sv8IPfBNrWTDmXB4Qbes8A9rEzt6wkJV8mUvoirjU0Mp3GGAU06Y0XQyA3/2/RQFVuK7MTfg==
