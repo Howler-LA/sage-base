@@ -1,7 +1,7 @@
 @props([
   'name' => null,
-  'inactive' => 'hover:text-blue-500',
-  'active' => 'text-blue-500',
+  'inactive' => 'hover:underline underline-offset-4',
+  'active' => 'underline underline-offset-4',
 ])
 
 @php($menu = Navi::build($name))
@@ -15,14 +15,12 @@
         $inactive => ! $item->active,
         $active => $item->active,
       ])>
-        <x-button 
-          state="{{ $item->active ? 'active' : '' }}"
-          icon="{{ $item->children ? 'lucide-chevron-down' : '' }}" 
-          variant="link" 
+        <a 
+          class="text-body-1 leading-none"
           href="{{ $item->url }}"
         >
           {{ $item->label }}
-        </x-button>
+        </a>
 
         @if ($item->children)
           <div class="opacity-0 invisible group-hover:visible group-hover:opacity-100 absolute -mt-px pt-min">

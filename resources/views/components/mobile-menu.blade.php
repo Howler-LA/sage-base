@@ -12,8 +12,8 @@
       @foreach ($menu->all() as $item)
         <li x-data="{show:false}">
           <div class="flex justify-between items-center py-em px-med">
-            <a href="{{ $item->url }}">
-              <x-body class="font-bold">{{ $item->label }}</x-body>
+            <a class="font-bold text-button" href="{{ $item->url }}">
+              {{ $item->label }}
             </a>
             @if ($item->children)
               <div 
@@ -26,7 +26,7 @@
             @endif
           </div>
           @if ($item->children)
-            <ul data-theme="White" x-show="show" class="bg-background text-foreground divide-y divide-foreground/10">
+            <ul data-theme="White" x-show="show" class="bg-background text-foreground divide-y divide-border">
               @foreach ($item->children as $child)
                 <li @class([
                   'py-em px-med',
@@ -35,7 +35,7 @@
                   $active => $child->active,
                 ])>
                   <a href="{{ $child->url }}">
-                    <x-body class="font-bold">{{ $item->label }}</x-body>
+                    <x-body class="font-bold">{{ $child->label }}</x-body>
                   </a>
                 </li>
               @endforeach

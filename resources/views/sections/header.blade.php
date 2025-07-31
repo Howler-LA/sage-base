@@ -1,7 +1,7 @@
 
 
 <x-section
-  x-data="{mobile:false}"
+  x-data="{mobile:true}"
   data-theme="{{ 
     $blocks 
       ? (get_field('sections','options')['header']['match'] ? $blocks[0]['config']['block']['themes'] : get_field('sections','options')['header']['themes'])
@@ -11,7 +11,7 @@
   padding="tight"
   @class([
     'sticky z-50',
-    is_user_logged_in() ? 'top-[32px]' : 'top-0',
+    is_user_logged_in() ? 'top-0 xl:top-[32px]' : 'top-0',
   ])
 >
   <x-container>
@@ -25,14 +25,13 @@
           @if(!str_contains(wp_get_attachment_url($img), 'svg'))
             @image($img,'large',['class'=>'text-foreground fill-foreground max-w-[145px] xl:max-w-72 2xl:max-w-none'])
           @else
-            @svg(str_replace('.svg','',$svg), 'text-foreground fill-foreground max-w-[145px] 2xl:max-w-none', ['aria-label' => $siteName])
+            @svg(str_replace('.svg','',$svg), 'text-foreground fill-foreground max-w-[145px] 2xl:max-w-none h-auto', ['aria-label' => $siteName])
           @endif
         @endunless
       </a>
-      <div class="flex flex-row lg:flex-col justify-end items-center lg:items-end gap-min flex-grow">
-        <x-sub-menu class='hidden xl:flex items-center gap-4' name="secondary_navigation" /> 
-        <x-button.group>
-          <x-desktop-menu class='hidden xl:flex items-center' />
+      <div class="flex flex-row lg:flex-col justify-end items-center lg:items-end gap-em flex-grow">
+        <x-button.group class="!gap-em">
+          <x-sub-menu class='hidden xl:flex items-center gap-4' name="secondary_navigation" /> 
           <x-button 
             label="Donate"
             href="#"
@@ -41,9 +40,10 @@
             variant=""
           />
         </x-button.group>
+        <x-desktop-menu class='hidden xl:flex items-center gap-med border-t border-border pt-em' />
         <button 
           @click="mobile=!mobile" 
-          class="size-11 flex xl:hidden items-center justify-center border border-foreground rounded-full transition-all ease" 
+          class="size-11 flex xl:hidden items-center justify-center border border-foreground cursor-pointer rounded-full transition-all ease" 
           :class="mobile ? 'bg-foreground text-background' : 'bg-background text-foreground'"
         >
           <x-lucide-menu class="size-6 stroke-1"/>

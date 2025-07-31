@@ -7,21 +7,21 @@
 @php($menu = Navi::build($name))
 
 @if ($menu->isNotEmpty())
-  <ul {{ $attributes->twMerge(['border-b border-foreground/50 pb-em']) }}>
+  <ul {{ $attributes->twMerge(['']) }}>
     @foreach ($menu->all() as $item)
       <li @class([
         'text-body-2',
-        'font-button',
+        'font-meta-text',
         $item->classes,
         $inactive => ! $item->active,
         $active => $item->active,
       ])>
         <a href="{{ $item->url }}">
-          {{ $item->label }}
+          <x-meta-text :message="$item->label" />
         </a>
 
         @if ($item->children)
-          <ul>
+          <ul class="hidden">
             @foreach ($item->children as $child)
               <li @class([
                 $child->classes,
