@@ -42,7 +42,7 @@
         </div>
         <x-body :message="$content['copy']" class="max-w-prose mx-auto" />
         @if($content['links'])
-          <x-card.footer>
+          <div class="flex flex-col pt-em card-footer justify-end">
             <x-button.group>
               @foreach($content['links'] as $link)
                 <x-button 
@@ -54,7 +54,7 @@
                 />
               @endforeach
             </x-button.group>
-          </x-card.footer>
+          </div>
         @endif
       </div>
     </div>
