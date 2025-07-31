@@ -40,7 +40,13 @@
             :message="$content['subhead']" 
           />
         </div>
-        <x-body :message="$content['copy']" class="max-w-prose mx-auto" />
+        <x-body 
+          :message="$content['copy']" 
+          @class([
+            'max-w-prose mx-auto',
+            'text-center' => $align == 'center'
+          ])
+        />
         @if($content['links'])
           <div class="flex flex-col pt-em card-footer justify-end">
             <x-button.group>
