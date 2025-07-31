@@ -1,6 +1,6 @@
 <x-section data-theme="{{ $config['block']['themes'] }}" padding="none" class="overflow-hidden">
   <x-container class="grid grid-cols-1 xl:grid-cols-2">
-    <div class="relative z-10 py-x-large">
+    <div class="relative z-10 py-small xl:py-x-large flex flex-col items-center text-center xl:text-left xl:items-start">
       <x-eyebrow :content="$content['eyebrow']" />
       <x-super-display :message="$content['headline']" class="mt-large mb-em" />
       <x-title :message="$content['subhead']" class="mb-med" />
@@ -22,7 +22,7 @@
       @endif
     </div>
     <div class="relative">
-      <div class="-mx-[calc(var(--spacing-browser)*.2)]">
+      <div class="xl:-mx-[calc(var(--spacing-browser)*.2)]">
         @image($content['image'],'large',[
           'data-aos-delay' => '100', 
           'data-aos'=>'fade-in', 
