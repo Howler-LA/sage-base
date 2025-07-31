@@ -1,8 +1,84 @@
-<x-section data-theme="{{ $config['block']['themes'] }}">
-	<x-container>
-
-	</x-container>
+<x-section data-theme="{{ $config['block']['themes'] }}" padding="none" class="overflow-hidden">
+  <x-container class="grid grid-cols-1 xl:grid-cols-2">
+    <div class="relative z-10 py-x-large">
+      <x-eyebrow :content="$content['eyebrow']" />
+      <x-super-display :message="$content['headline']" class="mt-large mb-em" />
+      <x-title :message="$content['subhead']" class="mb-med" />
+      <x-body :message="$content['copy']" class="max-w-[480px]" />
+      @if($content['links'])
+        <div class="flex flex-col pt-med card-footer justify-end">
+          <x-button.group>
+            @foreach($content['links'] as $link)
+              <x-button 
+                variant="{{ $loop->iteration == 1 ? 'primary' : 'outline' }}"
+                label="{{ $link['link']['title'] }}"
+                title="{{ $link['link']['title'] }}"
+                href="{{ $link['link']['url'] }}"
+                target="{{ $link['link']['target'] }}"
+              />
+            @endforeach
+          </x-button.group>
+        </div>
+      @endif
+    </div>
+    <div class="relative">
+      <div class="-mx-[calc(var(--spacing-browser)*.2)]">
+        @image($content['image'],'large',[
+          'data-aos-delay' => '100', 
+          'data-aos'=>'fade-in', 
+          'class'=>'w-full h-auto block', 
+          'alt'=> $content['headline'] 
+        ])
+      </div>
+    </div>
+  </x-container>
 </x-section>
+
+{{-- <x-section data-theme="{{ $config['block']['themes'] }}" padding="none" class="overflow-hidden">
+	<div
+    @class([
+      'grid grid-cols-1',
+      'gap-med xl:grid-cols-2 xl:gap-med' => $align != 'center'
+    ])
+  >
+    <div class="relative order-last">
+      <div 
+        @class([
+          'bg-pink-100',
+          'w-[calc(var(--spacing-browser)*.75)]',
+        ])
+      > 
+        @image($content['image'],'large',[
+          'data-aos-delay' => '100', 
+          'data-aos'=>'fade-in', 
+          'class'=>'w-full h-auto block', 
+          'alt'=> $content['headline'] 
+        ])
+      </div>
+    </div>
+    <div class="flex flex-col justify-center relative">
+      <x-eyebrow :content="$content['eyebrow']" />
+      <x-super-display :message="$content['headline']" class="mt-med mb-em" />
+      <x-title :message="$content['subhead']" class="mb-med" />
+      <x-body :message="$content['copy']" />
+      @if($content['links'])
+        <div class="flex flex-col pt-em card-footer justify-end">
+          <x-button.group>
+            @foreach($content['links'] as $link)
+              <x-button 
+                variant="{{ $loop->iteration == 1 ? 'primary' : 'outline' }}"
+                label="{{ $link['link']['title'] }}"
+                title="{{ $link['link']['title'] }}"
+                href="{{ $link['link']['url'] }}"
+                target="{{ $link['link']['target'] }}"
+              />
+            @endforeach
+          </x-button.group>
+        </div>
+      @endif
+    </div>
+	</div>
+</x-section> --}}
 
 {{-- <x-section
   :padding="$align == 'center' ? '' : 'none'"
