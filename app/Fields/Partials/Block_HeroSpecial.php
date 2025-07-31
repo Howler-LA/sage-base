@@ -26,6 +26,12 @@ class Block_HeroSpecial extends Partial
                 ;
                 return $fieldsBuilder;
             })
+            ->modifyField('content->image', function($fieldsBuilder) {
+                $fieldsBuilder
+                    ->addFile('svg_headline',['label'=>'Vector Headline'])
+                ;
+                return $fieldsBuilder;
+            })
             ->modifyField('config->block->themes', function($fieldsBuilder) {
                 $fieldsBuilder
                     ->addButtonGroup('align',[ 
