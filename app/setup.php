@@ -80,6 +80,7 @@ add_action('after_setup_theme', function () {
         'secondary_navigation' => __('Secondary Nav', 'sage'),
         'footer_navigation' => __('Upper Footer Nav', 'sage'),
         'lower_footer_navigation' => __('Lower Footer Nav', 'sage'),
+        'lang_navigation' => __('Language Switcher', 'sage'),
     ]);
 
     /**

@@ -41,6 +41,9 @@
             class='hidden xl:flex items-center gap-4' 
             name="secondary_navigation" 
           /> 
+          @if(has_nav_menu('lang_navigation'))
+            <x-language-switcher name="lang_navigation" />
+          @endif
           <x-button 
             label="Donate"
             href="#"

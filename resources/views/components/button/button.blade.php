@@ -15,7 +15,7 @@
   'success' => 'text-green-50 bg-green-400',
   'link'    => 'inline-flex rounded-full text-foreground hover:bg-btn-background/10 !px-5',
   'outline' => 'bg-transparent hover:bg-btn-background text-btn-foreground-hover hover:text-btn-foreground ring-1 ring-btn-border rounded-full',
-  default 	=> 'bg-btn-background text-btn-foreground hover:bg-btn-background-hover hover:text-btn-foreground-hover ring-1 ring-btn-border rounded-full',
+  default 	=> 'bg-btn-background text-btn-foreground hover:bg-btn-background-hover hover:text-btn-foreground-hover active:text-btn-foreground-hover ring-1 ring-btn-border rounded-full',
 })
 
 @php($size_class = match ($size) {
@@ -37,7 +37,7 @@
   </span>
 
   @if($icon)
-    <x-dynamic-component :component="$icon" class="translate-y-px size-5 stroke-3 transition duration-300 ease group-hover:rotate-180" /> 
+    <x-dynamic-component :component="$icon" class="translate-y-px size-4 stroke-3 transition-transform duration-300 ease group-hover:rotate-180" /> 
   @endif
 
 </{{ $attributes->has(['href']) ? 'a' : 'button' }}>

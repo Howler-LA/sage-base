@@ -8,6 +8,7 @@
 	html,body {
 		@apply antialiased;
     @apply bg-background text-foreground;
+    @apply font-body text-body-2;
 	}
 }
 
