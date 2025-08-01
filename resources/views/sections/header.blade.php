@@ -29,9 +29,18 @@
           @endif
         @endunless
       </a>
-      <div class="flex flex-row lg:flex-col justify-end items-center lg:items-end gap-em flex-grow">
-        <x-button.group class="!gap-em">
-          <x-sub-menu class='hidden xl:flex items-center gap-4' name="secondary_navigation" /> 
+      <div
+        @class([
+          'menu',
+          'flex flex-row justify-end items-center flex-grow',
+          has_nav_menu('secondary_navigation') ? 'lg:flex-col lg:items-end gap-em' : 'lg:flex-row gap-med',
+        ])
+      >
+        <x-dynamic-component class="!gap-em" :component="has_nav_menu('secondary_navigation') ? 'button.group' : 'empty'"> 
+          <x-sub-menu 
+            class='hidden xl:flex items-center gap-4' 
+            name="secondary_navigation" 
+          /> 
           <x-button 
             label="Donate"
             href="#"
@@ -39,8 +48,14 @@
             target="self"
             variant=""
           />
-        </x-button.group>
-        <x-desktop-menu class='hidden xl:flex items-center gap-med border-t border-border pt-em' />
+        </x-dynamic-component>
+        <x-desktop-menu 
+          @class([
+            'hidden xl:flex items-center gap-med',
+            'border-t border-border pt-em' => has_nav_menu('secondary_navigation'),
+            'order-first' => !has_nav_menu('secondary_navigation')
+          ])
+        />
         <button 
           @click="mobile=!mobile" 
           class="size-11 flex xl:hidden items-center justify-center border border-foreground cursor-pointer rounded-full transition-all ease" 

@@ -88,6 +88,11 @@
 	--spacing-gutter: 			calc(var(--spacing-gutters)*1px);
 	--spacing-section:			calc(var(--spacing-large)*1px);
 	--spacing-container:		calc(var(--spacing-large)*1px);
+
+	--spacing-btn-vert-l:		calc(var(--button-padding-vert-l)*1px);
+	--spacing-btn-horiz-l:	calc(var(--button-padding-horiz-l)*1px);
+	--spacing-btn-vert-s:		calc(var(--button-padding-vert-s)*1px);
+	--spacing-btn-horiz-s:	calc(var(--button-padding-horiz-s)*1px);
 	
 	--radius-card: 					calc(var(--card-radius)*1px);
   --spacing-card: 				calc(var(--card-padding)*1px);

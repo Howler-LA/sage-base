@@ -11,27 +11,38 @@
     @foreach ($menu->all() as $item)
       <li @class([
         'group',
+        'relative',
         $item->classes,
         $inactive => ! $item->active,
         $active => $item->active,
       ])>
         <a 
-          class="text-body-1 leading-none"
+          @class([
+            'font-body text-body-1 leading-none flex items-center',
+            'gap-min' => $item->children
+          ])
           href="{{ $item->url }}"
         >
-          {{ $item->label }}
+          <span>{{ $item->label }}</span>
+          <x-dynamic-component class="size--em" :component="$item->children ? 'lucide-arrow-down' : 'empty'" /> 
         </a>
 
         @if ($item->children)
-          <div class="opacity-0 invisible group-hover:visible group-hover:opacity-100 absolute -mt-px pt-min">
-            <ul class="drop-shadow-2xl bg-background rounded-card p-card -ml-min w-72 transition ease-in-out duration-300 translate-y-min group-hover:translate-y-0">
+          <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 top-full absolute -mt-px pt-em">
+            <ul data-theme="White" class="drop-shadow-2xl bg-background text-foreground rounded -ml-min w-72 transition ease-in-out duration-300 translate-y-min group-hover:translate-y-0">
               @foreach ($item->children as $child)
                 <li @class([
+                  'font-body',
+                  'text-body-1',
+                  'border-b last:border-0 border-border',
                   $child->classes,
                   $inactive => ! $child->active,
                   $active => $child->active,
                 ])>
-                  <a href="{{ $child->url }}">
+                  <a 
+                    class="px-btn-horiz-l py-btn-vert-l block"
+                    href="{{ $child->url }}"
+                  >
                     {{ $child->label }}
                   </a>
                 </li>
