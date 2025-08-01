@@ -22,7 +22,7 @@
   'person'      => 'rounded-card bg-background text-foreground',
 })
 
-<div {{ $attributes->twMerge([$class,'overflow-hidden grid grid-cols-1', $featured ? 'lg:grid-cols-2 col-span-full' : null, $variant]) }}>
+<div {{ $attributes->twMerge([$class,'overflow-hidden', $featured ? 'grid lg:grid-cols-2 col-span-full' : 'flex flex-col', $variant]) }}>
 
   @if($variant == 'image' OR  $variant == 'person' OR $variant == 'image-card')
     @if($image)
@@ -38,10 +38,7 @@
 
   <x-card.content
     @class([
-      $count == 1 || $variant == 'compare' ? 'p-large space-y-small' : '',  
-      'p-zero' => $variant == 'news',
-      'p-card lg:p-large xl:order-first' => $featured,
-      $featured ? 'justify-between' : null,
+      
     ])
   >
     <x-eyebrow 

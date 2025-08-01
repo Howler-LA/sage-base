@@ -10,7 +10,7 @@
   @foreach ($menu->all() as $item)
     <div class="flex flex-col gap-1">
       <a href="{{ $item->url }}" class="border-b border-border pb-em">
-        <x-eyebrow naked> {{ $item->label }}</x-eyebrow>
+        <x-eyebrow naked >{{ $item->label }}</x-eyebrow>
       </a>
       @if ($item->children)
         <ul class="border-t border-border">

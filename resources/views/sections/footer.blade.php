@@ -7,7 +7,7 @@
 
     <div class="flex flex-col lg:flex-row justify-between items-start gap-small">
       <x-eyebrow :content="$footer['upper']['eyebrow']" />
-      <ul class="flex-grow hidden xl:flex flex-col items-end">
+      <ul class="flex-grow hidden xl:flex flex-col items-end text-right">
         @if($footer['upper']['address'])
           <li class="flex gap-min"><x-body size="2" :message="$footer['upper']['address']" /></li>
         @endif
@@ -32,7 +32,7 @@
         <div class="border !border-[var(--gridlines-tint)] rounded-card p-med">
           <div class="h-full flex flex-col items-center gap-min">
             <x-title :message="$footer['widget']['headline']" />
-            <div class="w-px min-h-large flex-grow bg-foreground"></div>
+            <div class="w-px min-h-large lg:min-h-em flex-grow bg-foreground"></div>
             <x-button 
               href="{{ $footer['widget']['link']['url'] }}" 
               label="{{ $footer['widget']['link']['title'] }}" 
