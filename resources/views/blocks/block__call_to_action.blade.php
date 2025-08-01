@@ -1,6 +1,6 @@
 <x-section padding="roomy" data-theme="{{ $config['block']['themes'] }}">
   <x-section.image data-aos="fade-in" />
-  <x-container>
+  <x-container class="relative">
     <div 
       data-aos="fade-in" 
       data-aos-delay="100"

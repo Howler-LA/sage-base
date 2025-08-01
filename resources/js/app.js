@@ -23,5 +23,5 @@ for (const path in modules) {
  
 Alpine.start();
 AOS.init({
-  duration: 1500
+  duration: 750
 });

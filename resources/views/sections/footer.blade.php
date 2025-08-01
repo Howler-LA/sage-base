@@ -15,7 +15,11 @@
           <li class="flex gap-min"><x-body size="2" :message="$footer['upper']['phone']" /></li>
         @endif
         @if($footer['upper']['contact'])
-          <li class="flex gap-min"><x-body size="2" :message="$footer['upper']['contact']['title']" /></li>
+          <li class="flex gap-min">
+            <a class="underline underline-offset-4" href="{{ $footer['upper']['contact']['url'] }}">
+              <x-body size="2" :message="$footer['upper']['contact']['title']" />
+            </a>
+          </li>
         @endif
       </ul>
     </div>
