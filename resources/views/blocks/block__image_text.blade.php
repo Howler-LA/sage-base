@@ -30,7 +30,7 @@
       @if($content['image'])
         <div
           data-aos-delay="100" 
-          data-aos="fade-up"
+          data-aos="fade-in"
           data-theme="{{ $config['media']['themes'] }}"
           @class([
             'bg-background',

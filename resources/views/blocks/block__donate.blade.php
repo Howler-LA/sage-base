@@ -26,7 +26,7 @@
         @endif
       </div>
     </x-cols.col>
-    <x-cols.col data-aos-delay="100" data-aos="fade-up">
+    <x-cols.col data-aos-delay="100" data-aos="fade-in">
       @if($content['image'])
         @image($content['image'],'large',['class'=>'w-full aspect-[5/4] object-cover object-top'])
       @else
