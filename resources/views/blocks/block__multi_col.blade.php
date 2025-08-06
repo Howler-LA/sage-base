@@ -17,12 +17,12 @@
 
 <x-section data-theme="{{ $config['block']['themes'] }}">
   <x-section.image />
-  <x-section.header>
+  <x-section.header class="relative">
     <x-eyebrow>{{ $content['eyebrow'] }}</x-eyebrow>
     <x-display>{{ $content['headline'] }}</x-display>
     <x-body class="max-w-prose mx-auto">{!! $content['copy'] !!}</x-body>
   </x-section.header>
-  <x-container>
+  <x-container class="relative">
     <div 
       @class([
         'gap-gutter',

@@ -10,7 +10,12 @@
 	class="pb-0"
 >
 	<x-section.image />
-	<x-container class="relative">
+	<x-container
+		@class([
+			'relative flex flex-col',
+			$content['svg_headline'] ? 'items-start text-left' : 'items-center text-center',
+		])
+	>
 		<x-eyebrow :content="$content['eyebrow']" />
 		<div class="space-y-em mt-med">
       <x-super-display 
@@ -19,7 +24,13 @@
         ])
         :message="$content['headline']"
       />
-      <x-title :message="$content['subhead']" class="max-w-screen-md" />
+      <x-title 
+      	:message="$content['subhead']" 
+      	@class([
+					'max-w-screen-md',
+					$content['svg_headline'] ? null : 'mx-auto',
+				])
+      />
     </div>
 	</x-container>
 	@if($content['svg_headline'])

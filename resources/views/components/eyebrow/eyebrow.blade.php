@@ -25,10 +25,16 @@
         {!! $content ?? $slot !!}
       </div>
     </x-dynamic-component>
-    @if(str_contains(get_bloginfo('wpurl'), 'initiatejustice'))
-      <svg class="h-full w-auto flex-none" viewBox="0 0 21 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M18.9279 14.6261C20.4822 15.8271 20.4822 18.1729 18.928 19.3739L4.21161e-07 34L1.90735e-06 -9.6165e-07L18.9279 14.6261Z" fill="#FFCC02"/>
-      </svg>
-    @endif
+    @unless($naked)
+      @if(str_contains(get_bloginfo('wpurl'), 'initiatejustice'))
+        <div class="h-full py-px overflow-hidden rouned-[3px] text-eyebrow-border">
+          <svg class="h-full w-auto -ml-[2px] fill-eyebrow-background stroke-current" height="34" viewBox="0 0 21 34" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_4_11)">
+              <path d="M18.6221 15.0215C19.9173 16.0223 19.9172 17.9777 18.6221 18.9785L0.5 32.9814V1.01758L18.6221 15.0215Z"/>
+            </g>
+          </svg>
+        </div>
+      @endif
+    @endunless
   </div>
 @endif

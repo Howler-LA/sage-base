@@ -18,6 +18,7 @@ use App\Fields\Partials\Block_MultiCol;
 use App\Fields\Partials\Block_PageHeader;
 use App\Fields\Partials\Block_StickyContent;
 use App\Fields\Partials\Block_TestimonialSlider;
+use App\Fields\Partials\Block_Wysiwyg;
 
 class Blocks extends Field
 {
@@ -48,6 +49,7 @@ class Blocks extends Field
                 ->addLayout($this->get(Block_MultiCol::class))
                 ->addLayout($this->get(Block_StickyContent::class))
                 ->addLayout($this->get(Block_TestimonialSlider::class))
+                ->addLayout($this->get(Block_Wysiwyg::class))
             ->endFlexibleContent();
 
         return $fields->build();

@@ -40,17 +40,19 @@
           <x-sub-menu 
             class='hidden xl:flex items-center gap-4' 
             name="secondary_navigation" 
-          /> 
-          @if(has_nav_menu('lang_navigation'))
-            <x-language-switcher name="lang_navigation" />
-          @endif
-          <x-button 
-            label="Donate"
-            href="#"
-            size="sm"
-            target="self"
-            variant=""
           />
+          <div class="flex gap-min">
+            @if(has_nav_menu('lang_navigation'))
+              <x-language-switcher name="lang_navigation" />
+            @endif
+            <x-button 
+              label="Donate"
+              href="#"
+              size="sm"
+              target="self"
+              variant=""
+            />
+          </div>
         </x-dynamic-component>
         <x-desktop-menu 
           @class([
