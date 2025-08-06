@@ -3,9 +3,9 @@
 		'bg-eyebrow-background text-eyebrow-foreground inline-flex',
 		'py-min',
 		'px-em',
-		'border border-eyebrow-border',
+		'border-eyebrow-border',
 		'rounded-l pl-3 pr-0' => str_contains(get_bloginfo('wpurl'), 'initiatejustice'),
-		'px-em rounded-tl-[30px] rounded-br-[30px] rounded-tr-[10px] rounded-bl-[10px]' => str_contains(get_bloginfo('wpurl'), 'youthjustice'),
+		'border px-em rounded-tl-[30px] rounded-br-[30px] rounded-tr-[10px] rounded-bl-[10px]' => str_contains(get_bloginfo('wpurl'), 'youthjustice'),
 	])
 >
 	{{ $slot }}
