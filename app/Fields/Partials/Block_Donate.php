@@ -47,7 +47,7 @@ class Block_Donate extends Partial
                                 'narrow'    => 'Narrow margins',
                                 'wide'      => 'Wide margins', 
                             ],
-                            'default_value' => 'full'
+                            'default_value' => 'narrow'
                         ])
                         ->addFile('background')
                     ->endGroup()
