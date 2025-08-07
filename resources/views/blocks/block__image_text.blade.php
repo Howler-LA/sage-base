@@ -33,6 +33,7 @@
           data-aos="fade-in"
           data-theme="{{ $config['media']['themes'] }}"
           @class([
+
             'bg-background',
             'p-zero' => $config['media']['image_size'] == 'full',
             'p-large' => $config['media']['image_size'] == 'narrow',
@@ -42,7 +43,7 @@
           @image($content['image'],'large',['class'=>'w-full h-auto object-cover object-top'])
         </div>
       @else
-        <div class="aspect-[5/4] bg-background rounded-card bg-black/10">
+        <div class="aspect-[5/4] bg-background rounded-card bg-black/10 relative">
           <div class="absolute inset-0 flex items-center justify-center">
             <x-lucide-image-off class="size-24 stroke-1" />
           </div>
