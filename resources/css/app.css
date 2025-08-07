@@ -1,4 +1,5 @@
 @import "tailwindcss" theme(static);
+@import './forms';
 @plugin "@tailwindcss/typography";
 @import 'aos/dist/aos.css';
 @source "../views/";
@@ -140,6 +141,7 @@
   --color-color-card-active: var(--color-card-bg-active);
   --color-color-card-border-focus: var(--color-card-focus-border);
 
+  --gf-local-border-color: red;
 
 }
 
