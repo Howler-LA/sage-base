@@ -1,6 +1,6 @@
-@set($width,'narrow')
-@set($order,false)
-@set($scaling,true)
+@set($width,$config['media']['image_size'])
+@set($order,$config['media']['reverse'])
+@set($scaling,$config['media']['scaling'])
 
 <x-section data-theme="{{ $config['block']['themes'] }}" class="overflow-hidden" padding="{{ $scaling ? '' : 'none' }}">
   <x-cols :reversed="$order" :contained="$scaling" center>
@@ -26,9 +26,22 @@
         @endif
       </div>
     </x-cols.col>
-    <x-cols.col data-aos-delay="100" data-aos="fade-in">
-      @if($content['image'])
-        @image($content['image'],'large',['class'=>'w-full aspect-[5/4] object-cover object-top'])
+    <x-cols.col>
+      @if($content['donate'])
+        <div
+          data-aos-delay="100" 
+          data-aos="fade-in"
+          data-theme="{{ $config['media']['themes'] }}"
+          @class([
+            'bg-background text-foreground',
+            'p-zero' => $config['media']['image_size'] == 'full',
+            'p-large' => $config['media']['image_size'] == 'narrow',
+            'p-x-large' => $config['media']['image_size'] == 'wide',
+          ])
+        >
+          @image($config['media']['background'],'large',['class'=>'absolute inset-0 object-cover w-full h-full'])
+          <div class="relative">{!! $content['donate'] !!}</div>
+        </div>
       @else
         <div class="aspect-[5/4] bg-background rounded-card bg-black/10">
           <div class="absolute inset-0 flex items-center justify-center">
