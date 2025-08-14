@@ -17,7 +17,12 @@
 		])
 	>
 		<x-eyebrow :content="$content['eyebrow']" />
-		<div class="space-y-em mt-med">
+		<div
+			@class([
+				'space-y-em mt-med',
+				'mb-med' => $content['copy']
+			])
+		>
       <x-super-display 
         @class([
           'sr-only' => $content['svg_headline']
@@ -32,6 +37,10 @@
 				])
       />
     </div>
+    <x-body
+    	class="max-w-prose mx-auto"
+    	:message="$content['copy']" 
+    />
 	</x-container>
 	@if($content['svg_headline'])
 		<div

@@ -1,6 +1,7 @@
 @props([
   'size' => '1',
-  'message' => null
+  'message' => null,
+  'html' => 'div'
 ])
 
 @php($class = match ($size) {
@@ -8,7 +9,7 @@
 })
 
 @if($slot->isNotEmpty() or $message != null)
-  <div 
+  <{{ $html }} 
     {{ $attributes->twMerge([
       $class,
       'font-display',
@@ -19,5 +20,5 @@
     ]) }}
   >
     {!! $message ?? $slot !!}
-  </div>
+  </{{ $html }}>
 @endif
