@@ -26,6 +26,7 @@ class Block_CTA extends Partial
         $fields
             ->modifyField('config->block->themes', function($fieldsBuilder) {
                 $fieldsBuilder
+                    ->addTrueFalse('inset')
                     ->addButtonGroup('align',[ 
                         'label' => 'Text align',
                         'choices' => [ 

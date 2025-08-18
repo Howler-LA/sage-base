@@ -1,5 +1,6 @@
-<x-section data-theme="{{ $config['block']['themes'] }}">
-  <x-container>
+<x-section data-theme="{{ $config['block']['themes'] }}" class="relative">
+  <x-section.image />
+  <x-container class="relative">
     <div class="space-y-small">
       <x-eyebrow>{{ $content['eyebrow'] }}</x-eyebrow>
       <x-super-display>{{ $content['headline'] }}</x-super-display>

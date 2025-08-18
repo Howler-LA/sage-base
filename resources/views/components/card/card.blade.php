@@ -1,4 +1,5 @@
 @props([
+  'type'      => false,
   'count'     => 'color-card',
   'variant'   => 'color-card',
   'eyebrow'   => false,
@@ -47,9 +48,21 @@
     />
     <div class="space-y-small">
       <header class="flex flex-col">
+        @if($featured)
+          @set($headline_type,'subhead')
+          @set($headline_size,'1')
+        @else
+          @if($variant == 'news')
+            @set($headline_type,'body')
+            @set($headline_size,'1')
+          @else
+            @set($headline_type,'title')
+            @set($headline_size,'1')
+          @endif
+        @endif
         <x-dynamic-component 
-          :component="$featured || $variant == 'person' ? 'subhead' : ($variant == 'person' || $variant == 'person' || $variant == 'news' ? 'body' : 'title') " 
-          :class="$variant == 'person' || $variant == 'news' ? 'font-bold' : '' " 
+          :component="$headline_type" 
+          :size="$headline_size" 
           :message="$headline" 
         />
         <x-body :message="$variant == 'person' ? $subhead : null" />

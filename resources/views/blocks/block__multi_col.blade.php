@@ -23,6 +23,7 @@
     <x-body class="max-w-prose mx-auto">{!! $content['copy'] !!}</x-body>
   </x-section.header>
   <x-container class="relative">
+
     <div 
       @class([
         'gap-gutter',
