@@ -51,13 +51,20 @@
         @if($featured)
           @set($headline_type,'subhead')
           @set($headline_size,'1')
+          @set($body_size,'1')
         @else
           @if($variant == 'news')
             @set($headline_type,'body')
             @set($headline_size,'1')
+            @set($body_size,'1')
+          @elseif($variant == 'person')
+            @set($headline_type,'title')
+            @set($headline_size,'1')
+            @set($body_size,'2')
           @else
             @set($headline_type,'title')
             @set($headline_size,'1')
+            @set($body_size,'1')
           @endif
         @endif
         <x-dynamic-component 
@@ -65,9 +72,12 @@
           :size="$headline_size" 
           :message="$headline" 
         />
-        <x-body :message="$variant == 'person' ? $subhead : null" />
+        <x-body 
+          :size="$body_size" 
+          :message="$variant == 'person' ? $subhead : null" 
+        />
       </header>
-      <x-body :message="$body" />
+      <x-body :size="$body_size"  :message="$body" />
       @if($list)
         <ul class="divide-y divide-border">
           @foreach($list as $item)
