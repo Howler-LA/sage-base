@@ -32,7 +32,7 @@
 >
   <x-section.image />
   <x-container class="relative">
-    <div class="xl:p-section space-y-em">
+    <div class="xl:py-section space-y-em">
       <x-eyebrow>{{ $content['headline'] }}</x-eyebrow>
       <div x-ref="swiper" class="swiper w-full" aria-label="Testimonial Carousel">
         <div class="swiper-wrapper">
