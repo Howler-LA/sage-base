@@ -16,14 +16,14 @@
   'news-card' 	=> 'rounded-card bg-news-card-background hover:bg-news-card-background-hover active:news-card-background-active',
   'color-card'  => 'rounded-card bg-background text-foreground',
   'image-card' 	=> 'rounded-card bg-background text-foreground',
-  'news'        =>  null,
+  'news'        => 'bg-background text-foreground',
   'color'       => 'rounded-card bg-background text-foreground ring-foreground ring-1',
   'compare'     => 'rounded-card bg-background text-foreground ring-foreground ring-1',
   'image'       => 'rounded-card bg-background text-foreground',
   'person'      => 'rounded-card bg-background text-foreground',
 })
 
-<div {{ $attributes->twMerge([$class,'overflow-hidden', $featured ? 'grid lg:grid-cols-2 col-span-full' : 'flex flex-col', $variant]) }}>
+<div {{ $attributes->twMerge([$class, 'card overflow-hidden', $featured ? 'grid lg:grid-cols-2 col-span-full' : 'flex flex-col', $variant]) }}>
 
   @if($variant == 'image' OR  $variant == 'person' OR $variant == 'image-card')
     @if($image)
@@ -46,7 +46,7 @@
       :naked="$variant == 'news' ? true : false"
       :content="$eyebrow" 
     />
-    <div class="space-y-small">
+    <div class="space-y-min">
       <header class="flex flex-col">
         @if($featured)
           @set($headline_type,'subhead')
@@ -71,6 +71,7 @@
           :component="$headline_type" 
           :size="$headline_size" 
           :message="$headline" 
+          class="{{ $variant == 'news' ? 'font-bold' : null }}"
         />
         <x-body 
           :size="$body_size" 
