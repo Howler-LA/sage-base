@@ -20,6 +20,16 @@ class Block_StickyContent extends Partial
             ->addFields($this->get(Config::class))
         ;
 
+        $fields
+            ->removeField('content->image')
+            ->modifyField('config->block->themes', function($fieldsBuilder) {
+                $fieldsBuilder
+                    ->addButtonGroup('themes_cards',['label' => 'Card Theme'])
+                ;
+                return $fieldsBuilder;
+            })
+        ;
+
         return $fields;
     }
 }

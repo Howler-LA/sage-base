@@ -7,7 +7,7 @@
 
 <x-section 
 	data-theme="{{ $config['block']['themes'] }}"
-	class="pb-0 relative overflow-hidden"
+	class="pb-0 relative overflow-hidden h-screen"
 >
 	<x-section.image />
 	<x-container

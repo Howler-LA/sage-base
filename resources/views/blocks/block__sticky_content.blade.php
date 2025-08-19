@@ -33,13 +33,16 @@
         @foreach($cards as $card)
           <div class="p-section pb-0 last:pb-section bg-background">
             <x-card
-              data-theme="{{ $card['themes_card'] }}"
+              data-theme="{{ $card['themes_card'] == null ? $config['block']['themes_cards'] : $card['themes_card'] }}"
+              :variant="$type"
               :eyebrow="$card['eyebrow']"
               :headline="$card['headline']"
               :subhead="$card['subhead']"
               :body="$card['body']"
               :links="$card['links']"
               :image="$type == 'news' ? null : $card['image']"
+              :featured="$card['featured']"
+              :list="$card['list']"
             />
           </div>
         @endforeach
