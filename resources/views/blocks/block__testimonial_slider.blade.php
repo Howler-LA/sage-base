@@ -32,19 +32,19 @@
 >
   <x-section.image />
   <x-container class="relative">
-    <div class="xl:p-section space-y-em">
+    <div class="xl:py-section space-y-em">
       <x-eyebrow>{{ $content['headline'] }}</x-eyebrow>
-      <div x-ref="swiper" class="swiper w-full rounded-card" aria-label="Testimonial Carousel">
+      <div x-ref="swiper" class="swiper w-full" aria-label="Testimonial Carousel">
         <div class="swiper-wrapper">
           @foreach(get_sub_field('cards') as $card)
-            <div class="swiper-slide">
+            <div class="swiper-slide rounded-card overflow-hidden">
               <div 
                 data-theme="Black" 
                 @class([
                   'grid grid-cols-1 xl:grid-cols-2' => $card['image']
                 ])
               >
-                <div class="p-large bg-background text-foreground">
+                <div class="p-large bg-background text-foreground xl:min-h-[790px]">
                   <div class="size-full flex flex-col items-center justify-center text-center space-y-med">
                     <div class="space-y-zero">
                       <x-pull-quote message="“" />

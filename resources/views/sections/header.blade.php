@@ -23,7 +23,7 @@
           @set($img,get_field('brand','options')['logo'])
           @set($svg,str_replace('/','.', get_attached_file(get_field('brand','options')['logo'])))
           @if(!str_contains(wp_get_attachment_url($img), 'svg'))
-            @image($img,'large',['class'=>'text-foreground fill-foreground max-w-[145px] xl:max-w-72 2xl:max-w-none'])
+            @image($img,'large',['class'=>'text-foreground fill-foreground max-w-[145px] xl:max-w-60 2xl:max-w-none'])
           @else
             @svg(str_replace('.svg','',$svg), 'text-foreground fill-foreground max-w-[145px] 2xl:max-w-none h-auto', ['aria-label' => $siteName])
           @endif
@@ -56,7 +56,7 @@
         </x-dynamic-component>
         <x-desktop-menu 
           @class([
-            'hidden xl:flex items-center gap-med',
+            'hidden xl:flex items-center gap-small 2xl:gap-med',
             'border-t border-border pt-em' => has_nav_menu('secondary_navigation'),
             'order-first' => !has_nav_menu('secondary_navigation')
           ])

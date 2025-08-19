@@ -7,7 +7,7 @@
 
 <x-section 
 	data-theme="{{ $config['block']['themes'] }}"
-	class="pb-0"
+	class="pb-0 relative overflow-hidden"
 >
 	<x-section.image />
 	<x-container
@@ -62,7 +62,7 @@
 			@image($content['image'],'large',[
 	      'data-aos-delay' => '100', 
 	      'data-aos'=>'fade-in', 
-	      'class'=>'w-full h-auto block', 
+	      'class'=>'w-full h-auto block rounded-t-card', 
 	      'alt'=> $content['headline'] ? $content['headline'] : 'Image'
 	    ])
 	   </div>

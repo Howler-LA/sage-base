@@ -1,4 +1,5 @@
 @props([
+  'type'      => false,
   'count'     => 'color-card',
   'variant'   => 'color-card',
   'eyebrow'   => false,
@@ -15,18 +16,18 @@
   'news-card' 	=> 'rounded-card bg-news-card-background hover:bg-news-card-background-hover active:news-card-background-active',
   'color-card'  => 'rounded-card bg-background text-foreground',
   'image-card' 	=> 'rounded-card bg-background text-foreground',
-  'news'        =>  null,
+  'news'        => 'bg-background text-foreground',
   'color'       => 'rounded-card bg-background text-foreground ring-foreground ring-1',
   'compare'     => 'rounded-card bg-background text-foreground ring-foreground ring-1',
   'image'       => 'rounded-card bg-background text-foreground',
   'person'      => 'rounded-card bg-background text-foreground',
 })
 
-<div {{ $attributes->twMerge([$class,'overflow-hidden', $featured ? 'grid lg:grid-cols-2 col-span-full' : 'flex flex-col', $variant]) }}>
+<div {{ $attributes->twMerge([$class, 'card overflow-hidden', $featured ? 'grid lg:grid-cols-2 col-span-full' : 'flex flex-col', $variant]) }}>
 
   @if($variant == 'image' OR  $variant == 'person' OR $variant == 'image-card')
     @if($image)
-      @image($image,'large',['class'=> $count == 1 ? 'h-auto xl:size-full object-cover' : 'w-full h-auto object-cover' ])
+      @image($image,'large',['class'=> $count == 1 || $featured ? 'h-auto xl:size-full object-cover' : 'w-full h-auto object-cover' ])
     @else
       <div class="aspect-[5/4] bg-black/20 relative">
         <div class="absolute inset-0 flex items-center justify-center">
@@ -45,16 +46,43 @@
       :naked="$variant == 'news' ? true : false"
       :content="$eyebrow" 
     />
-    <div class="space-y-small">
+    <div class="space-y-min">
       <header class="flex flex-col">
+        @if($featured)
+          @set($headline_type,'subhead')
+          @set($headline_size,'1')
+          @set($body_size,'1')
+        @else
+          @if($variant == 'news')
+            @set($headline_type,'body')
+            @set($headline_size,'1')
+            @set($body_size,'1')
+          @elseif($variant == 'compare')
+            @set($headline_type,'subhead')
+            @set($headline_size,'1')
+            @set($body_size,'1')
+          @elseif($variant == 'person' || $variant == 'image')
+            @set($headline_type,'title')
+            @set($headline_size,'1')
+            @set($body_size,'2')
+          @else
+            @set($headline_type,'title')
+            @set($headline_size,'1')
+            @set($body_size,'1')
+          @endif
+        @endif
         <x-dynamic-component 
-          :component="$featured || $variant == 'person' ? 'subhead' : ($variant == 'person' || $variant == 'person' || $variant == 'news' ? 'body' : 'title') " 
-          :class="$variant == 'person' || $variant == 'news' ? 'font-bold' : '' " 
+          :component="$headline_type" 
+          :size="$headline_size" 
           :message="$headline" 
+          class="{{ $variant == 'news' ? 'font-bold' : null }}"
         />
-        <x-body :message="$variant == 'person' ? $subhead : null" />
+        <x-body 
+          :size="$body_size" 
+          :message="$variant == 'person' ? $subhead : null" 
+        />
       </header>
-      <x-body :message="$body" />
+      <x-body :size="$body_size" :message="$body" />
       @if($list)
         <ul class="divide-y divide-border">
           @foreach($list as $item)

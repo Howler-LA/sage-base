@@ -31,9 +31,9 @@
     <x-cols.col>
       @if($cards)
         @foreach($cards as $card)
-          <div class="p-section bg-background">
+          <div class="p-section pb-0 last:pb-section bg-background">
             <x-card
-              :variant="$type"
+              data-theme="{{ $card['themes_card'] }}"
               :eyebrow="$card['eyebrow']"
               :headline="$card['headline']"
               :subhead="$card['subhead']"

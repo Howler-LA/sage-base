@@ -20,7 +20,7 @@ class Block_PageHeader extends Partial
         ;
 
         $fields
-            ->removeField('content->image')
+            // ->removeField('content->image')
         ;
 
         return $fields;

@@ -33,14 +33,14 @@
           data-aos="fade-in"
           data-theme="{{ $config['media']['themes'] }}"
           @class([
-
             'bg-background',
-            'p-zero' => $config['media']['image_size'] == 'full',
+            'p-zero h-full' => $config['media']['image_size'] == 'full',
             'p-large' => $config['media']['image_size'] == 'narrow',
             'p-x-large' => $config['media']['image_size'] == 'wide',
           ])
         >
-          @image($content['image'],'large',['class'=>'w-full h-auto object-cover object-top'])
+          @set($rounded,$config['media']['image_size'] == 'full' ? 'w-full h-full object-cover object-top' : 'w-full h-auto object-cover object-top rounded-card')
+          @image($content['image'],'large',['class'=> $rounded])
         </div>
       @else
         <div class="aspect-[5/4] bg-background rounded-card bg-black/10 relative">

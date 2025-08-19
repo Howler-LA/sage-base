@@ -28,7 +28,7 @@
 	--font-weight-button: 	600;
 
 	--text-eyebrow: 				13px;
-	--leading-eyebrow: 			100%;
+	--leading-eyebrow: 			13px;
 	--tracking-eyebrow: 		10%;
 	--font-weight-eyebrow: 	600;
 
@@ -58,6 +58,9 @@
 	--leading-title-1: 			100%;
 	--tracking-title: 			-2%;
 	--font-weight-body: 		400;
+
+	--text-small-text: 			calc(var(--font-size-small-text)*1px);
+	--leading-small-text: 	calc(var(--line-height-small-text-lh)*1px);
 
 	--text-meta-text: 			calc(var(--font-size-meta-text)*1px);
 	--leading-meta-text: 		calc(var(--line-height-meta-text)*1px);

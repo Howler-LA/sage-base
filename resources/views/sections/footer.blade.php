@@ -32,7 +32,11 @@
         name="footer_navigation" 
       />
       <div class="flex flex-col gap-em lg:col-start-4">
-        <x-eyebrow naked :content="$footer['widget']['eyebrow']" />
+        @if($footer['widget']['eyebrow'])
+          <x-eyebrow naked :content="$footer['widget']['eyebrow']" />
+        @else
+          <div class="h-[13px]"></div>
+        @endif
         <div class="border !border-[var(--gridlines-tint)] rounded-card p-med">
           <div class="h-full flex flex-col items-center gap-min">
             <x-title :message="$footer['widget']['headline']" />
