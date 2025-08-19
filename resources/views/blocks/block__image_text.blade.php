@@ -34,12 +34,12 @@
           data-theme="{{ $config['media']['themes'] }}"
           @class([
             'bg-background',
-            'p-zero' => $config['media']['image_size'] == 'full',
+            'p-zero h-full' => $config['media']['image_size'] == 'full',
             'p-large' => $config['media']['image_size'] == 'narrow',
             'p-x-large' => $config['media']['image_size'] == 'wide',
           ])
         >
-          @set($rounded,$config['media']['image_size'] == 'full' ? 'w-full h-auto object-cover object-top' : 'w-full h-auto object-cover object-top rounded-card')
+          @set($rounded,$config['media']['image_size'] == 'full' ? 'w-full h-full object-cover object-top' : 'w-full h-auto object-cover object-top rounded-card')
           @image($content['image'],'large',['class'=> $rounded])
         </div>
       @else

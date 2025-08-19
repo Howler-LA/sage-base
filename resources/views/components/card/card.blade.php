@@ -27,7 +27,7 @@
 
   @if($variant == 'image' OR  $variant == 'person' OR $variant == 'image-card')
     @if($image)
-      @image($image,'large',['class'=> $count == 1 ? 'h-auto xl:size-full object-cover' : 'w-full h-auto object-cover' ])
+      @image($image,'large',['class'=> $count == 1 || $featured ? 'h-auto xl:size-full object-cover' : 'w-full h-auto object-cover' ])
     @else
       <div class="aspect-[5/4] bg-black/20 relative">
         <div class="absolute inset-0 flex items-center justify-center">
@@ -57,7 +57,7 @@
             @set($headline_type,'body')
             @set($headline_size,'1')
             @set($body_size,'1')
-          @elseif($variant == 'person')
+          @elseif($variant == 'person' || $variant == 'image')
             @set($headline_type,'title')
             @set($headline_size,'1')
             @set($body_size,'2')
@@ -77,7 +77,7 @@
           :message="$variant == 'person' ? $subhead : null" 
         />
       </header>
-      <x-body :size="$body_size"  :message="$body" />
+      <x-body :size="$body_size" :message="$body" />
       @if($list)
         <ul class="divide-y divide-border">
           @foreach($list as $item)

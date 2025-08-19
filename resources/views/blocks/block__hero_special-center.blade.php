@@ -53,7 +53,7 @@
 			@image($content['image'],'large',[
 	      'data-aos-delay' => '100', 
 	      'data-aos'=>'fade-in', 
-	      'class'=>'w-full h-auto block', 
+	      'class'=>'w-full h-auto block rounded-t-card', 
 	      'alt'=> $content['headline'] ? $content['headline'] : 'Image'
 	    ])
 	   </div>
