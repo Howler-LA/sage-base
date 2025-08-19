@@ -18,7 +18,7 @@
       ])>
         <a 
           @class([
-            'font-body text-body-1 leading-none flex items-center',
+            'font-body text-small-text leading-small-text leading-none flex items-center',
             'gap-min' => $item->children
           ])
           href="{{ $item->url }}"

@@ -59,6 +59,9 @@
 	--tracking-title: 			-2%;
 	--font-weight-body: 		400;
 
+	--text-small-text: 			calc(var(--font-size-small-text)*1px);
+	--leading-small-text: 	calc(var(--line-height-small-text-lh)*1px);
+
 	--text-meta-text: 			calc(var(--font-size-meta-text)*1px);
 	--leading-meta-text: 		calc(var(--line-height-meta-text)*1px);
 	--tracking-meta-text: 	6%;
