@@ -11,7 +11,7 @@
 	{{ 
 		$attributes->twMerge([
 			$center ? '' : 'h-full', 
-			$reversed ? 'even:xl:order-first even:xl:h-full' : 'xl:order-last'
+			$reversed ? 'even:xl:order-first even:xl:h-full' : 'xl:order-last xl:h-full'
 		])
 	}}
 >
