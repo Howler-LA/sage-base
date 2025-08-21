@@ -19,8 +19,7 @@ class Cards extends Partial
                 'label' => 'Card Type',
                 'instructions' => '',
                 'required' => 0,
-                'conditional_logic' => [],
-                'ui' => 0,
+                'wrapper' => ['width'=>'50%'],
                 'choices' => [
                     'news'    => 'News Card',
                     'color'   => 'Color Card',
@@ -29,6 +28,18 @@ class Cards extends Partial
                     'compare' => 'Compare Card',
                 ],
                 'default_value' => ['color'],
+            ])
+            ->addButtonGroup('columns', [
+                'label' => 'Columns',
+                'required' => 0,
+                'wrapper' => ['width'=>'50%'],
+                'choices' => [
+                    null    => 'Auto',
+                    '1'     => '1',
+                    '2'     => '2',
+                    '3'     => '3',
+                    '4'     => '4',
+                ],
             ])
             ->addRepeater('cards',['label' => 'Cards', 'collapsed'=>'headline'])
                 ->addText('eyebrow')

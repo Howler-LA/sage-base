@@ -44,7 +44,6 @@
           <div class="flex gap-min">
             @if(has_nav_menu('lang_navigation'))
               <x-language-switcher name="lang_navigation" />
-              <x-language-switcher name="lang_navigation" />
             @endif
             <x-button 
               label="Donate"

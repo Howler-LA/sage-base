@@ -12,8 +12,14 @@
       }
     }
   };
-  $count = $card_count - count($featured_cards);
+  if(get_sub_field('columns')) {
+    $count = get_sub_field('columns');
+  } else {
+    $count = $card_count - count($featured_cards);
+  }
 @endphp
+
+{{ var_dump(get_sub_field('columns')) }}
 
 <x-section data-theme="{{ $config['block']['themes'] }}">
   <x-section.image />
