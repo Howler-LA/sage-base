@@ -13,7 +13,8 @@
 	<x-container>
 		<div 
 			@class([
-				'max-w-screen-lg mx-auto',
+				// 'max-w-screen-lg mx-auto',
+				$content['width'] == 'narrow' ? 'max-w-screen-lg mx-auto' : null,
 				'relative flex flex-col',
 				$content['svg_headline'] ? 'items-start text-left' : 'items-center text-center',
 			])

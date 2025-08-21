@@ -7,7 +7,7 @@
         @class([
           'font-body',
           'text-body-1',
-          'prose',
+          'prose max-w-none',
           'text-foreground',
           'leading-relaxed',
           'prose-p:text-body-1 prose-p:leading-body-1 prose-p:font-body',
