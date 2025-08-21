@@ -37,6 +37,14 @@ class Block_HeroSpecial extends Partial
             })
             ->modifyField('content->image', function($fieldsBuilder) {
                 $fieldsBuilder
+                    ->addRadio('width',[ 
+                        'label' => 'Hero Width',
+                        'choices' => [ 
+                            'full'      => 'Full', 
+                            'narrow'    => 'Narrow',
+                        ],
+                        'default_value' => 'full'
+                    ])
                     ->addRadio('align',[ 
                         'label' => 'Hero Version',
                         'choices' => [ 

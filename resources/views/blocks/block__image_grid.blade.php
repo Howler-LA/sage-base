@@ -34,12 +34,11 @@
               @class([
                 'relative',
                 'w-full',
-                'bg-stone-200',
                 'aspect-[5/4]' => $aspect == 'landscape',
                 'aspect-[4/5]' => $aspect == 'portrait',
               ])
             >
-              <div class="absolute inset-0 bg-pink-200">
+              <div class="absolute inset-0 bg-black/10">
               	@image($image,'medium',[
               		'class'=>'w-full h-full object-cover'
               	])
