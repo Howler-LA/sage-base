@@ -88,6 +88,10 @@
   --spacing-min: 					calc(var(--spacing-min)*1px);
   --spacing-zero: 				calc(var(--spacing-zero)*1px);
 
+	--spacing-margins-x-large:	calc(var(--margins-x-large)*1px);
+	--spacing-margins-large:	calc(var(--margins-large)*1px);
+	--spacing-margins-small:	calc(var(--margins-small)*1px);
+
 	--spacing-browser: 			1600px;
 	--spacing-browser-half: calc(calc(var(--spacing-browser) * 0.5));
 	--spacing-gutter: 			calc(var(--spacing-gutters)*1px);

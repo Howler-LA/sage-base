@@ -1,6 +1,6 @@
 <x-section data-theme="{{ $config['block']['themes'] }}">
   <x-container>
-    <div class="space-y-small max-w-prose mx-auto">
+    <div class="space-y-small mx-margins-large mx-auto">
       <x-eyebrow>{{ $content['eyebrow'] }}</x-eyebrow>
       <x-display>{{ $content['headline'] }}</x-display>
       <div
