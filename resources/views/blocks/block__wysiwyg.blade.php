@@ -9,6 +9,7 @@
           'text-body-1',
           'prose max-w-none',
           'text-foreground',
+          'prose-headings:text-foreground',
           'leading-relaxed',
           'prose-p:text-body-1 prose-p:leading-body-1 prose-p:font-body',
           'prose-h1:text-super-display prose-h1:leading-super-display prose-h1:font-extrabold prose-h1:font-super-display prose-h1:tracking-[-4%]',
