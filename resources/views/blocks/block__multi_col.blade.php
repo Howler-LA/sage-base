@@ -19,8 +19,6 @@
   }
 @endphp
 
-{{ var_dump(get_sub_field('columns')) }}
-
 <x-section data-theme="{{ $config['block']['themes'] }}">
   <x-section.image />
   <x-section.header class="relative">
