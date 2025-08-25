@@ -25,7 +25,7 @@
           @if(!str_contains(wp_get_attachment_url($img), 'svg'))
             @image($img,'large',['class'=>'text-foreground fill-foreground'])
           @else
-            @svg(str_replace('.svg','',$svg), 'text-foreground fill-foreground max-w-[145px] w-full xl:max-w-none h-auto', ['aria-label' => $siteName])
+            @svg(str_replace('.svg','',$svg), 'text-foreground fill-foreground max-md:max-w-full', ['aria-label' => $siteName])
           @endif
         @endunless
       </a>
@@ -33,7 +33,7 @@
         @class([
           'menu',
           'flex flex-row justify-end items-center flex-grow',
-          has_nav_menu('secondary_navigation') ? 'lg:flex-col lg:items-end gap-em' : 'lg:flex-row gap-med',
+          has_nav_menu('secondary_navigation') ? 'xl:flex-col lg:items-end gap-min xl:gap-em' : 'lg:flex-row gap-min xl:gap-med',
         ])
       >
         <x-dynamic-component class="!gap-em" :component="has_nav_menu('secondary_navigation') ? 'button.group' : 'empty'"> 

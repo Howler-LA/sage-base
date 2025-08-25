@@ -5,7 +5,7 @@
 @php($menu = Navi::build($name))
 
 @if ($menu->isNotEmpty())
-  <div class="relative group">
+  <div class="relative group hidden md:block">
     <x-button 
       :label="weglot_get_current_language()"
       href="#"
