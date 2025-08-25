@@ -24,7 +24,7 @@
           ])
           href="{{ $item->url }}"
         >
-          <span>{{ $item->label }}</span>
+          <span class="whitespace-nowrap">{{ $item->label }}</span>
           <x-dynamic-component class="size--em" :component="$item->children ? 'lucide-arrow-down' : 'empty'" /> 
         </a>
 

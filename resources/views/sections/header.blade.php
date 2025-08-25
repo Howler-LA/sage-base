@@ -15,7 +15,7 @@
   ])
 >
   <x-container>
-    <div class="flex justify-between lg:gap-med items-center">
+    <div class="flex justify-between gap-small lg:gap-med items-center">
       <a href="/" class="text-foreground xl:flex-grow">
         @unless(get_field('brand','options')['logo'])
           <x-title size="1">{{ $siteName }}</x-title>
@@ -23,9 +23,9 @@
           @set($img,get_field('brand','options')['logo'])
           @set($svg,str_replace('/','.', get_attached_file(get_field('brand','options')['logo'])))
           @if(!str_contains(wp_get_attachment_url($img), 'svg'))
-            @image($img,'large',['class'=>'text-foreground fill-foreground max-w-[145px] xl:max-w-60 2xl:max-w-none'])
+            @image($img,'large',['class'=>'text-foreground fill-foreground'])
           @else
-            @svg(str_replace('.svg','',$svg), 'text-foreground fill-foreground max-w-[145px] 2xl:max-w-none h-auto', ['aria-label' => $siteName])
+            @svg(str_replace('.svg','',$svg), 'text-foreground fill-foreground max-w-[145px] w-full xl:max-w-none h-auto', ['aria-label' => $siteName])
           @endif
         @endunless
       </a>
