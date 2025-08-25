@@ -23,7 +23,7 @@
           @set($img,get_field('brand','options')['logo'])
           @set($svg,str_replace('/','.', get_attached_file(get_field('brand','options')['logo'])))
           @if(!str_contains(wp_get_attachment_url($img), 'svg'))
-            @image($img,'large',['class'=>'text-foreground fill-foreground'])
+            @image($img,'large',['class'=>'text-foreground fill-foreground max-md:max-w-full'])
           @else
             @svg(str_replace('.svg','',$svg), 'text-foreground fill-foreground max-md:max-w-full', ['aria-label' => $siteName])
           @endif
