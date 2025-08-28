@@ -30,22 +30,24 @@
     </x-cols.col>
     <x-cols.col>
       @if($cards)
-        @foreach($cards as $card)
-          <div class="p-section pb-px last:pb-section bg-background">
-            <x-card
-              data-theme="{{ $card['themes_card'] == null ? $config['block']['themes_cards'] : $card['themes_card'] }}"
-              :variant="$type"
-              :eyebrow="$card['eyebrow']"
-              :headline="$card['headline']"
-              :subhead="$card['subhead']"
-              :body="$card['body']"
-              :links="$card['links']"
-              :image="$type == 'news' ? null : $card['image']"
-              :featured="$card['featured']"
-              :list="$card['list']"
-            />
-          </div>
-        @endforeach
+        <div class="py-section space-y-med">
+          @foreach($cards as $card)
+            <div class="px-section pb-px">
+              <x-card
+                data-theme="{{ $card['themes_card'] == null ? $config['block']['themes_cards'] : $card['themes_card'] }}"
+                :variant="$type"
+                :eyebrow="$card['eyebrow']"
+                :headline="$card['headline']"
+                :subhead="$card['subhead']"
+                :body="$card['body']"
+                :links="$card['links']"
+                :image="$type == 'news' ? null : $card['image']"
+                :featured="$card['featured']"
+                :list="$card['list']"
+              />
+            </div>
+          @endforeach
+        </div>
       @endif
     </x-cols.col>
   </x-cols>
