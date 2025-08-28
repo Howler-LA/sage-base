@@ -36,7 +36,7 @@
   @if($content['links'])
     <x-container>
       <x-card.footer>
-        <x-button.group class="justify-center">
+        <x-button.group class="justify-center xl:justify-center">
           @foreach($content['links'] as $link)
             <x-button 
               variant="{{ $loop->iteration == 1 ? 'primary' : 'outline' }}"
