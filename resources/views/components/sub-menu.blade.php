@@ -14,6 +14,7 @@
         'text-body-2',
         'font-meta-text',
         'relative',
+        'whitespace-nowrap',
         $item->classes,
         $inactive => ! $item->active,
         $active => $item->active,

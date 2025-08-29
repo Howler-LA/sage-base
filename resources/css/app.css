@@ -1,5 +1,4 @@
 @import "tailwindcss" theme(static);
-@import './forms';
 @plugin "@tailwindcss/typography";
 @import 'aos/dist/aos.css';
 @source "../views/";
@@ -15,60 +14,73 @@
 
 @theme inline {
 
-	--text-body-1: 					calc(var(--font-size-body-1)*1px);
-	--leading-body-2: 			140%;
-	--text-body-2: 					calc(var(--font-size-body-2)*1px);
-	--leading-body-1: 			140%;
-	--tracking-body: 				0%;
-	--font-weight-body: 		400;
+	--text-body-1: 							calc(var(--font-size-body-1)*1px);
+	--text-body-2: 							calc(var(--font-size-body-2)*1px);
+	--leading-body-1: 					calc(var(--font-size-body-1-lh)*1px);
+	--leading-body-2: 					calc(var(--font-size-body-2-lh)*1px);
+	--tracking-body: 						var(--letter-spacing-body-1-ls);
+	--tracking-body-1: 					var(--letter-spacing-body-1-ls);
+	--tracking-body-2: 					var(--letter-spacing-body-2-ls);
+	--font-weight-body: 				400;
 
-	--text-button: 					var(--text-body);
-	--leading-button: 			var(--leading-body);
-	--tracking-button: 			-1%;
-	--font-weight-button: 	600;
+	--text-button: 							var(--text-body);
+	--leading-button: 					var(--leading-body);
+	--tracking-button: 					-1%;
+	--font-weight-button: 			600;
 
-	--text-eyebrow: 				13px;
-	--leading-eyebrow: 			13px;
-	--tracking-eyebrow: 		10%;
-	--font-weight-eyebrow: 	600;
+	--text-eyebrow: 						calc(var(--font-size-eyebrow)*1px);
+	--leading-eyebrow: 					calc(var(--line-height-eyebrow-lh)*1px);
+	--tracking-eyebrow: 				var(--letter-spacing-eyebrow-ls);
+	--font-weight-eyebrow: 			600;
 
-	--text-display-1: 			calc(var(--font-size-display-1)*1px);
-	--leading-display-1:		calc(var(--line-height-display-1-lh)*1px);
-	--text-display-2: 			calc(var(--font-size-display-2)*1px);
-	--leading-display-2:		calc(var(--line-height-display-1-lh)*1px);
-	--tracking-display: 		-4%;
-	--font-weight-display: 	900;
+	--text-display-1: 					calc(var(--font-size-display-1)*1px);
+	--text-display-2: 					calc(var(--font-size-display-2)*1px);	
+	--leading-display-1:				calc(var(--line-height-display-1-lh)*1px);
+	--leading-display-2:				calc(var(--line-height-display-1-lh)*1px);
+	--tracking-display-1: 			var(--letter-spacing-display-1-ls);
+	--font-weight-display: 			900;
 
-	--text-super-display: 		calc(var(--font-size-super-display)*1px);
-	--leading-super-display: 	calc(var(--line-height-super-display-lh)*1px);
+	--text-super-display: 			calc(var(--font-size-super-display)*1px);
+	--leading-super-display: 		calc(var(--line-height-super-display-lh)*1px);
+	--tracking-super-display: 	var(--letter-spacing-super-display-ls);
 
-	--text-pull-quote-sm: 		calc(var(--font-size-pullquote-sm)*1px);
-	--text-pull-quote-lg: 		calc(var(--font-size-pullquote-lg)*1px);
-	--text-pull-quote-xl: 		calc(var(--font-size-pullquote-xl)*1px);
-	--leading-pull-quote-sm: 	calc(var(--line-height-pullquote-sm)*1px);
-	--leading-pull-quote-lg: 	calc(var(--line-height-pullquote-lg)*1px);
-	--leading-pull-quote-xl: 	calc(var(--line-height-pullquote-xl)*1px);
-	
-	--tracking-display: 		-4%;
-	--font-weight-display: 	900;
+	--text-pull-quote-sm: 			calc(var(--font-size-pullquote-sm)*1px);
+	--text-pull-quote-lg: 			calc(var(--font-size-pullquote-lg)*1px);
+	--text-pull-quote-xl: 			calc(var(--font-size-pullquote-xl)*1px);
+	--leading-pull-quote-sm: 		calc(var(--line-height-pullquote-sm)*1px);
+	--leading-pull-quote-lg: 		calc(var(--line-height-pullquote-lg)*1px);
+	--leading-pull-quote-xl: 		calc(var(--line-height-pullquote-xl)*1px);
+	--tracking-pull-quote-sm:		var(--letter-spacing-pullquote-sm);
+	--tracking-pull-quote-lg:		var(--letter-spacing-pullquote-lg);
+	--tracking-pull-quote-xl:		var(--letter-spacing-pullquote-xl)*;
 
-	--text-title-1: 				calc(var(--font-size-title-1)*1px);
-	--leading-title-2: 			100%;
-	--text-title-2: 				calc(var(--font-size-title-2)*1px);
-	--leading-title-1: 			100%;
-	--tracking-title: 			-2%;
-	--font-weight-body: 		400;
+	--text-title-1: 						calc(var(--font-size-title-1)*1px);
+	--text-title-2: 						calc(var(--font-size-title-2)*1px);
+	--leading-title-1: 					calc(var(--line-height-title-1-lh)*1px);
+	--leading-title-2: 					calc(var(--line-height-title-2-lh)*1px);
+	--tracking-title-1: 				var(--letter-spacing-title-1-ls);
+	--tracking-title-2: 				var(--letter-spacing-title-2-ls);
+	--font-weight-body: 				400;
 
-	--text-small-text: 			calc(var(--font-size-small-text)*1px);
-	--leading-small-text: 	calc(var(--line-height-small-text-lh)*1px);
+	--text-small-text: 					calc(var(--font-size-small-text)*1px);
+	--leading-small-text: 			calc(var(--line-height-small-text-lh)*1px);
+	--tracking-small-text: 			var(--letter-spacing-small-text-ls);
+		
+	--text-meta-text: 					calc(var(--font-size-meta-text)*1px);
+	--leading-meta-text: 				calc(var(--line-height-meta-text)*1px);
+	--tracking-meta-text: 			6%;
+		
+	--text-subhead: 						calc(var(--font-size-subhead)*1px);
+	--leading-subhead: 					calc(var(--line-height-subhead-lh)*1px);
+	--tracking-subhead: 				var(--letter-spacing-subhead-ls);
 
-	--text-meta-text: 			calc(var(--font-size-meta-text)*1px);
-	--leading-meta-text: 		calc(var(--line-height-meta-text)*1px);
-	--tracking-meta-text: 	6%;
+	--text-editorial-intro:			calc(var(--font-size-editorial-intro)*1px);
+	--leading-editorial-intro: 	calc(var(--line-height-editorial-intro-lh)*1px);
+	--tracking-editorial-intro: var(--letter-spacing-editorial-intro-ls);
 
-	--text-subhead: 				calc(var(--font-size-subhead)*1px);
-	--leading-subhead: 			calc(var(--line-height-subhead-lh)*1px);
-	--tracking-subhead: 		-3%;
+	--text-editorial-body:			calc(var(--font-size-editorial-body)*1px);
+	--leading-editorial-body: 	calc(var(--line-height-editorial-body-lh)*1px);
+	--tracking-editorial-body: 	var(--letter-spacing-editorial-body-ls);
 
 	--font-eyebrow:    		  var(--eyebrow-font);
 	--font-display:    		  var(--display-font);

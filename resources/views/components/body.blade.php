@@ -4,8 +4,8 @@
 ])
 
 @php($class = match ($size) {
-  '1' => 'text-body-1 leading-body-1',
-  '2' => 'text-body-2 leading-body-2',
+  '1' => 'text-body-1 leading-body-1 tracking-body-1',
+  '2' => 'text-body-2 leading-body-2 tracking-body-2',
 })
 
 @if($slot->isNotEmpty() or $message != null)
@@ -14,7 +14,6 @@
       $class,
       'space-y-em',
       'font-body',
-      'tracking-body',
       'font-medium',
     ]) }}
   >

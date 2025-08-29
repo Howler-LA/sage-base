@@ -13,7 +13,7 @@
     {{ $attributes->twMerge([
       $class,
       'font-display',
-      'tracking-[-4%]',
+      'tracking-super-display',
       'font-extrabold',
       'text-balance',
       str_contains(get_site_url(), 'youthjustice') ? 'uppercase' : null,

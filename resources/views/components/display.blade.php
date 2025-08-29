@@ -12,7 +12,7 @@
   <div 
     {{ $attributes->twMerge([
       $class,
-      'tracking-display',
+      'tracking-display-1',
       'font-extrabold',
       'text-balance',
       'font-display',
