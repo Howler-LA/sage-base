@@ -41,7 +41,7 @@
             class='hidden xl:flex items-center gap-4' 
             name="secondary_navigation" 
           />
-          <div class="flex gap-min">
+          <div class="hidden lg:flex gap-min">
             @if(has_nav_menu('lang_navigation'))
               <x-language-switcher name="lang_navigation" />
             @endif
@@ -66,10 +66,27 @@
           class="size-11 flex xl:hidden items-center justify-center border border-foreground cursor-pointer rounded-full transition-all ease" 
           :class="mobile ? 'bg-foreground text-background' : 'bg-background text-foreground'"
         >
-          <x-lucide-menu class="size-6 stroke-1"/>
+          <div :class="mobile ? 'block' : 'hidden'"><x-lucide-x class="size-6 stroke-1"/></div>
+          <div :class="mobile ? 'hidden' : 'block'"><x-lucide-menu class="size-6 stroke-1"/></div>
         </button>
       </div>
     </div>
-    <x-mobile-menu x-show="mobile" data-theme="Primary" class='block xl:hidden' />
+    <div x-show="mobile" data-theme="Primary" class='block xl:hidden absolute inset-x-0 top-full shadow-lg bg-background'>
+      <x-mobile-sub-menu name="secondary_navigation" class="bg-background" />
+      <x-mobile-menu />
+      <div class="flex gap-min py-em px-med border-t border-foreground/50">
+        @if(has_nav_menu('lang_navigation'))
+          <x-language-switcher name="lang_navigation" />
+        @endif
+        <x-button 
+          label="Donate"
+          href="#"
+          size="sm"
+          target="self"
+          variant=""
+          class="w-full items-center justify-center"
+        />
+      </div>
+    </div>
   </x-container>
 </x-section>
