@@ -1,7 +1,7 @@
 
 
 <x-section
-  x-data="{mobile:false}"
+  x-data="{mobile:true}"
   data-theme="{{ 
     $blocks 
       ? (get_field('sections','options')['header']['match'] ? $blocks[0]['config']['block']['themes'] : get_field('sections','options')['header']['themes'])
@@ -45,13 +45,15 @@
             @if(has_nav_menu('lang_navigation'))
               <x-language-switcher name="lang_navigation" />
             @endif
-            <x-button 
-              label="Donate"
-              href="#"
-              size="sm"
-              target="self"
-              variant=""
-            />
+            @if($donate)
+              <x-button 
+                :label="$donate['text']"
+                :href="$donate['url']"
+                size="sm"
+                target="self"
+                variant=""
+              />
+            @endif
           </div>
         </x-dynamic-component>
         <x-desktop-menu 
@@ -78,14 +80,16 @@
         @if(has_nav_menu('lang_navigation'))
           <x-language-switcher name="lang_navigation" />
         @endif
-        <x-button 
-          label="Donate"
-          href="#"
-          size="sm"
-          target="self"
-          variant=""
-          class="w-full items-center justify-center"
-        />
+        @if($donate)
+          <x-button 
+            :label="$donate['text']"
+            :href="$donate['url']"
+            size="sm"
+            target="self"
+            variant=""
+            class="w-full items-center justify-center"
+          />
+        @endif
       </div>
     </div>
   </x-container>

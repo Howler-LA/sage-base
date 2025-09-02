@@ -84,6 +84,13 @@ class SiteSettings extends Field
                 ->endGroup()
             ->endGroup()
 
+            ->addTab('Donate')
+            ->addGroup('donate')
+                ->addText('text',['label'=>'Button Text','default_value'=>'Donate'])
+                ->addUrl('url',['label'=>'Donate Link','default_value'=>'http://google.com'])
+                ->addTrueFalse('enable',['default_value'=>1])
+            ->endGroup()
+
             ->addTab('Socials')
         ;
 
