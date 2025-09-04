@@ -1,7 +1,7 @@
 
 
 <x-section
-  x-data="{mobile:true}"
+  x-data="{mobile:false}"
   data-theme="{{ 
     $blocks 
       ? (get_field('sections','options')['header']['match'] ? $blocks[0]['config']['block']['themes'] : get_field('sections','options')['header']['themes'])

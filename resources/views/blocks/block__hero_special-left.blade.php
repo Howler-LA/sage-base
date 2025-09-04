@@ -1,4 +1,4 @@
-<x-section data-theme="{{ $config['block']['themes'] }}" padding="none" class="overflow-hidden">
+<x-section data-theme="{{ $config['block']['themes'] }}" padding="none" class="overflow-hidden lg:h-screen">
   <x-container class="grid grid-cols-1 xl:grid-cols-2">
     <div class="relative z-10 py-small xl:py-x-large flex flex-col items-center text-center xl:text-left xl:items-start">
       <x-eyebrow :content="$content['eyebrow']" class="mb-large" />
@@ -26,7 +26,7 @@
         @image($content['image'],'large',[
           'data-aos-delay' => '100', 
           'data-aos'=>'fade-in', 
-          'class'=>'w-full h-auto block', 
+          'class'=>'w-full h-full object-cover object-top-left', 
           'alt'=> $content['headline'] 
         ])
       </div>
