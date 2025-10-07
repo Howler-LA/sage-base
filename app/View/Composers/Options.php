@@ -16,6 +16,7 @@ class Options extends Composer
         return [
             'header'    => get_field('sections','option')['header'],
             'footer'    => get_field('sections','option')['footer'],
+            'socials'   => get_field('socials','option'),
             'donate'    => get_field('donate','option'),
         ];
     }

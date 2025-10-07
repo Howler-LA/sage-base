@@ -6,7 +6,33 @@
   <x-container class="flex flex-col gap-med">
 
     <div class="flex flex-col lg:flex-row justify-between items-start gap-small">
-      <x-eyebrow :content="$footer['upper']['eyebrow']" />
+      <div class="flex flex-col gap-em">
+        <x-eyebrow :content="$footer['upper']['eyebrow']" />
+        <x-eyebrow :content="$socials['headline']" />
+        @if($socials['links'])
+          <ul class="flex gap-min">
+            @foreach($socials['links'] as $link)
+              <li>
+                <a 
+                  aria-label="Links to {{ $link['name'] }}"
+                  href="{{ $link['url'] }}"
+                  @class([
+                    'bg-background text-foreground',
+                    'hover:bg-foreground hover:text-background',
+                    'transition ease',
+                    'border border-border size-14 flex items-center justify-center rounded-full group',
+                  ])
+                >
+                  <x-dynamic-component
+                    component="css-{{ $link['name'] ? strtolower($link['name']) : 'facebook' }}" 
+                    class="translate-y-px size-6 stroke-3 transition-transform duration-300 ease" 
+                  />
+                </a>
+              </li>
+            @endforeach
+          </ul>
+        @endif
+      </div>
       <ul class="flex-grow hidden xl:flex flex-col items-end text-right">
         @if($footer['upper']['address'])
           <li class="flex gap-min"><x-body size="2" :message="$footer['upper']['address']" /></li>
@@ -24,7 +50,10 @@
       </ul>
     </div>
 
-    <x-display :message="$footer['upper']['headline']" class="text-center xl:text-left" />
+    <x-display 
+      :message="$footer['upper']['headline']" 
+      class="text-center xl:text-left" 
+    />
     
     <div class="grid grid-cols-1 lg:grid-cols-4 gap-small">
       <x-footer

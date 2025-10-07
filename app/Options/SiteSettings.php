@@ -92,6 +92,14 @@ class SiteSettings extends Field
             ->endGroup()
 
             ->addTab('Socials')
+                ->addGroup('socials')
+                    ->addText('headline')
+                    ->addRepeater('links',['collapsed'=>'name'])
+                        ->addText('name',['required'=>true,'placeholder'=>'facebook,instagram (name is required to be lowercase)'])
+                        ->addUrl('url',['required'=>true])
+                    ->endrepeater()
+                ->endGroup()
+
         ;
 
         return $fields->build();
