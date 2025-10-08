@@ -5,6 +5,7 @@
         <a 
           aria-label="Links to {{ $link['name'] }}"
           href="{{ $link['url'] }}"
+          target="_blank" 
           @class([
             'bg-background text-foreground',
             'hover:bg-foreground hover:text-background',
