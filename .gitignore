@@ -1,6 +1,7 @@
 /node_modules
 /vendor
 /public/*
+!/public/vendor
 !/public/.gitkeep
 .env
 vite.config.js
