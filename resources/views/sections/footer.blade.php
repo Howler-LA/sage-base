@@ -9,6 +9,7 @@
       <div class="flex flex-col gap-em">
         <x-eyebrow :content="$footer['upper']['eyebrow']" />
         <x-eyebrow :content="$socials['headline']" />
+        {{-- Social Links --}}
         @if($socials['links'])
           <ul class="flex gap-min">
             @foreach($socials['links'] as $link)
