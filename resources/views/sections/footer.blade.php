@@ -24,7 +24,7 @@
                   ])
                 >
                   <x-dynamic-component
-                    component="css-{{ $link['name'] ? strtolower($link['name']) : 'facebook' }}" 
+                    component="fab-{{ $link['name'] ? strtolower($link['name']) : 'facebook' }}" 
                     class="translate-y-px size-6 stroke-3 transition-transform duration-300 ease" 
                   />
                 </a>
