@@ -10,29 +10,7 @@
         <x-eyebrow :content="$footer['upper']['eyebrow']" />
         <x-eyebrow :content="$socials['headline']" />
         {{-- Social Links --}}
-        @if($socials['links'])
-          <ul class="flex gap-min">
-            @foreach($socials['links'] as $link)
-              <li>
-                <a 
-                  aria-label="Links to {{ $link['name'] }}"
-                  href="{{ $link['url'] }}"
-                  @class([
-                    'bg-background text-foreground',
-                    'hover:bg-foreground hover:text-background',
-                    'transition ease',
-                    'border border-border size-14 flex items-center justify-center rounded-full group',
-                  ])
-                >
-                  <x-dynamic-component
-                    component="{{ $link['name'] ? strtolower($link['name']) : 'fab-facebook' }}" 
-                    class="translate-y-px size-6 stroke-3 transition-transform duration-300 ease" 
-                  />
-                </a>
-              </li>
-            @endforeach
-          </ul>
-        @endif
+        @includeWhen($socials['links'],'partials.social')
       </div>
       <ul class="flex-grow hidden xl:flex flex-col items-end text-right">
         @if($footer['upper']['address'])
