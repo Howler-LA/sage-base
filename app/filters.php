@@ -74,12 +74,29 @@ function acf_load_themes( $field ) {
   
   if ($cached_choices === null) {
     $cached_choices = [];
-    $colors_field = get_field('colors', 'option');
-    if( $colors_field && is_array($colors_field) && isset($colors_field['color_modes']) ) {
+    
+    // Debug the ACF field value
+    if (function_exists('sage_debug_acf_field')) {
+        $colors_field = sage_debug_acf_field('colors', 'option');
+    } else {
+        $colors_field = get_field('colors', 'option');
+        if (defined('WP_DEBUG') && WP_DEBUG) {
+            error_log("ACF colors field type: " . gettype($colors_field));
+            error_log("ACF colors field value: " . print_r($colors_field, true));
+        }
+    }
+    
+    if( $colors_field && is_array($colors_field) && isset($colors_field['color_modes']) && is_array($colors_field['color_modes']) ) {
       foreach($colors_field['color_modes'] as $mode){
-        $value = $mode['name'];
-        $label = $mode['name'];
-        $cached_choices[ $value ] = $label;
+        if (isset($mode['name'])) {
+          $value = $mode['name'];
+          $label = $mode['name'];
+          $cached_choices[ $value ] = $label;
+        }
+      }
+    } else {
+      if (defined('WP_DEBUG') && WP_DEBUG) {
+        error_log("ACF colors field is not properly structured for theme loading");
       }
     }
   }

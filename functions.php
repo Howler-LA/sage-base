@@ -21,6 +21,19 @@ require $composer;
 
 /*
 |--------------------------------------------------------------------------
+| Include Debug Helper
+|--------------------------------------------------------------------------
+|
+| Include debug helper for better error reporting during development.
+|
+*/
+
+if (defined('WP_DEBUG') && WP_DEBUG) {
+    require_once __DIR__ . '/debug-helper.php';
+}
+
+/*
+|--------------------------------------------------------------------------
 | Register The Bootloader
 |--------------------------------------------------------------------------
 |
