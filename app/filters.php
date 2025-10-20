@@ -74,8 +74,9 @@ function acf_load_themes( $field ) {
   
   if ($cached_choices === null) {
     $cached_choices = [];
-    if( get_field('colors', 'option')['color_modes'] ) {
-      foreach(get_field('colors', 'option')['color_modes'] as $mode){
+    $colors_field = get_field('colors', 'option');
+    if( $colors_field && is_array($colors_field) && isset($colors_field['color_modes']) ) {
+      foreach($colors_field['color_modes'] as $mode){
         $value = $mode['name'];
         $label = $mode['name'];
         $cached_choices[ $value ] = $label;
@@ -102,8 +103,9 @@ function acf_load_card_themes( $field ) {
     $cached_choices = [];
     // Add default 'inherit' choice
     $cached_choices[''] = 'Inherit theme';
-    if( get_field('colors', 'option')['color_modes'] ) {
-      foreach(get_field('colors', 'option')['color_modes'] as $mode){
+    $colors_field = get_field('colors', 'option');
+    if( $colors_field && is_array($colors_field) && isset($colors_field['color_modes']) ) {
+      foreach($colors_field['color_modes'] as $mode){
         $value = $mode['name'];
         $label = $mode['name'];
         $cached_choices[ $value ] = $label;
