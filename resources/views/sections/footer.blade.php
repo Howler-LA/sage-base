@@ -8,9 +8,13 @@
     <div class="flex flex-col lg:flex-row justify-between items-start gap-small">
       <div class="flex flex-col gap-em">
         <x-eyebrow :content="$footer['upper']['eyebrow']" />
-        <x-eyebrow :content="$socials['headline']" />
+        @if(is_array($socials) && isset($socials['headline']))
+          <x-eyebrow :content="$socials['headline']" />
+        @endif
         {{-- Social Links --}}
-        @includeWhen($socials['links'],'partials.social')
+        @if(is_array($socials) && isset($socials['links']))
+          @includeWhen($socials['links'],'partials.social')
+        @endif
       </div>
       <ul class="flex-grow hidden xl:flex flex-col items-end text-right">
         @if($footer['upper']['address'])

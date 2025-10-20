@@ -4,6 +4,13 @@
   'naked' => null
 ])
 
+@php(
+  // Debug logging for content issues
+  if (defined('WP_DEBUG') && WP_DEBUG && $content !== null && !is_string($content)) {
+    error_log('Eyebrow component received non-string content: ' . gettype($content) . ' - ' . print_r($content, true));
+  }
+)
+
 @php($class = match ($size) {
   '1' => 'text-eyebrow leading-eyebrow',
 })

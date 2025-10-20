@@ -278,3 +278,334 @@
 
 )
 
+[20-Oct-2025 21:41:44 UTC] SAGE THEME ERROR: Array
+(
+    [severity] => 2
+    [message] => file_get_contents(/Users/fowler/Sites/initiatejustice/wp-content/themes/sage/.env): Failed to open stream: No such file or directory
+    [file] => /Users/fowler/Sites/initiatejustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+    [line] => 73
+    [trace] => Array
+        (
+            [0] => Array
+                (
+                    [function] => {closure:/Users/fowler/Sites/initiatejustice/wp-content/themes/sage/debug-helper.php:22}
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/fowler/Sites/initiatejustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 73
+                    [function] => file_get_contents
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/fowler/Sites/initiatejustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 48
+                    [function] => readFromFile
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/fowler/Sites/initiatejustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/FileStore.php
+                    [line] => 62
+                    [function] => read
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [4] => Array
+                (
+                    [file] => /Users/fowler/Sites/initiatejustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Dotenv.php
+                    [line] => 222
+                    [function] => read
+                    [class] => Dotenv\Store\FileStore
+                    [type] => ->
+                )
+
+        )
+
+)
+
+[20-Oct-2025 21:41:44 UTC] ACF Field Debug - colors:
+[20-Oct-2025 21:41:44 UTC] Type: array
+[20-Oct-2025 21:41:44 UTC] Value: Array
+(
+    [variables] => --grade-100: linear-gradient(129deg,rgba(185, 232, 241, 1) 0%, rgba(55, 190, 214, 1) 37%, rgba(106, 75, 159, 1) 100%);
+--primary-100: #02ADCB;
+--primary-transp-90%: #02ADCBE5;
+--primary-transp-75%: #02ADCBBF;
+--primary-transp-50%: #02ADCB7F;
+--primary-transp-20%: #02ADCB33;
+--primary-transp-10%: #02ADCB19;
+--primary-tint-90-tint: #1BB5D0;
+--primary-tint-75-tint: #41C1D8;
+--primary-tint-50-tint: #80D6E5;
+--primary-tint-20-tint: #CCEFF5;
+--primary-tint-10-tint: #E6F7FA;
+--primary-dk: #117A99;
+--secondary-100: #6A4B9F;
+--secondary-transp-90%: #6A4B9FE5;
+--secondary-transp-75%: #6A4B9FBF;
+--secondary-transp-50%: #6A4B9F7F;
+--secondary-transp-25%: #6A4B9F3F;
+--secondary-transp-10%: #6A4B9F19;
+--secondary-tint-90-tint: #795DA9;
+--secondary-tint-75-tint: #8F78B7;
+--secondary-tint-50-tint: #B4A5CF;
+--secondary-tint-25-tint: #DAD2E7;
+--secondary-tint-10-tint: #F0EDF5;
+--neutral-100: #F4F4F7;
+--black-100: #000000;
+--black-transp-90%: #000000E5;
+--black-transp-75%: #000000BF;
+--black-transp-50%: #0000007F;
+--black-transp-25%: #0000003F;
+--black-transp-10%: #00000019;
+--black-tint-90-tint: #1A1A1A;
+--black-tint-75-tint: #404040;
+--black-tint-50-tint: #808080;
+--black-tint-25-tint: #BFBFBF;
+--black-tint-10-tint: #E5E5E5;
+--white-100: #FFFFFF;
+--white-transp-90%: #FFFFFFE5;
+--white-transp-75%: #FFFFFFBF;
+--white-transp-50%: #FFFFFF7F;
+--white-transp-25%: #FFFFFF3F;
+--white-transp-10%: #FFFFFF19;
+--ui-error: #CF1800;
+--ui-error-lt: #FF8585;
+--ui-success: #64A13F;
+--quaternary-100: #FFCC02;
+--tertiary-100: #A3CE45;
+    [color_modes] => Array
+        (
+            [0] => Array
+                (
+                    [name] => White
+                    [variables] => --txt-color: var(--black-100);
+--bg-color: var(--white-100);
+--button-color-btn-bg: var(--primary-100);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--primary-100);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--primary-100);
+--button-color-btn-border-hover: var(--primary-100);
+--button-color-btn-bg-active: var(--neutral-100);
+--button-color-btn-outline-bg-active: var(--primary-100);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--primary-lt);
+--gridlines-tint: var(--primary-tint-40-tint);
+--texture-color: var(--primary-tint-40-tint);
+--error-color: var(--ui-error);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--neutral-100);
+--news-card-bg-active: var(--primary-tint-40-tint);
+--news-card-icon-bg-hover: var(--txt-color);
+--news-card-icon-line-hover: var(--news-card-bg-hover);
+--news-card-focus-border: var(--primary-tint-40-tint);
+--news-card-feat-bg-hover: var(--neutral-100);
+--news-card-feat-bg-active: var(--white-100);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--primary-transp-10%);
+--link-grid-bg-active: var(--primary-transp-20%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--neutral-100);
+--color-card-bg-active: var(--primary-tint-40-tint);
+--color-card-focus-border: var(--secondary-100);
+--eyebrow-bg: var(--quaternary-100);
+--eyebrow-txt: var(--black-100);
+--eyebrow-border: var(--black-100);
+                )
+
+            [1] => Array
+                (
+                    [name] => Primary
+                    [variables] => --txt-color: var(--white-100);
+--bg-color: var(--primary-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--white-transp-25%);
+--button-color-btn-outline-bg-active: var(--white-transp-50%);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--white-transp-50%);
+--gridlines-tint: var(--primary-tint-60-tint);
+--texture-color: var(--primary-tint-70);
+--error-color: var(--ui-error-lt);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--primary-tint-70);
+--news-card-bg-active: var(--bg-color);
+--news-card-icon-bg-hover: var(--white-100);
+--news-card-icon-line-hover: var(--bg-color);
+--news-card-focus-border: var(--secondary-100);
+--news-card-feat-bg-hover: var(--primary-tint-30-tint);
+--news-card-feat-bg-active: var(--primary-tint-40-tint);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--white-transp-10%);
+--link-grid-bg-active: var(--white-transp-25%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--primary-tint-90-tint);
+--color-card-bg-active: var(--primary-tint-70);
+--color-card-focus-border: var(--secondary-100);
+--eyebrow-bg: var(--quaternary-100);
+--eyebrow-txt: var(--secondary-100);
+--eyebrow-border: var(--secondary-100);
+                )
+
+            [2] => Array
+                (
+                    [name] => Cream
+                    [variables] => --txt-color: var(--black-100);
+--bg-color: var(--neutral-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--white-transp-25%);
+--button-color-btn-outline-bg-active: var(--primary-100);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--primary-lt);
+--gridlines-tint: var(--primary-tint-40-tint);
+--texture-color: var(--primary-tint-50-tint);
+--error-color: var(--ui-error);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--white-100);
+--news-card-bg-active: var(--primary-tint-30-tint);
+--news-card-icon-bg-hover: var(--txt-color);
+--news-card-icon-line-hover: var(--news-card-bg-hover);
+--news-card-focus-border: var(--primary-tint-50-tint);
+--news-card-feat-bg-hover: var(--white-100);
+--news-card-feat-bg-active: var(--primary-tint-30-tint);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--white-100);
+--link-grid-bg-active: var(--white-transp-75%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--white-100);
+--color-card-bg-active: var(--white-transp-75%);
+--color-card-focus-border: var(--secondary-100);
+--eyebrow-bg: var(--secondary-100);
+--eyebrow-txt: var(--quaternary-100);
+--eyebrow-border: var(--quaternary-100);
+                )
+
+            [3] => Array
+                (
+                    [name] => Black
+                    [variables] => --txt-color: var(--white-100);
+--bg-color: var(--black-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--primary-100);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--white-transp-25%);
+--button-color-btn-outline-bg-active: var(--white-transp-50%);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--white-transp-50%);
+--gridlines-tint: var(--primary-tint-60-tint);
+--texture-color: var(--primary-tint-70);
+--error-color: var(--ui-error-lt);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--primary-tint-70);
+--news-card-bg-active: var(--bg-color);
+--news-card-icon-bg-hover: var(--white-100);
+--news-card-icon-line-hover: var(--bg-color);
+--news-card-focus-border: var(--secondary-100);
+--news-card-feat-bg-hover: var(--primary-tint-30-tint);
+--news-card-feat-bg-active: var(--primary-tint-40-tint);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--white-transp-10%);
+--link-grid-bg-active: var(--white-transp-25%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--primary-tint-90-tint);
+--color-card-bg-active: var(--primary-tint-70);
+--color-card-focus-border: var(--secondary-100);
+--eyebrow-bg: var(--quaternary-100);
+--eyebrow-txt: var(--secondary-100);
+--eyebrow-border: var(--secondary-100);
+                )
+
+        )
+
+)
+
+[20-Oct-2025 21:43:15 UTC] SAGE THEME ERROR: Array
+(
+    [severity] => 2
+    [message] => file_get_contents(/Users/fowler/Sites/initiatejustice/wp-content/themes/sage/.env): Failed to open stream: No such file or directory
+    [file] => /Users/fowler/Sites/initiatejustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+    [line] => 73
+    [trace] => Array
+        (
+            [0] => Array
+                (
+                    [function] => {closure:/Users/fowler/Sites/initiatejustice/wp-content/themes/sage/debug-helper.php:22}
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/fowler/Sites/initiatejustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 73
+                    [function] => file_get_contents
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/fowler/Sites/initiatejustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 48
+                    [function] => readFromFile
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/fowler/Sites/initiatejustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/FileStore.php
+                    [line] => 62
+                    [function] => read
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [4] => Array
+                (
+                    [file] => /Users/fowler/Sites/initiatejustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Dotenv.php
+                    [line] => 222
+                    [function] => read
+                    [class] => Dotenv\Store\FileStore
+                    [type] => ->
+                )
+
+        )
+
+)
+
