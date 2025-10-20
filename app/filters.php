@@ -17,6 +17,15 @@ add_filter('excerpt_more', function () {
 
 add_filter( 'acf/load_attachment',  __NAMESPACE__ . '\\custom_load_attachment', 10, 3);
 
+/**
+ * Custom ACF attachment loader to set medium size as icon for images.
+ * 
+ * @param array $response The attachment response array
+ * @param object $attachment The attachment object
+ * @param array $meta The attachment meta array
+ * @return array Modified response with icon set to medium size for images
+ * @since 1.0.0
+ */
 function custom_load_attachment ($response, $attachment, $meta){
   if ($response['type'] == 'image'){
     $response['icon'] = $response['sizes']['medium'];
@@ -26,6 +35,16 @@ function custom_load_attachment ($response, $attachment, $meta){
 
 add_filter('acf/fields/flexible_content/layout_title',  __NAMESPACE__ . '\\my_acf_fields_flexible_content_layout_title', 10, 4);
 
+/**
+ * Customize ACF flexible content layout titles with content headline.
+ * 
+ * @param string $title The original layout title
+ * @param array $field The field array
+ * @param array $layout The layout array
+ * @param int $i The layout index
+ * @return string Modified title with headline appended
+ * @since 1.0.0
+ */
 function my_acf_fields_flexible_content_layout_title( $title, $field, $layout, $i ) {
   // Remove layout name from title.
   $new_title = '';
@@ -33,38 +52,66 @@ function my_acf_fields_flexible_content_layout_title( $title, $field, $layout, $
   // load text sub field
   $sub_field = get_sub_field('content');
   if (isset($sub_field['headline']) && $sub_field['headline']) {
-    $new_title .= '<span style="font-weight:bold">'.$title.'</span> <span>— ' . esc_html($sub_field['headline']) . '</span>';
+    $new_title .= '<span style="font-weight:bold">'.esc_html($title).'</span> <span>— ' . esc_html($sub_field['headline']) . '</span>';
   } else {
-    $new_title = $title; // Fallback to the default
+    $new_title = esc_html($title); // Fallback to the default with sanitization
   }
 
   return $new_title;
 }
 
 // Populate Themes
+/**
+ * Populate ACF theme select fields with available color modes.
+ * Uses static caching to prevent repeated option queries.
+ * 
+ * @param array $field The ACF field array
+ * @return array Modified field with populated choices
+ * @since 1.0.0
+ */
 function acf_load_themes( $field ) {
-  $field['choices'] = array();
-  if( get_field('colors', 'option')['color_modes'] ) {
-    foreach(get_field('colors', 'option')['color_modes'] as $mode){
-      $value = $mode['name'];
-      $label = $mode['name'];
-      $field['choices'][ $value ] = $label;
+  static $cached_choices = null;
+  
+  if ($cached_choices === null) {
+    $cached_choices = [];
+    if( get_field('colors', 'option')['color_modes'] ) {
+      foreach(get_field('colors', 'option')['color_modes'] as $mode){
+        $value = $mode['name'];
+        $label = $mode['name'];
+        $cached_choices[ $value ] = $label;
+      }
     }
   }
+  
+  $field['choices'] = $cached_choices;
   return $field; 
 }
 
+/**
+ * Populate ACF card theme select fields with available color modes.
+ * Includes 'inherit' option and uses static caching for performance.
+ * 
+ * @param array $field The ACF field array
+ * @return array Modified field with populated choices
+ * @since 1.0.0
+ */
 function acf_load_card_themes( $field ) {
-  $field['choices'] = array();
-  // Add default 'inherit' choice
-  $field['choices'][''] = 'Inherit theme';
-  if( get_field('colors', 'option')['color_modes'] ) {
-    foreach(get_field('colors', 'option')['color_modes'] as $mode){
-      $value = $mode['name'];
-      $label = $mode['name'];
-      $field['choices'][ $value ] = $label;
+  static $cached_choices = null;
+  
+  if ($cached_choices === null) {
+    $cached_choices = [];
+    // Add default 'inherit' choice
+    $cached_choices[''] = 'Inherit theme';
+    if( get_field('colors', 'option')['color_modes'] ) {
+      foreach(get_field('colors', 'option')['color_modes'] as $mode){
+        $value = $mode['name'];
+        $label = $mode['name'];
+        $cached_choices[ $value ] = $label;
+      }
     }
   }
+  
+  $field['choices'] = $cached_choices;
   return $field; 
 }
 

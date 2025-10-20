@@ -5,6 +5,18 @@ import { wordpressPlugin, wordpressThemeJson } from '@roots/vite-plugin';
 
 export default defineConfig({
   base: '/app/themes/sage/public/build/',
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['alpinejs', 'aos'],
+          alpine: ['@alpinejs/anchor', '@alpinejs/collapse', '@alpinejs/focus']
+        }
+      }
+    },
+    sourcemap: false,
+    minify: 'terser'
+  },
   plugins: [
     tailwindcss(),
     laravel({
@@ -15,7 +27,7 @@ export default defineConfig({
         'resources/js/editor.js',
       ],
       refresh: true,
-      detectTls: 'youthjustice.test',
+      detectTls: process.env.VITE_TLS_HOST || 'localhost',
     }),
 
     wordpressPlugin(),
