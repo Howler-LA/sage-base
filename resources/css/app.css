@@ -164,3 +164,22 @@
 
 }
 
+.at .at-radios {
+	@apply grid grid-cols-2 gap-min;
+	margin-bottom: 20px;
+}
+
+.at .at-radios:before {
+	display: none!important;
+}
+
+.at form .label-amount {
+	width: 100%!important;
+	margin-bottom: 0!important;
+	letter-spacing: -0.03em;
+}
+
+.at form .label-amount:last-child {
+	@apply col-span-full;
+}
+

@@ -4,7 +4,7 @@ import laravel from 'laravel-vite-plugin'
 import { wordpressPlugin, wordpressThemeJson } from '@roots/vite-plugin';
 
 export default defineConfig({
-  base: '/app/themes/sage/public/build/',
+  base: '/wp-content/themes/sage/public/build/',
   build: {
     rollupOptions: {
       output: {
@@ -27,7 +27,8 @@ export default defineConfig({
         'resources/js/editor.js',
       ],
       refresh: true,
-      detectTls: process.env.VITE_TLS_HOST || 'localhost',
+      detectTls: 'initiatejustice.test',
+      // detectTls: process.env.VITE_TLS_HOST || 'localhost',
     }),
 
     wordpressPlugin(),
