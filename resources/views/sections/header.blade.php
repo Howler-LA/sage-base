@@ -17,17 +17,21 @@
   <x-container>
     <div class="flex justify-between gap-small lg:gap-med items-center">
       <a href="/" class="text-foreground xl:flex-grow">
-        @unless(get_field('brand','options')['logo'])
+        @php
+          $brand_field = get_field('brand','options');
+          $logo = is_array($brand_field) && isset($brand_field['logo']) ? $brand_field['logo'] : null;
+        @endphp
+        @if(!$logo)
           <x-title size="1">{{ $siteName }}</x-title>
         @else
-          @set($img,get_field('brand','options')['logo'])
-          @set($svg,str_replace('/','.', get_attached_file(get_field('brand','options')['logo'])))
+          @set($img, $logo)
+          @set($svg, str_replace('/','.', get_attached_file($logo)))
           @if(!str_contains(wp_get_attachment_url($img), 'svg'))
             @image($img,'large',['class'=>'text-foreground fill-foreground max-md:max-w-full'])
           @else
             @svg(str_replace('.svg','',$svg), 'text-foreground fill-foreground max-md:max-w-full', ['aria-label' => $siteName])
           @endif
-        @endunless
+        @endif
       </a>
       <div
         @class([
