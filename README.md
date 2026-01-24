@@ -1,31 +1,92 @@
-<p align="center">
-  <a href="https://roots.io/sage/"><img alt="Sage" src="https://cdn.roots.io/app/uploads/logo-sage.svg" height="100"></a>
-</p>
+# Youth Justice LA Theme
 
-<p align="center">
-  <a href="https://packagist.org/packages/roots/sage"><img alt="Packagist Installs" src="https://img.shields.io/packagist/dt/roots/sage?label=projects%20created&colorB=2b3072&colorA=525ddc&style=flat-square"></a>
-  <a href="https://github.com/roots/sage/actions/workflows/main.yml"><img alt="Build Status" src="https://img.shields.io/github/actions/workflow/status/roots/sage/main.yml?branch=main&logo=github&label=CI&style=flat-square"></a>
-  <a href="https://bsky.app/profile/roots.dev"><img alt="Follow roots.dev on Bluesky" src="https://img.shields.io/badge/follow-@roots.dev-0085ff?logo=bluesky&style=flat-square"></a>
-</p>
+Custom WordPress theme for Youth Justice LA, built on the Sage framework by [Roots](https://roots.io/sage/).
 
-# Sage
+## Tech Stack
 
-**Advanced hybrid WordPress starter theme with Laravel Blade and Tailwind CSS**
+- 🔧 **Laravel Blade** - Clean, efficient theme templating
+- ⚡️ **Vite** - Modern front-end development workflow with instant HMR
+- 🎨 **Tailwind CSS v4** - Utility-first CSS framework
+- 🚀 **Laravel Acorn** - Harness the power of Laravel in WordPress
+- 🧩 **Alpine.js** - Lightweight JavaScript framework for interactivity
+- 📦 **Advanced Custom Fields (ACF)** - Flexible content management
 
-- 🔧 Clean, efficient theme templating with Laravel Blade
-- ⚡️ Modern front-end development workflow powered by Vite
-- 🎨 Out of the box support for Tailwind CSS
-- 🚀 Harness the power of Laravel with [Acorn integration](https://github.com/roots/acorn)
-- 📦 Block editor support built-in
+## Key Features
 
-Sage brings proper PHP templating and modern JavaScript tooling to WordPress themes. Write organized, component-based code using Laravel Blade, enjoy instant builds and CSS hot-reloading with Vite, and leverage Laravel's robust feature set through Acorn.
+- Dynamic color theme system with configurable color modes
+- Custom Blade components for reusable UI elements
+- ACF-powered flexible content blocks
+- Responsive header with mobile navigation
+- Custom font configuration system
+- AOS (Animate On Scroll) integration
+- Masonry layout support
 
-[Read the docs to get started](https://roots.io/sage/docs/installation/)
+## Requirements
 
-## Sponsors
+- PHP >= 8.2
+- WordPress >= 6.6
+- Node.js >= 20.0.0
+- Composer
 
-Sage is an open source project and completely free to use. If you've benefited from our projects and would like to support our future endeavors, [please consider sponsoring us](https://github.com/sponsors/roots).
+## Development
 
-<div align="center">
-<a href="https://carrot.com/"><img src="https://cdn.roots.io/app/uploads/carrot.svg" alt="Carrot" width="120" height="90"></a> <a href="https://wordpress.com/"><img src="https://cdn.roots.io/app/uploads/wordpress.svg" alt="WordPress.com" width="120" height="90"></a> <a href="https://worksitesafety.ca/careers/"><img src="https://cdn.roots.io/app/uploads/worksite-safety.svg" alt="Worksite Safety" width="120" height="90"></a> <a href="https://40q.agency/"><img src="https://cdn.roots.io/app/uploads/40q.svg" alt="40Q" width="120" height="90"></a> <a href="https://www.itineris.co.uk/"><img src="https://cdn.roots.io/app/uploads/itineris.svg" alt="Itineris" width="120" height="90"></a> <a href="https://bonsai.so/"><img src="https://cdn.roots.io/app/uploads/bonsai.svg" alt="Bonsai" width="120" height="90"></a>
-</div>
+### Installation
+
+```bash
+# Install PHP dependencies
+composer install
+
+# Install JavaScript dependencies
+yarn install
+```
+
+### Development Workflow
+
+```bash
+# Start development server with hot reload
+yarn dev
+
+# Build for production
+yarn build
+```
+
+### Translation
+
+```bash
+# Generate POT file and update PO files
+yarn translate
+
+# Compile MO and JSON files
+yarn translate:compile
+```
+
+## Project Structure
+
+```
+├── app/                    # Theme PHP logic
+│   ├── filters.php        # WordPress filters and ACF field loaders
+│   └── setup.php          # Theme setup and configuration
+├── resources/
+│   ├── views/             # Blade templates
+│   │   ├── components/    # Reusable Blade components
+│   │   ├── partials/      # Partial templates
+│   │   └── sections/      # Major section templates
+│   ├── scripts/           # JavaScript files
+│   └── styles/            # Stylesheets
+└── public/                # Compiled assets (generated)
+```
+
+## Custom Features
+
+### Color Theme System
+The theme includes a dynamic color theming system powered by ACF options that allows editors to:
+- Define custom color modes (White, Blue, Gold, Black, Purple, etc.)
+- Apply themes to sections and components
+- Configure CSS custom properties for consistent theming
+
+### ACF Integration
+Custom ACF field loaders populate select fields with available color themes from the options page, ensuring consistency across the site.
+
+## Credits
+
+Built by [Howler Studio](https://howler.studio/) using the [Sage](https://roots.io/sage/) WordPress starter theme.
