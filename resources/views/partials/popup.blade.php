@@ -57,7 +57,10 @@
             class="space-y-small bg-background p-small text-foreground sm:p-med"
           >
             @if($popupContent !== '')
-              <div class="prose sm:prose-lg prose-invert max-w-full leading-normal sm:leading-normal">
+              <div @class([
+                'prose sm:prose-lg max-w-full leading-normal sm:leading-normal',
+                'prose-invert' => in_array(strtolower((string) $popupTheme), ['black', 'blue'], true),
+              ])>
                 {!! do_shortcode($popupContent) !!}
               </div>
             @endif
