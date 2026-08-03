@@ -3049,3 +3049,105 @@
 
 )
 
+[03-Aug-2026 22:01:05 UTC] SAGE THEME ERROR: Array
+(
+    [severity] => 2
+    [message] => file_get_contents(/Users/fowler/Sites/youthjustice/wp-content/themes/sage/.env): Failed to open stream: No such file or directory
+    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+    [line] => 73
+    [trace] => Array
+        (
+            [0] => Array
+                (
+                    [function] => {closure:/Users/fowler/Sites/youthjustice/wp-content/themes/sage/debug-helper.php:22}
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 73
+                    [function] => file_get_contents
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 48
+                    [function] => readFromFile
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/FileStore.php
+                    [line] => 62
+                    [function] => read
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [4] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Dotenv.php
+                    [line] => 222
+                    [function] => read
+                    [class] => Dotenv\Store\FileStore
+                    [type] => ->
+                )
+
+        )
+
+)
+
+[03-Aug-2026 22:03:05 UTC] SAGE THEME ERROR: Array
+(
+    [severity] => 2
+    [message] => file_get_contents(/Users/fowler/Sites/youthjustice/wp-content/themes/sage/.env): Failed to open stream: No such file or directory
+    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+    [line] => 73
+    [trace] => Array
+        (
+            [0] => Array
+                (
+                    [function] => {closure:/Users/fowler/Sites/youthjustice/wp-content/themes/sage/debug-helper.php:22}
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 73
+                    [function] => file_get_contents
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 48
+                    [function] => readFromFile
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/FileStore.php
+                    [line] => 62
+                    [function] => read
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [4] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Dotenv.php
+                    [line] => 222
+                    [function] => read
+                    [class] => Dotenv\Store\FileStore
+                    [type] => ->
+                )
+
+        )
+
+)
+
