@@ -5,6 +5,10 @@
 @source "../../app/";
 
 @layer base {
+	[x-cloak] {
+		display: none !important;
+	}
+
 	html,body {
 		@apply antialiased;
     @apply bg-background text-foreground;
@@ -182,4 +186,3 @@
 .at form .label-amount:last-child {
 	@apply col-span-full;
 }
-

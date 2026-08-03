@@ -91,6 +91,37 @@ class SiteSettings extends Field
                 ->addTrueFalse('enable',['default_value'=>1])
             ->endGroup()
 
+            ->addTab('Pop-Up')
+            ->addGroup('popup', ['label'=>'Homepage Pop-Up'])
+                ->addTrueFalse('enable', [
+                    'label'         => 'Enable Pop-Up',
+                    'instructions'  => 'Show the pop-up whenever the homepage loads.',
+                    'default_value' => 0,
+                    'ui'            => 1,
+                ])
+                ->addImage('image', [
+                    'label'         => 'Image',
+                    'instructions'  => 'Displayed at the full width of the pop-up. For an image-only pop-up, leave the content and CTA fields empty.',
+                    'return_format' => 'id',
+                    'preview_size'  => 'medium',
+                ])
+                ->addWysiwyg('content', [
+                    'label'        => 'Content or Form Embed',
+                    'instructions' => 'Optional. Add supporting copy, a shortcode, or third-party form embed markup. This appears below the image.',
+                    'tabs'         => 'all',
+                    'toolbar'      => 'full',
+                    'media_upload' => 0,
+                ])
+                ->addLink('cta', [
+                    'label'        => 'Call to Action',
+                    'instructions' => 'Optional. The link title is used as the button label.',
+                ])
+                ->addButtonGroup('themes', [
+                    'label'        => 'Content Theme',
+                    'instructions' => 'Controls the colors of the content panel and CTA button.',
+                ])
+            ->endGroup()
+
             ->addTab('Socials')
                 ->addGroup('socials')
                     ->addText('headline')
