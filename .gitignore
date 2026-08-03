@@ -6,3 +6,4 @@
 .env
 vite.config.js
 npm-debug.log
+debug.log
