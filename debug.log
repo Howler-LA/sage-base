@@ -1,0 +1,3051 @@
+[03-Aug-2026 21:55:18 UTC] SAGE THEME ERROR: Array
+(
+    [severity] => 2
+    [message] => file_get_contents(/Users/fowler/Sites/youthjustice/wp-content/themes/sage/.env): Failed to open stream: No such file or directory
+    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+    [line] => 73
+    [trace] => Array
+        (
+            [0] => Array
+                (
+                    [function] => {closure:/Users/fowler/Sites/youthjustice/wp-content/themes/sage/debug-helper.php:22}
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 73
+                    [function] => file_get_contents
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 48
+                    [function] => readFromFile
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/FileStore.php
+                    [line] => 62
+                    [function] => read
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [4] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Dotenv.php
+                    [line] => 222
+                    [function] => read
+                    [class] => Dotenv\Store\FileStore
+                    [type] => ->
+                )
+
+        )
+
+)
+
+[03-Aug-2026 21:55:19 UTC] SAGE THEME ERROR: Array
+(
+    [severity] => 2
+    [message] => file_get_contents(/Users/fowler/Sites/youthjustice/wp-content/themes/sage/.env): Failed to open stream: No such file or directory
+    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+    [line] => 73
+    [trace] => Array
+        (
+            [0] => Array
+                (
+                    [function] => {closure:/Users/fowler/Sites/youthjustice/wp-content/themes/sage/debug-helper.php:22}
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 73
+                    [function] => file_get_contents
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 48
+                    [function] => readFromFile
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/FileStore.php
+                    [line] => 62
+                    [function] => read
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [4] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Dotenv.php
+                    [line] => 222
+                    [function] => read
+                    [class] => Dotenv\Store\FileStore
+                    [type] => ->
+                )
+
+        )
+
+)
+
+[03-Aug-2026 21:55:21 UTC] SAGE THEME ERROR: Array
+(
+    [severity] => 2
+    [message] => file_get_contents(/Users/fowler/Sites/youthjustice/wp-content/themes/sage/.env): Failed to open stream: No such file or directory
+    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+    [line] => 73
+    [trace] => Array
+        (
+            [0] => Array
+                (
+                    [function] => {closure:/Users/fowler/Sites/youthjustice/wp-content/themes/sage/debug-helper.php:22}
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 73
+                    [function] => file_get_contents
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 48
+                    [function] => readFromFile
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/FileStore.php
+                    [line] => 62
+                    [function] => read
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [4] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Dotenv.php
+                    [line] => 222
+                    [function] => read
+                    [class] => Dotenv\Store\FileStore
+                    [type] => ->
+                )
+
+        )
+
+)
+
+[03-Aug-2026 21:55:21 UTC] ACF Field Debug - colors:
+[03-Aug-2026 21:55:21 UTC] Type: array
+[03-Aug-2026 21:55:21 UTC] Value: Array
+(
+    [variables] => --primary-100: #203A90;
+--primary-transp-90%: #203A90E5;
+--primary-transp-75%: #203A90BF;
+--primary-transp-50%: #203A907F;
+--primary-transp-20%: #203A9033;
+--primary-transp-10%: #203A9019;
+--primary-tint-90-tint: #364E9B;
+--primary-tint-75-tint: #586BAC;
+--primary-tint-50-tint: #8F9CC7;
+--primary-tint-20-tint: #D2D8E9;
+--primary-tint-10-tint: #E9EBF4;
+--primary-dk: #1E2C56;
+--secondary-100: #FCB825;
+--secondary-transp-90%: #FCB825E5;
+--secondary-transp-75%: #FCB825BF;
+--secondary-transp-50%: #FCB8257F;
+--secondary-transp-25%: #FCB8253F;
+--secondary-transp-10%: #FCB82519;
+--secondary-tint-90-tint: #FCBF3B;
+--secondary-tint-75-tint: #FDCA5C;
+--secondary-tint-50-tint: #FDDB92;
+--secondary-tint-25-tint: #FEEDC8;
+--secondary-tint-10-tint: #FFF8E9;
+--gold-100: #C39E6D;
+--black-100: #000000;
+--black-transp-90%: #000000E5;
+--black-transp-75%: #000000BF;
+--black-transp-50%: #0000007F;
+--black-transp-25%: #0000003F;
+--black-transp-10%: #00000019;
+--black-tint-90-tint: #1A1A1A;
+--black-tint-75-tint: #404040;
+--black-tint-50-tint: #808080;
+--black-tint-25-tint: #BFBFBF;
+--black-tint-10-tint: #E5E5E5;
+--white-100: #FFFFFF;
+--white-transp-90%: #FFFFFFE5;
+--white-transp-75%: #FFFFFFBF;
+--white-transp-50%: #FFFFFF7F;
+--white-transp-25%: #FFFFFF3F;
+--white-transp-10%: #FFFFFF19;
+--ui-error: #CF1800;
+--ui-error-lt: #FF8585;
+--ui-success: #64A13F;
+--tertiary-100: #FF8100;
+--quaternary-100: #31006E;
+    [color_modes] => Array
+        (
+            [0] => Array
+                (
+                    [name] => White
+                    [variables] => --txt-color: var(--primary-100);
+--bg-color: var(--white-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--gold-100);
+--button-color-btn-outline-bg-active: var(--primary-100);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--primary-lt);
+--eyebrow-txt: var(--quaternary-100);
+--eyebrow-bg: var(--tertiary-100);
+--eyebrow-border: var(--tertiary-100);
+--gridlines-tint: var(--primary-tint-40-tint);
+--texture-color: var(--primary-tint-40-tint);
+--error-color: var(--ui-error);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--gold-100);
+--news-card-bg-active: var(--primary-tint-40-tint);
+--news-card-icon-bg-hover: var(--txt-color);
+--news-card-icon-line-hover: var(--news-card-bg-hover);
+--news-card-focus-border: var(--primary-tint-40-tint);
+--news-card-feat-bg-hover: var(--gold-100);
+--news-card-feat-bg-active: var(--white-100);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--primary-transp-10%);
+--link-grid-bg-active: var(--primary-transp-20%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--gold-100);
+--color-card-bg-active: var(--primary-tint-40-tint);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [1] => Array
+                (
+                    [name] => Blue
+                    [variables] => --txt-color: var(--white-100);
+--bg-color: var(--primary-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--white-transp-25%);
+--button-color-btn-outline-bg-active: var(--white-transp-50%);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--white-transp-50%);
+--eyebrow-txt: var(--bg-color);
+--eyebrow-bg: var(--secondary-100);
+--eyebrow-border: var(--secondary-100);
+--gridlines-tint: var(--primary-tint-60-tint);
+--texture-color: var(--primary-tint-70);
+--error-color: var(--ui-error-lt);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--primary-tint-70);
+--news-card-bg-active: var(--bg-color);
+--news-card-icon-bg-hover: var(--white-100);
+--news-card-icon-line-hover: var(--bg-color);
+--news-card-focus-border: var(--secondary-100);
+--news-card-feat-bg-hover: var(--primary-tint-30-tint);
+--news-card-feat-bg-active: var(--primary-tint-40-tint);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--white-transp-10%);
+--link-grid-bg-active: var(--white-transp-25%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--primary-tint-90-tint);
+--color-card-bg-active: var(--primary-tint-70);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [2] => Array
+                (
+                    [name] => Gold
+                    [variables] => --txt-color: var(--black-100);
+--bg-color: var(--gold-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--white-transp-25%);
+--button-color-btn-outline-bg-active: var(--black-100);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--primary-lt);
+--eyebrow-txt: var(--gold-100);
+--eyebrow-bg: var(--txt-color);
+--eyebrow-border: var(--txt-color);
+--gridlines-tint: var(--primary-tint-40-tint);
+--texture-color: var(--primary-tint-50-tint);
+--error-color: var(--ui-error);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--white-100);
+--news-card-bg-active: var(--primary-tint-30-tint);
+--news-card-icon-bg-hover: var(--txt-color);
+--news-card-icon-line-hover: var(--news-card-bg-hover);
+--news-card-focus-border: var(--primary-tint-50-tint);
+--news-card-feat-bg-hover: var(--white-100);
+--news-card-feat-bg-active: var(--primary-tint-30-tint);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--white-100);
+--link-grid-bg-active: var(--white-transp-75%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--white-100);
+--color-card-bg-active: var(--white-transp-75%);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [3] => Array
+                (
+                    [name] => Black
+                    [variables] => --txt-color: var(--gold-100);
+--bg-color: var(--black-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--white-transp-25%);
+--button-color-btn-outline-bg-active: var(--white-transp-50%);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--white-transp-50%);
+--eyebrow-txt: var(--black-100);
+--eyebrow-bg: var(--secondary-100);
+--eyebrow-border: var(--secondary-100);
+--gridlines-tint: var(--primary-tint-60-tint);
+--texture-color: var(--primary-tint-70);
+--error-color: var(--ui-error-lt);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--primary-tint-70);
+--news-card-bg-active: var(--bg-color);
+--news-card-icon-bg-hover: var(--white-100);
+--news-card-icon-line-hover: var(--bg-color);
+--news-card-focus-border: var(--secondary-100);
+--news-card-feat-bg-hover: var(--primary-tint-30-tint);
+--news-card-feat-bg-active: var(--primary-tint-40-tint);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--white-transp-10%);
+--link-grid-bg-active: var(--white-transp-25%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--primary-tint-90-tint);
+--color-card-bg-active: var(--primary-tint-70);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [4] => Array
+                (
+                    [name] => Purple
+                    [variables] => --txt-color: var(--white-100);
+--bg-color: var(--quaternary-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--white-transp-25%);
+--button-color-btn-outline-bg-active: var(--white-transp-50%);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--white-transp-50%);
+--eyebrow-txt: var(--bg-color);
+--eyebrow-bg: var(--secondary-100);
+--eyebrow-border: var(--secondary-100);
+--gridlines-tint: var(--primary-tint-60-tint);
+--texture-color: var(--primary-tint-70);
+--error-color: var(--ui-error-lt);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--primary-tint-70);
+--news-card-bg-active: var(--bg-color);
+--news-card-icon-bg-hover: var(--white-100);
+--news-card-icon-line-hover: var(--bg-color);
+--news-card-focus-border: var(--secondary-100);
+--news-card-feat-bg-hover: var(--primary-tint-30-tint);
+--news-card-feat-bg-active: var(--primary-tint-40-tint);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--white-transp-10%);
+--link-grid-bg-active: var(--white-transp-25%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--primary-tint-90-tint);
+--color-card-bg-active: var(--primary-tint-70);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [5] => Array
+                (
+                    [name] => Pale-Yellow
+                    [variables] => --txt-color: var(--primary-100);
+--bg-color: var(--secondary-tint-10-tint);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--gold-100);
+--button-color-btn-outline-bg-active: var(--primary-100);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--primary-lt);
+--eyebrow-txt: var(--quaternary-100);
+--eyebrow-bg: var(--tertiary-100);
+--eyebrow-border: var(--tertiary-100);
+--gridlines-tint: var(--primary-tint-40-tint);
+--texture-color: var(--primary-tint-40-tint);
+--error-color: var(--ui-error);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--gold-100);
+--news-card-bg-active: var(--primary-tint-40-tint);
+--news-card-icon-bg-hover: var(--txt-color);
+--news-card-icon-line-hover: var(--news-card-bg-hover);
+--news-card-focus-border: var(--primary-tint-40-tint);
+--news-card-feat-bg-hover: var(--gold-100);
+--news-card-feat-bg-active: var(--white-100);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--primary-transp-10%);
+--link-grid-bg-active: var(--primary-transp-20%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--gold-100);
+--color-card-bg-active: var(--primary-tint-40-tint);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [6] => Array
+                (
+                    [name] => Pale-Blue
+                    [variables] => --txt-color: var(--primary-100);
+--bg-color: var(--primary-tint-10-tint);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--gold-100);
+--button-color-btn-outline-bg-active: var(--primary-100);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--primary-lt);
+--eyebrow-txt: var(--quaternary-100);
+--eyebrow-bg: var(--tertiary-100);
+--eyebrow-border: var(--tertiary-100);
+--gridlines-tint: var(--primary-tint-40-tint);
+--texture-color: var(--primary-tint-40-tint);
+--error-color: var(--ui-error);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--gold-100);
+--news-card-bg-active: var(--primary-tint-40-tint);
+--news-card-icon-bg-hover: var(--txt-color);
+--news-card-icon-line-hover: var(--news-card-bg-hover);
+--news-card-focus-border: var(--primary-tint-40-tint);
+--news-card-feat-bg-hover: var(--gold-100);
+--news-card-feat-bg-active: var(--white-100);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--primary-transp-10%);
+--link-grid-bg-active: var(--primary-transp-20%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--gold-100);
+--color-card-bg-active: var(--primary-tint-40-tint);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+        )
+
+)
+
+[03-Aug-2026 21:55:21 UTC] Options Composer Debug:
+[03-Aug-2026 21:55:21 UTC] Sections type: array
+[03-Aug-2026 21:55:21 UTC] Socials type: array
+[03-Aug-2026 21:55:21 UTC] Socials value: Array
+(
+    [headline] => Follow us on social media
+    [links] => Array
+        (
+            [0] => Array
+                (
+                    [name] => instagram
+                    [url] => http://instagram.com/youthjusticela
+                )
+
+            [1] => Array
+                (
+                    [name] => twitter
+                    [url] => http://x.com/youthjusticela
+                )
+
+        )
+
+)
+
+[03-Aug-2026 21:55:21 UTC] Options Composer Debug:
+[03-Aug-2026 21:55:21 UTC] Sections type: array
+[03-Aug-2026 21:55:21 UTC] Socials type: array
+[03-Aug-2026 21:55:21 UTC] Socials value: Array
+(
+    [headline] => Follow us on social media
+    [links] => Array
+        (
+            [0] => Array
+                (
+                    [name] => instagram
+                    [url] => http://instagram.com/youthjusticela
+                )
+
+            [1] => Array
+                (
+                    [name] => twitter
+                    [url] => http://x.com/youthjusticela
+                )
+
+        )
+
+)
+
+[03-Aug-2026 21:56:18 UTC] SAGE THEME ERROR: Array
+(
+    [severity] => 2
+    [message] => file_get_contents(/Users/fowler/Sites/youthjustice/wp-content/themes/sage/.env): Failed to open stream: No such file or directory
+    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+    [line] => 73
+    [trace] => Array
+        (
+            [0] => Array
+                (
+                    [function] => {closure:/Users/fowler/Sites/youthjustice/wp-content/themes/sage/debug-helper.php:22}
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 73
+                    [function] => file_get_contents
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 48
+                    [function] => readFromFile
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/FileStore.php
+                    [line] => 62
+                    [function] => read
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [4] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Dotenv.php
+                    [line] => 222
+                    [function] => read
+                    [class] => Dotenv\Store\FileStore
+                    [type] => ->
+                )
+
+        )
+
+)
+
+[03-Aug-2026 21:57:18 UTC] SAGE THEME ERROR: Array
+(
+    [severity] => 2
+    [message] => file_get_contents(/Users/fowler/Sites/youthjustice/wp-content/themes/sage/.env): Failed to open stream: No such file or directory
+    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+    [line] => 73
+    [trace] => Array
+        (
+            [0] => Array
+                (
+                    [function] => {closure:/Users/fowler/Sites/youthjustice/wp-content/themes/sage/debug-helper.php:22}
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 73
+                    [function] => file_get_contents
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 48
+                    [function] => readFromFile
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/FileStore.php
+                    [line] => 62
+                    [function] => read
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [4] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Dotenv.php
+                    [line] => 222
+                    [function] => read
+                    [class] => Dotenv\Store\FileStore
+                    [type] => ->
+                )
+
+        )
+
+)
+
+[03-Aug-2026 21:58:18 UTC] SAGE THEME ERROR: Array
+(
+    [severity] => 2
+    [message] => file_get_contents(/Users/fowler/Sites/youthjustice/wp-content/themes/sage/.env): Failed to open stream: No such file or directory
+    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+    [line] => 73
+    [trace] => Array
+        (
+            [0] => Array
+                (
+                    [function] => {closure:/Users/fowler/Sites/youthjustice/wp-content/themes/sage/debug-helper.php:22}
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 73
+                    [function] => file_get_contents
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 48
+                    [function] => readFromFile
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/FileStore.php
+                    [line] => 62
+                    [function] => read
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [4] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Dotenv.php
+                    [line] => 222
+                    [function] => read
+                    [class] => Dotenv\Store\FileStore
+                    [type] => ->
+                )
+
+        )
+
+)
+
+[03-Aug-2026 21:58:57 UTC] SAGE THEME ERROR: Array
+(
+    [severity] => 2
+    [message] => file_get_contents(/Users/fowler/Sites/youthjustice/wp-content/themes/sage/.env): Failed to open stream: No such file or directory
+    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+    [line] => 73
+    [trace] => Array
+        (
+            [0] => Array
+                (
+                    [function] => {closure:/Users/fowler/Sites/youthjustice/wp-content/themes/sage/debug-helper.php:22}
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 73
+                    [function] => file_get_contents
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 48
+                    [function] => readFromFile
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/FileStore.php
+                    [line] => 62
+                    [function] => read
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [4] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Dotenv.php
+                    [line] => 222
+                    [function] => read
+                    [class] => Dotenv\Store\FileStore
+                    [type] => ->
+                )
+
+        )
+
+)
+
+[03-Aug-2026 21:59:04 UTC] SAGE THEME ERROR: Array
+(
+    [severity] => 2
+    [message] => file_get_contents(/Users/fowler/Sites/youthjustice/wp-content/themes/sage/.env): Failed to open stream: No such file or directory
+    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+    [line] => 73
+    [trace] => Array
+        (
+            [0] => Array
+                (
+                    [function] => {closure:/Users/fowler/Sites/youthjustice/wp-content/themes/sage/debug-helper.php:22}
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 73
+                    [function] => file_get_contents
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 48
+                    [function] => readFromFile
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/FileStore.php
+                    [line] => 62
+                    [function] => read
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [4] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Dotenv.php
+                    [line] => 222
+                    [function] => read
+                    [class] => Dotenv\Store\FileStore
+                    [type] => ->
+                )
+
+        )
+
+)
+
+[03-Aug-2026 21:59:04 UTC] ACF Field Debug - colors:
+[03-Aug-2026 21:59:04 UTC] Type: array
+[03-Aug-2026 21:59:04 UTC] Value: Array
+(
+    [variables] => --primary-100: #203A90;
+--primary-transp-90%: #203A90E5;
+--primary-transp-75%: #203A90BF;
+--primary-transp-50%: #203A907F;
+--primary-transp-20%: #203A9033;
+--primary-transp-10%: #203A9019;
+--primary-tint-90-tint: #364E9B;
+--primary-tint-75-tint: #586BAC;
+--primary-tint-50-tint: #8F9CC7;
+--primary-tint-20-tint: #D2D8E9;
+--primary-tint-10-tint: #E9EBF4;
+--primary-dk: #1E2C56;
+--secondary-100: #FCB825;
+--secondary-transp-90%: #FCB825E5;
+--secondary-transp-75%: #FCB825BF;
+--secondary-transp-50%: #FCB8257F;
+--secondary-transp-25%: #FCB8253F;
+--secondary-transp-10%: #FCB82519;
+--secondary-tint-90-tint: #FCBF3B;
+--secondary-tint-75-tint: #FDCA5C;
+--secondary-tint-50-tint: #FDDB92;
+--secondary-tint-25-tint: #FEEDC8;
+--secondary-tint-10-tint: #FFF8E9;
+--gold-100: #C39E6D;
+--black-100: #000000;
+--black-transp-90%: #000000E5;
+--black-transp-75%: #000000BF;
+--black-transp-50%: #0000007F;
+--black-transp-25%: #0000003F;
+--black-transp-10%: #00000019;
+--black-tint-90-tint: #1A1A1A;
+--black-tint-75-tint: #404040;
+--black-tint-50-tint: #808080;
+--black-tint-25-tint: #BFBFBF;
+--black-tint-10-tint: #E5E5E5;
+--white-100: #FFFFFF;
+--white-transp-90%: #FFFFFFE5;
+--white-transp-75%: #FFFFFFBF;
+--white-transp-50%: #FFFFFF7F;
+--white-transp-25%: #FFFFFF3F;
+--white-transp-10%: #FFFFFF19;
+--ui-error: #CF1800;
+--ui-error-lt: #FF8585;
+--ui-success: #64A13F;
+--tertiary-100: #FF8100;
+--quaternary-100: #31006E;
+    [color_modes] => Array
+        (
+            [0] => Array
+                (
+                    [name] => White
+                    [variables] => --txt-color: var(--primary-100);
+--bg-color: var(--white-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--gold-100);
+--button-color-btn-outline-bg-active: var(--primary-100);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--primary-lt);
+--eyebrow-txt: var(--quaternary-100);
+--eyebrow-bg: var(--tertiary-100);
+--eyebrow-border: var(--tertiary-100);
+--gridlines-tint: var(--primary-tint-40-tint);
+--texture-color: var(--primary-tint-40-tint);
+--error-color: var(--ui-error);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--gold-100);
+--news-card-bg-active: var(--primary-tint-40-tint);
+--news-card-icon-bg-hover: var(--txt-color);
+--news-card-icon-line-hover: var(--news-card-bg-hover);
+--news-card-focus-border: var(--primary-tint-40-tint);
+--news-card-feat-bg-hover: var(--gold-100);
+--news-card-feat-bg-active: var(--white-100);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--primary-transp-10%);
+--link-grid-bg-active: var(--primary-transp-20%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--gold-100);
+--color-card-bg-active: var(--primary-tint-40-tint);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [1] => Array
+                (
+                    [name] => Blue
+                    [variables] => --txt-color: var(--white-100);
+--bg-color: var(--primary-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--white-transp-25%);
+--button-color-btn-outline-bg-active: var(--white-transp-50%);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--white-transp-50%);
+--eyebrow-txt: var(--bg-color);
+--eyebrow-bg: var(--secondary-100);
+--eyebrow-border: var(--secondary-100);
+--gridlines-tint: var(--primary-tint-60-tint);
+--texture-color: var(--primary-tint-70);
+--error-color: var(--ui-error-lt);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--primary-tint-70);
+--news-card-bg-active: var(--bg-color);
+--news-card-icon-bg-hover: var(--white-100);
+--news-card-icon-line-hover: var(--bg-color);
+--news-card-focus-border: var(--secondary-100);
+--news-card-feat-bg-hover: var(--primary-tint-30-tint);
+--news-card-feat-bg-active: var(--primary-tint-40-tint);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--white-transp-10%);
+--link-grid-bg-active: var(--white-transp-25%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--primary-tint-90-tint);
+--color-card-bg-active: var(--primary-tint-70);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [2] => Array
+                (
+                    [name] => Gold
+                    [variables] => --txt-color: var(--black-100);
+--bg-color: var(--gold-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--white-transp-25%);
+--button-color-btn-outline-bg-active: var(--black-100);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--primary-lt);
+--eyebrow-txt: var(--gold-100);
+--eyebrow-bg: var(--txt-color);
+--eyebrow-border: var(--txt-color);
+--gridlines-tint: var(--primary-tint-40-tint);
+--texture-color: var(--primary-tint-50-tint);
+--error-color: var(--ui-error);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--white-100);
+--news-card-bg-active: var(--primary-tint-30-tint);
+--news-card-icon-bg-hover: var(--txt-color);
+--news-card-icon-line-hover: var(--news-card-bg-hover);
+--news-card-focus-border: var(--primary-tint-50-tint);
+--news-card-feat-bg-hover: var(--white-100);
+--news-card-feat-bg-active: var(--primary-tint-30-tint);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--white-100);
+--link-grid-bg-active: var(--white-transp-75%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--white-100);
+--color-card-bg-active: var(--white-transp-75%);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [3] => Array
+                (
+                    [name] => Black
+                    [variables] => --txt-color: var(--gold-100);
+--bg-color: var(--black-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--white-transp-25%);
+--button-color-btn-outline-bg-active: var(--white-transp-50%);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--white-transp-50%);
+--eyebrow-txt: var(--black-100);
+--eyebrow-bg: var(--secondary-100);
+--eyebrow-border: var(--secondary-100);
+--gridlines-tint: var(--primary-tint-60-tint);
+--texture-color: var(--primary-tint-70);
+--error-color: var(--ui-error-lt);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--primary-tint-70);
+--news-card-bg-active: var(--bg-color);
+--news-card-icon-bg-hover: var(--white-100);
+--news-card-icon-line-hover: var(--bg-color);
+--news-card-focus-border: var(--secondary-100);
+--news-card-feat-bg-hover: var(--primary-tint-30-tint);
+--news-card-feat-bg-active: var(--primary-tint-40-tint);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--white-transp-10%);
+--link-grid-bg-active: var(--white-transp-25%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--primary-tint-90-tint);
+--color-card-bg-active: var(--primary-tint-70);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [4] => Array
+                (
+                    [name] => Purple
+                    [variables] => --txt-color: var(--white-100);
+--bg-color: var(--quaternary-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--white-transp-25%);
+--button-color-btn-outline-bg-active: var(--white-transp-50%);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--white-transp-50%);
+--eyebrow-txt: var(--bg-color);
+--eyebrow-bg: var(--secondary-100);
+--eyebrow-border: var(--secondary-100);
+--gridlines-tint: var(--primary-tint-60-tint);
+--texture-color: var(--primary-tint-70);
+--error-color: var(--ui-error-lt);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--primary-tint-70);
+--news-card-bg-active: var(--bg-color);
+--news-card-icon-bg-hover: var(--white-100);
+--news-card-icon-line-hover: var(--bg-color);
+--news-card-focus-border: var(--secondary-100);
+--news-card-feat-bg-hover: var(--primary-tint-30-tint);
+--news-card-feat-bg-active: var(--primary-tint-40-tint);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--white-transp-10%);
+--link-grid-bg-active: var(--white-transp-25%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--primary-tint-90-tint);
+--color-card-bg-active: var(--primary-tint-70);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [5] => Array
+                (
+                    [name] => Pale-Yellow
+                    [variables] => --txt-color: var(--primary-100);
+--bg-color: var(--secondary-tint-10-tint);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--gold-100);
+--button-color-btn-outline-bg-active: var(--primary-100);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--primary-lt);
+--eyebrow-txt: var(--quaternary-100);
+--eyebrow-bg: var(--tertiary-100);
+--eyebrow-border: var(--tertiary-100);
+--gridlines-tint: var(--primary-tint-40-tint);
+--texture-color: var(--primary-tint-40-tint);
+--error-color: var(--ui-error);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--gold-100);
+--news-card-bg-active: var(--primary-tint-40-tint);
+--news-card-icon-bg-hover: var(--txt-color);
+--news-card-icon-line-hover: var(--news-card-bg-hover);
+--news-card-focus-border: var(--primary-tint-40-tint);
+--news-card-feat-bg-hover: var(--gold-100);
+--news-card-feat-bg-active: var(--white-100);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--primary-transp-10%);
+--link-grid-bg-active: var(--primary-transp-20%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--gold-100);
+--color-card-bg-active: var(--primary-tint-40-tint);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [6] => Array
+                (
+                    [name] => Pale-Blue
+                    [variables] => --txt-color: var(--primary-100);
+--bg-color: var(--primary-tint-10-tint);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--gold-100);
+--button-color-btn-outline-bg-active: var(--primary-100);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--primary-lt);
+--eyebrow-txt: var(--quaternary-100);
+--eyebrow-bg: var(--tertiary-100);
+--eyebrow-border: var(--tertiary-100);
+--gridlines-tint: var(--primary-tint-40-tint);
+--texture-color: var(--primary-tint-40-tint);
+--error-color: var(--ui-error);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--gold-100);
+--news-card-bg-active: var(--primary-tint-40-tint);
+--news-card-icon-bg-hover: var(--txt-color);
+--news-card-icon-line-hover: var(--news-card-bg-hover);
+--news-card-focus-border: var(--primary-tint-40-tint);
+--news-card-feat-bg-hover: var(--gold-100);
+--news-card-feat-bg-active: var(--white-100);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--primary-transp-10%);
+--link-grid-bg-active: var(--primary-transp-20%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--gold-100);
+--color-card-bg-active: var(--primary-tint-40-tint);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+        )
+
+)
+
+[03-Aug-2026 21:59:04 UTC] SAGE THEME ERROR: Array
+(
+    [severity] => 2
+    [message] => file_get_contents(/Users/fowler/Sites/youthjustice/wp-content/themes/sage/.env): Failed to open stream: No such file or directory
+    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+    [line] => 73
+    [trace] => Array
+        (
+            [0] => Array
+                (
+                    [function] => {closure:/Users/fowler/Sites/youthjustice/wp-content/themes/sage/debug-helper.php:22}
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 73
+                    [function] => file_get_contents
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 48
+                    [function] => readFromFile
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/FileStore.php
+                    [line] => 62
+                    [function] => read
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [4] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Dotenv.php
+                    [line] => 222
+                    [function] => read
+                    [class] => Dotenv\Store\FileStore
+                    [type] => ->
+                )
+
+        )
+
+)
+
+[03-Aug-2026 21:59:04 UTC] ACF Field Debug - colors:
+[03-Aug-2026 21:59:04 UTC] Type: array
+[03-Aug-2026 21:59:04 UTC] Value: Array
+(
+    [variables] => --primary-100: #203A90;
+--primary-transp-90%: #203A90E5;
+--primary-transp-75%: #203A90BF;
+--primary-transp-50%: #203A907F;
+--primary-transp-20%: #203A9033;
+--primary-transp-10%: #203A9019;
+--primary-tint-90-tint: #364E9B;
+--primary-tint-75-tint: #586BAC;
+--primary-tint-50-tint: #8F9CC7;
+--primary-tint-20-tint: #D2D8E9;
+--primary-tint-10-tint: #E9EBF4;
+--primary-dk: #1E2C56;
+--secondary-100: #FCB825;
+--secondary-transp-90%: #FCB825E5;
+--secondary-transp-75%: #FCB825BF;
+--secondary-transp-50%: #FCB8257F;
+--secondary-transp-25%: #FCB8253F;
+--secondary-transp-10%: #FCB82519;
+--secondary-tint-90-tint: #FCBF3B;
+--secondary-tint-75-tint: #FDCA5C;
+--secondary-tint-50-tint: #FDDB92;
+--secondary-tint-25-tint: #FEEDC8;
+--secondary-tint-10-tint: #FFF8E9;
+--gold-100: #C39E6D;
+--black-100: #000000;
+--black-transp-90%: #000000E5;
+--black-transp-75%: #000000BF;
+--black-transp-50%: #0000007F;
+--black-transp-25%: #0000003F;
+--black-transp-10%: #00000019;
+--black-tint-90-tint: #1A1A1A;
+--black-tint-75-tint: #404040;
+--black-tint-50-tint: #808080;
+--black-tint-25-tint: #BFBFBF;
+--black-tint-10-tint: #E5E5E5;
+--white-100: #FFFFFF;
+--white-transp-90%: #FFFFFFE5;
+--white-transp-75%: #FFFFFFBF;
+--white-transp-50%: #FFFFFF7F;
+--white-transp-25%: #FFFFFF3F;
+--white-transp-10%: #FFFFFF19;
+--ui-error: #CF1800;
+--ui-error-lt: #FF8585;
+--ui-success: #64A13F;
+--tertiary-100: #FF8100;
+--quaternary-100: #31006E;
+    [color_modes] => Array
+        (
+            [0] => Array
+                (
+                    [name] => White
+                    [variables] => --txt-color: var(--primary-100);
+--bg-color: var(--white-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--gold-100);
+--button-color-btn-outline-bg-active: var(--primary-100);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--primary-lt);
+--eyebrow-txt: var(--quaternary-100);
+--eyebrow-bg: var(--tertiary-100);
+--eyebrow-border: var(--tertiary-100);
+--gridlines-tint: var(--primary-tint-40-tint);
+--texture-color: var(--primary-tint-40-tint);
+--error-color: var(--ui-error);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--gold-100);
+--news-card-bg-active: var(--primary-tint-40-tint);
+--news-card-icon-bg-hover: var(--txt-color);
+--news-card-icon-line-hover: var(--news-card-bg-hover);
+--news-card-focus-border: var(--primary-tint-40-tint);
+--news-card-feat-bg-hover: var(--gold-100);
+--news-card-feat-bg-active: var(--white-100);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--primary-transp-10%);
+--link-grid-bg-active: var(--primary-transp-20%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--gold-100);
+--color-card-bg-active: var(--primary-tint-40-tint);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [1] => Array
+                (
+                    [name] => Blue
+                    [variables] => --txt-color: var(--white-100);
+--bg-color: var(--primary-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--white-transp-25%);
+--button-color-btn-outline-bg-active: var(--white-transp-50%);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--white-transp-50%);
+--eyebrow-txt: var(--bg-color);
+--eyebrow-bg: var(--secondary-100);
+--eyebrow-border: var(--secondary-100);
+--gridlines-tint: var(--primary-tint-60-tint);
+--texture-color: var(--primary-tint-70);
+--error-color: var(--ui-error-lt);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--primary-tint-70);
+--news-card-bg-active: var(--bg-color);
+--news-card-icon-bg-hover: var(--white-100);
+--news-card-icon-line-hover: var(--bg-color);
+--news-card-focus-border: var(--secondary-100);
+--news-card-feat-bg-hover: var(--primary-tint-30-tint);
+--news-card-feat-bg-active: var(--primary-tint-40-tint);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--white-transp-10%);
+--link-grid-bg-active: var(--white-transp-25%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--primary-tint-90-tint);
+--color-card-bg-active: var(--primary-tint-70);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [2] => Array
+                (
+                    [name] => Gold
+                    [variables] => --txt-color: var(--black-100);
+--bg-color: var(--gold-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--white-transp-25%);
+--button-color-btn-outline-bg-active: var(--black-100);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--primary-lt);
+--eyebrow-txt: var(--gold-100);
+--eyebrow-bg: var(--txt-color);
+--eyebrow-border: var(--txt-color);
+--gridlines-tint: var(--primary-tint-40-tint);
+--texture-color: var(--primary-tint-50-tint);
+--error-color: var(--ui-error);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--white-100);
+--news-card-bg-active: var(--primary-tint-30-tint);
+--news-card-icon-bg-hover: var(--txt-color);
+--news-card-icon-line-hover: var(--news-card-bg-hover);
+--news-card-focus-border: var(--primary-tint-50-tint);
+--news-card-feat-bg-hover: var(--white-100);
+--news-card-feat-bg-active: var(--primary-tint-30-tint);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--white-100);
+--link-grid-bg-active: var(--white-transp-75%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--white-100);
+--color-card-bg-active: var(--white-transp-75%);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [3] => Array
+                (
+                    [name] => Black
+                    [variables] => --txt-color: var(--gold-100);
+--bg-color: var(--black-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--white-transp-25%);
+--button-color-btn-outline-bg-active: var(--white-transp-50%);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--white-transp-50%);
+--eyebrow-txt: var(--black-100);
+--eyebrow-bg: var(--secondary-100);
+--eyebrow-border: var(--secondary-100);
+--gridlines-tint: var(--primary-tint-60-tint);
+--texture-color: var(--primary-tint-70);
+--error-color: var(--ui-error-lt);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--primary-tint-70);
+--news-card-bg-active: var(--bg-color);
+--news-card-icon-bg-hover: var(--white-100);
+--news-card-icon-line-hover: var(--bg-color);
+--news-card-focus-border: var(--secondary-100);
+--news-card-feat-bg-hover: var(--primary-tint-30-tint);
+--news-card-feat-bg-active: var(--primary-tint-40-tint);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--white-transp-10%);
+--link-grid-bg-active: var(--white-transp-25%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--primary-tint-90-tint);
+--color-card-bg-active: var(--primary-tint-70);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [4] => Array
+                (
+                    [name] => Purple
+                    [variables] => --txt-color: var(--white-100);
+--bg-color: var(--quaternary-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--white-transp-25%);
+--button-color-btn-outline-bg-active: var(--white-transp-50%);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--white-transp-50%);
+--eyebrow-txt: var(--bg-color);
+--eyebrow-bg: var(--secondary-100);
+--eyebrow-border: var(--secondary-100);
+--gridlines-tint: var(--primary-tint-60-tint);
+--texture-color: var(--primary-tint-70);
+--error-color: var(--ui-error-lt);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--primary-tint-70);
+--news-card-bg-active: var(--bg-color);
+--news-card-icon-bg-hover: var(--white-100);
+--news-card-icon-line-hover: var(--bg-color);
+--news-card-focus-border: var(--secondary-100);
+--news-card-feat-bg-hover: var(--primary-tint-30-tint);
+--news-card-feat-bg-active: var(--primary-tint-40-tint);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--white-transp-10%);
+--link-grid-bg-active: var(--white-transp-25%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--primary-tint-90-tint);
+--color-card-bg-active: var(--primary-tint-70);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [5] => Array
+                (
+                    [name] => Pale-Yellow
+                    [variables] => --txt-color: var(--primary-100);
+--bg-color: var(--secondary-tint-10-tint);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--gold-100);
+--button-color-btn-outline-bg-active: var(--primary-100);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--primary-lt);
+--eyebrow-txt: var(--quaternary-100);
+--eyebrow-bg: var(--tertiary-100);
+--eyebrow-border: var(--tertiary-100);
+--gridlines-tint: var(--primary-tint-40-tint);
+--texture-color: var(--primary-tint-40-tint);
+--error-color: var(--ui-error);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--gold-100);
+--news-card-bg-active: var(--primary-tint-40-tint);
+--news-card-icon-bg-hover: var(--txt-color);
+--news-card-icon-line-hover: var(--news-card-bg-hover);
+--news-card-focus-border: var(--primary-tint-40-tint);
+--news-card-feat-bg-hover: var(--gold-100);
+--news-card-feat-bg-active: var(--white-100);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--primary-transp-10%);
+--link-grid-bg-active: var(--primary-transp-20%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--gold-100);
+--color-card-bg-active: var(--primary-tint-40-tint);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [6] => Array
+                (
+                    [name] => Pale-Blue
+                    [variables] => --txt-color: var(--primary-100);
+--bg-color: var(--primary-tint-10-tint);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--gold-100);
+--button-color-btn-outline-bg-active: var(--primary-100);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--primary-lt);
+--eyebrow-txt: var(--quaternary-100);
+--eyebrow-bg: var(--tertiary-100);
+--eyebrow-border: var(--tertiary-100);
+--gridlines-tint: var(--primary-tint-40-tint);
+--texture-color: var(--primary-tint-40-tint);
+--error-color: var(--ui-error);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--gold-100);
+--news-card-bg-active: var(--primary-tint-40-tint);
+--news-card-icon-bg-hover: var(--txt-color);
+--news-card-icon-line-hover: var(--news-card-bg-hover);
+--news-card-focus-border: var(--primary-tint-40-tint);
+--news-card-feat-bg-hover: var(--gold-100);
+--news-card-feat-bg-active: var(--white-100);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--primary-transp-10%);
+--link-grid-bg-active: var(--primary-transp-20%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--gold-100);
+--color-card-bg-active: var(--primary-tint-40-tint);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+        )
+
+)
+
+[03-Aug-2026 21:59:04 UTC] SAGE THEME ERROR: Array
+(
+    [severity] => 2
+    [message] => file_get_contents(/Users/fowler/Sites/youthjustice/wp-content/themes/sage/.env): Failed to open stream: No such file or directory
+    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+    [line] => 73
+    [trace] => Array
+        (
+            [0] => Array
+                (
+                    [function] => {closure:/Users/fowler/Sites/youthjustice/wp-content/themes/sage/debug-helper.php:22}
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 73
+                    [function] => file_get_contents
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 48
+                    [function] => readFromFile
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/FileStore.php
+                    [line] => 62
+                    [function] => read
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [4] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Dotenv.php
+                    [line] => 222
+                    [function] => read
+                    [class] => Dotenv\Store\FileStore
+                    [type] => ->
+                )
+
+        )
+
+)
+
+[03-Aug-2026 21:59:04 UTC] ACF Field Debug - colors:
+[03-Aug-2026 21:59:04 UTC] Type: array
+[03-Aug-2026 21:59:04 UTC] Value: Array
+(
+    [variables] => --primary-100: #203A90;
+--primary-transp-90%: #203A90E5;
+--primary-transp-75%: #203A90BF;
+--primary-transp-50%: #203A907F;
+--primary-transp-20%: #203A9033;
+--primary-transp-10%: #203A9019;
+--primary-tint-90-tint: #364E9B;
+--primary-tint-75-tint: #586BAC;
+--primary-tint-50-tint: #8F9CC7;
+--primary-tint-20-tint: #D2D8E9;
+--primary-tint-10-tint: #E9EBF4;
+--primary-dk: #1E2C56;
+--secondary-100: #FCB825;
+--secondary-transp-90%: #FCB825E5;
+--secondary-transp-75%: #FCB825BF;
+--secondary-transp-50%: #FCB8257F;
+--secondary-transp-25%: #FCB8253F;
+--secondary-transp-10%: #FCB82519;
+--secondary-tint-90-tint: #FCBF3B;
+--secondary-tint-75-tint: #FDCA5C;
+--secondary-tint-50-tint: #FDDB92;
+--secondary-tint-25-tint: #FEEDC8;
+--secondary-tint-10-tint: #FFF8E9;
+--gold-100: #C39E6D;
+--black-100: #000000;
+--black-transp-90%: #000000E5;
+--black-transp-75%: #000000BF;
+--black-transp-50%: #0000007F;
+--black-transp-25%: #0000003F;
+--black-transp-10%: #00000019;
+--black-tint-90-tint: #1A1A1A;
+--black-tint-75-tint: #404040;
+--black-tint-50-tint: #808080;
+--black-tint-25-tint: #BFBFBF;
+--black-tint-10-tint: #E5E5E5;
+--white-100: #FFFFFF;
+--white-transp-90%: #FFFFFFE5;
+--white-transp-75%: #FFFFFFBF;
+--white-transp-50%: #FFFFFF7F;
+--white-transp-25%: #FFFFFF3F;
+--white-transp-10%: #FFFFFF19;
+--ui-error: #CF1800;
+--ui-error-lt: #FF8585;
+--ui-success: #64A13F;
+--tertiary-100: #FF8100;
+--quaternary-100: #31006E;
+    [color_modes] => Array
+        (
+            [0] => Array
+                (
+                    [name] => White
+                    [variables] => --txt-color: var(--primary-100);
+--bg-color: var(--white-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--gold-100);
+--button-color-btn-outline-bg-active: var(--primary-100);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--primary-lt);
+--eyebrow-txt: var(--quaternary-100);
+--eyebrow-bg: var(--tertiary-100);
+--eyebrow-border: var(--tertiary-100);
+--gridlines-tint: var(--primary-tint-40-tint);
+--texture-color: var(--primary-tint-40-tint);
+--error-color: var(--ui-error);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--gold-100);
+--news-card-bg-active: var(--primary-tint-40-tint);
+--news-card-icon-bg-hover: var(--txt-color);
+--news-card-icon-line-hover: var(--news-card-bg-hover);
+--news-card-focus-border: var(--primary-tint-40-tint);
+--news-card-feat-bg-hover: var(--gold-100);
+--news-card-feat-bg-active: var(--white-100);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--primary-transp-10%);
+--link-grid-bg-active: var(--primary-transp-20%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--gold-100);
+--color-card-bg-active: var(--primary-tint-40-tint);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [1] => Array
+                (
+                    [name] => Blue
+                    [variables] => --txt-color: var(--white-100);
+--bg-color: var(--primary-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--white-transp-25%);
+--button-color-btn-outline-bg-active: var(--white-transp-50%);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--white-transp-50%);
+--eyebrow-txt: var(--bg-color);
+--eyebrow-bg: var(--secondary-100);
+--eyebrow-border: var(--secondary-100);
+--gridlines-tint: var(--primary-tint-60-tint);
+--texture-color: var(--primary-tint-70);
+--error-color: var(--ui-error-lt);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--primary-tint-70);
+--news-card-bg-active: var(--bg-color);
+--news-card-icon-bg-hover: var(--white-100);
+--news-card-icon-line-hover: var(--bg-color);
+--news-card-focus-border: var(--secondary-100);
+--news-card-feat-bg-hover: var(--primary-tint-30-tint);
+--news-card-feat-bg-active: var(--primary-tint-40-tint);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--white-transp-10%);
+--link-grid-bg-active: var(--white-transp-25%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--primary-tint-90-tint);
+--color-card-bg-active: var(--primary-tint-70);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [2] => Array
+                (
+                    [name] => Gold
+                    [variables] => --txt-color: var(--black-100);
+--bg-color: var(--gold-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--white-transp-25%);
+--button-color-btn-outline-bg-active: var(--black-100);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--primary-lt);
+--eyebrow-txt: var(--gold-100);
+--eyebrow-bg: var(--txt-color);
+--eyebrow-border: var(--txt-color);
+--gridlines-tint: var(--primary-tint-40-tint);
+--texture-color: var(--primary-tint-50-tint);
+--error-color: var(--ui-error);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--white-100);
+--news-card-bg-active: var(--primary-tint-30-tint);
+--news-card-icon-bg-hover: var(--txt-color);
+--news-card-icon-line-hover: var(--news-card-bg-hover);
+--news-card-focus-border: var(--primary-tint-50-tint);
+--news-card-feat-bg-hover: var(--white-100);
+--news-card-feat-bg-active: var(--primary-tint-30-tint);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--white-100);
+--link-grid-bg-active: var(--white-transp-75%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--white-100);
+--color-card-bg-active: var(--white-transp-75%);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [3] => Array
+                (
+                    [name] => Black
+                    [variables] => --txt-color: var(--gold-100);
+--bg-color: var(--black-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--white-transp-25%);
+--button-color-btn-outline-bg-active: var(--white-transp-50%);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--white-transp-50%);
+--eyebrow-txt: var(--black-100);
+--eyebrow-bg: var(--secondary-100);
+--eyebrow-border: var(--secondary-100);
+--gridlines-tint: var(--primary-tint-60-tint);
+--texture-color: var(--primary-tint-70);
+--error-color: var(--ui-error-lt);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--primary-tint-70);
+--news-card-bg-active: var(--bg-color);
+--news-card-icon-bg-hover: var(--white-100);
+--news-card-icon-line-hover: var(--bg-color);
+--news-card-focus-border: var(--secondary-100);
+--news-card-feat-bg-hover: var(--primary-tint-30-tint);
+--news-card-feat-bg-active: var(--primary-tint-40-tint);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--white-transp-10%);
+--link-grid-bg-active: var(--white-transp-25%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--primary-tint-90-tint);
+--color-card-bg-active: var(--primary-tint-70);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [4] => Array
+                (
+                    [name] => Purple
+                    [variables] => --txt-color: var(--white-100);
+--bg-color: var(--quaternary-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--white-transp-25%);
+--button-color-btn-outline-bg-active: var(--white-transp-50%);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--white-transp-50%);
+--eyebrow-txt: var(--bg-color);
+--eyebrow-bg: var(--secondary-100);
+--eyebrow-border: var(--secondary-100);
+--gridlines-tint: var(--primary-tint-60-tint);
+--texture-color: var(--primary-tint-70);
+--error-color: var(--ui-error-lt);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--primary-tint-70);
+--news-card-bg-active: var(--bg-color);
+--news-card-icon-bg-hover: var(--white-100);
+--news-card-icon-line-hover: var(--bg-color);
+--news-card-focus-border: var(--secondary-100);
+--news-card-feat-bg-hover: var(--primary-tint-30-tint);
+--news-card-feat-bg-active: var(--primary-tint-40-tint);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--white-transp-10%);
+--link-grid-bg-active: var(--white-transp-25%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--primary-tint-90-tint);
+--color-card-bg-active: var(--primary-tint-70);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [5] => Array
+                (
+                    [name] => Pale-Yellow
+                    [variables] => --txt-color: var(--primary-100);
+--bg-color: var(--secondary-tint-10-tint);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--gold-100);
+--button-color-btn-outline-bg-active: var(--primary-100);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--primary-lt);
+--eyebrow-txt: var(--quaternary-100);
+--eyebrow-bg: var(--tertiary-100);
+--eyebrow-border: var(--tertiary-100);
+--gridlines-tint: var(--primary-tint-40-tint);
+--texture-color: var(--primary-tint-40-tint);
+--error-color: var(--ui-error);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--gold-100);
+--news-card-bg-active: var(--primary-tint-40-tint);
+--news-card-icon-bg-hover: var(--txt-color);
+--news-card-icon-line-hover: var(--news-card-bg-hover);
+--news-card-focus-border: var(--primary-tint-40-tint);
+--news-card-feat-bg-hover: var(--gold-100);
+--news-card-feat-bg-active: var(--white-100);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--primary-transp-10%);
+--link-grid-bg-active: var(--primary-transp-20%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--gold-100);
+--color-card-bg-active: var(--primary-tint-40-tint);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [6] => Array
+                (
+                    [name] => Pale-Blue
+                    [variables] => --txt-color: var(--primary-100);
+--bg-color: var(--primary-tint-10-tint);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--gold-100);
+--button-color-btn-outline-bg-active: var(--primary-100);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--primary-lt);
+--eyebrow-txt: var(--quaternary-100);
+--eyebrow-bg: var(--tertiary-100);
+--eyebrow-border: var(--tertiary-100);
+--gridlines-tint: var(--primary-tint-40-tint);
+--texture-color: var(--primary-tint-40-tint);
+--error-color: var(--ui-error);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--gold-100);
+--news-card-bg-active: var(--primary-tint-40-tint);
+--news-card-icon-bg-hover: var(--txt-color);
+--news-card-icon-line-hover: var(--news-card-bg-hover);
+--news-card-focus-border: var(--primary-tint-40-tint);
+--news-card-feat-bg-hover: var(--gold-100);
+--news-card-feat-bg-active: var(--white-100);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--primary-transp-10%);
+--link-grid-bg-active: var(--primary-transp-20%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--gold-100);
+--color-card-bg-active: var(--primary-tint-40-tint);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+        )
+
+)
+
+[03-Aug-2026 21:59:05 UTC] SAGE THEME ERROR: Array
+(
+    [severity] => 2
+    [message] => file_get_contents(/Users/fowler/Sites/youthjustice/wp-content/themes/sage/.env): Failed to open stream: No such file or directory
+    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+    [line] => 73
+    [trace] => Array
+        (
+            [0] => Array
+                (
+                    [function] => {closure:/Users/fowler/Sites/youthjustice/wp-content/themes/sage/debug-helper.php:22}
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 73
+                    [function] => file_get_contents
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 48
+                    [function] => readFromFile
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/FileStore.php
+                    [line] => 62
+                    [function] => read
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [4] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Dotenv.php
+                    [line] => 222
+                    [function] => read
+                    [class] => Dotenv\Store\FileStore
+                    [type] => ->
+                )
+
+        )
+
+)
+
+[03-Aug-2026 22:00:05 UTC] SAGE THEME ERROR: Array
+(
+    [severity] => 2
+    [message] => file_get_contents(/Users/fowler/Sites/youthjustice/wp-content/themes/sage/.env): Failed to open stream: No such file or directory
+    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+    [line] => 73
+    [trace] => Array
+        (
+            [0] => Array
+                (
+                    [function] => {closure:/Users/fowler/Sites/youthjustice/wp-content/themes/sage/debug-helper.php:22}
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 73
+                    [function] => file_get_contents
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 48
+                    [function] => readFromFile
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/FileStore.php
+                    [line] => 62
+                    [function] => read
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [4] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Dotenv.php
+                    [line] => 222
+                    [function] => read
+                    [class] => Dotenv\Store\FileStore
+                    [type] => ->
+                )
+
+        )
+
+)
+
+[03-Aug-2026 22:00:05 UTC] SAGE THEME ERROR: Array
+(
+    [severity] => 2
+    [message] => file_get_contents(/Users/fowler/Sites/youthjustice/wp-content/themes/sage/.env): Failed to open stream: No such file or directory
+    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+    [line] => 73
+    [trace] => Array
+        (
+            [0] => Array
+                (
+                    [function] => {closure:/Users/fowler/Sites/youthjustice/wp-content/themes/sage/debug-helper.php:22}
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 73
+                    [function] => file_get_contents
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 48
+                    [function] => readFromFile
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/FileStore.php
+                    [line] => 62
+                    [function] => read
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [4] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Dotenv.php
+                    [line] => 222
+                    [function] => read
+                    [class] => Dotenv\Store\FileStore
+                    [type] => ->
+                )
+
+        )
+
+)
+
+[03-Aug-2026 22:00:08 UTC] SAGE THEME ERROR: Array
+(
+    [severity] => 2
+    [message] => file_get_contents(/Users/fowler/Sites/youthjustice/wp-content/themes/sage/.env): Failed to open stream: No such file or directory
+    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+    [line] => 73
+    [trace] => Array
+        (
+            [0] => Array
+                (
+                    [function] => {closure:/Users/fowler/Sites/youthjustice/wp-content/themes/sage/debug-helper.php:22}
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 73
+                    [function] => file_get_contents
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 48
+                    [function] => readFromFile
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/FileStore.php
+                    [line] => 62
+                    [function] => read
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [4] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Dotenv.php
+                    [line] => 222
+                    [function] => read
+                    [class] => Dotenv\Store\FileStore
+                    [type] => ->
+                )
+
+        )
+
+)
+
+[03-Aug-2026 22:00:08 UTC] ACF Field Debug - colors:
+[03-Aug-2026 22:00:08 UTC] Type: array
+[03-Aug-2026 22:00:08 UTC] Value: Array
+(
+    [variables] => --primary-100: #203A90;
+--primary-transp-90%: #203A90E5;
+--primary-transp-75%: #203A90BF;
+--primary-transp-50%: #203A907F;
+--primary-transp-20%: #203A9033;
+--primary-transp-10%: #203A9019;
+--primary-tint-90-tint: #364E9B;
+--primary-tint-75-tint: #586BAC;
+--primary-tint-50-tint: #8F9CC7;
+--primary-tint-20-tint: #D2D8E9;
+--primary-tint-10-tint: #E9EBF4;
+--primary-dk: #1E2C56;
+--secondary-100: #FCB825;
+--secondary-transp-90%: #FCB825E5;
+--secondary-transp-75%: #FCB825BF;
+--secondary-transp-50%: #FCB8257F;
+--secondary-transp-25%: #FCB8253F;
+--secondary-transp-10%: #FCB82519;
+--secondary-tint-90-tint: #FCBF3B;
+--secondary-tint-75-tint: #FDCA5C;
+--secondary-tint-50-tint: #FDDB92;
+--secondary-tint-25-tint: #FEEDC8;
+--secondary-tint-10-tint: #FFF8E9;
+--gold-100: #C39E6D;
+--black-100: #000000;
+--black-transp-90%: #000000E5;
+--black-transp-75%: #000000BF;
+--black-transp-50%: #0000007F;
+--black-transp-25%: #0000003F;
+--black-transp-10%: #00000019;
+--black-tint-90-tint: #1A1A1A;
+--black-tint-75-tint: #404040;
+--black-tint-50-tint: #808080;
+--black-tint-25-tint: #BFBFBF;
+--black-tint-10-tint: #E5E5E5;
+--white-100: #FFFFFF;
+--white-transp-90%: #FFFFFFE5;
+--white-transp-75%: #FFFFFFBF;
+--white-transp-50%: #FFFFFF7F;
+--white-transp-25%: #FFFFFF3F;
+--white-transp-10%: #FFFFFF19;
+--ui-error: #CF1800;
+--ui-error-lt: #FF8585;
+--ui-success: #64A13F;
+--tertiary-100: #FF8100;
+--quaternary-100: #31006E;
+    [color_modes] => Array
+        (
+            [0] => Array
+                (
+                    [name] => White
+                    [variables] => --txt-color: var(--primary-100);
+--bg-color: var(--white-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--gold-100);
+--button-color-btn-outline-bg-active: var(--primary-100);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--primary-lt);
+--eyebrow-txt: var(--quaternary-100);
+--eyebrow-bg: var(--tertiary-100);
+--eyebrow-border: var(--tertiary-100);
+--gridlines-tint: var(--primary-tint-40-tint);
+--texture-color: var(--primary-tint-40-tint);
+--error-color: var(--ui-error);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--gold-100);
+--news-card-bg-active: var(--primary-tint-40-tint);
+--news-card-icon-bg-hover: var(--txt-color);
+--news-card-icon-line-hover: var(--news-card-bg-hover);
+--news-card-focus-border: var(--primary-tint-40-tint);
+--news-card-feat-bg-hover: var(--gold-100);
+--news-card-feat-bg-active: var(--white-100);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--primary-transp-10%);
+--link-grid-bg-active: var(--primary-transp-20%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--gold-100);
+--color-card-bg-active: var(--primary-tint-40-tint);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [1] => Array
+                (
+                    [name] => Blue
+                    [variables] => --txt-color: var(--white-100);
+--bg-color: var(--primary-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--white-transp-25%);
+--button-color-btn-outline-bg-active: var(--white-transp-50%);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--white-transp-50%);
+--eyebrow-txt: var(--bg-color);
+--eyebrow-bg: var(--secondary-100);
+--eyebrow-border: var(--secondary-100);
+--gridlines-tint: var(--primary-tint-60-tint);
+--texture-color: var(--primary-tint-70);
+--error-color: var(--ui-error-lt);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--primary-tint-70);
+--news-card-bg-active: var(--bg-color);
+--news-card-icon-bg-hover: var(--white-100);
+--news-card-icon-line-hover: var(--bg-color);
+--news-card-focus-border: var(--secondary-100);
+--news-card-feat-bg-hover: var(--primary-tint-30-tint);
+--news-card-feat-bg-active: var(--primary-tint-40-tint);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--white-transp-10%);
+--link-grid-bg-active: var(--white-transp-25%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--primary-tint-90-tint);
+--color-card-bg-active: var(--primary-tint-70);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [2] => Array
+                (
+                    [name] => Gold
+                    [variables] => --txt-color: var(--black-100);
+--bg-color: var(--gold-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--white-transp-25%);
+--button-color-btn-outline-bg-active: var(--black-100);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--primary-lt);
+--eyebrow-txt: var(--gold-100);
+--eyebrow-bg: var(--txt-color);
+--eyebrow-border: var(--txt-color);
+--gridlines-tint: var(--primary-tint-40-tint);
+--texture-color: var(--primary-tint-50-tint);
+--error-color: var(--ui-error);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--white-100);
+--news-card-bg-active: var(--primary-tint-30-tint);
+--news-card-icon-bg-hover: var(--txt-color);
+--news-card-icon-line-hover: var(--news-card-bg-hover);
+--news-card-focus-border: var(--primary-tint-50-tint);
+--news-card-feat-bg-hover: var(--white-100);
+--news-card-feat-bg-active: var(--primary-tint-30-tint);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--white-100);
+--link-grid-bg-active: var(--white-transp-75%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--white-100);
+--color-card-bg-active: var(--white-transp-75%);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [3] => Array
+                (
+                    [name] => Black
+                    [variables] => --txt-color: var(--gold-100);
+--bg-color: var(--black-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--white-transp-25%);
+--button-color-btn-outline-bg-active: var(--white-transp-50%);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--white-transp-50%);
+--eyebrow-txt: var(--black-100);
+--eyebrow-bg: var(--secondary-100);
+--eyebrow-border: var(--secondary-100);
+--gridlines-tint: var(--primary-tint-60-tint);
+--texture-color: var(--primary-tint-70);
+--error-color: var(--ui-error-lt);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--primary-tint-70);
+--news-card-bg-active: var(--bg-color);
+--news-card-icon-bg-hover: var(--white-100);
+--news-card-icon-line-hover: var(--bg-color);
+--news-card-focus-border: var(--secondary-100);
+--news-card-feat-bg-hover: var(--primary-tint-30-tint);
+--news-card-feat-bg-active: var(--primary-tint-40-tint);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--white-transp-10%);
+--link-grid-bg-active: var(--white-transp-25%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--primary-tint-90-tint);
+--color-card-bg-active: var(--primary-tint-70);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [4] => Array
+                (
+                    [name] => Purple
+                    [variables] => --txt-color: var(--white-100);
+--bg-color: var(--quaternary-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--white-transp-25%);
+--button-color-btn-outline-bg-active: var(--white-transp-50%);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--white-transp-50%);
+--eyebrow-txt: var(--bg-color);
+--eyebrow-bg: var(--secondary-100);
+--eyebrow-border: var(--secondary-100);
+--gridlines-tint: var(--primary-tint-60-tint);
+--texture-color: var(--primary-tint-70);
+--error-color: var(--ui-error-lt);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--primary-tint-70);
+--news-card-bg-active: var(--bg-color);
+--news-card-icon-bg-hover: var(--white-100);
+--news-card-icon-line-hover: var(--bg-color);
+--news-card-focus-border: var(--secondary-100);
+--news-card-feat-bg-hover: var(--primary-tint-30-tint);
+--news-card-feat-bg-active: var(--primary-tint-40-tint);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--white-transp-10%);
+--link-grid-bg-active: var(--white-transp-25%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--primary-tint-90-tint);
+--color-card-bg-active: var(--primary-tint-70);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [5] => Array
+                (
+                    [name] => Pale-Yellow
+                    [variables] => --txt-color: var(--primary-100);
+--bg-color: var(--secondary-tint-10-tint);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--gold-100);
+--button-color-btn-outline-bg-active: var(--primary-100);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--primary-lt);
+--eyebrow-txt: var(--quaternary-100);
+--eyebrow-bg: var(--tertiary-100);
+--eyebrow-border: var(--tertiary-100);
+--gridlines-tint: var(--primary-tint-40-tint);
+--texture-color: var(--primary-tint-40-tint);
+--error-color: var(--ui-error);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--gold-100);
+--news-card-bg-active: var(--primary-tint-40-tint);
+--news-card-icon-bg-hover: var(--txt-color);
+--news-card-icon-line-hover: var(--news-card-bg-hover);
+--news-card-focus-border: var(--primary-tint-40-tint);
+--news-card-feat-bg-hover: var(--gold-100);
+--news-card-feat-bg-active: var(--white-100);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--primary-transp-10%);
+--link-grid-bg-active: var(--primary-transp-20%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--gold-100);
+--color-card-bg-active: var(--primary-tint-40-tint);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [6] => Array
+                (
+                    [name] => Pale-Blue
+                    [variables] => --txt-color: var(--primary-100);
+--bg-color: var(--primary-tint-10-tint);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--gold-100);
+--button-color-btn-outline-bg-active: var(--primary-100);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--primary-lt);
+--eyebrow-txt: var(--quaternary-100);
+--eyebrow-bg: var(--tertiary-100);
+--eyebrow-border: var(--tertiary-100);
+--gridlines-tint: var(--primary-tint-40-tint);
+--texture-color: var(--primary-tint-40-tint);
+--error-color: var(--ui-error);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--gold-100);
+--news-card-bg-active: var(--primary-tint-40-tint);
+--news-card-icon-bg-hover: var(--txt-color);
+--news-card-icon-line-hover: var(--news-card-bg-hover);
+--news-card-focus-border: var(--primary-tint-40-tint);
+--news-card-feat-bg-hover: var(--gold-100);
+--news-card-feat-bg-active: var(--white-100);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--primary-transp-10%);
+--link-grid-bg-active: var(--primary-transp-20%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--gold-100);
+--color-card-bg-active: var(--primary-tint-40-tint);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+        )
+
+)
+
+[03-Aug-2026 22:00:08 UTC] Options Composer Debug:
+[03-Aug-2026 22:00:08 UTC] Sections type: array
+[03-Aug-2026 22:00:08 UTC] Socials type: array
+[03-Aug-2026 22:00:08 UTC] Socials value: Array
+(
+    [headline] => Follow us on social media
+    [links] => Array
+        (
+            [0] => Array
+                (
+                    [name] => instagram
+                    [url] => http://instagram.com/youthjusticela
+                )
+
+            [1] => Array
+                (
+                    [name] => twitter
+                    [url] => http://x.com/youthjusticela
+                )
+
+        )
+
+)
+
+[03-Aug-2026 22:00:08 UTC] Options Composer Debug:
+[03-Aug-2026 22:00:08 UTC] Sections type: array
+[03-Aug-2026 22:00:08 UTC] Socials type: array
+[03-Aug-2026 22:00:08 UTC] Socials value: Array
+(
+    [headline] => Follow us on social media
+    [links] => Array
+        (
+            [0] => Array
+                (
+                    [name] => instagram
+                    [url] => http://instagram.com/youthjusticela
+                )
+
+            [1] => Array
+                (
+                    [name] => twitter
+                    [url] => http://x.com/youthjusticela
+                )
+
+        )
+
+)
+
+[03-Aug-2026 22:00:46 UTC] SAGE THEME ERROR: Array
+(
+    [severity] => 2
+    [message] => file_get_contents(/Users/fowler/Sites/youthjustice/wp-content/themes/sage/.env): Failed to open stream: No such file or directory
+    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+    [line] => 73
+    [trace] => Array
+        (
+            [0] => Array
+                (
+                    [function] => {closure:/Users/fowler/Sites/youthjustice/wp-content/themes/sage/debug-helper.php:22}
+                )
+
+            [1] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 73
+                    [function] => file_get_contents
+                )
+
+            [2] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/File/Reader.php
+                    [line] => 48
+                    [function] => readFromFile
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [3] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Store/FileStore.php
+                    [line] => 62
+                    [function] => read
+                    [class] => Dotenv\Store\File\Reader
+                    [type] => ::
+                )
+
+            [4] => Array
+                (
+                    [file] => /Users/fowler/Sites/youthjustice/wp-content/themes/sage/vendor/vlucas/phpdotenv/src/Dotenv.php
+                    [line] => 222
+                    [function] => read
+                    [class] => Dotenv\Store\FileStore
+                    [type] => ->
+                )
+
+        )
+
+)
+
+[03-Aug-2026 22:00:46 UTC] ACF Field Debug - colors:
+[03-Aug-2026 22:00:46 UTC] Type: array
+[03-Aug-2026 22:00:46 UTC] Value: Array
+(
+    [variables] => --primary-100: #203A90;
+--primary-transp-90%: #203A90E5;
+--primary-transp-75%: #203A90BF;
+--primary-transp-50%: #203A907F;
+--primary-transp-20%: #203A9033;
+--primary-transp-10%: #203A9019;
+--primary-tint-90-tint: #364E9B;
+--primary-tint-75-tint: #586BAC;
+--primary-tint-50-tint: #8F9CC7;
+--primary-tint-20-tint: #D2D8E9;
+--primary-tint-10-tint: #E9EBF4;
+--primary-dk: #1E2C56;
+--secondary-100: #FCB825;
+--secondary-transp-90%: #FCB825E5;
+--secondary-transp-75%: #FCB825BF;
+--secondary-transp-50%: #FCB8257F;
+--secondary-transp-25%: #FCB8253F;
+--secondary-transp-10%: #FCB82519;
+--secondary-tint-90-tint: #FCBF3B;
+--secondary-tint-75-tint: #FDCA5C;
+--secondary-tint-50-tint: #FDDB92;
+--secondary-tint-25-tint: #FEEDC8;
+--secondary-tint-10-tint: #FFF8E9;
+--gold-100: #C39E6D;
+--black-100: #000000;
+--black-transp-90%: #000000E5;
+--black-transp-75%: #000000BF;
+--black-transp-50%: #0000007F;
+--black-transp-25%: #0000003F;
+--black-transp-10%: #00000019;
+--black-tint-90-tint: #1A1A1A;
+--black-tint-75-tint: #404040;
+--black-tint-50-tint: #808080;
+--black-tint-25-tint: #BFBFBF;
+--black-tint-10-tint: #E5E5E5;
+--white-100: #FFFFFF;
+--white-transp-90%: #FFFFFFE5;
+--white-transp-75%: #FFFFFFBF;
+--white-transp-50%: #FFFFFF7F;
+--white-transp-25%: #FFFFFF3F;
+--white-transp-10%: #FFFFFF19;
+--ui-error: #CF1800;
+--ui-error-lt: #FF8585;
+--ui-success: #64A13F;
+--tertiary-100: #FF8100;
+--quaternary-100: #31006E;
+    [color_modes] => Array
+        (
+            [0] => Array
+                (
+                    [name] => White
+                    [variables] => --txt-color: var(--primary-100);
+--bg-color: var(--white-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--gold-100);
+--button-color-btn-outline-bg-active: var(--primary-100);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--primary-lt);
+--eyebrow-txt: var(--quaternary-100);
+--eyebrow-bg: var(--tertiary-100);
+--eyebrow-border: var(--tertiary-100);
+--gridlines-tint: var(--primary-tint-40-tint);
+--texture-color: var(--primary-tint-40-tint);
+--error-color: var(--ui-error);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--gold-100);
+--news-card-bg-active: var(--primary-tint-40-tint);
+--news-card-icon-bg-hover: var(--txt-color);
+--news-card-icon-line-hover: var(--news-card-bg-hover);
+--news-card-focus-border: var(--primary-tint-40-tint);
+--news-card-feat-bg-hover: var(--gold-100);
+--news-card-feat-bg-active: var(--white-100);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--primary-transp-10%);
+--link-grid-bg-active: var(--primary-transp-20%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--gold-100);
+--color-card-bg-active: var(--primary-tint-40-tint);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [1] => Array
+                (
+                    [name] => Blue
+                    [variables] => --txt-color: var(--white-100);
+--bg-color: var(--primary-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--white-transp-25%);
+--button-color-btn-outline-bg-active: var(--white-transp-50%);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--white-transp-50%);
+--eyebrow-txt: var(--bg-color);
+--eyebrow-bg: var(--secondary-100);
+--eyebrow-border: var(--secondary-100);
+--gridlines-tint: var(--primary-tint-60-tint);
+--texture-color: var(--primary-tint-70);
+--error-color: var(--ui-error-lt);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--primary-tint-70);
+--news-card-bg-active: var(--bg-color);
+--news-card-icon-bg-hover: var(--white-100);
+--news-card-icon-line-hover: var(--bg-color);
+--news-card-focus-border: var(--secondary-100);
+--news-card-feat-bg-hover: var(--primary-tint-30-tint);
+--news-card-feat-bg-active: var(--primary-tint-40-tint);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--white-transp-10%);
+--link-grid-bg-active: var(--white-transp-25%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--primary-tint-90-tint);
+--color-card-bg-active: var(--primary-tint-70);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [2] => Array
+                (
+                    [name] => Gold
+                    [variables] => --txt-color: var(--black-100);
+--bg-color: var(--gold-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--white-transp-25%);
+--button-color-btn-outline-bg-active: var(--black-100);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--primary-lt);
+--eyebrow-txt: var(--gold-100);
+--eyebrow-bg: var(--txt-color);
+--eyebrow-border: var(--txt-color);
+--gridlines-tint: var(--primary-tint-40-tint);
+--texture-color: var(--primary-tint-50-tint);
+--error-color: var(--ui-error);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--white-100);
+--news-card-bg-active: var(--primary-tint-30-tint);
+--news-card-icon-bg-hover: var(--txt-color);
+--news-card-icon-line-hover: var(--news-card-bg-hover);
+--news-card-focus-border: var(--primary-tint-50-tint);
+--news-card-feat-bg-hover: var(--white-100);
+--news-card-feat-bg-active: var(--primary-tint-30-tint);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--white-100);
+--link-grid-bg-active: var(--white-transp-75%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--white-100);
+--color-card-bg-active: var(--white-transp-75%);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [3] => Array
+                (
+                    [name] => Black
+                    [variables] => --txt-color: var(--gold-100);
+--bg-color: var(--black-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--white-transp-25%);
+--button-color-btn-outline-bg-active: var(--white-transp-50%);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--white-transp-50%);
+--eyebrow-txt: var(--black-100);
+--eyebrow-bg: var(--secondary-100);
+--eyebrow-border: var(--secondary-100);
+--gridlines-tint: var(--primary-tint-60-tint);
+--texture-color: var(--primary-tint-70);
+--error-color: var(--ui-error-lt);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--primary-tint-70);
+--news-card-bg-active: var(--bg-color);
+--news-card-icon-bg-hover: var(--white-100);
+--news-card-icon-line-hover: var(--bg-color);
+--news-card-focus-border: var(--secondary-100);
+--news-card-feat-bg-hover: var(--primary-tint-30-tint);
+--news-card-feat-bg-active: var(--primary-tint-40-tint);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--white-transp-10%);
+--link-grid-bg-active: var(--white-transp-25%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--primary-tint-90-tint);
+--color-card-bg-active: var(--primary-tint-70);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [4] => Array
+                (
+                    [name] => Purple
+                    [variables] => --txt-color: var(--white-100);
+--bg-color: var(--quaternary-100);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--white-transp-25%);
+--button-color-btn-outline-bg-active: var(--white-transp-50%);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--white-transp-50%);
+--eyebrow-txt: var(--bg-color);
+--eyebrow-bg: var(--secondary-100);
+--eyebrow-border: var(--secondary-100);
+--gridlines-tint: var(--primary-tint-60-tint);
+--texture-color: var(--primary-tint-70);
+--error-color: var(--ui-error-lt);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--primary-tint-70);
+--news-card-bg-active: var(--bg-color);
+--news-card-icon-bg-hover: var(--white-100);
+--news-card-icon-line-hover: var(--bg-color);
+--news-card-focus-border: var(--secondary-100);
+--news-card-feat-bg-hover: var(--primary-tint-30-tint);
+--news-card-feat-bg-active: var(--primary-tint-40-tint);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--white-transp-10%);
+--link-grid-bg-active: var(--white-transp-25%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--primary-tint-90-tint);
+--color-card-bg-active: var(--primary-tint-70);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [5] => Array
+                (
+                    [name] => Pale-Yellow
+                    [variables] => --txt-color: var(--primary-100);
+--bg-color: var(--secondary-tint-10-tint);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--gold-100);
+--button-color-btn-outline-bg-active: var(--primary-100);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--primary-lt);
+--eyebrow-txt: var(--quaternary-100);
+--eyebrow-bg: var(--tertiary-100);
+--eyebrow-border: var(--tertiary-100);
+--gridlines-tint: var(--primary-tint-40-tint);
+--texture-color: var(--primary-tint-40-tint);
+--error-color: var(--ui-error);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--gold-100);
+--news-card-bg-active: var(--primary-tint-40-tint);
+--news-card-icon-bg-hover: var(--txt-color);
+--news-card-icon-line-hover: var(--news-card-bg-hover);
+--news-card-focus-border: var(--primary-tint-40-tint);
+--news-card-feat-bg-hover: var(--gold-100);
+--news-card-feat-bg-active: var(--white-100);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--primary-transp-10%);
+--link-grid-bg-active: var(--primary-transp-20%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--gold-100);
+--color-card-bg-active: var(--primary-tint-40-tint);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+            [6] => Array
+                (
+                    [name] => Pale-Blue
+                    [variables] => --txt-color: var(--primary-100);
+--bg-color: var(--primary-tint-10-tint);
+--button-color-btn-bg: var(--txt-color);
+--button-color-btn-txt: var(--bg-color);
+--button-color-btn-border: var(--txt-color);
+--button-color-btn-bg-hover: var(--bg-color);
+--button-color-btn-txt-hover: var(--txt-color);
+--button-color-btn-border-hover: var(--txt-color);
+--button-color-btn-bg-active: var(--gold-100);
+--button-color-btn-outline-bg-active: var(--primary-100);
+--button-color-btn-txt-active: var(--txt-color);
+--button-color-btn-border-active: var(--txt-color);
+--button-color-btn-bg-disabled: var(--white-transp-50%);
+--button-color-btn-txt-disabled: var(--bg-color);
+--button-color-btn-border-disabled: var(--white-transp-25%);
+--button-color-btn-border-focus: var(--primary-lt);
+--eyebrow-txt: var(--quaternary-100);
+--eyebrow-bg: var(--tertiary-100);
+--eyebrow-border: var(--tertiary-100);
+--gridlines-tint: var(--primary-tint-40-tint);
+--texture-color: var(--primary-tint-40-tint);
+--error-color: var(--ui-error);
+--news-card-bg-enabled: var(--bg-color);
+--news-card-bg-hover: var(--gold-100);
+--news-card-bg-active: var(--primary-tint-40-tint);
+--news-card-icon-bg-hover: var(--txt-color);
+--news-card-icon-line-hover: var(--news-card-bg-hover);
+--news-card-focus-border: var(--primary-tint-40-tint);
+--news-card-feat-bg-hover: var(--gold-100);
+--news-card-feat-bg-active: var(--white-100);
+--news-card-feat-txt-hover: var(--primary-100);
+--news-card-feat-focus-border: var(--secondary-100);
+--link-grid-bg-hover: var(--primary-transp-10%);
+--link-grid-bg-active: var(--primary-transp-20%);
+--link-grid-focus-border: var(--secondary-100);
+--color-card-bg-hover: var(--gold-100);
+--color-card-bg-active: var(--primary-tint-40-tint);
+--color-card-focus-border: var(--secondary-100);
+                )
+
+        )
+
+)
+
+[03-Aug-2026 22:00:46 UTC] Options Composer Debug:
+[03-Aug-2026 22:00:46 UTC] Sections type: array
+[03-Aug-2026 22:00:46 UTC] Socials type: array
+[03-Aug-2026 22:00:46 UTC] Socials value: Array
+(
+    [headline] => Follow us on social media
+    [links] => Array
+        (
+            [0] => Array
+                (
+                    [name] => instagram
+                    [url] => http://instagram.com/youthjusticela
+                )
+
+            [1] => Array
+                (
+                    [name] => twitter
+                    [url] => http://x.com/youthjusticela
+                )
+
+        )
+
+)
+
+[03-Aug-2026 22:00:46 UTC] Options Composer Debug:
+[03-Aug-2026 22:00:46 UTC] Sections type: array
+[03-Aug-2026 22:00:46 UTC] Socials type: array
+[03-Aug-2026 22:00:46 UTC] Socials value: Array
+(
+    [headline] => Follow us on social media
+    [links] => Array
+        (
+            [0] => Array
+                (
+                    [name] => instagram
+                    [url] => http://instagram.com/youthjusticela
+                )
+
+            [1] => Array
+                (
+                    [name] => twitter
+                    [url] => http://x.com/youthjusticela
+                )
+
+        )
+
+)
+

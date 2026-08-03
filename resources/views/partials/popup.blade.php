@@ -1,4 +1,7 @@
 @php
+
+  ## This is a test.
+
   $popup = get_field('popup', 'option');
   $popupImage = is_array($popup) ? ($popup['image'] ?? null) : null;
   $popupContent = is_array($popup) ? trim((string) ($popup['content'] ?? '')) : '';
