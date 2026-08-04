@@ -116,6 +116,18 @@ class SiteSettings extends Field
                     'label'        => 'Call to Action',
                     'instructions' => 'Optional. The link title is used as the button label.',
                 ])
+                ->addButtonGroup('cta_alignment', [
+                    'label'         => 'CTA Alignment',
+                    'instructions'  => 'Controls the horizontal alignment of the CTA button.',
+                    'choices'       => [
+                        'left'   => 'Left',
+                        'center' => 'Center',
+                        'right'  => 'Right',
+                    ],
+                    'default_value' => 'center',
+                    'layout'        => 'horizontal',
+                    'return_format' => 'value',
+                ])
                 ->addButtonGroup('themes', [
                     'label'        => 'Content Theme',
                     'instructions' => 'Controls the colors of the content panel and CTA button.',

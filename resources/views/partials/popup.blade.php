@@ -6,9 +6,14 @@
   $popupImage = is_array($popup) ? ($popup['image'] ?? null) : null;
   $popupContent = is_array($popup) ? trim((string) ($popup['content'] ?? '')) : '';
   $popupCta = is_array($popup) ? ($popup['cta'] ?? null) : null;
+  $popupCtaAlignment = is_array($popup) ? ($popup['cta_alignment'] ?? 'center') : 'center';
   $popupTheme = is_array($popup) ? ($popup['themes'] ?? '') : '';
   $popupEnabled = is_front_page() && is_array($popup) && !empty($popup['enable']) && $popupImage;
   $popupHasPanel = $popupContent !== '' || !empty($popupCta);
+
+  if (!in_array($popupCtaAlignment, ['left', 'center', 'right'], true)) {
+    $popupCtaAlignment = 'center';
+  }
 @endphp
 
 @if($popupEnabled)
@@ -66,12 +71,19 @@
             @endif
 
             @if($popupCta)
-              <x-button
-                href="{{ $popupCta['url'] }}"
-                target="{{ $popupCta['target'] ?: '_self' }}"
-                rel="{{ ($popupCta['target'] ?? '') === '_blank' ? 'noopener noreferrer' : null }}"
-                label="{{ $popupCta['title'] ?: __('Learn more', 'sage') }}"
-              />
+              <div @class([
+                'flex',
+                'justify-start' => $popupCtaAlignment === 'left',
+                'justify-center' => $popupCtaAlignment === 'center',
+                'justify-end' => $popupCtaAlignment === 'right',
+              ])>
+                <x-button
+                  href="{{ $popupCta['url'] }}"
+                  target="{{ $popupCta['target'] ?: '_self' }}"
+                  rel="{{ ($popupCta['target'] ?? '') === '_blank' ? 'noopener noreferrer' : null }}"
+                  label="{{ $popupCta['title'] ?: __('Learn more', 'sage') }}"
+                />
+              </div>
             @endif
           </div>
         @endif
