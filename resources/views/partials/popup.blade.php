@@ -3,6 +3,7 @@
   ## This is a test.
 
   $popup = get_field('popup', 'option');
+  $popupWidth = is_array($popup) ? ($popup['modal_width'] ?? 'medium') : 'medium';
   $popupImage = is_array($popup) ? ($popup['image'] ?? null) : null;
   $popupContent = is_array($popup) ? trim((string) ($popup['content'] ?? '')) : '';
   $popupCta = is_array($popup) ? ($popup['cta'] ?? null) : null;
@@ -13,6 +14,10 @@
 
   if (!in_array($popupCtaAlignment, ['left', 'center', 'right'], true)) {
     $popupCtaAlignment = 'center';
+  }
+
+  if (!in_array($popupWidth, ['small', 'medium', 'large'], true)) {
+    $popupWidth = 'medium';
   }
 @endphp
 
@@ -40,7 +45,12 @@
         role="dialog"
         aria-modal="true"
         aria-label="{{ __('Site announcement', 'sage') }}"
-        class="pointer-events-auto relative w-full max-w-4xl overflow-hidden rounded-card bg-background text-foreground shadow-2xl"
+        @class([
+          'pointer-events-auto relative w-full overflow-hidden rounded-card bg-background text-foreground shadow-2xl',
+          'max-w-2xl' => $popupWidth === 'small',
+          'max-w-4xl' => $popupWidth === 'medium',
+          'max-w-6xl' => $popupWidth === 'large',
+        ])
       >
         <button
           type="button"

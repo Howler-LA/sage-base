@@ -99,6 +99,18 @@ class SiteSettings extends Field
                     'default_value' => 0,
                     'ui'            => 1,
                 ])
+                ->addButtonGroup('modal_width', [
+                    'label'         => 'Modal Width',
+                    'instructions'  => 'Controls the maximum width of the pop-up on larger screens.',
+                    'choices'       => [
+                        'small'  => 'Small',
+                        'medium' => 'Medium',
+                        'large'  => 'Large',
+                    ],
+                    'default_value' => 'medium',
+                    'layout'        => 'horizontal',
+                    'return_format' => 'value',
+                ])
                 ->addImage('image', [
                     'label'         => 'Image',
                     'instructions'  => 'Displayed at the full width of the pop-up. For an image-only pop-up, leave the content and CTA fields empty.',
